@@ -13,7 +13,7 @@ var paths = {
   watch: 'src/**/*.scss',
   outputFolder: './dist/',
   outputName: 'atlantis.css',
-  examples: 'examples/*.html'
+  examples: 'examples/**/*.html'
 };
 
 // Build all scss files, autoprefix,

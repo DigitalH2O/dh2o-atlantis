@@ -1,0 +1,49 @@
+<template>
+  <div id="content-menu" class="section">
+    <div class="title"><h1>Menu</h1></div>
+    <div class="content">
+      <p>
+        Although menus may change depending on the application
+        we have a very simple implementation that is easy to implement.
+        Just add the below code to the sidebar div.
+      </p>
+      <p>You can also add an image if you need to.</p>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <ul class="nav">
+              <li class="link"><a>Link tag</a></li>
+            </ul>
+          </script>
+        </code>
+      </pre>
+
+      <div class="seperator"></div>
+
+      <h3>Active State</h3>
+      <p>In order to show active state just add the active class to the a tag.</p>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <a class="active" href="#">Link tag</a>
+          </script>
+        </code>
+      </pre>
+
+      <div class="seperator"></div>
+
+      <h3>Seperators</h3>
+      <p>
+        If you need to add a line seperator in a menu item. Just change
+        the class of one of the li link items with seperator.
+      </p>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <li class="seperator"></li>
+          </script>
+        </code>
+      </pre>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,41 @@
+.message {
+  box-sizing: content-box !important;
+  vertical-align: middle;
+  margin: 0 0 10px 0;
+  padding: 10px 15px 10px 15px;
+  color: $white;
+  font-weight: bold;
+  border-radius: 4px;
+
+  // Adding flush will get rid of rounded corners and
+  &.flush {
+    margin: 0px;
+    border-radius: 0px;
+  }
+
+  // Setting background color based upon type
+  &.success {
+    background-color: $success-color;
+    &.lighten {
+      background-color: lighten($success-color, 30%);
+    }
+  }
+  &.warning {
+    background-color: $warning-color;
+    &.lighten {
+      background-color: lighten($warning-color, 30%);
+    }
+  }
+  &.alert {
+    background-color: $alert-color;
+    &.lighten {
+      background-color: lighten($alert-color, 30%);
+    }
+  }
+  &.notice {
+    background-color: $notice-color;
+    &.lighten {
+      background-color: lighten($notice-color, 30%);
+    }
+  }
+}

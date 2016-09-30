@@ -5,5 +5,5 @@ document.querySelectorAll('link[rel="import"]').forEach(function(info) {
   }
   var templateContent = info.import.querySelector('template').content;
   var clone = document.importNode(templateContent, true);
-  document.querySelector('.container').appendChild(clone);
+  document.querySelector('.main').appendChild(clone);
 });

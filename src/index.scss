@@ -1,8 +1,11 @@
 @import "reset";
-@import "misc";
+@import "layout/flexboxgrid";
 
 // Variables
 @import "colors";
+
+// Misc
+@import "misc";
 
 // Fonts
 @import "fonts";
@@ -10,5 +13,11 @@
 // Inputs
 @import "inputs";
 
+// Messages
+@import "messages";
+
 // Layouts
-@import "layout";
+@import "layout/variables";
+@import "layout/app";
+@import "layout/section";
+@import "layout/nav";

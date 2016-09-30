@@ -2,21 +2,47 @@
   <head>
     <link class="no-import" rel="import" href="scripts/prism.html">
     <link rel="stylesheet" type="text/css" href="atlantis.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!-- Import in the order you want them to show on the page -->
-    <link rel="import" href="layout.html">
+    <link rel="import" href="welcome.html">
+    <link rel="import" href="layout/layout.html">
+    <link rel="import" href="layout/menu.html">
+    <link rel="import" href="layout/sections.html">
+    <link rel="import" href="layout/flexboxgrid.html">
     <link rel="import" href="fonts.html">
     <link rel="import" href="inputs.html">
+    <link rel="import" href="messages.html">
+    <link rel="import" href="icons.html">
+    <link rel="import" href="misc.html">
   </head>
   <body>
     <div class="header">
       <a class="logo" href="#"><img src="images/logo-white.svg" /></a>
+      <div class="website-name">Style Guide App</div>
     </div>
     <div class="sidebar">
-      <a href="#content-layout">Layout</a>
-      <a href="#content-sections">Section</a>
+      <ul class="nav">
+        <li class="link">
+          <a href="#content-welcome">
+            <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
+            Home
+          </a>
+        </li>
+        <li class="seperator"></li>
+        <li class="link"><a href="#content-layout">Layout</a></li>
+        <li class="link"><a href="#content-menu">Menu</a></li>
+        <li class="link"><a href="#content-sections">Sections</a></li>
+        <li class="link"><a href="#content-grid">Grid</a></li>
+        <li class="seperator"></li>
+        <li class="link"><a href="#content-fonts">Fonts</a></li>
+        <li class="link"><a href="#content-inputs">Inputs</a></li>
+        <li class="link"><a href="#content-messages">Messages</a></li>
+        <li class="link"><a href="#content-icons">Icons</a></li>
+        <li class="link"><a href="#content-misc">Misc</a></li>
+      </ul>
     </div>
-    <div class="container"></div>
+    <div class="main"></div>
 
     <script src="scripts/imports.js"></script>
   </body>

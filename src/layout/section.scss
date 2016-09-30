@@ -1,0 +1,25 @@
+// Section defines a piece of content in the main container
+.section {
+  background-color: $background-color;
+
+  .title {
+    width: auto;
+    padding: 20px;
+    margin: 0 0 10px 0;
+    border: solid 1px $border-color;
+    background-color: $white;
+  }
+
+  .content {
+    padding: 20px;
+    margin: 20px;
+    border: solid 1px $border-color;
+    background-color: $white;
+  }
+
+  // If p tag last child in a section
+  // exists lets remove the spacing margin
+  p:last-child {
+    margin: 0;
+  }
+}

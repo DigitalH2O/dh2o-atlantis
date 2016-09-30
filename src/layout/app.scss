@@ -1,11 +1,8 @@
-// Variables
-$header-height: 58px; // Height of main header
-$sidebar-width: 100px; // Width of main sidebar
-
 // Main body element
 body {
   font-family: $font-family;
   font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.4;
   color: $font-color;
   background-color: $white;
@@ -37,13 +34,21 @@ body {
     opacity: .3;
   }
 
+  // Digitalh2o logo located in the header
   .logo {
-    height: 15px;
-    max-width: 100px;
+    @include vertical-align(absolute);
+    margin: 0 0 0 15px;
 
     img {
-      width: inherit;
+      height: 30px;
     }
+  }
+
+  // Website name located in the header
+  .website-name {
+    @include vertical-align(absolute);
+    margin: 0 0 0 230px;
+    opacity: .6;
   }
 }
 
@@ -57,38 +62,14 @@ body {
   width: $sidebar-width;
   overflow-x: hidden;
   overflow-y: auto;
-  color: $white;
-
-  a {
-    color: $white;
-    text-decoration: none;
-    width: 100%;
-  }
 }
 
 // Content is the large main section
-.container {
+.main {
   position: fixed;
   left: $sidebar-width;
   top: $header-height;
   bottom: 0;
   background-color: $background-color;
-}
-
-// Section defines a piece of content in the container
-.section {
-  .title {
-    width: auto;
-    padding: 20px;
-    margin: 0 0 10px 0;
-    border: solid 1px $border-color;
-    background-color: $white;
-  }
-
-  .content {
-    padding: 20px;
-    margin: 20px;
-    border: solid 1px $border-color;
-    background-color: $white;
-  }
+  overflow-y: auto;
 }
