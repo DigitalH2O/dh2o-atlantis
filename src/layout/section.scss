@@ -5,9 +5,15 @@
   .title {
     width: auto;
     padding: 20px;
-    margin: 0 0 10px 0;
+    margin: 0px;
     border: solid 1px $border-color;
     background-color: $white;
+  }
+
+  .bar {
+    color: $white;
+    padding: 20px;
+    background-color: $secondary;
   }
 
   .content {
