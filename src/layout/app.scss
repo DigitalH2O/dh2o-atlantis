@@ -54,7 +54,7 @@ body {
 
 // Sidebar is the primarly left hand bar
 .sidebar {
-  background-color: $secondary;
+  background-color: darken($secondary, 10%);
   position: fixed;
   top: $header-height;
   bottom: 0;
