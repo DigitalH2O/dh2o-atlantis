@@ -1,0 +1,38 @@
+.btn {
+  color: $font-color;
+  cursor: pointer;
+  background-color: $background-color;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 18px;
+  border: 0 none;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  transition: background-color 0.25s ease-in-out 0s, opacity 0.23s ease-in-out;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $primary;
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+  &.secondary {
+    color: $white;
+    background-color: $secondary;
+    &:hover {
+      background-color: darken($secondary, 10%);
+    }
+  }
+}
