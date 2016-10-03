@@ -19,6 +19,11 @@ body {
   color: $white;
 
   &:before {
+    @extend .dh2o-logo-droplet-white;
+    background-size: 200px, auto;
+    background-position: left 40%;
+    opacity: .3;
+
     content: ' ';
     display: block;
     position: absolute;
@@ -26,12 +31,6 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-
-    background-image: url(images/logo-droplet-white.svg);
-    background-repeat: no-repeat;
-    background-size: 200px, auto;
-    background-position: left 40%;
-    opacity: .3;
   }
 
   // Digitalh2o logo located in the header
@@ -39,9 +38,8 @@ body {
     @include vertical-align(absolute);
     margin: 0 0 0 15px;
 
-    img {
-      height: 30px;
-    }
+    width: 161px;
+    height: 30px;
   }
 
   // Website name located in the header

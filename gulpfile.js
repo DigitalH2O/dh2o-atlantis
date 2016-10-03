@@ -11,6 +11,7 @@ var autoprefixer = require('autoprefixer');
 var paths = {
   main: 'src/index.scss',
   watch: 'src/**/*.scss',
+  images: 'images',
   outputFolder: './dist/',
   outputName: 'atlantis.css',
   examples: 'examples/**/*.html'

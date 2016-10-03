@@ -1,3 +1,6 @@
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !default; // for referencing Bootstrap CDN font files directly
+@import "../node_modules/font-awesome/scss/font-awesome";
+
 @import "reset";
 @import "layout/flexboxgrid";
 
@@ -9,6 +12,10 @@
 
 // Fonts
 @import "fonts";
+@import "dh2o-icon-font";
+
+// Icons
+@import "svg-icons";
 
 // Inputs
 @import "inputs";
