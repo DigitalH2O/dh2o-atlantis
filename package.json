@@ -25,8 +25,12 @@
     "url": "https://github.com/DigitalH2O/dh2o-atlantis/issues"
   },
   "homepage": "https://github.com/DigitalH2O/dh2o-atlantis#readme",
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
+    "compass-mixins": "^0.12.10",
     "concurrently": "^3.0.0",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
