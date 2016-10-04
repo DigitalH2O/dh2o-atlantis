@@ -11,9 +11,14 @@
   }
 
   .bar {
-    color: $white;
     padding: 20px;
-    background-color: $secondary;
+    color: $font-color;
+    background-color: $white;
+
+    &.secondary {
+      color: $white;
+      background-color: $secondary;
+    }
   }
 
   .content {
