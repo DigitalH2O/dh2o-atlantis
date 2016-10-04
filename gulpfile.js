@@ -39,7 +39,7 @@ gulp.task('html', function() {
 });
 
 // Watch files for changes and trigger live reload
-gulp.task('watch', function() {
+gulp.task('watch', ['build'], function() {
     // LiveReload
     livereload.listen();
 
