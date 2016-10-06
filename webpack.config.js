@@ -1,12 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
 
 module.exports = {
   devtool: 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
+    'webpack/hot/dev-server',
     './src/index'
   ],
   output: {
@@ -24,11 +23,7 @@ module.exports = {
     contentBase: 'examples',
     inline: true,
     hot: true,
-    open: true,
-    stats: { colors: true }
-  },
-  sassLoader: {
-    includePaths: ['src/scss']
+    open: true
   },
   module: {
     loaders: [
@@ -43,7 +38,7 @@ module.exports = {
           ],
         },
       },
-      { test: /\.scss$/, loader: "style!css!sass" },
+      { test: /\.scss$/, loader: "style!css?sourceMap!sass?sourceMap" },
     ],
   },
 };
