@@ -11,3 +11,5 @@ dist
 
 # Optional npm cache directory
 .npm
+
+.DS_Store
