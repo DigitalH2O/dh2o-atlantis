@@ -5,28 +5,27 @@ var WebpackDevServer = require('webpack-dev-server');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
+    'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: 'http://localhost:8080/dist',
     filename: 'main.js'
   },
   resolve: {
     root: path.resolve('./src'),
     extensions: ['', '.js']
   },
-  plugins: [],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
     contentBase: 'examples',
+    inline: true,
     hot: true,
     open: true,
-    quiet: true,
-    staticOptions: {
-
-    }
+    stats: { colors: true }
   },
   sassLoader: {
     includePaths: ['src/scss']
@@ -44,10 +43,7 @@ module.exports = {
           ],
         },
       },
-      {
-        test: /\.scss$/,
-        loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
-      }
+      { test: /\.scss$/, loader: "style!css!sass" },
     ],
   },
 };
