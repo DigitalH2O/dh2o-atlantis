@@ -16,26 +16,14 @@
   // Setting background color based upon type
   &.success {
     background-color: $success-color;
-    &.lighten {
-      background-color: lighten($success-color, 30%);
-    }
   }
   &.warning {
     background-color: $warning-color;
-    &.lighten {
-      background-color: lighten($warning-color, 30%);
-    }
   }
   &.alert {
     background-color: $alert-color;
-    &.lighten {
-      background-color: lighten($alert-color, 30%);
-    }
   }
   &.notice {
     background-color: $notice-color;
-    &.lighten {
-      background-color: lighten($notice-color, 30%);
-    }
   }
 }
