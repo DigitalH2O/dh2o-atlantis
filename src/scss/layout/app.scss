@@ -1,0 +1,73 @@
+// Main body element
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  color: $font-color;
+  background-color: $white;
+}
+
+// Header - located at the top of the aplication
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  min-height: $header-height;
+  max-height: $header-height;
+  background-color: $primary;
+  color: $white;
+
+  &:before {
+    @extend .dh2o-logo-droplet-white;
+    background-size: 200px, auto;
+    background-position: left 40%;
+    opacity: .3;
+
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  // Digitalh2o logo located in the header
+  .logo {
+    @include vertical-align(absolute);
+    margin: 0 0 0 15px;
+
+    width: 161px;
+    height: 30px;
+  }
+
+  // Website name located in the header
+  .website-name {
+    @include vertical-align(absolute);
+    margin: 0 0 0 230px;
+    opacity: .6;
+  }
+}
+
+// Sidebar is the primarly left hand bar
+.sidebar {
+  background-color: darken($secondary, 10%);
+  position: fixed;
+  top: $header-height;
+  bottom: 0;
+  left: 0;
+  width: $sidebar-width;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Content is the large main section
+.main {
+  position: fixed;
+  left: $sidebar-width;
+  top: $header-height;
+  bottom: 0;
+  background-color: $background-color;
+  overflow-y: auto;
+}

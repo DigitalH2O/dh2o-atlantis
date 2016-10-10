@@ -1,0 +1,45 @@
+{
+  "homepage": "https://github.com/DigitalH2O/dh2o-atlantis#readme",
+  "name": "dh2o-atlantis",
+  "author": "Digital H2O Team",
+  "license": "MIT",
+  "version": "1.0.0",
+  "title": "DigitalH2O Style Guide",
+  "description": "Style guide for front end apps",
+  "bugs": {
+    "url": "https://github.com/DigitalH2O/dh2o-atlantis/issues"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "dh2o"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalH2O/dh2o-atlantis.git"
+  },
+  "style": "src/index.scss",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack",
+    "start": "npm run clean && webpack-dev-server"
+  },
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.7.1",
+    "node-sass": "^3.10.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
