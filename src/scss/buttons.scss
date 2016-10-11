@@ -24,7 +24,7 @@
 
   &.inactive {
     color: $border-color;
-    cursor: default;
+    cursor: not-allowed;
     &:hover {
     background-color: $background-color;
     }
