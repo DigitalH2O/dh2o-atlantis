@@ -9,7 +9,7 @@
   white-space: nowrap;
   overflow: hidden;
   padding: 0 18px;
-  border: 0 none;
+  border: 1px solid $border-color;
   border-radius: 3px;
   display: inline-block;
   font-size: 13px;
@@ -19,20 +19,33 @@
 
   &:hover {
     background-color: darken($background-color, 10%);
+    border: 1px solid darken($background-color, 10%);
+  }
+
+  &.inactive {
+    color: $border-color;
+    cursor: default;
+    &:hover {
+    background-color: $background-color;
+    }
   }
 
   &.primary {
     color: $white;
     background-color: $primary;
+    border: 1px solid $primary;
     &:hover {
       background-color: darken($primary, 10%);
+      border: 1px solid darken($primary, 10%);
     }
   }
   &.secondary {
     color: $white;
     background-color: $secondary;
+    border: 1px solid $secondary;
     &:hover {
       background-color: darken($secondary, 10%);
+      border: 1px solid darken($secondary, 10%);
     }
   }
 }
