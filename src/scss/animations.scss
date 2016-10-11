@@ -1,0 +1,29 @@
+// Fade in/out
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+// Height in/out
+@keyframes heightIn {
+  0% {max-height: 0px; padding: 0px; margin: 0px;}
+  100% {max-height: 1000px;}
+}
+@keyframes heightOut {
+  0% {max-height: 1000px;}
+  100% {max-height: 0px; padding: 0px; margin: 0px;}
+}
+
+// Slide in/out
+@keyframes slideInDown {
+  from {transform: translate3d(0, -100%, 0); visibility: visible;}
+  to {transform: translate3d(0, 0, 0);}
+}
+@keyframes slideOutUp {
+  from {transform: translate3d(0, 0, 0);}
+  to {visibility: hidden; transform: translate3d(0, -100%, 0);}
+}
