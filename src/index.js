@@ -1,8 +1,8 @@
 import 'scss/index.scss';
 
 // Import dropdowns
-import 'components/dh2o-dropdown/dh2o-dropdown.js';
-import 'components/dh2o-dropdown/dh2o-dropdown.scss';
+import 'components/dropdowns/dropdowns.js';
+import 'components/dropdowns/dropdowns.scss';
 
 // Import modal
 import 'components/modals/modals.js';
