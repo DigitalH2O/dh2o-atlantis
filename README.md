@@ -6,7 +6,7 @@ npm install
 
 ## Run
 npm start
-open http://localhost:3000
+open http://localhost:8080
 
 ## Live Reload
 Optional - To use live reload download the chrome extension and once your run the npm script click the icon to activate live reload. https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en
