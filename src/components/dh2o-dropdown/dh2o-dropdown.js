@@ -34,7 +34,7 @@ document.addEventListener('click', function(e) {
     for(let i = 0; i < dropdowns.length; i++) {
       let currentClassList = dropdowns[i].classList;
       if(!currentClassList.contains('hide')) {
-        currentClassList.add('hide');
+        dropdowns[i].hide();
       }
     }
   }
