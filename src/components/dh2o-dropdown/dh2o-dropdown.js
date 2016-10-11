@@ -1,28 +1,41 @@
-let $ = require('jquery');
+document.addEventListener('click', function(e) {
+  let trigger = 'dh2o-dropdown-trigger';
+  let content = 'dh2o-dropdown-content';
+  let dropdown;
 
-module.exports = function() {
-  let triggers = document.getElementsByClassName('dh2o-dropdown-trigger');
+  if(e.target.classList.contains(trigger)) {
+    e.stopPropagation();
+    let triggerEle = e.target;
 
-  Array.prototype.forEach.call(triggers, (element) => {
-    element.onclick = function(event) {
-      event.stopPropagation();
-
-      let targetEle = event.target;
-      let contentChild;
-      //There should only be one child, but just in case
-      Array.prototype.forEach.call(targetEle.children, (child) => {
-        if(child.classList.contains('dh2o-dropdown-content')) {
-          child.classList.remove('hide');
-        }
-      });
-    };
-  });
-
-  $(document).click(function(event) {
-    let container = $('dh2o-dropdown-trigger');
-    if(container.has(event.target).length === 0 &&
-      !$('.dh2o-dropdown-content').hasClass('hide')) {
-      $('.dh2o-dropdown-content').addClass('hide');
+    //Grab the dropdown content element
+    for(let i = 0; i < triggerEle.children.length; i++) {
+      if(triggerEle.children[i].classList.contains(content)) {
+        dropdown = triggerEle.children[i];
+      }
     }
-  });
-}
+
+    dropdown.show = () => {
+      dropdown.classList.remove('hide');
+    };
+
+    dropdown.hide = () => {
+      dropdown.classList.add('hide');
+    };
+
+    dropdown.show();
+
+    dropdown.onclick = (e) => {
+      e.stopPropagation();
+    }
+
+  } else {
+    let dropdowns = document.getElementsByClassName(content);
+
+    for(let i = 0; i < dropdowns.length; i++) {
+      let currentClassList = dropdowns[i].classList;
+      if(!currentClassList.contains('hide')) {
+        currentClassList.add('hide');
+      }
+    }
+  }
+});
