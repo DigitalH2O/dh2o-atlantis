@@ -2,11 +2,12 @@
 
 .dh2o-dropdown-trigger {
   position: relative;
-  overflow: visible;
+  overflow: visible !important;
   outline: none;
 }
 
 .dh2o-dropdown-content {
+  display: none;
   position: absolute;
   cursor: default;
   border: 1px solid $border-color;
@@ -15,6 +16,19 @@
   top: 28px;
   z-index: 1000;
   left: 10px;
+
+  &.animate-in {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+  }
+  &.animate-out {
+    display: block;
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+  }
 
   .menu-item {
     padding: 0 5px;

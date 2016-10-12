@@ -21,13 +21,17 @@
         <li class="seperator"></li>
         <li class="link"><router-link to="/colors">Colors</router-link></li>
         <li class="link"><router-link to="/fonts">Fonts</router-link></li>
+        <li class="link"><router-link to="/images">Images</router-link></li>
+        <li class="link"><router-link to="/misc">Misc</router-link></li>
+        <li class="seperator"></li>
         <li class="link"><router-link to="/inputs">Inputs</router-link></li>
         <li class="link"><router-link to="/buttons">Buttons</router-link></li>
         <li class="link"><router-link to="/messages">Messages</router-link></li>
         <li class="link"><router-link to="/lists">Lists</router-link></li>
         <li class="link"><router-link to="/tables">Tables</router-link></li>
-        <li class="link"><router-link to="/images">Images</router-link></li>
-        <li class="link"><router-link to="/misc">Misc</router-link></li>
+        <li class="seperator"></li>
+        <li class="link"><router-link to="/dropdowns">Dropdowns</router-link></li>
+        <li class="link"><router-link to="/modals">Modals</router-link></li>
       </ul>
     </div>
     <div class="main">
@@ -35,12 +39,3 @@
     </div>
   </div>
 </template>
-
-<script>
-
-export default {};
-
-</script>
-
-<style>
-</style>

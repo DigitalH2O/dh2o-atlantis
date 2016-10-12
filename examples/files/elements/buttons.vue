@@ -8,6 +8,7 @@
         their original color.
       </p>
       <div class="btn">Regular</div>
+      <div class="btn inactive">Inactive</div>
       <div class="btn primary">Primary</div>
       <div class="btn secondary">Secondary</div>
       <pre>

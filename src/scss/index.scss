@@ -1,34 +1,37 @@
 $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !default; // for referencing Bootstrap CDN font files directly
 @import "../../node_modules/font-awesome/scss/font-awesome";
 
-@import "reset";
+@import "misc/reset";
 @import "layout/flexboxgrid";
 
 // Variables
-@import "colors";
+@import "misc/colors";
 
 // Misc
-@import "misc";
+@import "misc/misc";
 
 // Fonts
-@import "fonts";
+@import "misc/fonts";
 
 // Images
 @import "images/dh2o-icon-font";
 @import "images/loading";
 @import "images/logos";
 
+// Animations
+@import "misc/animations";
+
 // Inputs
-@import "inputs";
+@import "elements/inputs";
 
 // Messages
-@import "messages";
+@import "elements/messages";
 
 // Lists
-@import "lists";
+@import "elements/lists";
 
 // Buttons
-@import "buttons";
+@import "elements/buttons";
 
 // Layouts
 @import "layout/variables";
