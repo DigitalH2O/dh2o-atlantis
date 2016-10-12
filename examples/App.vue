@@ -8,29 +8,31 @@
     <div class="sidebar">
       <ul class="nav">
         <li class="link">
-          <a href="#content-welcome">
+          <router-link to="/">
             <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
             Home
-          </a>
+          </router-link>
         </li>
         <li class="seperator"></li>
-        <li class="link"><a href="#content-layout">Layout</a></li>
-        <li class="link"><a href="#content-menu">Menu</a></li>
-        <li class="link"><a href="#content-sections">Sections</a></li>
-        <li class="link"><a href="#content-grid">Grid</a></li>
+        <li class="link"><router-link to="/layout">Layout</router-link></li>
+        <li class="link"><router-link to="/menu">Menu</router-link></li>
+        <li class="link"><router-link to="/sections">Sections</router-link></li>
+        <li class="link"><router-link to="/grid">Grid</router-link></li>
         <li class="seperator"></li>
-        <li class="link"><a href="#content-colors">Colors</a></li>
-        <li class="link"><a href="#content-fonts">Fonts</a></li>
-        <li class="link"><a href="#content-inputs">Inputs</a></li>
-        <li class="link"><a href="#content-buttons">Buttons</a></li>
-        <li class="link"><a href="#content-messages">Messages</a></li>
-        <li class="link"><a href="#content-lists">Lists</a></li>
-        <li class="link"><a href="#content-tables">Tables</a></li>
-        <li class="link"><a href="#content-images">Images</a></li>
-        <li class="link"><a href="#content-misc">Misc</a></li>
+        <li class="link"><router-link to="/colors">Colors</router-link></li>
+        <li class="link"><router-link to="/fonts">Fonts</router-link></li>
+        <li class="link"><router-link to="/inputs">Inputs</router-link></li>
+        <li class="link"><router-link to="/buttons">Buttons</router-link></li>
+        <li class="link"><router-link to="/messages">Messages</router-link></li>
+        <li class="link"><router-link to="/lists">Lists</router-link></li>
+        <li class="link"><router-link to="/tables">Tables</router-link></li>
+        <li class="link"><router-link to="/images">Images</router-link></li>
+        <li class="link"><router-link to="/misc">Misc</router-link></li>
       </ul>
     </div>
-    <div class="main"></div>
+    <div class="main">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
