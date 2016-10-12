@@ -1,25 +1,5 @@
-<html>
-  <head>
-    <link class="no-import" rel="import" href="scripts/prism.html">
-    <script src="http://localhost:8080/main.js"></script>
-
-    <!-- Import in the order you want them to show on the page -->
-    <link rel="import" href="welcome.html">
-    <link rel="import" href="layout/layout.html">
-    <link rel="import" href="layout/menu.html">
-    <link rel="import" href="layout/sections.html">
-    <link rel="import" href="layout/flexboxgrid.html">
-    <link rel="import" href="colors.html">
-    <link rel="import" href="fonts.html">
-    <link rel="import" href="inputs.html">
-    <link rel="import" href="buttons.html">
-    <link rel="import" href="messages.html">
-    <link rel="import" href="lists.html">
-    <link rel="import" href="tables.html">
-    <link rel="import" href="images.html">
-    <link rel="import" href="misc.html">
-  </head>
-  <body>
+<template>
+  <div class="app-container">
     <div class="header">
       <a class="logo dh2o-logo-white" href="#">
       </a>
@@ -51,7 +31,14 @@
       </ul>
     </div>
     <div class="main"></div>
+  </div>
+</template>
 
-    <script src="scripts/imports.js"></script>
-  </body>
-</html>
+<script>
+
+export default {};
+
+</script>
+
+<style>
+</style>
