@@ -17,7 +17,7 @@
         <li class="link"><router-link to="/layout">Layout</router-link></li>
         <li class="link"><router-link to="/menu">Menu</router-link></li>
         <li class="link"><router-link to="/sections">Sections</router-link></li>
-        <li class="link"><router-link to="/grid">Grid</router-link></li>
+        <li class="link"><router-link to="/flexboxgrid">Grid</router-link></li>
         <li class="seperator"></li>
         <li class="link"><router-link to="/colors">Colors</router-link></li>
         <li class="link"><router-link to="/fonts">Fonts</router-link></li>

@@ -2,9 +2,23 @@ require('../src/scss/index.scss');
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+/* global Prism */
+
+Vue.mixin({
+  updated() {
+    Prism.highlightAll()
+  },
+});
 
 import App from './App.vue';
+
 import welcome from './welcome.vue';
+
+import layout from './layout/layout.vue';
+import menu from './layout/menu.vue';
+import flexboxgrid from './layout/flexboxgrid.vue';
+import sections from './layout/sections.vue';
+
 
 import buttons from './buttons.vue';
 import colors from './colors.vue';
@@ -25,6 +39,23 @@ const router = new VueRouter({
     {
       path: '/',
       component: welcome
+    },
+
+    {
+      path: '/layout',
+      component: layout
+    },
+    {
+      path: '/menu',
+      component: menu
+    },
+    {
+      path: '/sections',
+      component: sections
+    },
+    {
+      path: '/flexboxgrid',
+      component: flexboxgrid
     },
 
     {
@@ -68,5 +99,5 @@ const router = new VueRouter({
 
 new Vue({
   router,
-  render: (h) => h(App)
+  render: (h) => h(App),
 }).$mount('#app');
