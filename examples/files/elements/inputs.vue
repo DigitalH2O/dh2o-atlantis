@@ -19,10 +19,6 @@
         <input type="password" placeholder="Password" />
       </label>
       <label>
-        Number
-        <input type="number" placeholder="Number" />
-      </label>
-      <label>
         Search
         <input type="text" class="search" placeholder="Search" />
       </label>
