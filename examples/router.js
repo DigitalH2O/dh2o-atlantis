@@ -2,27 +2,29 @@ module.exports = {
   mode: 'history',
   base: '/',
   routes: [
-    {path: '/', component: require('./welcome.vue')},
+    {path: '/', component: require('./files/welcome.vue')},
 
     // Layouts
-    {path: '/layout', component: require('./layout/layout.vue')},
-    {path: '/menu', component: require('./layout/menu.vue')},
-    {path: '/sections', component: require('./layout/sections.vue')},
-    {path: '/flexboxgrid', component: require('./layout/flexboxgrid.vue')},
+    {path: '/layout', component: require('./files/layout/layout.vue')},
+    {path: '/menu', component: require('./files/layout/menu.vue')},
+    {path: '/sections', component: require('./files/layout/sections.vue')},
+    {path: '/flexboxgrid', component: require('./files/layout/flexboxgrid.vue')},
+
+    // Misc
+    {path: '/misc', component: require('./files/misc/misc.vue')},
+    {path: '/images', component: require('./files/misc/images.vue')},
+    {path: '/fonts', component: require('./files/misc/fonts.vue')},
+    {path: '/colors', component: require('./files/misc/colors.vue')},
 
     // Elements
-    {path: '/buttons', component: require('./buttons.vue')},
-    {path: '/colors', component: require('./colors.vue')},
-    {path: '/fonts', component: require('./fonts.vue')},
-    {path: '/images', component: require('./images.vue')},
-    {path: '/inputs', component: require('./inputs.vue')},
-    {path: '/lists', component: require('./lists.vue')},
-    {path: '/messages', component: require('./messages.vue')},
-    {path: '/tables', component: require('./tables.vue')},
-    {path: '/misc', component: require('./misc.vue')},
+    {path: '/buttons', component: require('./files/elements/buttons.vue')},
+    {path: '/inputs', component: require('./files/elements/inputs.vue')},
+    {path: '/lists', component: require('./files/elements/lists.vue')},
+    {path: '/messages', component: require('./files/elements/messages.vue')},
+    {path: '/tables', component: require('./files/elements/tables.vue')},
 
     // Components
-    {path: '/dropdowns', component: require('./dropdowns.vue')},
-    {path: '/modals', component: require('./modals.vue')}
+    {path: '/dropdowns', component: require('./files/components/dropdowns.vue')},
+    {path: '/modals', component: require('./files/components/modals.vue')}
   ]
 };
