@@ -1,0 +1,17 @@
+{
+  "colors": {
+    "base": {
+      "primary": "#1b7a9d",
+      "secondary": "#454e67",
+      "font-color": "#455864",
+      "border-color": "#DCDEE2",
+      "background-color": "#f1f1f1"
+    },
+    "message": {
+      "success": "#719d46",
+      "warning": "#efaa1b",
+      "alert-color": "#b63813",
+      "notice-color": "#1b7a9d"
+    }
+  }
+}
