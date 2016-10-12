@@ -15,24 +15,26 @@
         elements of our applications.
       </p>
 
-      <div class="color-group">
-        <h2>Base Colors</h2>
-        <ul class="colors">
-          <li v-for="(color, colorName) in colors.base"
-              :style="{'background-color': color, 'color': '#ffffff'}">
-            ${{colorName}}: {{color}}
-          </li>
-        </ul>
-      </div>
+      <div class="row">
+        <div class="color-group">
+          <h2>Base Colors</h2>
+          <ul class="colors">
+            <li v-for="(color, colorName) in colors.base"
+                :style="{'background-color': color, 'color': '#ffffff'}">
+              ${{colorName}}: {{color}}
+            </li>
+          </ul>
+        </div>
 
-      <div class="color-group">
-        <h2>Message Colors</h2>
-        <ul class="colors">
-          <li v-for="(color, colorName) in colors.message"
-              :style="{'background-color': color, 'color': '#ffffff'}">
-            ${{colorName}}: {{color}}
-          </li>
-        </ul>
+        <div class="color-group">
+          <h2>Message Colors</h2>
+          <ul class="colors">
+            <li v-for="(color, colorName) in colors.message"
+                :style="{'background-color': color, 'color': '#ffffff'}">
+              ${{colorName}}: {{color}}
+            </li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -54,7 +56,7 @@
   @import '../../../src/scss/index.scss';
 
   .color-group {
-    margin-bottom: 30px;
+    @extend .col-xs-3;
   }
 
   ul.colors {
@@ -62,7 +64,6 @@
       @extend .btn;
 
       display: block;
-      width: 200px;
     }
   }
 </style>
