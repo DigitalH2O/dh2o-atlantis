@@ -1,3 +1,17 @@
+<script>
+  module.exports = {
+    methods: {
+      applyModal1: function() {
+        var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>';
+        document.querySelector('#modal1 .modal-body').innerHTML = text;
+        setTimeout(function() {
+          document.getElementById('modal1').hide();
+        }, 1000);
+      }
+    }
+  }
+</script>
+
 <template>
   <div id="content-modals" class="section">
     <div class="title"><h1>Modals</h1></div>
@@ -33,7 +47,7 @@
             <p>Here is some more more text</p>
           </div>
           <div class="modal-footer">
-            <div class="btn primary" onclick="applyModal1()">Apply</div>
+            <div class="btn primary" v-on:click="applyModal1()">Apply</div>
             <div class="btn model-close">Cancel</div>
           </div>
         </div>
@@ -43,15 +57,6 @@
           <div class="modal-body">Just the body</div>
         </div>
       </div>
-      <script>
-        function applyModal1() {
-          var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>';
-          document.querySelector('#modal1 .modal-body').innerHTML = text;
-          setTimeout(function() {
-            document.getElementById('modal1').hide();
-          }, 1000);
-        }
-      </script>
 
       <pre>
         <code class="language-markup">
