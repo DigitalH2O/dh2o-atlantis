@@ -1,0 +1,30 @@
+@import '../../scss/index.scss';
+
+.dh2o-dropdown-trigger {
+  position: relative;
+  overflow: visible;
+  outline: none;
+}
+
+.dh2o-dropdown-content {
+  position: absolute;
+  cursor: default;
+  border: 1px solid $border-color;
+  background-color: $white;
+  white-space: nowrap;
+  top: 28px;
+  z-index: 1000;
+  left: 10px;
+
+  .menu-item {
+    padding: 0 5px;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      cursor: pointer;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}

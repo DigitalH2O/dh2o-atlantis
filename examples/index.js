@@ -1,4 +1,6 @@
-require('../src/scss/index.scss');
+import '../src/scss/index.scss';
+import '../src/components/dh2o-dropdown/dh2o-dropdown.js';
+import '../src/components/dh2o-dropdown/dh2o-dropdown.scss';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
