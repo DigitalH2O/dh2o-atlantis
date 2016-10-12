@@ -44,14 +44,14 @@
   export default {
     data() {
       return {
-        colors: require('../src/scss/shared.json').colors
+        colors: require('../../../src/scss/shared.json').colors
       };
     }
   };
 </script>
 
 <style scoped>
-  @import '../src/scss/index.scss';
+  @import '../../../src/scss/index.scss';
 
   .color-group {
     margin-bottom: 30px;
