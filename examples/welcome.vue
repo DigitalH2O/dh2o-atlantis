@@ -6,7 +6,7 @@
     <div class="content">
       <p>
         This guide is to help understand how to develop apps using
-        our universal style guide.
+        our digital H2O style guide.
       </p>
 
     </div>

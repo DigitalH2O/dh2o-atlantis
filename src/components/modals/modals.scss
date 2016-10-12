@@ -1,0 +1,72 @@
+@import '../../scss/index';
+
+.dh2o-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba($black, .6);
+
+  &.animate-in {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+
+    .modal-content {
+      animation-name: slideInDown;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+    }
+  }
+  &.animate-out {
+    display: block;
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+
+    .modal-content {
+      animation-name: slideOutUp;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+    }
+  }
+
+  .modal-content {
+    background: $white;
+    margin: 15% auto;
+    border: 1px solid $border-color;
+    width: 80%;
+    border-radius: 2px;
+
+    .modal-header {
+      @extend h3;
+      border-bottom: solid 1px $border-color;
+      padding: 10px 0 10px 0;
+      margin: 0 10px 0 10px;
+
+      .close {
+        float: right;
+        cursor: pointer;
+      }
+    }
+    .modal-body {
+      padding: 10px;
+    }
+    .modal-footer {
+      border-top: solid 1px $border-color;
+      padding: 10px;
+      margin: 0;
+      background-color: $background-color;
+      text-align: right;
+
+      .btn {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -7,33 +7,37 @@ document.addEventListener('click', function(e) {
     e.stopPropagation();
     let triggerEle = e.target;
 
-    //Grab the dropdown content element
+    // Grab the dropdown content element
     for(let i = 0; i < triggerEle.children.length; i++) {
       if(triggerEle.children[i].classList.contains(content)) {
         dropdown = triggerEle.children[i];
       }
     }
 
+    // Dropdown show and hide functions
     dropdown.show = () => {
-      dropdown.classList.remove('hide');
+      dropdown.classList.remove('animate-out');
+      dropdown.classList.add('animate-in');
     };
-
     dropdown.hide = () => {
-      dropdown.classList.add('hide');
+      dropdown.classList.remove('animate-in');
+      dropdown.classList.add('animate-out');
+      setTimeout(() => {
+        dropdown.classList.remove('animate-out');
+      }, 300);
     };
 
     dropdown.show();
 
     dropdown.onclick = (e) => {
       e.stopPropagation();
-    }
+    };
 
   } else {
     let dropdowns = document.getElementsByClassName(content);
 
     for(let i = 0; i < dropdowns.length; i++) {
-      let currentClassList = dropdowns[i].classList;
-      if(!currentClassList.contains('hide')) {
+      if(dropdowns[i].classList.contains('animate-in') && dropdowns[i].hide) {
         dropdowns[i].hide();
       }
     }
