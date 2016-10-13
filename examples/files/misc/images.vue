@@ -140,7 +140,7 @@
   export default {
     data() {
       return {
-        fontIcons: require('../../../src/scss/shared.json')['font-icons']
+        fontIcons: require('dh2o-atlantis/scss/shared.json')['font-icons']
       };
     }
   }

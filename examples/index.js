@@ -1,21 +1,23 @@
-import App from './files/app.vue';
-import routerList from './router';
-
-// Styles
-import '../src/scss/index.scss';
-
-// Dropdowns
-import '../src/components/dropdowns/dropdowns.js';
-import '../src/components/dropdowns/dropdowns.scss';
-
-// Modals
-import '../src/components/modals/modals.js';
-import '../src/components/modals/modals.scss';
-
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 /* global Prism */
+
+// Styles
+import 'dh2o-atlantis/scss/index.scss';
+
+// Dropdowns
+import 'dh2o-atlantis/components/dropdowns/dropdowns.js';
+import 'dh2o-atlantis/components/dropdowns/dropdowns.scss';
+
+// Modals
+import 'dh2o-atlantis/components/modals/modals.js';
+import 'dh2o-atlantis/components/modals/modals.scss';
+
+import App from './files/app.vue';
+import routerList from './router';
+
+
 
 Vue.mixin({
   updated() {

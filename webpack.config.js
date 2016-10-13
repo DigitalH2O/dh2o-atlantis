@@ -5,7 +5,7 @@ const SASS_JSON_VARS_PATH = 'src/scss/shared.json';
 const SASS_LOADER_CONFIG = `style!css?sourceMap!sass?sourceMap!jsontosass?path=${SASS_JSON_VARS_PATH}`;
 
 module.exports = {
-  entry: './examples/index.js',
+  entry: path.resolve(__dirname, 'examples/index.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -43,6 +43,9 @@ module.exports = {
         loader: SASS_LOADER_CONFIG,
       },
     ]
+  },
+  resolve: {
+    alias: { 'dh2o-atlantis': path.resolve('./src') }
   },
   devServer: {
     historyApiFallback: true,

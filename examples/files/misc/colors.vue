@@ -46,14 +46,14 @@
   export default {
     data() {
       return {
-        colors: require('../../../src/scss/shared.json').colors
+        colors: require('dh2o-atlantis/scss/shared.json').colors
       };
     }
   };
 </script>
 
 <style scoped>
-  @import '../../../src/scss/index.scss';
+  @import '~dh2o-atlantis/scss/index.scss';
 
   .color-group {
     @extend .col-xs-3;
