@@ -1,0 +1,27 @@
+$base-colors: map-get($colors, base);
+$primary: map-get($base-colors, primary);
+$secondary: map-get($base-colors, secondary);
+$font-color: map-get($base-colors, font-color);
+$border-color: map-get($base-colors, border-color);
+$background-color: map-get($base-colors, background-color);
+
+// Standard white/black
+$white: #ffffff;
+$black: #000000;
+
+// Standard default font color
+$font-color: #555555;
+$link-text-color: $primary;
+
+// Border color
+$border-color: #DCDEE2;
+
+// Background color
+$background-color: #f1f1f1;
+
+// Message bar colors
+$message-colors: map-get($colors, message);
+$success-color  : map-get($message-colors, success);
+$warning-color  : map-get($message-colors, warning);
+$alert-color    : map-get($message-colors, alert);
+$notice-color   : map-get($message-colors, notice);

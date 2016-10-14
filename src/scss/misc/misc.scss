@@ -1,0 +1,33 @@
+strong, b {
+  font-weight: bold;
+}
+
+// Used for javascript to easily add
+// and remove class for simple hiding
+.hide {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  margin: 20px 0 15px 0;
+  background-color: $black;
+  opacity: .1;
+
+  &.smaller {
+    margin: 10px 0 8px 0;
+  }
+}
+
+// This mixin will allow you to vertical-align
+// an element relative to its parent
+@mixin vertical-align($position) {
+  position: $position; // Either relative or absolute
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,29 @@
+.message {
+  box-sizing: content-box !important;
+  vertical-align: middle;
+  margin: 0 0 10px 0;
+  padding: 10px 15px 10px 15px;
+  color: $white;
+  font-weight: bold;
+  border-radius: 4px;
+
+  // Adding flush will get rid of rounded corners and
+  &.flush {
+    margin: 0px;
+    border-radius: 0px;
+  }
+
+  // Setting background color based upon type
+  &.success {
+    background-color: $success-color;
+  }
+  &.warning {
+    background-color: $warning-color;
+  }
+  &.alert {
+    background-color: $alert-color;
+  }
+  &.notice {
+    background-color: $notice-color;
+  }
+}

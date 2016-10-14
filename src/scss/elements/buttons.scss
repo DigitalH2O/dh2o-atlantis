@@ -1,0 +1,67 @@
+@mixin button-size($font-size, $border-width: 0) {
+  $button-font-size: $font-size;
+  $button-padding: $button-font-size * (1/2);
+
+  font-size: $button-font-size;
+  padding: $button-padding $button-padding * 2;
+}
+
+.btn {
+  @include button-size($font-size, 1);
+  color: $font-color;
+  cursor: pointer;
+  background-color: $background-color;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background-color 0.25s ease-in-out 0s, opacity 0.23s ease-in-out;
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+    border: 1px solid darken($background-color, 10%);
+  }
+  &:active {
+    background-color: darken($background-color, 20%);
+    border: 1px solid darken($background-color, 20%);
+  }
+
+  &.inactive {
+    color: $border-color;
+    cursor: not-allowed;
+    &:hover {
+    background-color: $background-color;
+    }
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+    &:hover {
+      background-color: darken($primary, 10%);
+      border: 1px solid darken($primary, 10%);
+    }
+    &:active {
+      background-color: darken($primary, 20%);
+      border: 1px solid darken($primary, 20%);
+    }
+  }
+  &.secondary {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    &:hover {
+      background-color: darken($secondary, 10%);
+      border: 1px solid darken($secondary, 10%);
+    }
+    &:active {
+      background-color: darken($secondary, 20%);
+      border: 1px solid darken($secondary, 20%);
+    }
+  }
+}
