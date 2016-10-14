@@ -25,6 +25,22 @@
         <input id="checkbox-input3" type="checkbox"/>
         <label for="checkbox-input3" class="inline checkbox-label">Option 3</label>
       </fieldset>
+      <div class="message notice">Checkboxes need to have a class of .checkbox-label on their labels to style them properly and have a unique HTML structure as opposed to the other inputs</div>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <label>Checkbox</label>
+            <fieldset>
+              <input id="checkbox-input1" type="checkbox"/>
+              <label for="checkbox-input1" class="inline checkbox-label">Option 1</label>
+              <input id="checkbox-input2" type="checkbox"/>
+              <label for="checkbox-input2" class="inline checkbox-label">Option 2</label>
+              <input id="checkbox-input3" type="checkbox"/>
+              <label for="checkbox-input3" class="inline checkbox-label">Option 3</label>
+            </fieldset>
+          </script>
+        </code>
+      </pre>
       <div class="message notice">Switching input types sets icons</div>
     </div>
   </div>
