@@ -1,14 +1,13 @@
 <template>
   <div class="app-container">
     <div class="header">
-      <a class="logo dh2o-logo-white" href="#">
-      </a>
+      <router-link to="/welcome" class="logo dh2o-logo-white"></router-link>
       <div class="website-name">Style Guide App</div>
     </div>
     <div class="sidebar">
       <ul class="nav">
         <li class="link">
-          <router-link to="/">
+          <router-link to="/welcome">
             <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
             Home
           </router-link>

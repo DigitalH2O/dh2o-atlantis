@@ -1,8 +1,10 @@
 module.exports = {
   mode: 'history',
   base: '/',
+  linkActiveClass: 'active',
   routes: [
-    {path: '/', component: require('./files/welcome.vue')},
+    {path: '/', redirect: '/welcome'},
+    {path: '/welcome', component: require('./files/welcome.vue')},
 
     // Layouts
     {path: '/layout', component: require('./files/layout/layout.vue')},

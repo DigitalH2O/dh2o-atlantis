@@ -1,8 +1,9 @@
-// Primary color
-$primary: #1b7a9d;
-
-// Secondary color
-$secondary: #454e67;
+$base-colors: map-get($colors, base);
+$primary: map-get($base-colors, primary);
+$secondary: map-get($base-colors, secondary);
+$font-color: map-get($base-colors, font-color);
+$border-color: map-get($base-colors, border-color);
+$background-color: map-get($base-colors, background-color);
 
 // Standard white/black
 $white: #ffffff;
@@ -19,7 +20,8 @@ $border-color: #DCDEE2;
 $background-color: #f1f1f1;
 
 // Message bar colors
-$success-color  : #719d46;
-$warning-color  : #efaa1b;
-$alert-color    : #b63813;
-$notice-color   : $primary;
+$message-colors: map-get($colors, message);
+$success-color  : map-get($message-colors, success);
+$warning-color  : map-get($message-colors, warning);
+$alert-color    : map-get($message-colors, alert);
+$notice-color   : map-get($message-colors, notice);
