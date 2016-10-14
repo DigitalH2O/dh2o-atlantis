@@ -9,6 +9,15 @@ $background-color: map-get($base-colors, background-color);
 $white: #ffffff;
 $black: #000000;
 
+// Standard default font color
+$font-color: #555555;
+$link-text-color: $primary;
+
+// Border color
+$border-color: #DCDEE2;
+
+// Background color
+$background-color: #f1f1f1;
 
 // Message bar colors
 $message-colors: map-get($colors, message);
