@@ -10,8 +10,8 @@
     "message": {
       "success": "#719d46",
       "warning": "#efaa1b",
-      "alert-color": "#b63813",
-      "notice-color": "#1b7a9d"
+      "alert": "#b63813",
+      "notice": "#1b7a9d"
     }
   },
 
