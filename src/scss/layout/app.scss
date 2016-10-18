@@ -19,9 +19,10 @@ body {
   color: $white;
 
   &:before {
-    @extend .dh2o-logo-droplet-white;
+    background-image: url(#{$dh2o-images-path}logo-droplet-white.svg);
     background-size: 200px, auto;
     background-position: left 40%;
+    background-repeat: no-repeat;
     opacity: .3;
 
     content: ' ';
@@ -40,6 +41,9 @@ body {
 
     width: 161px;
     height: 30px;
+    background-image: url(#{$dh2o-images-path}logo-white.svg);
+    background-position: left 50%;
+    background-repeat: no-repeat;
   }
 
   // Website name located in the header

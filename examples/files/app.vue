@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="header">
-      <router-link to="/welcome" class="logo dh2o-logo-white"></router-link>
+      <router-link to="/welcome" class="logo"></router-link>
       <div class="website-name">Style Guide App</div>
     </div>
     <div class="sidebar">
