@@ -15,7 +15,7 @@
       <label for="search-input">Search</label>
       <input type="text" id="search-input" class="search" placeholder="Search" />
       <label for="text-area-input">Textarea</label>
-      <textarea name="name" id="text-area-input" rows="3" placeholder="Textarea"></textarea>
+      <textarea name="name" id="text-area-input" rows="4" placeholder="Textarea"></textarea>
       <label>Checkbox</label>
       <fieldset>
         <input id="checkbox-input1" type="checkbox"/>
