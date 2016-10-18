@@ -1,6 +1,7 @@
 var path = require('path');
 const webpack = require('webpack');
 
+var port = process.env.npm_config_port || 8080;
 const SASS_JSON_VARS_PATH = 'src/scss/shared.json';
 const SASS_LOADER_CONFIG = `style!css?sourceMap!sass?sourceMap!jsontosass?path=${SASS_JSON_VARS_PATH}`;
 
@@ -49,7 +50,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    noInfo: true,
+    port: port
   },
   devtool: '#eval-source-map'
 };

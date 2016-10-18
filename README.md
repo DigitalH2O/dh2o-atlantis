@@ -8,6 +8,9 @@ npm install
 ```
 npm start
 open http://localhost:8080
+
+// To listen on another port
+npm start --port=5555
 ```
 
 ## Live Reload
