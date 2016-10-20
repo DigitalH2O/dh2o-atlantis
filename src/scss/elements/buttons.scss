@@ -19,15 +19,16 @@
   border: 1px solid $border-color;
   border-radius: 3px;
   display: inline-block;
-  transition: background-color 0.25s ease-in-out 0s, opacity 0.23s ease-in-out;
 
   &:hover {
     background-color: darken($background-color, 10%);
     border: 1px solid darken($background-color, 10%);
+    transition: background-color 0.25s ease-in;
   }
   &:active {
     background-color: darken($background-color, 20%);
     border: 1px solid darken($background-color, 20%);
+    transition: background-color 0.25s ease-in;
   }
 
   &.inactive {
@@ -45,10 +46,12 @@
     &:hover {
       background-color: darken($primary, 10%);
       border: 1px solid darken($primary, 10%);
+      transition: background-color 0.25s ease-in;
     }
     &:active {
       background-color: darken($primary, 20%);
       border: 1px solid darken($primary, 20%);
+      transition: background-color 0.25s ease-in;
     }
   }
   &.secondary {
@@ -58,10 +61,12 @@
     &:hover {
       background-color: darken($secondary, 10%);
       border: 1px solid darken($secondary, 10%);
+      transition: background-color 0.25s ease-in;
     }
     &:active {
       background-color: darken($secondary, 20%);
       border: 1px solid darken($secondary, 20%);
+      transition: background-color 0.25s ease-in;
     }
   }
 }
