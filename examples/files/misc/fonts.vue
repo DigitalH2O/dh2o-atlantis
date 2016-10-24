@@ -2,16 +2,26 @@
   <div id="content-fonts" class="section">
     <div class="title"><h1>Fonts</h1></div>
     <div class="content">
-      <h1 style="display: inline;">H1</h1>
-      <h2 style="display: inline;">H2</h2>
-      <h3 style="display: inline;">H3</h3>
-      <h4 style="display: inline;">H4</h4>
-      <h5 style="display: inline;">H5</h5>
-      <h6 style="display: inline;">H6</h6>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+      <h6>H6</h6>
+
       <div class="message notice">
         Notice that this application uses h tags for each section title
         and for each sub section title.
       </div>
+
+      <p class="normal-weight">
+        This text has the normal font weight.
+      </p>
+
+      <p class="bold-weight">
+        This text uses <code class="language-markup">$font-weight-bold</code>.
+        Section headers, input labels, and buttons should usually use bold text.
+      </p>
 
       <div class="seperator"></div>
 
@@ -58,3 +68,15 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  @import '~dh2o-atlantis/scss/index.scss';
+
+  h1, h2, h3, h4, h5, h6 {
+    display: inline;
+  }
+
+  .bold-weight {
+    font-weight: $font-weight-bold;
+  }
+</style>
