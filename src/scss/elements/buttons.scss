@@ -23,12 +23,12 @@
   /*transition: background-color 0.25s ease-in-out;*/
 
   &:hover {
-    background-color: darken($background-color, 10%);
-    border: 1px solid darken($background-color, 10%);
+    background-color: darker($background-color);
+    border: 1px solid darker($background-color);
   }
   &:active {
-    background-color: darken($background-color, 20%);
-    border: 1px solid darken($background-color, 20%);
+    background-color: darkest($background-color);
+    border: 1px solid darkest($background-color);
   }
 
   &.inactive {
@@ -44,12 +44,12 @@
     background-color: $primary;
     border: 1px solid $primary;
     &:hover {
-      background-color: darken($primary, 10%);
-      border: 1px solid darken($primary, 10%);
+      background-color: darker($primary);
+      border: 1px solid darker($primary);
     }
     &:active {
-      background-color: darken($primary, 20%);
-      border: 1px solid darken($primary, 20%);
+      background-color: darkest($primary);
+      border: 1px solid darkest($primary);
     }
   }
   &.secondary {
@@ -57,12 +57,12 @@
     background-color: $secondary;
     border: 1px solid $secondary;
     &:hover {
-      background-color: darken($secondary, 10%);
-      border: 1px solid darken($secondary, 10%);
+      background-color: darker($secondary);
+      border: 1px solid darker($secondary);
     }
     &:active {
-      background-color: darken($secondary, 20%);
-      border: 1px solid darken($secondary, 20%);
+      background-color: darkest($secondary);
+      border: 1px solid darkest($secondary);
     }
   }
 }
