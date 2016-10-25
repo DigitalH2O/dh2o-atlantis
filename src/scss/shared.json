@@ -15,6 +15,9 @@
     }
   },
 
+  "darker-amount": "0.1",
+  "darkest-amount": "0.2",
+
   "font-weight-bold": "500",
 
   "font-icons": {

@@ -9,15 +9,7 @@ $background-color: map-get($base-colors, background-color);
 $white: #ffffff;
 $black: #000000;
 
-// Standard default font color
-$font-color: #555555;
 $link-text-color: $primary;
-
-// Border color
-$border-color: #DCDEE2;
-
-// Background color
-$background-color: #f1f1f1;
 
 // Message bar colors
 $message-colors: map-get($colors, message);
@@ -25,3 +17,6 @@ $success-color  : map-get($message-colors, success);
 $warning-color  : map-get($message-colors, warning);
 $alert-color    : map-get($message-colors, alert);
 $notice-color   : map-get($message-colors, notice);
+
+@function darker($original) { @return darken($original, percentage($darker-amount)); }
+@function darkest($original) { @return darken($original, percentage($darkest-amount)); }
