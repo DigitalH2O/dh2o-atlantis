@@ -7,20 +7,34 @@
         with our color system. Hover stats are just a darkening of
         their original color.
       </p>
-      <div class="btn">Regular</div>
-      <div class="btn inactive">Inactive</div>
-      <div class="btn primary">Primary</div>
-      <div class="btn secondary">Secondary</div>
-      <pre>
-        <code class="language-markup">
-          <script type="prism-html-markup">
-            <div class="btn">Regular</div>
-            <div class="btn primary">Primary</div>
-            <div class="btn secondary">Secondary</div>
-          </script>
-        </code>
-      </pre>
+
+      <code-sample>
+        <button class="btn">Regular</button>
+      </code-sample>
+
+      <code-sample>
+        <button class="btn inactive">Inactive</button>
+      </code-sample>
+
+      <code-sample>
+        <button class="btn primary">Primary</button>
+      </code-sample>
+
+      <code-sample>
+        <button class="btn secondary">Secondary</button>
+      </code-sample>
+
     </div>
   </div>
 
 </template>
+
+<style>
+  @import '~dh2o-atlantis/scss/index';
+  #content-buttons {
+    .code-sample {
+      .as-rendered { width: 10%; }
+      .as-code { width: 89%; }
+    }
+  }
+</style>

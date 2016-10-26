@@ -8,30 +8,17 @@
       <p>
         For the items in the dropdown menu, apply the "menu-item" class to get the hover states and borders as shown below.
       </p>
-      <div class="dh2o-dropdown-trigger btn">
-        User Menu
-        <div class="dh2o-dropdown-content">
-          <ul>
-            <li class="menu-item">User Account</li>
-            <li class="menu-item">Logout</li>
-          </ul>
+      <code-sample>
+        <div class="dh2o-dropdown-trigger btn">
+          User Menu
+          <div class="dh2o-dropdown-content">
+            <ul>
+              <li class="menu-item">User Account</li>
+              <li class="menu-item">Logout</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <pre>
-        <code class="language-markup">
-          <script type="prism-html-markup">
-            <div class="dh2o-dropdown-trigger btn">
-              User Menu
-              <div class="dh2o-dropdown-content">
-                <ul>
-                  <li class="menu-item">User Account</li>
-                  <li class="menu-item">Logout</li>
-                </ul>
-              </div>
-            </div>
-          </script>
-        </code>
-      </pre>
+        </code-sample>
 
       <div class="message alert">
         Do not use button element for dropdowns.
@@ -41,3 +28,14 @@
     </div>
   </div>
 </template>
+
+<style>
+  #content-dropdowns {
+    .code-sample {
+      .as-rendered, .as-code {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+</style>

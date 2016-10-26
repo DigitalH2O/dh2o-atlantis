@@ -38,6 +38,7 @@
     "css-loader": "^0.25.0",
     "eslint": "^3.7.1",
     "file-loader": "^0.8.4",
+    "js-beautify": "^1.6.4",
     "json-loader": "^0.5.4",
     "jsontosass-loader": "^0.1.9",
     "lodash": "^4.16.4",

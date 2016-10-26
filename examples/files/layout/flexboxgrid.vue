@@ -13,54 +13,30 @@
         how we build out our applications.
       </p>
 
-      <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-          <div style="background-color: #31708f; border-bottom: solid 1px #ffffff;">&nbsp;</div>
+      <code-sample>
+        <h3>2 Column Example</h3>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <div>&nbsp;</div>
+          </div>
         </div>
-        <div class="col-md-6 col-sm-12 col-xs-12">
-          <div style="background-color: #31708f; border-bottom: solid 1px #ffffff;">&nbsp;</div>
-        </div>
-      </div>
-      <div class="seperator smaller"></div>
-      <div class="row">
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <div style="background-color: #31708f; border-bottom: solid 1px #ffffff;">&nbsp;</div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <div style="background-color: #31708f; border-bottom: solid 1px #ffffff;">&nbsp;</div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <div style="background-color: #31708f; border-bottom: solid 1px #ffffff;">&nbsp;</div>
-        </div>
-      </div>
-      <pre>
-        <code class="language-markup">
-          <script type="prism-html-markup">
-            // 2 to 1 column example
-            <div class="row">
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <div>&nbsp;</div>
-              </div>
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <div>&nbsp;</div>
-              </div>
-            </div>
 
-            // 3 to 1 column example
-            <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div>&nbsp;</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div>&nbsp;</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div>&nbsp;</div>
-              </div>
-            </div>
-          </script>
-        </code>
-      </pre>
+        <h3>3 Column Example</h3>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div>&nbsp;</div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div>&nbsp;</div>
+          </div>
+        </div>
+      </code-sample>
 
       <div class="message notice">
         Notice that when resizing the site it will redistribute columns
@@ -69,3 +45,24 @@
     </div>
   </div>
 </template>
+
+<style>
+  @import '~dh2o-atlantis/scss/index';
+
+  #content-grid {
+    .row {
+      margin-bottom: 20px;
+    }
+    .col-xs-12 > div {
+      background-color: $primary;
+      border-bottom: solid 1px $white;
+    }
+
+    .code-sample {
+      .as-rendered, .as-code {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+</style>

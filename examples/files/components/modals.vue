@@ -29,61 +29,36 @@
         To Close the modal just add an element with the class modal-close
       </p>
 
-      <div class="btn primary dh2o-modal-btn" data-dh2o-modal="modal1">
-        Click here
-      </div>
-      <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal2">
-        Simple
-      </div>
-      <div id="modal1" class="dh2o-modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            Title
-            <div class="close model-close"><small>X</small></div>
-          </div>
-          <div class="modal-body">
-            <p>Here is some text</p>
-            <p>Here is some more text</p>
-            <p>Here is some more more text</p>
-          </div>
-          <div class="modal-footer">
-            <div class="btn primary" v-on:click="applyModal1()">Apply</div>
-            <div class="btn model-close">Cancel</div>
+      <code-sample>
+        <div class="btn primary dh2o-modal-btn" data-dh2o-modal="modal1">
+          Full Modal
+        </div>
+        <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal2">
+          Body-only Modal
+        </div>
+        <div id="modal1" class="dh2o-modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              Title
+              <div class="close model-close"><small>X</small></div>
+            </div>
+            <div class="modal-body">
+              <p>Here is some text</p>
+              <p>Here is some more text</p>
+              <p>Here is some more more text</p>
+            </div>
+            <div class="modal-footer">
+              <div class="btn primary" v-on:click="applyModal1()">Apply</div>
+              <div class="btn model-close">Cancel</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="modal2" class="dh2o-modal">
-        <div class="modal-content">
-          <div class="modal-body">Just the body</div>
+        <div id="modal2" class="dh2o-modal">
+          <div class="modal-content">
+            <div class="modal-body">Just the body</div>
+          </div>
         </div>
-      </div>
-
-      <pre>
-        <code class="language-markup">
-          <script type="prism-html-markup">
-            // Button
-            <div class="btn dh2o-modal-btn" data-dh2o-modal="modal1">
-              Click here
-            </div>
-
-            // Modal
-            <div id="modal1" class="dh2o-modal">
-              <div class="modal-content">
-                <div class="modal-header">
-                  Title
-                  <div class="close model-close"><small>X</small></div>
-                </div>
-                <div class="modal-body">
-                  Body Content
-                </div>
-                <div class="modal-footer">
-                  <div class="btn model-close">Button</div>
-                </div>
-              </div>
-            </div>
-          </script>
-        </code>
-      </pre>
+      </code-sample>
 
       <div class="seperator"></div>
 
@@ -101,3 +76,14 @@
     </div>
   </div>
 </template>
+
+<style>
+  #content-modals {
+    .code-sample {
+      .as-rendered, .as-code {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+</style>

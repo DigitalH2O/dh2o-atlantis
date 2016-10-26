@@ -13,6 +13,8 @@
 </template>
 
 <script>
+  import jsBeautify from 'js-beautify';
+
   export default {
     data() {
       return {
@@ -30,6 +32,9 @@
         markupInDOM = markupInDOM.replace(
           /src="http:\/\/.*\/(.*\.svg)\?.*?"/g,
           (match, p1, p2) => `src="~dh2o-atlantis/images/${p1}"`);
+
+        //and run the markup through the beautifier to make it more readable:
+        markupInDOM = jsBeautify.html(markupInDOM, { indent_size: 2 });
 
         //re-render the Prism code preview, in case the markup in .content has
         //changed

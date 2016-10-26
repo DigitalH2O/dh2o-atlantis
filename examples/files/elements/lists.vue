@@ -4,51 +4,22 @@
     <div class="content">
       <p>By default our <code class="language-css">ul</code> and <code class="language-css">ol</code> tags do not have standard bulleted list styles applied due to our CSS reset. They will look the same unless you apply the <code class="language-css">.list</code> class to the <code class="language-css">ul</code> or <code class="language-css">ol</code> tag.</p>
       <div class="row">
-
-        <div class="col-xs-6">
-          <div class="row">
-            <div class="col-xs-4">
-              <ul class="bulleted-list">
-                <li>First Item</li>
-                <li>Second Item</li>
-              </ul>
-            </div>
-            <div class="col-xs-8">
-              <pre>
-                <code class="language-markup">
-                  <script type="prism-html-markup">
-                    <ul class="bulleted-list">
-                      <li>First Item</li>
-                      <li>Second Item</li>
-                    </ul>
-                  </script>
-                </code>
-              </pre>
-            </div>
-          </div>
+        <div class="col-xs-12 col-md-6">
+          <code-sample>
+            <ul class="bulleted-list">
+              <li>First Item</li>
+              <li>Second Item</li>
+            </ul>
+          </code-sample>
         </div>
 
-        <div class="col-xs-6">
-          <div class="row">
-            <div class="col-xs-4">
-              <ol class="ordered-list">
-                <li>First Item</li>
-                <li>Second Item</li>
-              </ol>
-            </div>
-            <div class="col-xs-8">
-              <pre>
-                <code class="language-markup">
-                  <script type="prism-html-markup">
-                    <ol class="ordered-list">
-                      <li>First Item</li>
-                      <li>Second Item</li>
-                    </ol>
-                  </script>
-                </code>
-              </pre>
-            </div>
-          </div>
+        <div class="col-xs-12 col-md-6">
+          <code-sample>
+            <ol class="ordered-list">
+              <li>First Item</li>
+              <li>Second Item</li>
+            </ol>
+          </code-sample>
         </div>
 
       </div>
@@ -56,3 +27,16 @@
 
   </div>
 </template>
+
+<style>
+  @import '~dh2o-atlantis/scss/index';
+
+  #content-lists {
+    .code-sample {
+      .as-rendered {
+        @include vertical-align(relative);
+      }
+    }
+  }
+
+</style>
