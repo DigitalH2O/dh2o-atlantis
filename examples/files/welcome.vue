@@ -8,7 +8,9 @@
         This guide is to help understand how to develop apps using
         our digital H2O style guide.
       </p>
-
     </div>
   </div>
 </template>
+
+<script>
+</script>
