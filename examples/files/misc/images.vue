@@ -3,7 +3,6 @@
     data() {
       return {
         fontIcons: require('dh2o-atlantis/scss/shared.json')['font-icons'],
-        twoToneIcons: ['analytics', 'assets', 'dashboard', 'watertransfer']
       };
     }
   }
@@ -58,8 +57,38 @@
         </div>
 
         <p>We also have a few two-tone navigation icons, which are distributed
-        as SVGs. Each has a normal state, and an active state intended for a
-        <code class="language-markup">$primary</code> background.</p>
+        as SVGs. Each has a normal state for a <code class="language-markup">$secondary</code>
+        background, and an active state for a <code class="language-markup">$primary</code>background.</p>
+
+        <div class="navigation inactive">
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-analytics.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-assets.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-dashboard.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-watertransfer.svg" />
+          </code-sample>
+        </div>
+
+        <div class="navigation active">
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-analytics-active.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-assets-active.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-dashboard-active.svg" />
+          </code-sample>
+          <code-sample>
+            <img src="~dh2o-atlantis/images/icon-watertransfer-active.svg" />
+          </code-sample>
+        </div>
       </section>
 
 
@@ -97,6 +126,8 @@
 </template>
 
 <style>
+  @import '~dh2o-atlantis/scss/index';
+
   section.logos, section.loading-icons {
     .code-sample {
       .as-rendered {
@@ -115,6 +146,21 @@
       }
       .as-code {
         width: 89%;
+      }
+    }
+
+    .navigation {
+      .as-rendered {
+        padding: 5px;
+        width: 8%;
+      }
+
+      &.inactive {
+        .as-rendered { background-color: $secondary; }
+      }
+
+      &.active {
+        .as-rendered { background-color: $primary; }
       }
     }
   }
