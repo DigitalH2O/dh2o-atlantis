@@ -15,9 +15,10 @@ import 'dh2o-atlantis/components/modals/modals.js';
 import 'dh2o-atlantis/components/modals/modals.scss';
 
 import App from './files/app.vue';
+import CodeSample from './files/code-sample.vue';
 import routerList from './router';
 
-
+Vue.component('code-sample', CodeSample);
 
 Vue.mixin({
   updated() {
