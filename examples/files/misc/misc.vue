@@ -16,17 +16,17 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
-      <h3>Seperator</h3>
+      <h3>Separator</h3>
       <p>
         Want to add a divider line between elements. Here you go.
       </p>
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <div class="seperator"></div>
-            <div class="seperator smaller"></div> // For smaller seperation
+            <div class="separator"></div>
+            <div class="separator smaller"></div> // For smaller separation
           </script>
         </code>
       </pre>
@@ -34,7 +34,7 @@
         If you look in each section i used them to seperate pieces of information.
       </div>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Vertical Align</h3>
       <p>

@@ -31,10 +31,10 @@
       <div class="section">
         <div class="title">Title</div>
         <div class="content">Content</div>
-        <div class="seperator"></div>
+        <div class="separator"></div>
       </div>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Section Bar</h3>
       <p>

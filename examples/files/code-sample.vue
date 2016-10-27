@@ -25,6 +25,11 @@
       refreshCodePreview() {
         let markupInDOM = this.$el.querySelector('.as-rendered').innerHTML;
 
+        if (this.lastSeenMarkup === markupInDOM) {
+          return;
+        }
+
+        this.lastSeenMarkup = markupInDOM;
         //take out the data attributes that Vue uses for scoped CSS
         markupInDOM = markupInDOM.replace(/data\-v.*?=""\s*/g, '');
 
@@ -38,7 +43,6 @@
 
         //re-render the Prism code preview, in case the markup in .content has
         //changed
-
         this.$el.querySelector('.as-code code').innerHTML = Prism.highlight(
           markupInDOM,
           Prism.languages.markup);

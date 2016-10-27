@@ -60,7 +60,7 @@
         </div>
       </code-sample>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Javascript</h3>
       <p>

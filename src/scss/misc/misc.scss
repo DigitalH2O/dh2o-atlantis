@@ -21,15 +21,15 @@ strong, b {
   display: inline-block;
 }
 
-.seperator {
+.separator {
   height: 1px;
   width: 100%;
-  margin: 20px 0 15px 0;
+  margin: $standard-spacing 0 $standard-spacing/2 0;
   background-color: $black;
   opacity: .1;
 
   &.smaller {
-    margin: 10px 0 8px 0;
+    margin: $standard-spacing/2 0 $standard-spacing/2 0;
   }
 }
 

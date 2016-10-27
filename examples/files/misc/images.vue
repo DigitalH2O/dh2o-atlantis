@@ -22,7 +22,7 @@
         </code-sample>
 
 
-        <div class="seperator smaller"></div>
+        <div class="separator smaller"></div>
 
         <code-sample>
           <div style="padding: 3px; background-color: #31708f;">
@@ -30,7 +30,7 @@
           </div>
         </code-sample>
 
-        <div class="seperator smaller"></div>
+        <div class="separator smaller"></div>
 
         <code-sample>
           <img src="~dh2o-atlantis/images/logo-droplet-color.svg" style="width: 150px;" />
@@ -42,7 +42,7 @@
           </div>
         </code-sample>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <section class="custom-icons">
         <h3>Custom Icons</h3>
@@ -95,14 +95,14 @@
 
 
 
-      <div class="seperator smaller"></div>
+      <div class="separator smaller"></div>
 
       <section class="generic-icons">
         <h3>Generic Icons</h3>
         <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
       </section>
 
-      <div class="seperator smaller"></div>
+      <div class="separator smaller"></div>
 
       <section class="loading-icons">
         <h3>Loading Icons</h3>
@@ -151,7 +151,7 @@
 
     .navigation {
       .as-rendered {
-        padding: 5px;
+        padding: $standard-spacing/2;
         width: 8%;
       }
 

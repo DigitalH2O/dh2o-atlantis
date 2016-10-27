@@ -9,7 +9,7 @@
       <div class="message notice">Notice message</div>
     </code-sample>
 
-    <div class="seperator"></div>
+    <div class="separator"></div>
 
     <h3>Flush</h3>
     <p>
@@ -21,7 +21,7 @@
       <div class="message success flush">Success message</div>
     </code-sample>
 
-    <div class="seperator"></div>
+    <div class="separator"></div>
 
     <h3>Colors</h3>
     <pre>
@@ -58,6 +58,10 @@
         display: block;
         width: 100%;
       }
+    }
+
+    .message {
+      margin-bottom: $standard-spacing/2;
     }
   }
 </style>

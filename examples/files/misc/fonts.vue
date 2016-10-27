@@ -23,7 +23,7 @@
         Section headers, input labels, and buttons should usually use bold text.
       </p>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>P tags</h3>
       <p>This tag has a default line height and a small bottom margin</p>
@@ -51,7 +51,7 @@
         commodo libero justo vel mi.
       </p>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>small tags</h3>
       <p>

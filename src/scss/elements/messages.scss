@@ -1,8 +1,7 @@
 .message {
   box-sizing: content-box !important;
   vertical-align: middle;
-  margin: 0 0 10px 0;
-  padding: 10px 15px 10px 15px;
+  padding: $standard-spacing/2 $standard-spacing $standard-spacing/2 $standard-spacing;
   color: $white;
   font-weight: $font-weight-bold;
   border-radius: 4px;
