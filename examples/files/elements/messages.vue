@@ -61,7 +61,7 @@
     }
 
     .message {
-      margin-bottom: $standard-spacing/2;
+      margin-bottom: $spacing-half;
     }
   }
 </style>

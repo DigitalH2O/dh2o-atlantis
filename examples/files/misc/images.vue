@@ -151,7 +151,7 @@
 
     .navigation {
       .as-rendered {
-        padding: $standard-spacing/2;
+        padding: $spacing-half;
         width: 8%;
       }
 

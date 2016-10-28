@@ -3,8 +3,8 @@ label {
   color: $font-color;
   display: block;
   font-weight: $font-weight-bold;
-  padding-bottom: $standard-spacing/4;
-  margin-right: $standard-spacing/4;
+  padding-bottom: $spacing-quarter;
+  margin-right: $spacing-quarter;
 
 }
 
@@ -22,8 +22,8 @@ input, textarea {
   font-weight: normal;
   display: block;
   width: 100%;
-  padding: $standard-spacing/4 $standard-spacing/2;
-  margin: 0 0 $standard-spacing/2 0;
+  padding: $spacing-quarter $spacing-half;
+  margin: 0 0 $spacing-half 0;
   border: 1px solid $border-color;
   border-radius: 4px;
   background-color: $white;
