@@ -18,7 +18,7 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Variables</h3>
       <p>
@@ -34,7 +34,7 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Logo</h3>
       <p>
@@ -49,7 +49,7 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Website Name</h3>
       <p>To place the website add the below code in the header after the logo.</p>

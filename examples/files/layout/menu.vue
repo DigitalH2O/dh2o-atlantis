@@ -18,7 +18,7 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
       <h3>Active State</h3>
       <p>In order to show active state just add the active class to the a tag.</p>
@@ -30,17 +30,17 @@
         </code>
       </pre>
 
-      <div class="seperator"></div>
+      <div class="separator"></div>
 
-      <h3>Seperators</h3>
+      <h3>Separators</h3>
       <p>
-        If you need to add a line seperator in a menu item. Just change
-        the class of one of the li link items with seperator.
+        If you need to add a line separator in a menu item. Just change
+        the class of one of the li link items with separator.
       </p>
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <li class="seperator"></li>
+            <li class="separator"></li>
           </script>
         </code>
       </pre>

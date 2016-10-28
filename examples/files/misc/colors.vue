@@ -39,7 +39,7 @@
   @import '~dh2o-atlantis/scss/index.scss';
 
   .row.base {
-    margin-bottom: 20px;
+    margin-bottom: $spacing;
   }
 
   ul.colors {

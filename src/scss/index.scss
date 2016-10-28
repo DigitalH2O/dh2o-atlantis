@@ -1,6 +1,8 @@
 $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !default; // for referencing Bootstrap CDN font files directly
 @import "~font-awesome/scss/font-awesome";
 
+@import "misc/variables";
+
 @import 'images/variables';
 
 @import "misc/reset";

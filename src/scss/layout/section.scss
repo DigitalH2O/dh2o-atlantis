@@ -4,14 +4,14 @@
 
   .title {
     width: auto;
-    padding: 20px;
+    padding: $spacing;
     margin: 0px;
     border: solid 1px $border-color;
     background-color: $white;
   }
 
   .bar {
-    padding: 20px;
+    padding: $spacing;
     color: $font-color;
     background-color: $white;
 
@@ -22,8 +22,8 @@
   }
 
   .content {
-    padding: 20px;
-    margin: 20px;
+    padding: $spacing;
+    margin: $spacing;
     border: solid 1px $border-color;
     background-color: $white;
   }
