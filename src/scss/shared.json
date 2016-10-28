@@ -20,7 +20,7 @@
 
   "font-weight-bold": "600",
 
-  "standard-spacing": "20px",
+  "spacing": "20px",
 
   "font-icons": {
     "rig": "600",

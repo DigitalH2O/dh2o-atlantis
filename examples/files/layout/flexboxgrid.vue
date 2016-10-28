@@ -51,7 +51,7 @@
 
   #content-grid {
     .row {
-      margin-bottom: $standard-spacing;
+      margin-bottom: $spacing;
     }
     .col-xs-12 > div {
       background-color: $primary;
