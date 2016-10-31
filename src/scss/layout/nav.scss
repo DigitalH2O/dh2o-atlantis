@@ -5,13 +5,11 @@
       a {
         display: block;
         padding: $spacing-half;
-        color: $white;
-        opacity: .6;
+        color: darken($white, 20);
         text-decoration: none;
 
         &:hover, &.active {
           background-color: $primary;
-          opacity: 1;
         }
       }
     }
@@ -19,8 +17,7 @@
     .separator {
       margin: 0;
       padding: 0;
-      background-color: $white;
-      opacity: .6;
+      background-color: darken($border-color, 10);
     }
   }
 
