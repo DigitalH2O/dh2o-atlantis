@@ -28,6 +28,7 @@ input, textarea {
   border-radius: 4px;
   background-color: $white;
   outline: 0;
+  box-sizing: border-box;
 
   &:focus {
     box-shadow: 0 0 3px $primary;
