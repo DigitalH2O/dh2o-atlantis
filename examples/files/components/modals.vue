@@ -1,16 +1,28 @@
 <script>
-  module.exports = {
+  export default {
     methods: {
-      applyModal1: function() {
-        var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>';
-        document.querySelector('#modal1 .modal-body').innerHTML = text;
-        setTimeout(function() {
-          document.getElementById('modal1').hide();
-        }, 1000);
+      applyModal1: function () {
+        var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
+        document.querySelector('#modal1 .modal-body').innerHTML = text
+        setTimeout(function () {
+          /* global dh2oModal */
+          dh2oModal('modal1').hide()
+        }, 1000)
       }
     }
   }
 </script>
+
+<style>
+  #content-modals {
+    .code-sample {
+      .as-rendered, .as-code {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+</style>
 
 <template>
   <div id="content-modals" class="section">
@@ -64,26 +76,18 @@
 
       <h3>Javascript</h3>
       <p>
-        You most likely will need to programmably hide the modal.
-        To do so just trigger the hide function on the modal element.
+        You most likely will need to programmably call to the modal.
+        Just use the global dh2oModal() function.
       </p>
       <pre>
         <code class="language-js">
-          document.getElementById('modal1').hide();
+          let modal = dh2oModal('modalId')
+          modal.show()
+          // or
+          modal.hide()
         </code>
       </pre>
 
     </div>
   </div>
 </template>
-
-<style>
-  #content-modals {
-    .code-sample {
-      .as-rendered, .as-code {
-        display: block;
-        width: 100%;
-      }
-    }
-  }
-</style>
