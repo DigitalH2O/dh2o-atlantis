@@ -70,7 +70,7 @@
 </template>
 
 <style scoped>
-  @import '~dh2o-atlantis/scss/index.scss';
+  @import '~dh2o-atlantis/scss/_partials.scss';
 
   h1, h2, h3, h4, h5, h6 {
     display: inline;

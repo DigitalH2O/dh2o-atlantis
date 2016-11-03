@@ -36,7 +36,7 @@
 </script>
 
 <style scoped>
-  @import '~dh2o-atlantis/scss/index.scss';
+  @import '~dh2o-atlantis/scss/_partials.scss';
 
   .row.base {
     margin-bottom: $spacing;
@@ -44,8 +44,6 @@
 
   ul.colors {
     li {
-      @extend .btn;
-
       display: block;
     }
   }
@@ -66,7 +64,7 @@
         <div class="col-xs-6 col-lg-4">
           <h2>Base Colors</h2>
           <ul class="colors">
-            <li v-for="(color, colorName) in colors.base"
+            <li class="btn" v-for="(color, colorName) in colors.base"
                 :style="{'background-color': color, 'color': '#ffffff'}">
               ${{colorName}}: {{color}}
             </li>
@@ -76,7 +74,7 @@
         <div class="col-xs-6 col-lg-4">
           <h2>Darker Colors ({{darkerPercent}}%)</h2>
           <ul class="colors">
-            <li v-for="(color, colorName) in darkerColors"
+            <li class="btn" v-for="(color, colorName) in darkerColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
               darker(${{colorName}})
             </li>
@@ -86,7 +84,7 @@
         <div class="col-xs-6 col-lg-4">
           <h2>Darkest Colors ({{darkestPercent}}%)</h2>
           <ul class="colors">
-            <li v-for="(color, colorName) in darkestColors"
+            <li class="btn" v-for="(color, colorName) in darkestColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
               darkest(${{colorName}})
             </li>
@@ -100,7 +98,7 @@
         <div class="col-xs-6 col-lg-4">
           <h2>Message Colors</h2>
           <ul class="colors">
-            <li v-for="(color, colorName) in colors.message"
+            <li class="btn" v-for="(color, colorName) in colors.message"
                 :style="{'background-color': color, 'color': '#ffffff'}">
               ${{colorName}}: {{color}}
             </li>
