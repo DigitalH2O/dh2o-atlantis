@@ -6,7 +6,8 @@ Style guide for front end applications
 Install dh2o-atlantis with npm, and then do `@import '~dh2o-atlantis/scss/index';`
 in your project's main SASS file to add the base DH2O styles.
 
-You'll also need to append the following to your SASS configuration in webpack:
+You'll also need to install `jsontosass-loader`, and append the following to your
+SASS configuration in webpack:
 
 ```
 jsontosass?path=${SASS_JSON_VARS_PATH}
