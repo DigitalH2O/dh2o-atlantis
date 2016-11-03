@@ -46,7 +46,10 @@ module.exports = {
     ]
   },
   resolve: {
-    alias: { 'dh2o-atlantis': path.resolve('./src') }
+    alias: {
+      'dh2o-atlantis': path.resolve('./src'),
+      'dh2o-atlantis-partials': path.resolve('./src/scss/_partials.scss')
+    }
   },
   devServer: {
     historyApiFallback: true,

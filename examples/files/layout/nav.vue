@@ -1,5 +1,5 @@
 <template>
-  <div id="content-menu" class="section">
+  <section id="content-nav" class="section">
     <div class="title"><h1>Menu</h1></div>
     <div class="content">
       <p>
@@ -45,5 +45,5 @@
         </code>
       </pre>
     </div>
-  </div>
+  </section>
 </template>

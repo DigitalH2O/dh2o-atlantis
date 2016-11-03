@@ -13,7 +13,7 @@
     <div class="title"><h1>Images</h1></div>
     <div class="content">
       <section class="logos">
-        <h3>Logos</h3>
+        <h2>Logos</h2>
 
         <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>
 
@@ -45,7 +45,7 @@
       <div class="separator"></div>
 
       <section class="custom-icons">
-        <h3>Custom Icons</h3>
+        <h2>Custom Icons</h2>
         <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
         <div class="row">
@@ -136,14 +136,14 @@
       <div class="separator smaller"></div>
 
       <section class="generic-icons">
-        <h3>Generic Icons</h3>
+        <h2>Generic Icons</h2>
         <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
       </section>
 
       <div class="separator smaller"></div>
 
       <section class="loading-icons">
-        <h3>Loading Icons</h3>
+        <h2>Loading Icons</h2>
         <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
         <code-sample>
