@@ -1,11 +1,12 @@
 <script>
+  import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
+
   export default {
     methods: {
       applyModal1: function () {
         var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
         document.querySelector('#modal1 .modal-body').innerHTML = text
         setTimeout(function () {
-          /* global dh2oModal */
           dh2oModal('modal1').hide()
         }, 1000)
       }

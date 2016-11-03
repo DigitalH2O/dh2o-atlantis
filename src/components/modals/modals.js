@@ -1,4 +1,4 @@
-window.dh2oModal = function (modalId = false, autoShow = false) {
+let dh2oModal = function (modalId = false, autoShow = false) {
   if (!modalId) { console.error('Must pass a modal id'); return }
 
   let modal = document.getElementById(modalId)
@@ -59,6 +59,8 @@ document.addEventListener('click', function (event) {
     let element = event.target
     let modalId = element.dataset[dataset]
 
-    window.dh2oModal(modalId, true)
+    dh2oModal(modalId, true)
   }
 })
+
+export default dh2oModal
