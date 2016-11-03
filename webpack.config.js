@@ -40,7 +40,7 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         loader: SASS_LOADER_CONFIG,
       },
     ]

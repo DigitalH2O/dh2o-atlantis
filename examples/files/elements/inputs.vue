@@ -13,7 +13,7 @@
       <label for="password-input">Password</label>
       <input type="password" id="password-input" placeholder="Password" />
       <label for="search-input">Search</label>
-      <input type="text" id="search-input" class="search" placeholder="Search" />
+      <input type="search" id="search-input" placeholder="Search" />
       <label for="text-area-input">Textarea</label>
       <textarea name="name" id="text-area-input" rows="4" placeholder="Textarea"></textarea>
       <label>Checkbox</label>
