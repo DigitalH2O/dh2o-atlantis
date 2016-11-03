@@ -31,11 +31,3 @@ strong, b {
     margin: $spacing-half 0 $spacing-half 0;
   }
 }
-
-// This mixin will allow you to vertical-align
-// an element relative to its parent
-@mixin vertical-align($position) {
-  position: $position; // Either relative or absolute
-  top: 50%;
-  transform: translateY(-50%);
-}

@@ -164,7 +164,7 @@
 </template>
 
 <style>
-  @import '~dh2o-atlantis/scss/index';
+  @import '~dh2o-atlantis/scss/_partials';
 
   section.logos, section.loading-icons {
     .code-sample {

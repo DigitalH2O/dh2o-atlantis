@@ -40,7 +40,7 @@
           <div class="modal-content">
             <div class="modal-header">
               Title
-              <div class="close model-close"><small>X</small></div>
+              <div class="close model-close"><i class="fa fa-close"></i></div>
             </div>
             <div class="modal-body">
               <p>Here is some text</p>

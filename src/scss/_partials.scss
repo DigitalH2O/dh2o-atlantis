@@ -1,0 +1,11 @@
+// This document imports variables and mixins from other partial files -- basically
+// it pulls in as much of the project as it can without generating actual styles.
+//
+// This is a useful entry point for components that need to use variables from
+// atlantis, but shouldn't duplicate the existing styles of the project (which
+// would happen if those components imported index.scss)
+@import "misc/_variables";
+@import "misc/_colors";
+
+@import 'images/_variables';
+@import "layout/_variables";
