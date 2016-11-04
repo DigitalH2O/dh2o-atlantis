@@ -136,14 +136,14 @@
       <div class="separator smaller"></div>
 
       <section class="generic-icons">
-        <h2>Generic Icons</h2>
+        <h3>Generic Icons</h3>
         <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
       </section>
 
       <div class="separator smaller"></div>
 
       <section class="loading-icons">
-        <h2>Loading Icons</h2>
+        <h3>Loading Icons</h3>
         <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
         <code-sample>
