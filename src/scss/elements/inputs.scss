@@ -58,7 +58,12 @@ input, textarea {
 
 input[type=search] {
   @include input-background('search');
+
+  &::-webkit-search-decoration, &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
 }
+
 input[type=email] {
   @include input-background('email');
 }
