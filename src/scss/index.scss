@@ -1,5 +1,6 @@
 $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !default; // for referencing Bootstrap CDN font files directly
 @import "~font-awesome/scss/font-awesome";
+@import '~select2/dist/css/select2.css';
 
 // Import of variables, mixing, etc...
 @import "_partials";
@@ -22,6 +23,9 @@ $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !defaul
 // Inputs
 @import "elements/inputs";
 
+// Menus
+@import "elements/menus";
+
 // Messages
 @import "elements/messages";
 
@@ -34,4 +38,4 @@ $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !defaul
 // Layouts
 @import "layout/app";
 @import "layout/section";
-@import "layout/nav";
+@import "layout/sidebar";

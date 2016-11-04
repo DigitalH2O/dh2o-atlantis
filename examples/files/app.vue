@@ -14,7 +14,8 @@
         </li>
         <li class="separator"></li>
         <li class="link"><router-link to="/layout">Layout</router-link></li>
-        <li class="link"><router-link to="/menu">Menu</router-link></li>
+        <li class="link"><router-link to="/sidebar">Sidebar</router-link></li>
+        <li class="link"><router-link to="/menus">Menus</router-link></li>
         <li class="link"><router-link to="/sections">Sections</router-link></li>
         <li class="link"><router-link to="/flexboxgrid">Grid</router-link></li>
         <li class="separator"></li>

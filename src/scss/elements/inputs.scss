@@ -56,7 +56,7 @@ input, textarea {
   @extend %input-background-position;
 }
 
-input.search {
+input[type=search] {
   @include input-background('search');
 }
 input[type=email] {
