@@ -1,9 +1,9 @@
 <template>
-  <div id="content-menu" class="section">
-    <div class="title"><h1>Menu</h1></div>
+  <section id="content-sidebar" class="section">
+    <div class="title"><h1>Sidebar</h1></div>
     <div class="content">
       <p>
-        Although menus may change depending on the application
+        Although navigation may change depending on the application
         we have a very simple implementation that is easy to implement.
         Just add the below code to the sidebar div.
       </p>
@@ -45,5 +45,5 @@
         </code>
       </pre>
     </div>
-  </div>
+  </section>
 </template>

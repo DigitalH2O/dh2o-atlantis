@@ -1,0 +1,64 @@
+//to enforce consistency between .dh2o-dropdown-menu and the Select2 overrides,
+//we put the actual styles in these placeholder classes and then @extend them
+//into each control
+
+%dropdown-menu-container {
+  border: 1px solid $border-color;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+%dropdown-menu-item {
+  padding: $spacing-quarter $spacing-half;
+  text-align: left;
+  cursor: pointer;
+  color: $font-color;
+}
+
+%dropdown-menu-item-hover {
+  background-color: $primary;
+  color: $white;
+}
+
+%dropdown-menu-item-selected {
+  background-color: $primary;
+  color: $white;
+  font-weight: $font-weight-bold;
+}
+
+.dh2o-dropdown-menu {
+  @extend %dropdown-menu-container;
+
+  li {
+    @extend %dropdown-menu-item;
+
+    &:hover { @extend %dropdown-menu-item-hover; }
+    &[aria-selected="true"] { @extend %dropdown-menu-item-selected; }
+  }
+}
+
+.select2-dropdown {
+  @extend %dropdown-menu-container;
+
+  li.select2-results__option {
+    @extend %dropdown-menu-item;
+
+    &.select2-results__option--highlighted {
+      @extend %dropdown-menu-item-hover;
+    }
+
+    &[aria-selected="true"] {
+      @extend %dropdown-menu-item-selected;
+    }
+  }
+
+  .select2-search--dropdown {
+    border-bottom: 1px solid $border-color;
+    padding: $spacing-half;
+
+    input {
+      padding: $spacing-quarter $spacing-half;
+      margin: 0;
+    }
+  }
+}

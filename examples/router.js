@@ -8,7 +8,8 @@ module.exports = {
 
     // Layouts
     {path: '/layout', component: require('./files/layout/layout.vue')},
-    {path: '/menu', component: require('./files/layout/menu.vue')},
+    {path: '/sidebar', component: require('./files/layout/sidebar.vue')},
+    {path: '/menus', component: require('./files/layout/menus.vue')},
     {path: '/sections', component: require('./files/layout/sections.vue')},
     {path: '/flexboxgrid', component: require('./files/layout/flexboxgrid.vue')},
 
