@@ -1,7 +1,6 @@
 <script>
 import $ from 'jquery';
 import 'select2';                       // globally assign select2 fn to $ element
-import 'select2/dist/css/select2.css';  // optional if you have css loader
 
 export default {
   mounted() {
@@ -20,7 +19,7 @@ export default {
 <style>
   @import '~dh2o-atlantis/scss/_partials';
 
-  h3, h2 {
+  h3 {
     margin-bottom: $spacing-half;
   }
 
@@ -44,7 +43,7 @@ export default {
           applied to all Select2 dropdowns.
         </p>
 
-      <h2>Generic Dropdown Menus</h2>
+      <h3>Generic Dropdown Menus</h3>
 
       <p>Note the use of <code class="language-html">aria-selected</code> to mark the selected element.</p>
       <div class="example">
@@ -60,7 +59,7 @@ export default {
       </div>
 
 
-      <h2>Select2</h2>
+      <h3>Select2</h3>
 
       <h3>A Select2 control without a search box</h3>
       <div class="example">
