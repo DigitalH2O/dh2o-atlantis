@@ -13,7 +13,7 @@
     <div class="title"><h1>Images</h1></div>
     <div class="content">
       <section class="logos">
-        <h2>Logos</h2>
+        <h3>Logos</h3>
 
         <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>
 
@@ -45,7 +45,7 @@
       <div class="separator"></div>
 
       <section class="custom-icons">
-        <h2>Custom Icons</h2>
+        <h3>Custom Icons</h3>
         <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
         <div class="row">
