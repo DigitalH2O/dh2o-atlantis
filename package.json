@@ -3,7 +3,7 @@
   "name": "dh2o-atlantis",
   "author": "Digital H2O Team",
   "license": "MIT",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "title": "DigitalH2O Style Guide",
   "description": "Style guide for front end apps",
   "bugs": {
@@ -25,7 +25,8 @@
     "start": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "select2": "^4.0.3",
   },
   "devDependencies": {
     "animate.css": "^3.5.2",
@@ -52,7 +53,6 @@
     "node-sass-json-importer": "^2.1.1",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
-    "select2": "^4.0.3",
     "style-loader": "^0.13.1",
     "tinycolor2": "^1.4.1",
     "transform-loader": "^0.2.3",
