@@ -19,6 +19,7 @@
   border: 1px solid $border-color;
   border-radius: 3px;
   display: inline-block;
+  vertical-align: middle;
   /* TODO: figure out another way to transition this doesnt work cause it fade in on page load*/
   /*transition: background-color 0.25s ease-in-out;*/
 
