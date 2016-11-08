@@ -2,7 +2,7 @@ let dh2oModal = function (modalId = false, autoShow = false) {
   if (!modalId) { console.error('Must pass a modal id'); return }
 
   let modal = document.getElementById(modalId)
-  let closeName = 'model-close'
+  let closeName = 'modal-close'
 
   // Check to make sure modal id exists
   if (!modal) { console.error('Modal does not exist'); return }
