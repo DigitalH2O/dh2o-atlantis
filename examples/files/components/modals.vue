@@ -1,6 +1,4 @@
 <script>
-  import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
-
   export default {
     methods: {
       applyModal1: function () {
