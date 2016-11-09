@@ -1,5 +1,5 @@
-import dh2oModal from './modals/modals'
-import dh2oDropdown from './dropdowns/dropdowns'
+var dh2oModal = require('./modals/modals')
+var dh2oDropdown = require('./dropdowns/dropdowns')
 
 // This will be reusable for our modals/dropdowns and anything else that needs to
 // be shown in front of other stacking contexts
@@ -46,4 +46,4 @@ window.getParentElement = function (initialEle, parentClass) {
   return parentEle
 }
 
-export { dh2oModal, dh2oDropdown }
+module.exports = { dh2oModal, dh2oDropdown }
