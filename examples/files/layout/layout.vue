@@ -5,6 +5,7 @@
       <p>The main application primarily consists of three elements wrapped in
         a div with the class of "app" for the application to mount to.</p>
       <p>
+        <b>App</b> - Main app container<br />
         <b>Header</b> - Main blue top bar<br />
         <b>Sidebar</b> - Main left dark blue bar<br />
         <b>Main</b> - Main center section
@@ -12,9 +13,11 @@
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <div class="header"></div>
-            <div class="sidebar"></div>
-            <div class="main"></div>
+            <div class="app">
+              <div class="header"></div>
+              <div class="sidebar"></div>
+              <div class="main"></div>
+            </div>
           </script>
         </code>
       </pre>
