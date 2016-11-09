@@ -2,6 +2,7 @@ let dh2oModal = function (modalId = false, autoShow = false) {
   if (!modalId) { console.error('Must pass a modal id'); return }
 
   let modal = document.getElementById(modalId)
+  let stackingContextParent = window.findParentStackingContext(modal, 'app')
   let closeName = 'modal-close'
 
   // Check to make sure modal id exists
@@ -16,10 +17,12 @@ let dh2oModal = function (modalId = false, autoShow = false) {
 
   // Add functionality to animate hide and show of modal
   modal.show = () => {
+    stackingContextParent.classList.add('stacking-context-front')
     modal.classList.remove('animate-out')
     modal.classList.add('animate-in')
   }
   modal.hide = () => {
+    stackingContextParent.classList.add('stacking-context-front')
     modal.classList.remove('animate-in')
     modal.classList.add('animate-out')
     setTimeout(() => {
