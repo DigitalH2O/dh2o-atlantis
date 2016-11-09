@@ -1,45 +1,47 @@
-document.addEventListener('click', function(e) {
-  let trigger = 'dh2o-dropdown-trigger';
-  let content = 'dh2o-dropdown-content';
-  let dropdown;
+document.addEventListener('click', function (e) {
+  let trigger = 'dh2o-dropdown-trigger'
+  let content = 'dh2o-dropdown-content'
+  let dropdown
+  let triggerEle = e.target.classList.contains(trigger) ? e.target : window.getParentElement(e.target, trigger)
 
-  if(e.target.classList.contains(trigger)) {
-    e.stopPropagation();
-    let triggerEle = e.target;
+  if (triggerEle) {
+    e.stopPropagation()
+    let stackingContextParent = window.findParentStackingContext(triggerEle)
 
     // Grab the dropdown content element
-    for(let i = 0; i < triggerEle.children.length; i++) {
-      if(triggerEle.children[i].classList.contains(content)) {
-        dropdown = triggerEle.children[i];
+    for (let i = 0; i < triggerEle.children.length; i++) {
+      if (triggerEle.children[i].classList.contains(content)) {
+        dropdown = triggerEle.children[i]
       }
     }
 
     // Dropdown show and hide functions
     dropdown.show = () => {
-      dropdown.classList.remove('animate-out');
-      dropdown.classList.add('animate-in');
-    };
+      stackingContextParent.classList.add('stacking-context-front')
+      dropdown.classList.remove('animate-out')
+      dropdown.classList.add('animate-in')
+    }
     dropdown.hide = () => {
-      dropdown.classList.remove('animate-in');
-      dropdown.classList.add('animate-out');
+      stackingContextParent.classList.remove('stacking-context-front')
+      dropdown.classList.remove('animate-in')
+      dropdown.classList.add('animate-out')
       setTimeout(() => {
-        dropdown.classList.remove('animate-out');
-      }, 300);
-    };
+        dropdown.classList.remove('animate-out')
+      }, 300)
+    }
 
-    dropdown.show();
+    dropdown.show()
 
     dropdown.onclick = (e) => {
-      e.stopPropagation();
-    };
-
+      e.stopPropagation()
+    }
   } else {
-    let dropdowns = document.getElementsByClassName(content);
+    let dropdowns = document.getElementsByClassName(content)
 
-    for(let i = 0; i < dropdowns.length; i++) {
-      if(dropdowns[i].classList.contains('animate-in') && dropdowns[i].hide) {
-        dropdowns[i].hide();
+    for (let i = 0; i < dropdowns.length; i++) {
+      if (dropdowns[i].classList.contains('animate-in') && dropdowns[i].hide) {
+        dropdowns[i].hide()
       }
     }
   }
-});
+})

@@ -6,8 +6,10 @@ import VueRouter from 'vue-router'
 // Styles
 import 'dh2o-atlantis/scss/index.scss'
 
+// Components
+import 'dh2o-atlantis/components/components.js'
+
 // Dropdowns
-import 'dh2o-atlantis/components/dropdowns/dropdowns.js'
 import 'dh2o-atlantis/components/dropdowns/dropdowns.scss'
 
 // Modals

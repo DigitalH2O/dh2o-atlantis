@@ -10,7 +10,7 @@
       </p>
       <code-sample>
         <div class="dh2o-dropdown-trigger btn">
-          User Menu
+          <div class="dh2o-dropdown-trigger-text">User Menu</div>
           <div class="dh2o-dropdown-content">
             <ul>
               <li class="menu-item">User Account</li>
