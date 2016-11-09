@@ -2,7 +2,8 @@
   <div id="content-layout" class="section">
     <div class="title"><h1>Layout</h1></div>
     <div class="content">
-      <p>The main application primarily consists of three elements.</p>
+      <p>The main application primarily consists of three elements wrapped in
+        a div with the class of "app" for the application to mount to.</p>
       <p>
         <b>Header</b> - Main blue top bar<br />
         <b>Sidebar</b> - Main left dark blue bar<br />

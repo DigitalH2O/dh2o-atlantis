@@ -13,6 +13,10 @@ strong, b {
   display: none;
 }
 
+.stacking-context-front {
+  z-index: 1000;
+}
+
 .inline {
   display: inline;
 }
@@ -26,6 +30,14 @@ strong, b {
   width: 100%;
   margin: $spacing 0 $spacing-half 0;
   background-color: $border-color;
+
+  &.vertical {
+    vertical-align: middle;
+    height: 20px;
+    width: 1px;
+    display: inline-block;
+    margin: 0 $spacing-half;
+  }
 
   &.smaller {
     margin: $spacing-half 0 $spacing-half 0;

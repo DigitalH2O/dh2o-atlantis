@@ -18,20 +18,34 @@
 
       <div class="separator"></div>
 
-      <h3>Separator</h3>
+      <h3>Separators</h3>
       <p>
-        Want to add a divider line between elements. Here you go.
+        Want to add a  divider line between elements? We have both horizontal and vertical separators.
+        The vertical separator will have to be vertically aligned manually if you are floating it
+        or it's parent element. The height should also be overridden depending on the height of the
+        elements it is separating.
       </p>
+      <div>
+        <div class="btn">Button</div>
+        <div class="separator vertical"></div>
+        <div class="btn">Button</div>
+      </div>
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
+            <div>
+              <div class="btn">Button</div>
+              <div class="separator vertical"></div>
+              <div class="btn">Button</div>
+            </div>
+
             <div class="separator"></div>
             <div class="separator smaller"></div> // For smaller separation
           </script>
         </code>
       </pre>
       <div class="message notice">
-        If you look in each section i used them to seperate pieces of information.
+        If you look in each section I used horizontal separators to seperate pieces of information.
       </div>
 
       <div class="separator"></div>
