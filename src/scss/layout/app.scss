@@ -63,9 +63,13 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      cursor: pointer;
       .dh2o-icon-user {
         font-size: 14px;
       }
+    }
+    .dh2o-dropdown-content {
+      top: 40px;
     }
   }
 }
