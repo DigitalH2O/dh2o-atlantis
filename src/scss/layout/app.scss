@@ -58,14 +58,17 @@ body {
     height: $header-height;
     padding-top: 18px;
     margin-right: $spacing;
-    width: 100px;
     .dh2o-dropdown-trigger-text {
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
       .dh2o-icon-user {
+        margin-right: $spacing-quarter;
         font-size: 14px;
+      }
+      .fa-caret-down {
+        margin-left: $spacing-quarter;
       }
     }
     .dh2o-dropdown-content {
