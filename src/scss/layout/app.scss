@@ -96,6 +96,5 @@ body {
   top: $header-height;
   bottom: 0;
   background-color: $background-color;
-  overflow-y: auto;
   width: calc(100% - #{$sidebar-width});
 }
