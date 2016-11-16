@@ -1,3 +1,19 @@
+$colors: (
+  base: (
+    primary: #1b7a9d,
+    secondary: #454e67,
+    font-color: #455864,
+    border-color: #DCDEE2,
+    background-color: #f1f1f1
+  ),
+  message: (
+    success: #719d46,
+    warning: #efaa1b,
+    alert: #b63813,
+    notice: #1b7a9d
+  )
+);
+
 $base-colors: map-get($colors, base);
 $primary: map-get($base-colors, primary);
 $secondary: map-get($base-colors, secondary);
@@ -12,11 +28,13 @@ $black: #000000;
 $link-text-color: $primary;
 
 // Message bar colors
-$message-colors: map-get($colors, message);
+$message-colors : map-get($colors, message);
 $success-color  : map-get($message-colors, success);
 $warning-color  : map-get($message-colors, warning);
 $alert-color    : map-get($message-colors, alert);
 $notice-color   : map-get($message-colors, notice);
 
-@function darker($original) { @return darken($original, percentage($darker-amount)); }
-@function darkest($original) { @return darken($original, percentage($darkest-amount)); }
+$darker-percent: 10%;
+$darkest-percent: 20%;
+@function darker($original) { @return darken($original, $darker-percent); }
+@function darkest($original) { @return darken($original, $darkest-percent); }

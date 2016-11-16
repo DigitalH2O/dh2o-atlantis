@@ -1,38 +1,37 @@
 <script>
-  import tinycolor from 'tinycolor2';
-  import _ from 'lodash';
-
-  import styleVars from 'dh2o-atlantis/scss/shared.json';
+  import tinycolor from 'tinycolor2'
+  import _ from 'lodash'
+  import colorVars from '!!get-sass-vars-loader!dh2o-atlantis/scss/misc/_colors.scss'
 
   export default {
-    data() {
-      const darkerPercent = styleVars['darker-amount'] * 100;
-      const darkestPercent = styleVars['darkest-amount'] * 100;
+    data () {
+      const darkerPercent = colorVars['$darker-percent']
+      const darkestPercent = colorVars['$darkest-percent']
+      let colors = colorVars.$colors
 
-      const darkerColors = _(styleVars.colors.base)
+      const darkerColors = _(colors.base)
       .map((color, colorName) =>
-        [colorName, tinycolor(color).darken(darkerPercent).toString()]
+        [colorName, tinycolor(color).darken(darkerPercent.replace(/%/i, '')).toString()]
       )
       .fromPairs()
-      .value();
+      .value()
 
-      const darkestColors = _(styleVars.colors.base)
+      const darkestColors = _(colors.base)
       .map((color, colorName) =>
-        [colorName, tinycolor(color).darken(darkestPercent).toString()]
+        [colorName, tinycolor(color).darken(darkestPercent.replace(/%/i, '')).toString()]
       )
       .fromPairs()
-      .value();
-
+      .value()
 
       return {
-        colors: styleVars.colors,
+        colors: colors,
         darkerPercent,
         darkestPercent,
         darkerColors,
         darkestColors
-      };
+      }
     }
-  };
+  }
 </script>
 
 <style scoped>
