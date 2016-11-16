@@ -97,4 +97,5 @@ body {
   bottom: 0;
   background-color: $background-color;
   width: calc(100% - #{$sidebar-width});
+  overflow-y: auto;
 }

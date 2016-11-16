@@ -38,12 +38,12 @@
 </template>
 
 <script>
-  import styleVars from 'dh2o-atlantis/scss/shared.json';
+  import colorVars from '!!get-sass-vars-loader!dh2o-atlantis/scss/misc/_colors.scss'
 
   export default {
-    data() {
+    data () {
       return {
-        colors: styleVars.colors.message
+        colors: colorVars.$colors.message
       }
     }
   }

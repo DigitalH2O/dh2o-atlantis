@@ -1,48 +1,46 @@
-var path = require('path');
-const webpack = require('webpack');
+var path = require('path')
+const webpack = require('webpack')
 
-var port = process.env.npm_config_port || 8080;
-const SASS_JSON_VARS_PATH = 'src/scss/shared.json';
-const SASS_LOADER_CONFIG = `style!css?sourceMap!sass?sourceMap!jsontosass?path=${SASS_JSON_VARS_PATH}`;
+var port = process.env.npm_config_port || 8080
 
 module.exports = {
   entry: path.resolve(__dirname, 'examples/index.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: 'http://localhost:'+port+'/',
+    publicPath: 'http://localhost:' + port + '/',
     filename: 'build.js'
   },
   module: {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue',
+        loader: 'vue-loader',
         options: {
           loaders: {
-            css: SASS_LOADER_CONFIG
+            css: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
           }
         }
       },
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /node_modules/
       },
       {
         test: /\.json$/,
-        loader: 'json'
+        loader: 'json-loader'
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file',
+        loader: 'file-loader',
         query: {
           name: '[name].[ext]?[hash]'
         }
       },
       {
         test: /\.s?css$/,
-        loader: SASS_LOADER_CONFIG,
-      },
+        loader: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
+      }
     ]
   },
   resolve: {
@@ -57,10 +55,10 @@ module.exports = {
     port: port
   },
   devtool: '#eval-source-map'
-};
+}
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map';
+  module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
@@ -72,6 +70,6 @@ if (process.env.NODE_ENV === 'production') {
       compress: {
         warnings: false
       }
-    }),
-  ]);
+    })
+  ])
 }

@@ -1,9 +1,10 @@
 <script>
+  import fontIcons from '!!get-sass-vars-loader!dh2o-atlantis/scss/images/_variables.scss'
   export default {
-    data() {
+    data () {
       return {
-        fontIcons: require('dh2o-atlantis/scss/shared.json')['font-icons'],
-      };
+        fontIcons: fontIcons['$font-icons']
+      }
     }
   }
 </script>
@@ -128,10 +129,6 @@
 
         </div>
       </section>
-
-
-
-
 
       <div class="separator smaller"></div>
 
