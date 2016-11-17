@@ -1,3 +1,13 @@
+<script>
+  import dh2oDropdown from 'dh2o-atlantis/components/dropdowns/dropdowns.js'
+
+  export default {
+    mounted () {
+      // One time dropdown set up
+      dh2oDropdown()
+    }
+  }
+</script>
 <template>
   <div class="app">
     <div class="header">
