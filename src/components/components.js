@@ -32,6 +32,10 @@ window.findParentStackingContext = function (initialEle) {
 window.getParentElement = function (initialEle, parentClass) {
   let parentEle
   function findParent (ele) {
+    if (!ele) {
+      return
+    }
+
     if (ele.classList.contains(parentClass)) {
       parentEle = ele
       return
