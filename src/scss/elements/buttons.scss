@@ -67,3 +67,8 @@
     }
   }
 }
+
+.dh2o-tag {
+  @extend .btn;
+  @include button-size($font-size*0.8, 1)
+}
