@@ -26,6 +26,15 @@
   font-weight: $font-weight-bold;
 }
 
+%dropdown-menu-item-disabled {
+  color: $border-color;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: inherit;
+  }
+}
+
 .dh2o-dropdown-menu {
   @extend %dropdown-menu-container;
 
@@ -34,6 +43,7 @@
 
     &:hover { @extend %dropdown-menu-item-hover; }
     &[aria-selected="true"] { @extend %dropdown-menu-item-selected; }
+    &[aria-disabled="true"] { @extend %dropdown-menu-item-disabled; }
   }
 }
 
@@ -49,6 +59,10 @@
 
     &[aria-selected="true"] {
       @extend %dropdown-menu-item-selected;
+    }
+
+    &[aria-disabled="true"] {
+      @extend %dropdown-menu-item-disabled;
     }
   }
 
