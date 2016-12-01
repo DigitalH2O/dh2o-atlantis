@@ -52,7 +52,7 @@ export default {
             <li>Option 1</li>
             <li aria-selected="true">Option 2 (selected)</li>
             <li>Option 3</li>
-            <li>Option 4</li>
+            <li aria-disabled="true">Option 4 (disabled)</li>
             <li>Option 5</li>
           </ul>
         </code-sample>
@@ -65,7 +65,7 @@ export default {
       <div class="example">
         <select class="select2-nosearch">
           <option>Option 1</option>
-          <option>Option 2</option>
+          <option disabled="true">Option 2 (disabled)</option>
           <option>Option 3</option>
           <option>Option 4</option>
           <option>Option 5</option>
@@ -78,7 +78,7 @@ export default {
       <div class="example">
         <select class="select2-search">
           <option>Option 1</option>
-          <option>Option 2</option>
+          <option disabled="true">Option 2 (disabled)</option>
           <option>Option 3</option>
           <option>Option 4</option>
           <option>Option 5</option>
