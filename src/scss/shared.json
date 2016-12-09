@@ -1,0 +1,61 @@
+{
+  "colors": {
+    "base": {
+      "primary": "#1b7a9d",
+      "secondary": "#454e67",
+      "font-color": "#455864",
+      "border-color": "#DCDEE2",
+      "background-color": "#f1f1f1"
+    },
+    "message": {
+      "success": "#719d46",
+      "warning": "#efaa1b",
+      "alert": "#b63813",
+      "notice": "#1b7a9d"
+    }
+  },
+
+  "lighter-amount": "0.1",
+  "darker-amount": "0.1",
+  "darkest-amount": "0.2",
+
+  "font-weight-bold": "600",
+
+  "spacing": "20px",
+
+  "font-icons": {
+    "rig": "600",
+    "well": "601",
+    "pipe": "602",
+    "operator": "603",
+    "user": "604",
+    "groupby": "605",
+    "menuexpand": "606",
+    "menucollapse": "607",
+    "accordianexpand": "608",
+    "accordiancollapse": "609",
+    "layers": "610",
+    "ruler": "611",
+    "analytics": "612",
+    "report": "613",
+    "map": "614",
+    "search": "615",
+    "dashboard": "616",
+    "microtrend": "617",
+    "co2": "618",
+    "brandicon": "619",
+    "fire": "620",
+    "waterdrop": "621",
+    "marker": "622",
+    "gascan": "623",
+    "barrel": "624",
+    "truck": "625",
+    "arrowupcircle": "626",
+    "arrowdowncircle": "627",
+    "arrowrightcircle": "628",
+    "arrowleftcircle": "629",
+    "questioncircle": "630",
+    "infocircle": "631",
+    "test": "632"
+  }
+}
