@@ -2,6 +2,7 @@ var path = require('path')
 const webpack = require('webpack')
 
 var port = process.env.npm_config_port || 8080
+port = Number(port) // Make sure its not a string
 
 module.exports = {
   entry: path.resolve(__dirname, 'examples/index.js'),
