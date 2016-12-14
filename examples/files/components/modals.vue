@@ -61,7 +61,7 @@
             </div>
             <div class="modal-footer">
               <div class="btn primary" v-on:click="applyModal1()">Apply</div>
-              <div class="btn model-close">Cancel</div>
+              <div class="btn modal-close">Cancel</div>
             </div>
           </div>
         </div>
