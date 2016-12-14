@@ -11,6 +11,9 @@ $colors: (
     warning: #efaa1b,
     alert: #b63813,
     notice: #1b7a9d
+  ),
+  text: (
+    link-text-color: #40b4de
   )
 );
 
@@ -25,7 +28,9 @@ $background-color: map-get($base-colors, background-color);
 $white: #ffffff;
 $black: #000000;
 
-$link-text-color: #40b4de;
+//text colors
+$text-colors: map-get($colors, text);
+$link-text-color: map-get($text-colors, link-text-color);
 
 // Message bar colors
 $message-colors : map-get($colors, message);
