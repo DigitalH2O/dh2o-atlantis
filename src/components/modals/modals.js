@@ -19,12 +19,16 @@ let dh2oModal = function (modalId = false, autoShow = false) {
 
   // Add functionality to animate hide and show of modal
   modal.show = () => {
-    stackingContextParent.classList.add('stacking-context-front')
+    if (stackingContextParent) {
+      stackingContextParent.classList.add('stacking-context-front')
+    }
     modal.classList.remove('animate-out')
     modal.classList.add('animate-in')
   }
   modal.hide = () => {
-    stackingContextParent.classList.remove('stacking-context-front')
+    if (stackingContextParent) {
+      stackingContextParent.classList.remove('stacking-context-front')
+    }
     modal.classList.remove('animate-in')
     modal.classList.add('animate-out')
     setTimeout(() => {
