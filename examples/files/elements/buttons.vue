@@ -13,16 +13,18 @@
       </code-sample>
 
       <code-sample>
-        <button class="btn inactive">Inactive</button>
-      </code-sample>
-
-      <code-sample>
         <button class="btn primary">Primary</button>
       </code-sample>
 
       <code-sample>
         <button class="btn secondary">Secondary</button>
       </code-sample>
+
+      <code-sample>
+        <button class="btn inactive">Inactive</button>
+      </code-sample>
+
+      <div class="separator"></div>
 
       <h2>Tags</h2>
       <p>Tags look like small versions of "regular" buttons.</p>

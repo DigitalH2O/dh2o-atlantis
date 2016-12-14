@@ -42,6 +42,18 @@
         </code>
       </pre>
       <div class="message notice">Switching input types sets icons</div>
+      <label>Checkbox</label>
+      <code-sample>
+
+        <div class="toggle">
+          <input type="checkbox" name="toggle" class="toggle-checkbox" id="toggle" checked>
+          <label class="toggle-label" for="toggle">
+              <span class="toggle-inner"></span>
+              <span class="toggle-switch"></span>
+          </label>
+        </div>
+      </code-sample>
     </div>
   </div>
+
 </template>
