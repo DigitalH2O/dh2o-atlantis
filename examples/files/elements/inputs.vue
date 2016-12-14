@@ -42,7 +42,8 @@
         </code>
       </pre>
       <div class="message notice">Switching input types sets icons</div>
-      <label>Checkbox</label>
+      <div class="separator"></div>
+      <label>Toggle</label>
       <code-sample>
 
         <div class="toggle">
