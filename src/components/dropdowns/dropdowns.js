@@ -1,14 +1,16 @@
+import parents from '../../helpers/parents.js'
+
 export default function () {
   let eleCache = []
   document.addEventListener('click', function (e) {
     let dropdown
     let trigger = 'dh2o-dropdown-trigger'
     let content = 'dh2o-dropdown-content'
-    let triggerEle = e.target.classList.contains(trigger) ? e.target : window.getParentElement(e.target, trigger)
+    let triggerEle = e.target.classList.contains(trigger) ? e.target : parents.getParentElement(e.target, trigger)
 
     if (triggerEle) {
       e.stopPropagation()
-      let stackingContextParent = window.findParentStackingContext(triggerEle)
+      let stackingContextParent = parents.getLastParentElement(triggerEle)
 
       // Grab the dropdown content element
       for (let i = 0; i < triggerEle.children.length; i++) {
