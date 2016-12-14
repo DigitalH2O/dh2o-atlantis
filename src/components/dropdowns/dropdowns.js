@@ -31,7 +31,9 @@ export default function () {
         eleCache.push(dropdown)
 
         // Add applicable class to the stacking context parent
-        stackingContextParent.classList.add('stacking-context-front')
+        if (stackingContextParent) {
+          stackingContextParent.classList.add('stacking-context-front')
+        }
         dropdown.classList.remove('animate-out')
         dropdown.classList.add('animate-in')
       }
@@ -42,7 +44,9 @@ export default function () {
         })
 
         // Remove applicable class to the stacking context parent
-        stackingContextParent.classList.remove('stacking-context-front')
+        if (stackingContextParent) {
+          stackingContextParent.classList.remove('stacking-context-front')
+        }
         dropdown.classList.remove('animate-in')
         dropdown.classList.add('animate-out')
         setTimeout(() => {
