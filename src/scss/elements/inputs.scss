@@ -31,7 +31,8 @@ input, textarea {
   box-sizing: border-box;
 
   &:focus {
-    box-shadow: 0 0 3px $primary;
+    box-shadow: 0 0 3px $link-text-color;
+    border-color: $link-text-color;
     transition: box-shadow 0.30s ease-in-out, border-color 0.30s ease-in-out;
   }
 }
