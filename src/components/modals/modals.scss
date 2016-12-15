@@ -48,8 +48,7 @@
       font-size: 24px;
       vertical-align: middle;
       border-bottom: solid 1px $border-color;
-      padding: $spacing-quarter 0 $spacing-quarter 0;
-      margin: 0 $spacing-half 0 $spacing-half;
+      padding: $spacing-quarter $spacing-half $spacing-quarter $spacing-half;
 
       .modal-header-right {
         float: right;
