@@ -29,11 +29,11 @@ npm install
 
 ### Run
 ```
-npm start
+npm run dev
 open http://localhost:8080
 
 // To listen on another port
-npm start --port=5555
+npm run dev --port=5555
 ```
 
 ### Sass Variables

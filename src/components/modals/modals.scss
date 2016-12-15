@@ -51,12 +51,14 @@
       padding: $spacing-quarter 0 $spacing-quarter 0;
       margin: 0 $spacing-half 0 $spacing-half;
 
-      .modal-close {
-        font-size: 18px;
-        cursor: pointer;
-        opacity: .5;
+      .modal-header-right {
         float: right;
-        padding-top: 8px;
+        .fa-close {
+          font-size: 18px;
+          cursor: pointer;
+          opacity: .5;
+          padding-top: 8px;
+        }
       }
     }
     .modal-body {
