@@ -52,7 +52,7 @@
           <div class="modal-content">
             <div class="modal-header">
               Title
-              <div class="close modal-close"><i class="fa fa-close"></i></div>
+              <div class="modal-header-right"><i class="fa fa-close modal-close"></i></div>
             </div>
             <div class="modal-body">
               <p>Here is some text</p>
