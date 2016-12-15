@@ -36,6 +36,7 @@ export default function () {
         }
         dropdown.classList.remove('animate-out')
         dropdown.classList.add('animate-in')
+        dropdown.classList.add('open')
       }
       dropdown.hide = () => {
         // Remove the dropdown node from the element cache
@@ -48,6 +49,7 @@ export default function () {
           stackingContextParent.classList.remove('stacking-context-front')
         }
         dropdown.classList.remove('animate-in')
+        dropdown.classList.remove('open')
         dropdown.classList.add('animate-out')
         setTimeout(() => {
           dropdown.classList.remove('animate-out')
