@@ -44,6 +44,7 @@
   ul.colors {
     li {
       display: block;
+      text-transform: none;
     }
   }
 </style>
