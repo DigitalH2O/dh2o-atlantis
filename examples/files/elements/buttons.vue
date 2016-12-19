@@ -30,9 +30,9 @@
       <p>Use 'left', 'right' or 'center' to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
 
       <code-sample>
-        <span class="btn left">Tag</span>
-        <span class="btn middle">Tag</span>
-        <span class="btn right">Tag</span>
+        <span class="btn left">One</span>
+        <span class="btn middle">Two</span>
+        <span class="btn right">Three</span>
       </code-sample>
 
       <div class="separator"></div>
