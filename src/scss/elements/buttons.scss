@@ -68,6 +68,24 @@
       border: 1px solid darkest($secondary);
     }
   }
+
+  //button groups
+
+  &.left {
+    border-radius: 0.285714rem 0px 0px 0.285714rem;
+    margin-right: 0px;
+  }
+
+  &.middle {
+    border-radius: 0;
+    margin-left: -6px;
+    margin-right: 1px;
+  }
+
+  &.right {
+     border-radius: 0px 0.285714rem 0.285714rem 0px;
+     margin-left: -6px;
+  }
 }
 
 .dh2o-tag {

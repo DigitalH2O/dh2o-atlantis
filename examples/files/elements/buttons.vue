@@ -26,6 +26,17 @@
 
       <div class="separator"></div>
 
+      <h2>Button Group</h2>
+      <p>Use 'left', 'right' or 'center' to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
+
+      <code-sample>
+        <span class="btn left">Tag</span>
+        <span class="btn middle">Tag</span>
+        <span class="btn right">Tag</span>
+      </code-sample>
+
+      <div class="separator"></div>
+
       <h2>Tags</h2>
       <p>Tags look like small versions of "regular" buttons.</p>
 
