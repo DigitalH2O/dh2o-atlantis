@@ -34,15 +34,20 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss">
   @import '~dh2o-atlantis/scss/_partials.scss';
 
-  .row.base {
-    margin-bottom: $spacing;
-  }
+  .colors-group {
+    display: flex;
+    flex-direction: row;
 
-  ul.colors {
-    li {
+    div {
+      flex: 0 1 33%;
+      margin: 0 $spacing-quarter 0 $spacing-quarter;
+      &:first-child, &:last-child { margin: 0;}
+    }
+
+    .colors li {
       display: block;
     }
   }
@@ -59,8 +64,8 @@
         on the original colors.
       </p>
 
-      <div class="row base">
-        <div class="col-xs-6 col-lg-4">
+      <div class="colors-group">
+        <div>
           <h2>Base Colors</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in colors.base"
@@ -70,8 +75,8 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-lg-4">
-          <h2>Darker Colors ({{darkerPercent}}%)</h2>
+        <div>
+          <h2>Darker Colors ({{darkerPercent}})</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in darkerColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
@@ -80,8 +85,8 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-lg-4">
-          <h2>Darkest Colors ({{darkestPercent}}%)</h2>
+        <div>
+          <h2>Darkest Colors ({{darkestPercent}})</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in darkestColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
@@ -91,10 +96,8 @@
         </div>
       </div>
 
-      <p>The message color palette is used in the slide-out messaging bar.</p>
-
-      <div class="row">
-        <div class="col-xs-6 col-lg-4">
+      <div class="colors-group">
+        <div>
           <h2>Message Colors</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in colors.message"

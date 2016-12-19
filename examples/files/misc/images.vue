@@ -9,6 +9,47 @@
   }
 </script>
 
+<style lang="scss">
+  @import '~dh2o-atlantis/scss/_partials';
+
+  section.logos, section.loading-icons {
+    .code-sample {
+      .as-rendered {
+        width: 25%;
+      }
+      .as-code {
+        width: 74%;
+      }
+    }
+  }
+
+  section.custom-icons {
+    .code-sample {
+      .as-rendered {
+        width: 10%;
+      }
+      .as-code {
+        width: 89%;
+      }
+    }
+
+    .navigation {
+      .as-rendered {
+        padding: $spacing-half;
+        width: 8%;
+      }
+
+      .inactive {
+        .as-rendered { background-color: $secondary; }
+      }
+
+      .active {
+        .as-rendered { background-color: $primary; }
+      }
+    }
+  }
+</style>
+
 <template>
   <div id="content-images" class="section">
     <div class="title"><h1>Images</h1></div>
@@ -49,8 +90,8 @@
         <h3>Custom Icons</h3>
         <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
-        <div class="row">
-          <div v-for="(characterCode, iconName) in fontIcons" class="col-xs-6">
+        <div>
+          <div v-for="(characterCode, iconName) in fontIcons">
             <code-sample>
               <i :class="`dh2o-icon-${iconName}`"></i>
             </code-sample>
@@ -62,65 +103,65 @@
         background, and an active state for a <code class="language-markup">$primary</code>background.</p>
 
         <div class="navigation">
-          <div class="row">
-            <div class="col-xs-6 inactive">
+          <div>
+            <div class="inactive">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-analytics.svg" />
               </code-sample>
             </div>
-            <div class="col-xs-6 active">
+            <div class="active">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-analytics-active.svg" />
               </code-sample>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6 inactive">
+          <div>
+            <div class="inactive">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-assets.svg" />
               </code-sample>
             </div>
-            <div class="col-xs-6 active">
+            <div class="active">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-assets-active.svg" />
               </code-sample>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6 inactive">
+          <div>
+            <div class="inactive">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-dashboard.svg" />
               </code-sample>
             </div>
-            <div class="col-xs-6 active">
+            <div class="active">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-dashboard-active.svg" />
               </code-sample>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6 inactive">
+          <div>
+            <div class="inactive">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-watertransfer.svg" />
               </code-sample>
             </div>
-            <div class="col-xs-6 active">
+            <div class="active">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-watertransfer-active.svg" />
               </code-sample>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6 inactive">
+          <div>
+            <div class="inactive">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-waterforecast.svg" />
               </code-sample>
             </div>
-            <div class="col-xs-6 active">
+            <div class="active">
               <code-sample>
                 <img src="~dh2o-atlantis/images/icon-waterforecast-active.svg" />
               </code-sample>
@@ -159,46 +200,3 @@
     </div>
   </div>
 </template>
-
-<style>
-  @import '~dh2o-atlantis/scss/_partials';
-
-  section.logos, section.loading-icons {
-    .code-sample {
-      .as-rendered {
-        width: 25%;
-      }
-      .as-code {
-        width: 74%;
-      }
-    }
-  }
-
-  section.custom-icons {
-    .code-sample {
-      .as-rendered {
-        width: 10%;
-      }
-      .as-code {
-        width: 89%;
-      }
-    }
-
-    .navigation {
-      .as-rendered {
-        padding: $spacing-half;
-        width: 8%;
-      }
-
-      .inactive {
-        .as-rendered { background-color: $secondary; }
-      }
-
-      .active {
-        .as-rendered { background-color: $primary; }
-      }
-    }
-  }
-
-
-</style>

@@ -15,8 +15,10 @@
           <script type="prism-html-markup">
             <div class="app">
               <div class="header"></div>
-              <div class="sidebar"></div>
-              <div class="main"></div>
+              <div class="container">
+                <div class="sidebar"></div>
+                <div class="main"></div>
+              </div>
             </div>
           </script>
         </code>
