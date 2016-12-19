@@ -35,11 +35,13 @@
 
 </template>
 
-<style>
+<style lang="scss">
   #content-buttons {
     .code-sample {
-      .as-rendered { width: 10%; }
-      .as-code { width: 89%; }
+      display: flex;
+      flex-direction: row;
+      .as-rendered { flex: 0 1 20%; }
+      .as-code { flex: 1 1 auto; }
     }
   }
 </style>
