@@ -50,6 +50,12 @@ module.exports = {
       'dh2o-atlantis-partials': path.resolve('./src/scss/_partials.scss')
     }
   },
+  resolveLoader: {
+    alias: {
+      // This will allow you to do lang="scss" in your style tags
+      'scss-loader': 'sass-loader'
+    }
+  },
   devServer: {
     historyApiFallback: true,
     noInfo: true,
