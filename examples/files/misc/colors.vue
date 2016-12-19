@@ -71,7 +71,7 @@
         </div>
 
         <div class="col-xs-6 col-lg-4">
-          <h2>Darker Colors ({{darkerPercent}}%)</h2>
+          <h2>Darker Colors ({{darkerPercent}})</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in darkerColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
@@ -81,7 +81,7 @@
         </div>
 
         <div class="col-xs-6 col-lg-4">
-          <h2>Darkest Colors ({{darkestPercent}}%)</h2>
+          <h2>Darkest Colors ({{darkestPercent}})</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in darkestColors"
                 :style="{ 'background-color': color, 'color': '#ffffff' }">
