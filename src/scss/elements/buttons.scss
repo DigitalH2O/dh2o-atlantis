@@ -1,25 +1,26 @@
-@mixin button-size($font-size, $border-width: 0) {
-  $button-font-size: $font-size;
+@mixin button-size($button-font-size, $border-width: 0) {
   $button-padding: $button-font-size * (1/2);
 
   font-size: $button-font-size;
-  padding: $button-padding $button-padding * 2;
+  padding: $spacing-quarter $spacing-half;
 }
 
 .btn {
-  @include button-size($font-size, 1);
+  @include button-size($font-size - 2, 1);
   color: $font-color;
   cursor: pointer;
   background-color: $background-color;
   font-weight: $font-weight-bold;
+  text-transform: uppercase;
   text-align: center;
   user-select: none;
   white-space: nowrap;
   overflow: hidden;
   border: 1px solid $border-color;
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
   vertical-align: middle;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   /* TODO: figure out another way to transition this doesnt work cause it fade in on page load*/
   /*transition: background-color 0.25s ease-in-out;*/
 
@@ -68,7 +69,28 @@
   }
 }
 
+//button groups
+
+.btn-group {
+  display: flex;
+  > * {
+    border-radius: 0;
+    border-right: 1px solid;
+    border-color: $border-color;
+    margin-left: -1px;
+
+    &:first-child {
+      border-radius: $border-radius 0px 0px $border-radius;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      border-radius: 0px $border-radius $border-radius 0px;
+    }
+  }
+}
+
 .dh2o-tag {
   @extend .btn;
-  @include button-size($font-size*0.8, 1)
+  @include button-size($font-size, 1)
 }

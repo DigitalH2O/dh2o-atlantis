@@ -49,6 +49,7 @@
 
     .colors li {
       display: block;
+      text-transform: none;
     }
   }
 </style>
@@ -96,11 +97,30 @@
         </div>
       </div>
 
+      <div class="separator"></div>
+
+      <p>The message color palette is used in the slide-out messaging bar.</p>
       <div class="colors-group">
         <div>
           <h2>Message Colors</h2>
           <ul class="colors">
             <li class="btn" v-for="(color, colorName) in colors.message"
+                :style="{'background-color': color, 'color': '#ffffff'}">
+              ${{colorName}}: {{color}}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <p>Text Link Color is used to highlight text based links and focus values on fields</p>
+
+      <div class="row">
+        <div class="col-xs-6 col-lg-4">
+          <h2>Text Link Color</h2>
+          <ul class="colors">
+            <li class="btn" v-for="(color, colorName) in colors.text"
                 :style="{'background-color': color, 'color': '#ffffff'}">
               ${{colorName}}: {{color}}
             </li>
