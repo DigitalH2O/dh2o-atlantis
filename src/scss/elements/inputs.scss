@@ -1,13 +1,11 @@
 label {
-  -moz-user-select: none;
+  user-select: none;
   color: $font-color;
   display: block;
   font-weight: $font-weight-bold;
   padding-bottom: $spacing-quarter;
   margin-right: $spacing-quarter;
-
 }
-
 
 fieldset {
   margin-bottom: 6px;
@@ -60,7 +58,7 @@ input[type=search] {
   @include input-background('search');
 
   &::-webkit-search-decoration, &::-webkit-search-cancel-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
 }
 
@@ -71,7 +69,7 @@ input[type=password] {
   @include input-background('password');
 }
 input[type=checkbox] {
-  -webkit-appearance: none;
+  appearance: none;
   border-radius: 0;
   padding: 0;
   display: inline-block;
@@ -114,9 +112,7 @@ textarea {
   position: relative;
   width: 50px;
   height: 19px;
-  -webkit-user-select:  none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  user-select:  none;
 
   .toggle-checkbox {
     display: none !important;
@@ -183,5 +179,4 @@ textarea {
   .toggle-checkbox:checked + .toggle-label .toggle-switch {
     transform: translateX(28px);
   }
-
 }
