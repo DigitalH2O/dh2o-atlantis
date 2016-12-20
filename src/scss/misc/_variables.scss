@@ -9,11 +9,3 @@ $font-weight-bold: 700;
 $spacing: 20px;
 $spacing-half: $spacing/2;
 $spacing-quarter: $spacing/4;
-
-// This mixin will allow you to vertical-align
-// an element relative to its parent
-@mixin vertical-align($position) {
-  position: $position; // Either relative or absolute
-  top: 50%;
-  transform: translateY(-50%);
-}

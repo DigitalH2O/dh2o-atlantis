@@ -1,14 +1,16 @@
+import parents from '../../helpers/parents.js'
+
 export default function () {
   let eleCache = []
   document.addEventListener('click', function (e) {
     let dropdown
     let trigger = 'dh2o-dropdown-trigger'
     let content = 'dh2o-dropdown-content'
-    let triggerEle = e.target.classList.contains(trigger) ? e.target : window.getParentElement(e.target, trigger)
+    let triggerEle = e.target.classList.contains(trigger) ? e.target : parents.getParentElement(e.target, trigger)
 
     if (triggerEle) {
       e.stopPropagation()
-      let stackingContextParent = window.findParentStackingContext(triggerEle)
+      let stackingContextParent = parents.getLastParentElement(triggerEle)
 
       // Grab the dropdown content element
       for (let i = 0; i < triggerEle.children.length; i++) {
@@ -29,9 +31,12 @@ export default function () {
         eleCache.push(dropdown)
 
         // Add applicable class to the stacking context parent
-        stackingContextParent.classList.add('stacking-context-front')
+        if (stackingContextParent) {
+          stackingContextParent.classList.add('stacking-context-front')
+        }
         dropdown.classList.remove('animate-out')
         dropdown.classList.add('animate-in')
+        dropdown.classList.add('open')
       }
       dropdown.hide = () => {
         // Remove the dropdown node from the element cache
@@ -40,8 +45,11 @@ export default function () {
         })
 
         // Remove applicable class to the stacking context parent
-        stackingContextParent.classList.remove('stacking-context-front')
+        if (stackingContextParent) {
+          stackingContextParent.classList.remove('stacking-context-front')
+        }
         dropdown.classList.remove('animate-in')
+        dropdown.classList.remove('open')
         dropdown.classList.add('animate-out')
         setTimeout(() => {
           dropdown.classList.remove('animate-out')

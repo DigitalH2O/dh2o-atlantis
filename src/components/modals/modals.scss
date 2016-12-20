@@ -48,15 +48,16 @@
       font-size: 24px;
       vertical-align: middle;
       border-bottom: solid 1px $border-color;
-      padding: $spacing-quarter 0 $spacing-quarter 0;
-      margin: 0 $spacing-half 0 $spacing-half;
+      padding: $spacing-quarter $spacing-half $spacing-quarter $spacing-half;
 
-      .modal-close {
-        font-size: 18px;
-        cursor: pointer;
-        opacity: .5;
+      .modal-header-right {
         float: right;
-        padding-top: 8px;
+        .fa-close {
+          font-size: 18px;
+          cursor: pointer;
+          opacity: .5;
+          padding-top: 8px;
+        }
       }
     }
     .modal-body {
