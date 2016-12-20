@@ -28,7 +28,7 @@ $background-color: map-get($base-colors, background-color);
 $white: #ffffff;
 $black: #000000;
 
-//text colors
+// Text colors
 $text-colors: map-get($colors, text);
 $link-text-color: map-get($text-colors, link-text-color);
 
