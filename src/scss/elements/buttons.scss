@@ -68,23 +68,26 @@
       border: 1px solid darkest($secondary);
     }
   }
+}
 
-  //button groups
+//button groups
 
-  &.left {
-    border-radius: 0.285714rem 0px 0px 0.285714rem;
-    margin-right: 0px;
-  }
-
-  &.middle {
+.btn-group {
+  display: flex;
+  > * {
     border-radius: 0;
-    margin-left: -6px;
-    margin-right: 1px;
-  }
+    border-right: 1px solid;
+    border-color: $border-color;
+    margin-left: -1px;
 
-  &.right {
-     border-radius: 0px 0.285714rem 0.285714rem 0px;
-     margin-left: -6px;
+    &:first-child {
+      border-radius: $border-radius 0px 0px $border-radius;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      border-radius: 0px $border-radius $border-radius 0px;
+    }
   }
 }
 

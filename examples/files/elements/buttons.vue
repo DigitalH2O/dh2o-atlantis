@@ -27,12 +27,14 @@
       <div class="separator"></div>
 
       <h2>Button Group</h2>
-      <p>Use 'left', 'right' or 'center' to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
+      <p>Use <code class="language-css">.btn-group</code> to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
 
       <code-sample>
-        <span class="btn left">One</span>
-        <span class="btn middle">Two</span>
-        <span class="btn right">Three</span>
+        <span class="btn-group">
+          <span class="btn">One</span>
+          <span class="btn">Two</span>
+          <span class="btn">Three</span>
+        </span>
       </code-sample>
 
       <div class="separator"></div>
