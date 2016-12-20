@@ -1,3 +1,15 @@
+<style>
+  #content-dropdowns {
+    .code-sample {
+      .as-rendered, .as-code {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+</style>
+
+
 <template>
   <div id="content-dropdowns" class="section">
   <div class="title"><h1>Dropdowns</h1></div>
@@ -28,14 +40,3 @@
     </div>
   </div>
 </template>
-
-<style>
-  #content-dropdowns {
-    .code-sample {
-      .as-rendered, .as-code {
-        display: block;
-        width: 100%;
-      }
-    }
-  }
-</style>

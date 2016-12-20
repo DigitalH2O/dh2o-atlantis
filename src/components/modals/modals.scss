@@ -43,6 +43,8 @@
     border: 1px solid $border-color;
     max-width: 100%;
     border-radius: 2px;
+    display: flex;
+    flex-direction: column;
 
     .modal-header {
       font-weight: $font-weight-bold;

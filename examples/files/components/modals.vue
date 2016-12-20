@@ -14,6 +14,8 @@
 </script>
 
 <style lang="scss">
+  @import '~dh2o-atlantis/scss/_partials.scss';
+
   #content-modals {
     .code-sample {
       .as-rendered, .as-code {
@@ -23,12 +25,25 @@
     }
   }
 
-  #modal4 {
-    .left {
-      flex: 0 1 100px;
+  #modal5 {
+    .info {
+      display: flex;
+      flex-direction: row;
+      .left {
+        background-color: $background-color;
+        flex: 0 1 100px;
+      }
+      .right {
+        padding: 0 0 0 10px;
+        flex: 1 1 auto;
+      }
     }
-    .right {
-      flex: 1 1 auto;
+    .bottom {
+      padding-top: 10px;
+
+      .btn {
+        margin-bottom: $spacing-quarter;
+      }
     }
   }
 </style>
@@ -117,14 +132,47 @@
         <div id="modal5" class="dh2o-modal">
           <div class="modal-content" style="width: 500px;">
             <div class="modal-header">
-              Advanced Header
+              Advanced Modal
               <div class="modal-header-right">
-                <div class="btn primary" v-on:click="applyModal()">Apply</div>
+                <div class="btn primary">Apply</div>
                 <div class="btn modal-close">Cancel</div>
               </div>
             </div>
             <div class="modal-body">
-              <div></div>
+              <div class="info">
+                <div class="left">
+                  <ul class="ordered-list">
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <p>Here is some text</p>
+                  <p>Here is some more text</p>
+                  <p>Here is some more more text</p>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+                <div class="btn">btn</div>
+              </div>
             </div>
           </div>
         </div>
