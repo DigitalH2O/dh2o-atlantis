@@ -1,9 +1,10 @@
 import parents from '../../helpers/parents.js'
 
 let dh2oModal = function (modalId = false, autoShow = false) {
-  if (!modalId) { console.error('Must pass a modal id'); return }
+  if (!modalId) { throw new Error('Must pass a modal id') }
 
   let modal = document.getElementById(modalId)
+  if (!modal) { throw new Error('Could not find modal. Please make sure you pass an id of a modal that exists') }
   let stackingContextParent = parents.getLastParentElement(modal)
   let closeName = 'modal-close'
 
