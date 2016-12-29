@@ -14,6 +14,22 @@
       <input type="password" id="password-input" placeholder="Password" />
       <label for="search-input">Search</label>
       <input type="search" id="search-input" placeholder="Search" />
+      <label for="select-input">Select</label>
+      <select name="select" id="select-input">
+        <option value="">Value</option>
+        <option value="">Value 2</option>
+        <option value="">Value 3</option>
+        <option value="">Value 4</option>
+        <option value="">Value 5</option>
+      </select>
+      <label for="multi-select-input">Multi Select</label>
+      <select multiple name="select" id="multi-select-input">
+        <option value="">Value</option>
+        <option value="">Value 2</option>
+        <option value="">Value 3</option>
+        <option value="">Value 4</option>
+        <option value="">Value 5</option>
+      </select>
       <label for="text-area-input">Textarea</label>
       <textarea name="name" id="text-area-input" rows="4" placeholder="Textarea"></textarea>
       <label>Checkbox</label>
@@ -45,7 +61,6 @@
       <div class="separator"></div>
       <label>Toggle</label>
       <code-sample>
-
         <div class="toggle">
           <input type="checkbox" name="toggle" class="toggle-checkbox" id="toggle" checked>
           <label class="toggle-label" for="toggle">

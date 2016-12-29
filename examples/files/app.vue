@@ -50,6 +50,8 @@
           <li class="separator"></li>
           <li class="link"><router-link to="/inputs">Inputs</router-link></li>
           <li class="link"><router-link to="/buttons">Buttons</router-link></li>
+          <li class="link"><router-link to="/tags">Tags</router-link></li>
+          <li class="link"><router-link to="/groups">Groups</router-link></li>
           <li class="link"><router-link to="/messages">Messages</router-link></li>
           <li class="link"><router-link to="/lists">Lists</router-link></li>
           <li class="link"><router-link to="/tables">Tables</router-link></li>

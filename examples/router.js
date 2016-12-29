@@ -21,7 +21,9 @@ module.exports = {
 
     // Elements
     {path: '/buttons', component: require('./files/elements/buttons.vue')},
+    {path: '/tags', component: require('./files/elements/tags.vue')},
     {path: '/inputs', component: require('./files/elements/inputs.vue')},
+    {path: '/groups', component: require('./files/elements/groups.vue')},
     {path: '/lists', component: require('./files/elements/lists.vue')},
     {path: '/messages', component: require('./files/elements/messages.vue')},
     {path: '/tables', component: require('./files/elements/tables.vue')},
@@ -30,4 +32,4 @@ module.exports = {
     {path: '/dropdowns', component: require('./files/components/dropdowns.vue')},
     {path: '/modals', component: require('./files/components/modals.vue')}
   ]
-};
+}
