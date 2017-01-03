@@ -73,4 +73,4 @@ document.addEventListener('click', function (event) {
   }
 })
 
-module.exports = dh2oModal
+export default dh2oModal
