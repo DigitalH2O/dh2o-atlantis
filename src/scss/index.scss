@@ -22,6 +22,9 @@ $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !defaul
 // Inputs
 @import "elements/inputs";
 
+// Groups
+@import "elements/groups";
+
 // Menus
 @import "elements/menus";
 
@@ -33,6 +36,7 @@ $fa-font-path: "http://netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts" !defaul
 
 // Buttons
 @import "elements/buttons";
+@import "elements/tags";
 
 // Layouts
 @import "layout/app";

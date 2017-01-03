@@ -1,14 +1,7 @@
-@mixin button-size($font-size, $border-width: 0) {
-  $button-font-size: $font-size;
-  $button-padding: $button-font-size * (1/2);
-
-  font-size: $button-font-size;
-  padding: $button-padding $button-padding * 2;
-}
-
 .btn {
-  @include button-size($font-size, 1);
   color: $font-color;
+  font-size: $font-size;
+  padding: $spacing-quarter $spacing-half;
   cursor: pointer;
   background-color: $background-color;
   font-weight: $font-weight-bold;
@@ -17,9 +10,10 @@
   white-space: nowrap;
   overflow: hidden;
   border: 1px solid $border-color;
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
   vertical-align: middle;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   /* TODO: figure out another way to transition this doesnt work cause it fade in on page load*/
   /*transition: background-color 0.25s ease-in-out;*/
 
@@ -66,9 +60,4 @@
       border: 1px solid darkest($secondary);
     }
   }
-}
-
-.dh2o-tag {
-  @extend .btn;
-  @include button-size($font-size*0.8, 1)
 }

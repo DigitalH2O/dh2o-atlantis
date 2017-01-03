@@ -1,0 +1,20 @@
+.group-inline {
+  display: inline-flex;
+  flex-direction: row;
+
+  > * {
+    flex: 0 0 auto;
+    width: auto;
+    border-radius: 0 !important;
+    border-right: 1px solid $border-color !important;
+    margin-left: -1px;
+
+    &:first-child {
+      border-radius: $border-radius 0px 0px $border-radius !important;
+      margin-left: 0;
+    }
+    &:last-child {
+      border-radius: 0px $border-radius $border-radius 0px !important;
+    }
+  }
+}

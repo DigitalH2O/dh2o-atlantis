@@ -1,3 +1,14 @@
+<style lang="scss">
+  #content-buttons {
+    .code-sample {
+      display: flex;
+      flex-direction: row;
+      .as-rendered { flex: 0 1 20%; }
+      .as-code { flex: 1 1 auto; }
+    }
+  }
+</style>
+
 <template>
   <div id="content-buttons" class="section">
     <div class="title"><h1>Buttons</h1></div>
@@ -13,10 +24,6 @@
       </code-sample>
 
       <code-sample>
-        <button class="btn inactive">Inactive</button>
-      </code-sample>
-
-      <code-sample>
         <button class="btn primary">Primary</button>
       </code-sample>
 
@@ -24,24 +31,10 @@
         <button class="btn secondary">Secondary</button>
       </code-sample>
 
-      <h2>Tags</h2>
-      <p>Tags look like small versions of "regular" buttons.</p>
-
       <code-sample>
-        <span class="dh2o-tag">Tag</span>
+        <button class="btn inactive">Inactive</button>
       </code-sample>
     </div>
   </div>
 
 </template>
-
-<style lang="scss">
-  #content-buttons {
-    .code-sample {
-      display: flex;
-      flex-direction: row;
-      .as-rendered { flex: 0 1 20%; }
-      .as-code { flex: 1 1 auto; }
-    }
-  }
-</style>
