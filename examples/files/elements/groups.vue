@@ -14,7 +14,7 @@
     <div class="title"><h1>Groups</h1></div>
     <div class="content">
       <h3>Button Group</h3>
-      <p>Use <code class="language-css">.btn-group</code> to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
+      <p>Use <code class="language-css">.group-inline</code> to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
 
       <code-sample>
         <div class="group-inline">
