@@ -1,8 +1,10 @@
 <style lang="scss">
   @import '~dh2o-atlantis/scss/_partials.scss';
 
-  input, select, textarea {
-    margin: 0 0 $spacing-half 0;
+  #content-inputs {
+    input, select, textarea {
+      margin: 0 0 $spacing-half 0;
+    }
   }
 </style>
 
