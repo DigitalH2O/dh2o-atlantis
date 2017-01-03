@@ -61,22 +61,3 @@
     }
   }
 }
-
-.btn-group {
-  display: flex;
-  > .btn {
-    border-radius: 0;
-    border-right: 1px solid;
-    border-color: $border-color;
-    margin-left: -1px;
-
-    &:first-child {
-      border-radius: $border-radius 0px 0px $border-radius;
-      margin-left: 0;
-    }
-
-    &:last-child {
-      border-radius: 0px $border-radius $border-radius 0px;
-    }
-  }
-}

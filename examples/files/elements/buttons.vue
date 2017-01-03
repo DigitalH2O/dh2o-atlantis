@@ -34,15 +34,6 @@
       <code-sample>
         <button class="btn inactive">Inactive</button>
       </code-sample>
-
-      <div class="separator"></div>
-
-      <h2>Tags</h2>
-      <p>Tags look like small versions of "regular" buttons.</p>
-
-      <code-sample>
-        <span class="dh2o-tag">Tag</span>
-      </code-sample>
     </div>
   </div>
 

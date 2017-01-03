@@ -17,7 +17,7 @@
       <p>Use <code class="language-css">.btn-group</code> to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>
 
       <code-sample>
-        <div class="btn-group">
+        <div class="group-inline">
           <div class="btn">One</div>
           <div class="btn">Two</div>
           <div class="btn">Three</div>
@@ -26,8 +26,20 @@
 
       <div class="separator"></div>
 
+      <h3>Input Group</h3>
       <code-sample>
-        <div class="inline-form form-group">
+        <div class="group-inline">
+          <div class="btn"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;</div>
+          <input type="number" placeholder="0.00" />
+          <div class="btn primary">Submit</div>
+        </div>
+      </code-sample>
+
+      <div class="separator"></div>
+
+      <h3>Dropdown Group</h3>
+      <code-sample>
+        <div class="group-inline">
           <div class="dh2o-dropdown-trigger btn">
             <div class="dh2o-dropdown-trigger-text">
               Search Values <i class="fa fa-caret-down"></i>
@@ -39,12 +51,9 @@
               </ul>
             </div>
           </div>
-          <div class="btn primary save-btn">Save Form</div>
           <input type="text" placeholder="Search Values" />
-          <div class="btn primary save-btn">Save Form</div>
+          <div class="btn primary">Save Form</div>
         </div>
-
-        <div class="btn primary save-btn">Save Form</div>
       </code-sample>
 
     </div>
