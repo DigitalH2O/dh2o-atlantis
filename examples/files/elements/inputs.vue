@@ -1,15 +1,15 @@
-<style lang="scss">
+<style lang="scss" scoped>
   @import '~dh2o-atlantis/scss/_partials.scss';
 
-  #content-inputs {
-    input, select, textarea {
+  input, select, textarea {
+    &:not([type="checkbox"]) {
       margin: 0 0 $spacing-half 0;
     }
   }
 </style>
 
 <template>
-  <div id="content-inputs" class="section">
+  <div class="section">
     <div class="title"><h1>Inputs</h1></div>
     <div class="content">
       <p>
