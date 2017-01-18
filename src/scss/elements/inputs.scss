@@ -73,12 +73,15 @@ input[type=password] {
   @include input-background('password');
 }
 input[type=checkbox] {
-  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
   padding: 0;
   display: inline-block;
   width: $font-size*1.4;
   height: $font-size*1.4;
+  vertical-align: middle;
+  margin-bottom: 0;
 
   &::before {
     content: "\f096";
