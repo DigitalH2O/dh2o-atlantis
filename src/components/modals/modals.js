@@ -27,6 +27,7 @@ let dh2oModal = function (modalId = false, autoShow = false) {
     modal.classList.add('animate-in')
   }
   modal.hide = () => {
+    if (!modal.classList.contains('animate-in')) { return }
     if (stackingContextParent) {
       stackingContextParent.classList.remove('stacking-context-front')
     }
