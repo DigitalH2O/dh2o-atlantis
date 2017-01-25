@@ -24,6 +24,9 @@
 
     #loading-barrel .loading-text-letter {
       animation: letter-opacity 2s infinite ease;
+      font-family: helvetica !important;
+      font-size: 28px !important;
+      font-weight: bold !important;
     }
     #loading-barrel .letter-delay1 {animation-delay: .2s;}
     #loading-barrel .letter-delay2 {animation-delay: .4s;}
@@ -55,11 +58,11 @@
   <rect class="water-bottom" fill="#1b7a9d" mask="url(#barrel-mask)" x="5" y="130" width="165" height="60"/>
   <path id="barrel-border" fill="#555555" transform="translate(0 -0.65)" d="M164.31,94.65a11.89,11.89,0,0,0-5-9.7V21.35a11.89,11.89,0,0,0,5-9.7,12,12,0,0,0-12-12h-140a12,12,0,0,0-3,23.62V83a11.87,11.87,0,0,0-1.15.37l.09-.08A11.9,11.9,0,0,0,3.05,87l-.38.49c-.1.13-.2.27-.29.4a12,12,0,0,0-.67,1.12v0a12,12,0,0,0,7.62,17.18V159A12,12,0,0,0,5,161.08v0a12.09,12.09,0,0,0-2.43,2.51l-.09.11-.15.22-.14.21-.27.44-.27.49,0,.07a11.91,11.91,0,0,0-1.33,5.47c0,.06,0,.11,0,.17s0,.11,0,.16a12,12,0,0,0,12,12h140a11.44,11.44,0,0,0,9.32-4.83l.13-.2a11.85,11.85,0,0,0-2.46-17V104.35A11.89,11.89,0,0,0,164.31,94.65Zm-152-6h3v-71h-3a6,6,0,0,1,0-12h140A6,6,0,0,1,155,17l-1.65.83V88.49l1.65.83A5.92,5.92,0,0,1,155,100l-1.65.83v63.67l1.65.83A5.92,5.92,0,0,1,155,176l-1.32.67H12.31a6,6,0,0,1-5.15-9.07,6.08,6.08,0,0,1,.4-.56,6,6,0,0,1,3.37-2.21h0a6,6,0,0,1,1.36-.16h3v-64h-3A6,6,0,0,1,11,100.5v0a6,6,0,0,1-3.78-8.91l0,0A6,6,0,0,1,12.31,88.65Z" />
 
-  <text class="loading-text-letter letter-delay1" x="30" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">L</text>
-  <text class="loading-text-letter letter-delay2" x="47" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">o</text>
-  <text class="loading-text-letter letter-delay3" x="64" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">a</text>
-  <text class="loading-text-letter letter-delay4" x="81" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">d</text>
-  <text class="loading-text-letter letter-delay5" x="98" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">i</text>
-  <text class="loading-text-letter letter-delay6" x="105" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">n</text>
-  <text class="loading-text-letter letter-delay7" x="122" y="145" fill="#ffffff" font-family="Helvetica" font-size="28" font-weight="bold">g</text>
+  <text class="loading-text-letter letter-delay1" x="30" y="145" fill="#ffffff">L</text>
+  <text class="loading-text-letter letter-delay2" x="47" y="145" fill="#ffffff">o</text>
+  <text class="loading-text-letter letter-delay3" x="65" y="145" fill="#ffffff">a</text>
+  <text class="loading-text-letter letter-delay4" x="81" y="145" fill="#ffffff">d</text>
+  <text class="loading-text-letter letter-delay5" x="98" y="145" fill="#ffffff">i</text>
+  <text class="loading-text-letter letter-delay6" x="105" y="145" fill="#ffffff">n</text>
+  <text class="loading-text-letter letter-delay7" x="122" y="145" fill="#ffffff">g</text>
 </svg>
