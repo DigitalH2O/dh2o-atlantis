@@ -22,7 +22,8 @@ function getParentElement (el, parentClass) {
 }
 
 // This is useful for finding a parent element all the way up the stack
-function getLastParentElement (el, lastElement = 'app') {
+function getLastParentElement (el, lastElement) {
+  lastElement = lastElement || 'app'
   var lastParentEle
 
   function innerClosure (ele) {
