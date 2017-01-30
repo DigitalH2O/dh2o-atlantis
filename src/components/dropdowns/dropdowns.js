@@ -1,28 +1,28 @@
 import parents from '../../helpers/parents.js'
 
 export default function () {
-  let eleCache = []
+  var eleCache = []
   document.addEventListener('click', function (e) {
-    let dropdown
-    let trigger = 'dh2o-dropdown-trigger'
-    let content = 'dh2o-dropdown-content'
-    let triggerEle = e.target.classList.contains(trigger) ? e.target : parents.getParentElement(e.target, trigger)
+    var dropdown
+    var trigger = 'dh2o-dropdown-trigger'
+    var content = 'dh2o-dropdown-content'
+    var triggerEle = e.target.classList.contains(trigger) ? e.target : parents.getParentElement(e.target, trigger)
 
     if (triggerEle) {
       e.stopPropagation()
-      let stackingContextParent = parents.getLastParentElement(triggerEle)
+      var stackingContextParent = parents.getLastParentElement(triggerEle)
 
       // Grab the dropdown content element
-      for (let i = 0; i < triggerEle.children.length; i++) {
+      for (var i = 0; i < triggerEle.children.length; i++) {
         if (triggerEle.children[i].classList.contains(content)) {
           dropdown = triggerEle.children[i]
         }
       }
 
       // Dropdown show and hide functions
-      dropdown.show = () => {
+      dropdown.show = function () {
         // Close any currently open dropdowns and remove them from the cache
-        eleCache.forEach((ele) => {
+        eleCache.forEach(function (ele) {
           ele.hide()
         })
         eleCache = []
@@ -38,9 +38,9 @@ export default function () {
         dropdown.classList.add('animate-in')
         dropdown.classList.add('open')
       }
-      dropdown.hide = () => {
+      dropdown.hide = function () {
         // Remove the dropdown node from the element cache
-        eleCache = eleCache.filter((ele) => {
+        eleCache = eleCache.filter(function (ele) {
           return ele !== dropdown
         })
 
@@ -51,20 +51,20 @@ export default function () {
         dropdown.classList.remove('animate-in')
         dropdown.classList.remove('open')
         dropdown.classList.add('animate-out')
-        setTimeout(() => {
+        setTimeout(function () {
           dropdown.classList.remove('animate-out')
         }, 300)
       }
 
       dropdown.show()
 
-      dropdown.onclick = (e) => {
+      dropdown.onclick = function (e) {
         e.stopPropagation()
       }
     } else {
-      let dropdowns = document.getElementsByClassName(content)
+      var dropdowns = document.getElementsByClassName(content)
 
-      for (let i = 0; i < dropdowns.length; i++) {
+      for (var i = 0; i < dropdowns.length; i++) {
         if (dropdowns[i].classList.contains('animate-in') && dropdowns[i].hide) {
           dropdowns[i].hide()
         }

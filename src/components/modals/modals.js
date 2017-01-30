@@ -1,12 +1,12 @@
 import parents from '../../helpers/parents.js'
 
-let dh2oModal = function (modalId = false, autoShow = false) {
+var dh2oModal = function (modalId = false, autoShow = false) {
   if (!modalId) { throw new Error('Must pass a modal id') }
 
-  let modal = document.getElementById(modalId)
+  var modal = document.getElementById(modalId)
   if (!modal) { throw new Error('Could not find modal. Please make sure you pass an id of a modal that exists') }
-  let stackingContextParent = parents.getLastParentElement(modal)
-  let closeName = 'modal-close'
+  var stackingContextParent = parents.getLastParentElement(modal)
+  var closeName = 'modal-close'
 
   // Check to make sure modal id exists
   if (!modal) { console.error('Modal does not exist'); return }
@@ -19,21 +19,21 @@ let dh2oModal = function (modalId = false, autoShow = false) {
   }
 
   // Add functionality to animate hide and show of modal
-  modal.show = () => {
+  modal.show = function () {
     if (stackingContextParent) {
       stackingContextParent.classList.add('stacking-context-front')
     }
     modal.classList.remove('animate-out')
     modal.classList.add('animate-in')
   }
-  modal.hide = () => {
+  modal.hide = function () {
     if (!modal.classList.contains('animate-in')) { return }
     if (stackingContextParent) {
       stackingContextParent.classList.remove('stacking-context-front')
     }
     modal.classList.remove('animate-in')
     modal.classList.add('animate-out')
-    setTimeout(() => {
+    setTimeout(function () {
       modal.classList.remove('animate-out')
     }, 300)
   }
@@ -43,16 +43,16 @@ let dh2oModal = function (modalId = false, autoShow = false) {
 
   // Add event listener for closing
   // based upon clicking background
-  modal.onclick = (event) => {
+  modal.onclick = function (event) {
     if (event.target === modal) {
       modal.hide()
     }
   }
 
   // Add onclick handlers for any model-close buttons
-  let closes = modal.getElementsByClassName(closeName)
-  for (let i = 0; i < closes.length; i++) {
-    closes[i].onclick = () => {
+  var closes = modal.getElementsByClassName(closeName)
+  for (var i = 0; i < closes.length; i++) {
+    closes[i].onclick = function () {
       modal.hide()
     }
   }
@@ -62,13 +62,13 @@ let dh2oModal = function (modalId = false, autoShow = false) {
 
 // Add a document listener, that targets modal buttons
 document.addEventListener('click', function (event) {
-  let buttonName = 'dh2o-modal-btn'
-  let dataset = 'dh2oModal'
+  var buttonName = 'dh2o-modal-btn'
+  var dataset = 'dh2oModal'
 
   if (event.target.classList.contains(buttonName)) {
     // Get all elements needed
-    let element = event.target
-    let modalId = element.dataset[dataset]
+    var element = event.target
+    var modalId = element.dataset[dataset]
 
     dh2oModal(modalId, true)
   }
