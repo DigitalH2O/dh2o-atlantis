@@ -48,6 +48,6 @@ function getLastParentElement (el, lastElement) {
 }
 
 module.exports = {
-  getParentElement,
-  getLastParentElement
+  getParentElement: getParentElement,
+  getLastParentElement: getLastParentElement
 }
