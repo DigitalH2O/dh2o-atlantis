@@ -1,6 +1,8 @@
 import parents from '../../helpers/parents.js'
 
-var dh2oModal = function (modalId = false, autoShow = false) {
+var dh2oModal = function (modalId, autoShow) {
+  modalId = modalId || false
+  autoShow = autoShow || false
   if (!modalId) { throw new Error('Must pass a modal id') }
 
   var modal = document.getElementById(modalId)
