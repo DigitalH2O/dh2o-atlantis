@@ -12,7 +12,7 @@ module.exports = {
     filename: 'build.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -62,6 +62,7 @@ module.exports = {
     port: port
   },
   devtool: '#eval-source-map'
+
 }
 
 if (process.env.NODE_ENV === 'production') {
