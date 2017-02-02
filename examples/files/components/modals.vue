@@ -1,11 +1,11 @@
 <script>
-  import { dh2oModal } from '../../../src/components/components.js'
+  import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
   export default {
     methods: {
-      applyModal: function () {
+      applyModal: () => {
         var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
         document.querySelector('#modal2 .modal-body').innerHTML = text
-        setTimeout(function () {
+        setTimeout(() => {
           dh2oModal('modal2').hide()
         }, 1000)
       }
@@ -14,7 +14,7 @@
 </script>
 
 <style lang="scss">
-  @import '../../../src/scss/_partials.scss';
+  @import '~dh2o-atlantis/scss/_partials.scss';
 
   #content-modals {
     .code-sample {

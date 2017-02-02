@@ -4,16 +4,14 @@ import VueRouter from 'vue-router'
 /* global Prism */
 
 // Styles
-import '../src/scss/index.scss'
-
-// Components
-import '../src/components/components.js'
+import 'dh2o-atlantis/scss/index.scss'
 
 // Dropdowns
-import '../src/components/dropdowns/dropdowns.scss'
+import 'dh2o-atlantis/components/dropdowns/dropdowns.js'
+import 'dh2o-atlantis/components/dropdowns/dropdowns.scss'
 
 // Modals
-import '../src/components/modals/modals.scss'
+import 'dh2o-atlantis/components/modals/modals.scss'
 
 import App from './files/app.vue'
 import CodeSample from './files/code-sample.vue'

@@ -1,5 +1,3 @@
-import parents from '../../helpers/parents.js'
-
 var dh2oModal = function (modalId, autoShow) {
   modalId = modalId || false
   autoShow = autoShow || false
@@ -7,7 +5,6 @@ var dh2oModal = function (modalId, autoShow) {
 
   var modal = document.getElementById(modalId)
   if (!modal) { throw new Error('Could not find modal. Please make sure you pass an id of a modal that exists') }
-  var stackingContextParent = parents.getLastParentElement(modal)
   var closeName = 'modal-close'
 
   // Check to make sure modal id exists
@@ -22,17 +19,10 @@ var dh2oModal = function (modalId, autoShow) {
 
   // Add functionality to animate hide and show of modal
   modal.show = function () {
-    if (stackingContextParent) {
-      stackingContextParent.classList.add('stacking-context-front')
-    }
     modal.classList.remove('animate-out')
     modal.classList.add('animate-in')
   }
   modal.hide = function () {
-    if (!modal.classList.contains('animate-in')) { return }
-    if (stackingContextParent) {
-      stackingContextParent.classList.remove('stacking-context-front')
-    }
     modal.classList.remove('animate-in')
     modal.classList.add('animate-out')
     setTimeout(function () {
