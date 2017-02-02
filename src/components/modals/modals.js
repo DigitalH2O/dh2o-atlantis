@@ -1,4 +1,4 @@
-var dh2oModal = function (modalId, autoShow) {
+export const dh2oModal = function (modalId, autoShow) {
   modalId = modalId || false
   autoShow = autoShow || false
   if (!modalId) { throw new Error('Must pass a modal id') }
@@ -65,5 +65,3 @@ document.addEventListener('click', function (event) {
     dh2oModal(modalId, true)
   }
 })
-
-export default dh2oModal

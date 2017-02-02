@@ -21,7 +21,7 @@ function hasClassInTree (element, className) {
   return hasClass(element, className) || parentByClass(element, className)
 }
 
-var dh2oDropdown = function (dropdown, autoShow) {
+export const dh2oDropdown = function (dropdown, autoShow) {
   autoShow = autoShow || true
   var contentStr = 'dh2o-dropdown-content'
 
@@ -81,5 +81,3 @@ document.addEventListener('click', function (e) {
     dh2oDropdown(containerElement)
   }
 })
-
-export default dh2oDropdown
