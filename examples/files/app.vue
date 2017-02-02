@@ -1,5 +1,5 @@
 <script>
-  import dh2oDropdown from 'dh2o-atlantis/components/dropdowns/dropdowns.js'
+  import dh2oDropdown from '../../src/components/dropdowns/dropdowns.js'
 
   export default {
     mounted () {

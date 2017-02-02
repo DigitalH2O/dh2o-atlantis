@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-  @import '~dh2o-atlantis/scss/_partials.scss';
+  @import '../../../src/scss/_partials.scss';
 
   input, select, textarea {
     &:not([type="checkbox"]) {

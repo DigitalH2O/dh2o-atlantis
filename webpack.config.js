@@ -44,12 +44,6 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      'dh2o-atlantis': path.resolve('./src'),
-      'dh2o-atlantis-partials': path.resolve('./src/scss/_partials.scss')
-    }
-  },
   resolveLoader: {
     alias: {
       // This will allow you to do lang="scss" in your style tags

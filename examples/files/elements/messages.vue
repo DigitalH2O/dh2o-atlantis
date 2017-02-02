@@ -38,7 +38,7 @@
 </template>
 
 <script>
-  import colorVars from '!!get-sass-vars-loader!dh2o-atlantis/scss/misc/_colors.scss'
+  import colorVars from '!!get-sass-vars-loader!../../../src/scss/misc/_colors.scss'
 
   export default {
     data () {
@@ -50,7 +50,7 @@
 </script>
 
 <style>
-  @import '~dh2o-atlantis/scss/_partials';
+  @import '../../../src/scss/_partials';
 
   #content-messages {
     .code-sample {

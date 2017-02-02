@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-  @import '~dh2o-atlantis/scss/_partials';
+  @import '../../../src/scss/_partials';
 
   h3 {
     margin-bottom: $spacing-half;

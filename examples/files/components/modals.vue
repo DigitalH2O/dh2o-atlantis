@@ -1,5 +1,5 @@
 <script>
-  import { dh2oModal } from 'dh2o-atlantis/components/components.js'
+  import { dh2oModal } from '../../../src/components/components.js'
   export default {
     methods: {
       applyModal: function () {
@@ -14,7 +14,7 @@
 </script>
 
 <style lang="scss">
-  @import '~dh2o-atlantis/scss/_partials.scss';
+  @import '../../../src/scss/_partials.scss';
 
   #content-modals {
     .code-sample {
