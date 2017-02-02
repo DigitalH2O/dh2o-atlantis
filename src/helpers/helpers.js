@@ -1,3 +1,2 @@
-export default {
-  parents: require('./parents.js')
-}
+import parents from './parents.js'
+export const helpers = { parents }
