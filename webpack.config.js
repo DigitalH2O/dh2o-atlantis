@@ -12,7 +12,7 @@ module.exports = {
     filename: 'build.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -43,12 +43,6 @@ module.exports = {
         loader: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
       }
     ]
-  },
-  resolve: {
-    alias: {
-      'dh2o-atlantis': path.resolve('./src'),
-      'dh2o-atlantis-partials': path.resolve('./src/scss/_partials.scss')
-    }
   },
   resolveLoader: {
     alias: {

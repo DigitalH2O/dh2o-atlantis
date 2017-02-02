@@ -3,7 +3,7 @@
   "name": "dh2o-atlantis",
   "author": "Digital H2O Team",
   "license": "MIT",
-  "version": "1.22.0",
+  "version": "1.25.0",
   "title": "DigitalH2O Style Guide",
   "description": "Style guide for front end apps",
   "bugs": {
@@ -18,10 +18,11 @@
     "type": "git",
     "url": "git+https://github.com/DigitalH2O/dh2o-atlantis.git"
   },
+  "main": "dist/build.js",
   "style": "src/index.scss",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack",
+    "prod": "npm run clean && webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
@@ -62,7 +63,7 @@
     "vue-loader": "^10.0.0",
     "vue-router": "^2.0.3",
     "vue-template-compiler": "^2.1.3",
-    "webpack": "^2.1.0-beta.27",
-    "webpack-dev-server": "^2.1.0-beta.11"
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
   }
 }

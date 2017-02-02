@@ -27,7 +27,7 @@
 </template>
 
 <style>
-  @import '~dh2o-atlantis/scss/_partials';
+  @import '../../../src/scss/_partials';
 
   #content-lists {
     .code-sample {

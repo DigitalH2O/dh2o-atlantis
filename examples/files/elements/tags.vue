@@ -1,5 +1,5 @@
 <style lang="scss">
-  @import '~dh2o-atlantis/scss/_partials.scss';
+  @import '../../../src/scss/_partials.scss';
 
   #content-buttons {
     .code-sample {
