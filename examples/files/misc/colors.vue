@@ -1,7 +1,7 @@
 <script>
   import tinycolor from 'tinycolor2'
   import _ from 'lodash'
-  import colorVars from '!!get-sass-vars-loader!dh2o-atlantis/scss/misc/_colors.scss'
+  import colorVars from '!!get-sass-vars-loader!../../../src/scss/misc/_colors.scss'
 
   export default {
     data () {
@@ -35,7 +35,7 @@
 </script>
 
 <style lang="scss">
-  @import '~dh2o-atlantis/scss/_partials.scss';
+  @import '../../../src/scss/_partials.scss';
 
   .colors-group {
     display: flex;
