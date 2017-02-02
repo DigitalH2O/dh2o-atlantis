@@ -20,7 +20,7 @@
     animation-fill-mode: both;
 
     .modal-content {
-      animation-name: slideInDown;
+      animation-name: bounceIn;
       animation-duration: .3s;
       animation-fill-mode: both;
     }
@@ -32,7 +32,7 @@
     animation-fill-mode: both;
 
     .modal-content {
-      animation-name: slideOutUp;
+      animation-name: bounceOut;
       animation-duration: .3s;
       animation-fill-mode: both;
     }

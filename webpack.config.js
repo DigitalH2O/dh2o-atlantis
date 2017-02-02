@@ -44,6 +44,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      'dh2o-atlantis': path.resolve('./src'),
+      'dh2o-atlantis-partials': path.resolve('./src/scss/_partials.scss')
+    }
+  },
   resolveLoader: {
     alias: {
       // This will allow you to do lang="scss" in your style tags
@@ -55,8 +61,10 @@ module.exports = {
     noInfo: true,
     port: port
   },
-  devtool: '#eval-source-map'
-
+  devtool: '#eval-source-map',
+  performance: {
+    hints: false
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
