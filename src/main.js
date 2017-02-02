@@ -1,5 +1,9 @@
+import dh2oModal from './components/modals/modals.js'
+import dh2oDropdown from './components/dropdowns/dropdowns.js'
+import helpers from './helpers/helpers.js'
+
 export default {
-  dh2oModal: require('./components/modals/modals.js'),
-  dh2oDropdown: require('./components/dropdowns/dropdowns.js'),
-  helpers: require('./helpers/helpers.js')
+  dh2oModal,
+  dh2oDropdown,
+  helpers
 }
