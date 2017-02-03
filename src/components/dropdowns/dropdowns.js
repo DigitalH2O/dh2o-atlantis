@@ -69,10 +69,10 @@ document.addEventListener('click', function (e) {
 
   // Close all dropdowns
   var dropdowns = document.getElementsByClassName(containerStr)
-  for (var dropdownElement of dropdowns) {
+  for (var i = 0; i < dropdowns.length; i++) {
     // Only hide is the element isnt the same as your current parent container element
-    if (!parentContainerElement || !dropdownElement.isSameNode(parentContainerElement)) {
-      if (dropdownElement.hide) { dropdownElement.hide() }
+    if (!parentContainerElement || !dropdowns[i].isSameNode(parentContainerElement)) {
+      if (dropdowns[i].hide) { dropdowns[i].hide() }
     }
   }
 

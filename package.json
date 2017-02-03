@@ -3,7 +3,7 @@
   "name": "dh2o-atlantis",
   "author": "Digital H2O Team",
   "license": "MIT",
-  "version": "1.27.5",
+  "version": "1.27.6",
   "title": "DigitalH2O Style Guide",
   "description": "Style guide for front end apps",
   "bugs": {
@@ -26,6 +26,7 @@
     "dev": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
+    "babel-polyfill": "^6.22.0",
     "font-awesome": "^4.6.3",
     "select2": "^4.0.3"
   },
