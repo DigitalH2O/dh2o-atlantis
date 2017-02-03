@@ -105,7 +105,9 @@ body {
 
     // Main is the large main section
     .main {
-      flex: 1 1 calc(100% - #{$sidebar-width});
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: calc(100% - #{$sidebar-width});
       min-height: 0; /* weird browser fix */
       background-color: $background-color;
       overflow-x: hidden;
