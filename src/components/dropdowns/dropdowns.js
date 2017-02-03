@@ -2,7 +2,7 @@
 // Returning that parent element if it does exist
 function hasClassInTree (element, className) {
   function hasClass (element, className) {
-    if (!(!className || !element || !element.className || !element.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)')))) {
+    if (!(!className || !element || !element.classList || !element.classList.contains(className))) {
       return element
     }
     return null
