@@ -4,14 +4,16 @@
   export default {
     data () {
       return {
-        showDropdown: false
+        showDropdownContents: false
       }
     },
     methods: {
       click () {
         this.showDropdown = true
-        Vue.nextTick(function () {
-          dh2oDropdown('program_trigger')
+        Vue.nextTick(() => {
+          dh2oDropdown('program_trigger', true, (isShowing) => {
+            this.showDropdownContents = isShowing
+          })
         })
       }
     }
@@ -61,10 +63,11 @@
       <code-sample>
         <div id="program_trigger" class="dh2o-dropdown-container">
           <div class="btn" @click="click">Button</div>
-          <div v-if="showDropdown" class="dh2o-dropdown-content">
-            Stuff to show here
+          <div class="dh2o-dropdown-content">
+            <div v-if="showDropdownContents">Stuff to show here</div>
           </div>
         </div>
+        <div style="display: inline-block;">Is dropdown showing: {{showDropdownContents}}</div>
       </code-sample>
 
       <div class="message alert">
