@@ -57,7 +57,7 @@ document.addEventListener('click', function (event) {
   var buttonName = 'dh2o-modal-btn'
   var dataset = 'dh2oModal'
 
-  if (event.target.classList.contains(buttonName)) {
+  if (event.target.classList && event.target.classList.contains(buttonName)) {
     // Get all elements needed
     var element = event.target
     var modalId = element.dataset[dataset]
