@@ -20,8 +20,9 @@
     animation-fill-mode: both;
 
     .modal-content {
-      animation-name: bounceIn;
+      animation-name: zoomIn;
       animation-duration: .3s;
+      transition-timing-function: ease-in-out;
       animation-fill-mode: both;
     }
   }
@@ -32,8 +33,9 @@
     animation-fill-mode: both;
 
     .modal-content {
-      animation-name: bounceOut;
+      animation-name: zoomOut;
       animation-duration: .3s;
+      transition-timing-function: ease-in-out;
       animation-fill-mode: both;
     }
   }
