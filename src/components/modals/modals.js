@@ -66,4 +66,41 @@ document.addEventListener('click', function (event) {
   }
 })
 
+// Add keydown function for esc and enter
+document.onkeydown = function (evt) {
+  evt = evt || window.event
+  var isEscape = false
+  var isEnter = false
+  if ('key' in evt) {
+    isEscape = (evt.key === 'Escape' || evt.key === 'Esc')
+    isEnter = (evt.key === 'Enter')
+  } else {
+    isEscape = (evt.keyCode === 27)
+    isEnter = (evt.keyCode === 13)
+  }
+
+  // If you hit escape close last modal
+  var modals
+  if (isEscape) {
+    modals = document.querySelectorAll('.dh2o-modal.animate-in')
+    if (modals.length > 0) {
+      if (modals[modals.length - 1].hide) {
+        modals[modals.length - 1].hide()
+      }
+    }
+  }
+
+  // If you hit enter find a modal-enter class and click it
+  if (isEnter) {
+    modals = document.querySelectorAll('.dh2o-modal.animate-in')
+    if (modals.length > 0) {
+      var modal = modals[modals.length - 1]
+      var enterer = modal.querySelector('.modal-enter')
+      if (enterer) {
+        enterer.click()
+      }
+    }
+  }
+}
+
 export default dh2oModal

@@ -64,6 +64,12 @@
       <p>
         To Close the modal just add an element with the class <strong>modal-close</strong>
       </p>
+      <p>
+        Modals have onkey press function so if use hits esc button it will close last modal in the dom.
+      </p>
+      <p>
+        If you would like to have a modal element triggered a click by hitting enter add the class modal-enter
+      </p>
 
       <code-sample>
         <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
@@ -94,7 +100,7 @@
               <p>Here is some more more text</p>
             </div>
             <div class="modal-footer">
-              <div class="btn primary" v-on:click="applyModal()">Apply</div>
+              <div class="btn primary modal-enter" v-on:click="applyModal()">Apply</div>
               <div class="btn modal-close">Cancel</div>
             </div>
           </div>
