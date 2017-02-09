@@ -1,4 +1,4 @@
-var dh2oModal = function (modalId, autoShow) {
+var dh2oModal = function (modalId, autoShow, callback = null) {
   modalId = modalId || false
   autoShow = autoShow || false
   if (!modalId) { throw new Error('Must pass a modal id') }
@@ -21,12 +21,14 @@ var dh2oModal = function (modalId, autoShow) {
   modal.show = function () {
     modal.classList.remove('animate-out')
     modal.classList.add('animate-in')
+    if (callback) { callback(true) }
   }
   modal.hide = function () {
     modal.classList.remove('animate-in')
     modal.classList.add('animate-out')
     setTimeout(function () {
       modal.classList.remove('animate-out')
+      if (callback) { callback(false) }
     }, 300)
   }
 

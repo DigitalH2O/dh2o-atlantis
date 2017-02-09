@@ -1,13 +1,24 @@
 <script>
   import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
+
   export default {
+    data () {
+      return {
+        isModalJsShowing: false
+      }
+    },
     methods: {
-      applyModal: () => {
+      applyModal () {
         var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
         document.querySelector('#modal2 .modal-body').innerHTML = text
         setTimeout(() => {
           dh2oModal('modal2').hide()
         }, 1000)
+      },
+      showModalJs () {
+        dh2oModal('modalJs', true, (isShowing) => {
+          this.isModalJsShowing = isShowing
+        })
       }
     }
   }
@@ -191,6 +202,16 @@
         You most likely will need to programmably call to the modal.
         Just use the global dh2oModal() function.
       </p>
+      <div class="btn secondary" @click="showModalJs">
+        Click Me!
+      </div>
+      Is Modal Showing? {{isModalJsShowing}}
+
+      <div id="modalJs" class="dh2o-modal">
+        <div class="modal-content" style="width: 300px;">
+          <div class="modal-body">Hey buddy!</div>
+        </div>
+      </div>
       <pre>
         <code class="language-js">
           let modal = dh2oModal('modalId')
