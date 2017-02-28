@@ -62,12 +62,17 @@ body {
       color: $white;
     }
 
+    // User info located on the right side of the header
     .user-menu {
       flex: 0 0 auto;
       margin-left: auto;
       margin-right: $spacing;
 
-      .dh2o-dropdown-trigger-text {
+      i {
+        font-size: 14px;
+      }
+
+      .user-menu-btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -80,6 +85,7 @@ body {
           margin-left: $spacing-quarter;
         }
       }
+
       .dh2o-dropdown-content {
         left: 0px;
       }
