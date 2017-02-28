@@ -66,6 +66,45 @@
           </script>
         </code>
       </pre>
+
+      <div class="separator"></div>
+
+      <h3>User Info</h3>
+      <p>To place user info in the upper right hand section of the header we use the code listed below.</p>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <div class="user-menu">
+              <div class="user-menu-btn">
+                <i class="dh2o-icon-user"></i>
+                <span class="user-name">User Menu</span>
+              </div>
+            </div>
+          </script>
+        </code>
+      </pre>
+
+      <p>If you just need a dropdown integration</p>
+      <pre>
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <div class="user-menu dh2o-dropdown-container">
+              <div class="dh2o-dropdown-trigger user-menu-btn">
+                <i class="dh2o-icon-user"></i>
+                <span class="user-name">User Menu</span>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="dh2o-dropdown-content">
+                <ul>
+                  <li class="menu-item">User Account</li>
+                  <li class="menu-item">Logout</li>
+                </ul>
+              </div>
+            </div>
+          </script>
+        </code>
+      </pre>
+
     </div>
   </div>
 </template>

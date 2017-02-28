@@ -4,7 +4,7 @@
       <router-link to="/welcome" class="logo"></router-link>
       <div class="website-name">Style Guide App</div>
       <div class="user-menu dh2o-dropdown-container">
-        <div class="dh2o-dropdown-trigger-text dh2o-dropdown-trigger">
+        <div class="dh2o-dropdown-trigger user-menu-btn">
           <i class="dh2o-icon-user"></i>
           <span class="user-name">User Menu</span>
           <i class="fa fa-caret-down"></i>
@@ -51,8 +51,8 @@
         </ul>
       </div>
       <div class="main">
-      <router-view></router-view>
-    </div>
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
