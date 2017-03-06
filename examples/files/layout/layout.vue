@@ -37,14 +37,14 @@
         </p>
         <pre>
           <code class="language-scss">
-            $header-height: 58px; // Height of main header
+            $header-height: 65px; // Height of main header
             $sidebar-width: 100px; // Width of main sidebar
           </code>
         </pre>
       </section>
 
       <section>
-        <header><h2>Logo</h2></header>
+        <header><h2>Logo and Website Name</h2></header>
         <p>
           Your going to need to add a link to main app with the company logo.
           Place this tag in your header
@@ -52,19 +52,10 @@
         <pre>
           <code class="language-markup">
             <script type="prism-html-markup">
-              <a class="logo" href="#"><img src="images/logo-white.svg" /></a>
-            </script>
-          </code>
-        </pre>
-      </section>
-
-      <section>
-        <header><h2>Website Name</h2></header>
-        <p>To place the website add the below code in the header after the logo.</p>
-        <pre>
-          <code class="language-markup">
-            <script type="prism-html-markup">
-              <div class="website-name">Style Guide App</div>
+              <div class="website">
+                <a class="logo" href="#"><img src="images/logo-white.svg" /></a>
+                <div class="name">Style Guide App</div>
+              </div>
             </script>
           </code>
         </pre>

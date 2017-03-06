@@ -44,21 +44,23 @@ body {
       height: $header-height;
     }
 
-    // Digitalh2o logo located in the header
-    .logo {
-      flex: 0 0 auto;
+    .website {
       margin: 0 0 0 15px;
-      width: 161px;
-      height: 30px;
-      background-image: url(#{$dh2o-images-path}logo-white.svg);
-      background-position: left 50%;
-      background-repeat: no-repeat;
-    }
+      line-height: normal;
 
-    // Website name located in the header
-    .website-name {
-      flex: 0 0 auto;
-      margin: 0 0 0 50px;
+      .logo {
+        display: block;
+        width: 160px;
+        height: 30px;
+        background-image: url(#{$dh2o-images-path}logo-white.svg);
+        background-position: left 50%;
+        background-repeat: no-repeat;
+      }
+
+      .name {
+        font-size: $font-size + 1;
+        font-weight: bold;
+      }
     }
 
     // User info located on the right side of the header

@@ -1,8 +1,10 @@
 <template>
   <div class="app">
     <header>
-      <router-link to="/welcome" class="logo"></router-link>
-      <div class="website-name">Style Guide App</div>
+      <div class="website">
+        <router-link to="/welcome" class="logo"></router-link>
+        <div class="name">Style Guide App</div>
+      </div>
       <div class="user-menu dh2o-dropdown-container">
         <div class="dh2o-dropdown-trigger user-menu-btn">
           <i class="dh2o-icon-user"></i>
