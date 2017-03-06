@@ -38,8 +38,8 @@
 </style>
 
 <template>
-  <div id="content-dropdowns" class="section">
-  <div class="title"><h1>Dropdowns</h1></div>
+  <section id="content-dropdowns">
+    <div class="title"><h1>Dropdowns</h1></div>
     <div class="content">
       <p>
         The dropdown menu styles are applied through 2 main classes: "dh2o-dropdown-trigger" and "dh2o-dropdown-content". The trigger class needs to be applied to the parent element of the content class. This is because the dropdown content is positioned relative to the position of the button.
@@ -76,5 +76,5 @@
       </div>
 
     </div>
-  </div>
+  </section>
 </template>

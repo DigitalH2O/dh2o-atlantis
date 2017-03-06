@@ -9,7 +9,7 @@
 </style>
 
 <template>
-  <div class="section">
+  <section id="content-inputs">
     <div class="title"><h1>Inputs</h1></div>
     <div class="content">
       <p>
@@ -80,6 +80,5 @@
         </div>
       </code-sample>
     </div>
-  </div>
-
+  </section>
 </template>

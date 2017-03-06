@@ -1,7 +1,7 @@
 <style lang="scss">
   @import '../../../src/scss/_partials.scss';
 
-  #content-buttons {
+  #content-tags {
     .code-sample {
       display: flex;
       flex-direction: column;
@@ -23,7 +23,7 @@
 </style>
 
 <template>
-  <div id="content-buttons" class="section">
+  <section id="content-tags">
     <div class="title"><h1>Tags</h1></div>
     <div class="content">
       <p>
@@ -53,6 +53,5 @@
         </script>
       </code>
     </div>
-  </div>
-
+  </section>
 </template>

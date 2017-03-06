@@ -60,7 +60,7 @@
 </style>
 
 <template>
-  <div id="content-modals" class="section">
+  <section id="content-modals">
     <div class="title"><h1>Modals</h1></div>
     <div class="content">
       <p>
@@ -130,6 +130,7 @@
                 Modal Over Modal
               </div>
             </div>
+          </div>
         </div>
         <div id="modal4" class="dh2o-modal">
           <div class="modal-content">
@@ -138,6 +139,7 @@
               <p>Here is some more text</p>
               <p>Here is some more more text</p>
             </div>
+          </div>
         </div>
       </code-sample>
 
@@ -222,5 +224,5 @@
       </pre>
 
     </div>
-  </div>
+  </section>
 </template>

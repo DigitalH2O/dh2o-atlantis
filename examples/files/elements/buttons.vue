@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <div id="content-buttons" class="section">
+  <section id="content-buttons">
     <div class="title"><h1>Buttons</h1></div>
     <div class="content">
       <p>
@@ -35,6 +35,5 @@
         <button class="btn inactive">Inactive</button>
       </code-sample>
     </div>
-  </div>
-
+  </section>
 </template>

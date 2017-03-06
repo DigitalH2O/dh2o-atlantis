@@ -12,7 +12,7 @@
 <style lang="scss">
   @import '../../../src/scss/_partials';
 
-  section.logos, section.loading-icons {
+  .logos, .loading-icons {
     .code-sample {
       .as-rendered {
         width: 25%;
@@ -23,7 +23,7 @@
     }
   }
 
-  section.custom-icons {
+  .custom-icons {
     .code-sample {
       .as-rendered {
         width: 10%;
@@ -51,10 +51,10 @@
 </style>
 
 <template>
-  <div id="content-images" class="section">
+  <section id="content-images">
     <div class="title"><h1>Images</h1></div>
     <div class="content">
-      <section class="logos">
+      <div class="logos">
         <h3>Logos</h3>
 
         <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>
@@ -83,10 +83,11 @@
             <img src="../../../src/images/logo-droplet-white.svg" />
           </div>
         </code-sample>
+      </div>
 
       <div class="separator"></div>
 
-      <section class="custom-icons">
+      <div class="custom-icons">
         <h3>Custom Icons</h3>
         <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
@@ -169,18 +170,18 @@
           </div>
 
         </div>
-      </section>
+      </div>
 
       <div class="separator smaller"></div>
 
-      <section class="generic-icons">
+      <div class="generic-icons">
         <h3>Generic Icons</h3>
         <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
-      </section>
+      </div>
 
       <div class="separator smaller"></div>
 
-      <section class="loading-icons">
+      <div class="loading-icons">
         <h3>Loading Icons</h3>
         <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
@@ -195,8 +196,8 @@
             <img height="200" src="../../../src/images/loading-barrel-static.svg" />
           </div>
         </code-sample>
-      </section>
+      </div>
 
     </div>
-  </div>
+  </section>
 </template>

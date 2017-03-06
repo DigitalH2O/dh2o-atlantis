@@ -1,5 +1,5 @@
 <template>
-  <div id="content-sections" class="section">
+  <section id="content-sections">
     <div class="title"><h1>Sections</h1></div>
     <div class="bar">
       Here is our section bar.
@@ -19,20 +19,20 @@
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <div class="section">
+            <section>
               <div class="title">Section title</div>
               <div class="content">Main content area</div>
-            </div>
+            </section>
           </script>
         </code>
       </pre>
 
       <p>You can even add a section in a section</p>
-      <div class="section">
+      <section>
         <div class="title">Title</div>
         <div class="content">Content</div>
         <div class="separator"></div>
-      </div>
+      </section>
 
       <div class="separator"></div>
 
@@ -46,16 +46,16 @@
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <div class="section">
+            <section>
               <div class="title">Section title</div>
               <div class="bar">Section bar</div>
               <div class="bar secondary">Section bar</div>
               <div class="content">Main content area</div>
-            </div>
+            </section>
           </script>
         </code>
       </pre>
 
     </div>
-  </div>
+  </section>
 </template>

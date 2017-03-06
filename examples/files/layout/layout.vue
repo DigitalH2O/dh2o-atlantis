@@ -1,5 +1,5 @@
 <template>
-  <div id="content-layout" class="section">
+  <section id="content-layout">
     <div class="title"><h1>Layout</h1></div>
     <div class="content">
       <p>The main application primarily consists of three elements wrapped in
@@ -106,5 +106,5 @@
       </pre>
 
     </div>
-  </div>
+  </section>
 </template>

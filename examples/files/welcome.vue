@@ -1,5 +1,5 @@
 <template>
-  <div id="content-welcome" class="section">
+  <section id="content-welcome">
     <div class="title">
       <h1>Welcome</h1>
     </div>
@@ -9,5 +9,5 @@
         our digital H2O style guide.
       </p>
     </div>
-  </div>
+  </section>
 </template>

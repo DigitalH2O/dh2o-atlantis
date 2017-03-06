@@ -1,5 +1,17 @@
+<style lang="scss" scoped>
+  @import '../../../src/scss/_partials.scss';
+
+  h1, h2, h3, h4, h5, h6 {
+    display: inline;
+  }
+
+  .bold-weight {
+    font-weight: $font-weight-bold;
+  }
+</style>
+
 <template>
-  <div id="content-fonts" class="section">
+  <section id="content-fonts">
     <div class="title"><h1>Fonts</h1></div>
     <div class="content">
       <h1>H1</h1>
@@ -66,17 +78,5 @@
         </small>
       </p>
     </div>
-  </div>
+  </section>
 </template>
-
-<style scoped>
-  @import '../../../src/scss/_partials.scss';
-
-  h1, h2, h3, h4, h5, h6 {
-    display: inline;
-  }
-
-  .bold-weight {
-    font-weight: $font-weight-bold;
-  }
-</style>

@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <div id="group-section" class="section">
+  <section id="group-section">
     <div class="title"><h1>Groups</h1></div>
     <div class="content">
       <h3>Button Group</h3>
@@ -55,7 +55,6 @@
           <div class="btn primary">Save Form</div>
         </div>
       </code-sample>
-
     </div>
-  </div>
+  </section>
 </template>

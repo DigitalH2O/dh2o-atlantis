@@ -1,19 +1,19 @@
 <script>
-import $ from 'jquery';
-import 'select2';                       // globally assign select2 fn to $ element
+  import $ from 'jquery'
+  import 'select2' // globally assign select2 fn to $ element
 
-export default {
-  mounted() {
-    $('.select2-nosearch').select2({
-      width: '300px',
-      minimumResultsForSearch: Infinity
-    });
+  export default {
+    mounted () {
+      $('.select2-nosearch').select2({
+        width: '300px',
+        minimumResultsForSearch: Infinity
+      })
 
-    $('.select2-search').select2({
-      width: '300px'
-    });
+      $('.select2-search').select2({
+        width: '300px'
+      })
+    }
   }
-}
 </script>
 
 <style>
@@ -34,7 +34,7 @@ export default {
 </style>
 
 <template>
-  <section id="content-menus" class="section">
+  <section id="content-menus">
       <div class="title"><h1>Menus</h1></div>
       <div class="content">
         <p>

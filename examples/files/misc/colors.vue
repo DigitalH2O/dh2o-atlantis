@@ -55,7 +55,7 @@
 </style>
 
 <template>
-  <div id="content-colors" class="section">
+  <section id="content-colors">
     <div class="title"><h1>Colors</h1></div>
     <div class="content">
       <p>
@@ -129,6 +129,6 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
 </template>
