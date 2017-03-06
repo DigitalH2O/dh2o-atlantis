@@ -23,35 +23,39 @@
 </style>
 
 <template>
-  <section id="content-tags">
-    <div class="title"><h1>Tags</h1></div>
+  <article id="content-tags">
+    <header><h1>Tags</h1></header>
     <div class="content">
-      <p>
-        Tags are a way of showing small labels for visual
-        markers correlating differencial pieces of information.
-      </p>
-      <div class="tag-container">
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-        <div class="tag">Tag</div>
-      </div>
 
-      <code class="language-markup">
-        <script type="prism-html-markup">
+      <section>
+        <p>
+          Tags are a way of showing small labels for visual
+          markers correlating differencial pieces of information.
+        </p>
+        <div class="tag-container">
           <div class="tag">Tag</div>
-        </script>
-      </code>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+          <div class="tag">Tag</div>
+        </div>
+
+        <code class="language-markup">
+          <script type="prism-html-markup">
+            <div class="tag">Tag</div>
+          </script>
+        </code>
+      </section>
+
     </div>
-  </section>
+  </article>
 </template>

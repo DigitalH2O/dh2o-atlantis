@@ -35,28 +35,28 @@
 
   &.primary {
     color: $white;
-    background-color: $primary;
-    border: 1px solid $primary;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
     &:hover {
-      background-color: darker($primary);
-      border: 1px solid darker($primary);
+      background-color: darker($primary-color);
+      border: 1px solid darker($primary-color);
     }
     &:active {
-      background-color: darkest($primary);
-      border: 1px solid darkest($primary);
+      background-color: darkest($primary-color);
+      border: 1px solid darkest($primary-color);
     }
   }
   &.secondary {
     color: $white;
-    background-color: $secondary;
-    border: 1px solid $secondary;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
     &:hover {
-      background-color: darker($secondary);
-      border: 1px solid darker($secondary);
+      background-color: darker($secondary-color);
+      border: 1px solid darker($secondary-color);
     }
     &:active {
-      background-color: darkest($secondary);
-      border: 1px solid darkest($secondary);
+      background-color: darkest($secondary-color);
+      border: 1px solid darkest($secondary-color);
     }
   }
 }

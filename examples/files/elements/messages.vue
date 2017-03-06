@@ -28,39 +28,43 @@
 </style>
 
 <template>
-  <section id="content-messages">
-    <div class="title"><h1>Messages</h1></div>
+  <article id="content-messages">
+    <header><h1>Messages</h1></header>
     <div class="content">
-      <code-sample>
-        <div class="message success">Success message</div>
-        <div class="message warning">Warning message</div>
-        <div class="message alert">Alert message</div>
-        <div class="message notice">Notice message</div>
-      </code-sample>
 
-      <div class="separator"></div>
+      <section>
+        <code-sample>
+          <div class="message success">Success message</div>
+          <div class="message warning">Warning message</div>
+          <div class="message alert">Alert message</div>
+          <div class="message notice">Notice message</div>
+        </code-sample>
+      </section>
 
-      <h3>Flush</h3>
-      <p>
-        In situations where you need to tight flush fit with no margins
-        or rounded corners. Just add flush.
-      </p>
+      <section>
+        <header><h2>Flush</h2></header>
+        <p>
+          In situations where you need to tight flush fit with no margins
+          or rounded corners. Just add flush.
+        </p>
 
-      <code-sample>
-        <div class="message success flush">Success message</div>
-      </code-sample>
+        <code-sample>
+          <div class="message success flush">Success message</div>
+        </code-sample>
+      </section>
 
-      <div class="separator"></div>
+      <section>
+        <header><h2>Colors</h2></header>
+        <pre>
+          <code class="language-scss">
+            $success-color  : {{colors['success-color']}};
+            $warning-color  : {{colors['warning-color']}};
+            $alert-color    : {{colors['alert-color']}};
+            $notice-color   : {{colors['notice-color']}};
+          </code>
+        </pre>
+      </section>
 
-      <h3>Colors</h3>
-      <pre>
-        <code class="language-scss">
-          $success-color  : {{colors.success}};
-          $warning-color  : {{colors.warning}};
-          $alert-color    : {{colors.alert}};
-          $notice-color   : {{colors.notice}};
-        </code>
-      </pre>
     </div>
-  </section>
+  </article>
 </template>

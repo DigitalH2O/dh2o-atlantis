@@ -12,83 +12,118 @@
 <style lang="scss">
   @import '../../../src/scss/_partials';
 
-  .logos, .loading-icons {
-    .code-sample {
-      .as-rendered {
-        width: 25%;
-      }
-      .as-code {
-        width: 74%;
+  #content-images {
+    .logos {
+      .code-sample {
+        display: flex;
+
+        .as-rendered {
+          margin: 0 $spacing-half 0 0;
+          flex: 0 0 40%;
+        }
+        .as-code {
+          flex: 1 1 auto;
+        }
       }
     }
-  }
+    .logos-droplet {
+      .code-sample {
+        display: flex;
 
-  .custom-icons {
-    .code-sample {
-      .as-rendered {
-        width: 10%;
-      }
-      .as-code {
-        width: 89%;
+        .as-rendered {
+          margin: 0 $spacing-half 0 0;
+          flex: 0 0 150px;
+        }
+        .as-code {
+          flex: 1 1 auto;
+        }
       }
     }
 
-    .navigation {
-      .as-rendered {
-        padding: $spacing-half;
-        width: 8%;
+    .custom-icons {
+      .code-sample {
+        .as-rendered {
+          width: 10%;
+        }
+        .as-code {
+          width: 89%;
+        }
       }
 
-      .inactive {
-        .as-rendered { background-color: $secondary; }
-      }
+      .navigation {
+        .as-rendered {
+          padding: $spacing-half;
+          width: 8%;
+        }
 
-      .active {
-        .as-rendered { background-color: $primary; }
+        .inactive {
+          .as-rendered { background-color: $secondary-color; }
+        }
+
+        .active {
+          .as-rendered { background-color: $primary-color; }
+        }
       }
+    }
+
+    .loading-icons {
+      .code-sample {
+        display: flex;
+
+        .as-rendered {
+          margin: 0 $spacing-half 0 0;
+          flex: 0 0 150px;
+        }
+        .as-code {
+          flex: 1 1 auto;
+        }
+      }
+    }
+
+    .bg-primary {
+      padding: 3px;
+      background-color: $primary-color;
     }
   }
 </style>
 
 <template>
-  <section id="content-images">
-    <div class="title"><h1>Images</h1></div>
+  <article id="content-images">
+    <header><h1>Images</h1></header>
     <div class="content">
-      <div class="logos">
-        <h3>Logos</h3>
-
+      <section>
+        <header><h2>Logos</h2></header>
         <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>
 
-        <code-sample>
-          <img src="../../../src/images/logo-color.svg" />
-        </code-sample>
+        <section class="logos">
+          <code-sample>
+            <img src="~dh2o-atlantis/images/logo-color.svg" />
+          </code-sample>
 
+          <code-sample>
+            <div class="bg-primary">
+              <img src="~dh2o-atlantis/images/logo-white.svg" />
+            </div>
+          </code-sample>
+        </section>
 
         <div class="separator smaller"></div>
 
-        <code-sample>
-          <div style="padding: 3px; background-color: #31708f;">
-            <img src="../../../src/images/logo-white.svg" />
-          </div>
-        </code-sample>
+        <section class="logos-droplet">
+          <code-sample>
+            <img src="~dh2o-atlantis/images/logo-droplet-color.svg" style="width: 150px;" />
+          </code-sample>
 
-        <div class="separator smaller"></div>
+          <code-sample>
+            <div class="bg-primary">
+              <img src="~dh2o-atlantis/images/logo-droplet-white.svg" style="width: 150px;" />
+            </div>
+          </code-sample>
+        </section>
+      </section>
 
-        <code-sample>
-          <img src="../../../src/images/logo-droplet-color.svg" style="width: 150px;" />
-        </code-sample>
-
-        <code-sample>
-          <div style="background-color: #31708f; padding: 5px; width: 150px;">
-            <img src="../../../src/images/logo-droplet-white.svg" />
-          </div>
-        </code-sample>
-      </div>
-
-      <div class="separator"></div>
-
-      <div class="custom-icons">
-        <h3>Custom Icons</h3>
+      <section class="custom-icons">
+        <header><h2>Custom Icons</h2></header>
         <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
         <div>
@@ -100,19 +135,19 @@
         </div>
 
         <p>We also have a few two-tone navigation icons, which are distributed
-        as SVGs. Each has a normal state for a <code class="language-markup">$secondary</code>
-        background, and an active state for a <code class="language-markup">$primary</code>background.</p>
+        as SVGs. Each has a normal state for a <code class="language-markup">$secondary-color</code>
+        background, and an active state for a <code class="language-markup">$primary-color</code>background.</p>
 
         <div class="navigation">
           <div>
             <div class="inactive">
               <code-sample>
-                <img src="../../../src/images/icon-analytics.svg" />
+                <img src="~dh2o-atlantis/images/icon-analytics.svg" />
               </code-sample>
             </div>
             <div class="active">
               <code-sample>
-                <img src="../../../src/images/icon-analytics-active.svg" />
+                <img src="~dh2o-atlantis/images/icon-analytics-active.svg" />
               </code-sample>
             </div>
           </div>
@@ -120,12 +155,12 @@
           <div>
             <div class="inactive">
               <code-sample>
-                <img src="../../../src/images/icon-assets.svg" />
+                <img src="~dh2o-atlantis/images/icon-assets.svg" />
               </code-sample>
             </div>
             <div class="active">
               <code-sample>
-                <img src="../../../src/images/icon-assets-active.svg" />
+                <img src="~dh2o-atlantis/images/icon-assets-active.svg" />
               </code-sample>
             </div>
           </div>
@@ -133,12 +168,12 @@
           <div>
             <div class="inactive">
               <code-sample>
-                <img src="../../../src/images/icon-dashboard.svg" />
+                <img src="~dh2o-atlantis/images/icon-dashboard.svg" />
               </code-sample>
             </div>
             <div class="active">
               <code-sample>
-                <img src="../../../src/images/icon-dashboard-active.svg" />
+                <img src="~dh2o-atlantis/images/icon-dashboard-active.svg" />
               </code-sample>
             </div>
           </div>
@@ -146,12 +181,12 @@
           <div>
             <div class="inactive">
               <code-sample>
-                <img src="../../../src/images/icon-watertransfer.svg" />
+                <img src="~dh2o-atlantis/images/icon-watertransfer.svg" />
               </code-sample>
             </div>
             <div class="active">
               <code-sample>
-                <img src="../../../src/images/icon-watertransfer-active.svg" />
+                <img src="~dh2o-atlantis/images/icon-watertransfer-active.svg" />
               </code-sample>
             </div>
           </div>
@@ -159,45 +194,37 @@
           <div>
             <div class="inactive">
               <code-sample>
-                <img src="../../../src/images/icon-waterforecast.svg" />
+                <img src="~dh2o-atlantis/images/icon-waterforecast.svg" />
               </code-sample>
             </div>
             <div class="active">
               <code-sample>
-                <img src="../../../src/images/icon-waterforecast-active.svg" />
+                <img src="~dh2o-atlantis/images/icon-waterforecast-active.svg" />
               </code-sample>
             </div>
           </div>
 
         </div>
-      </div>
+      </section>
 
-      <div class="separator smaller"></div>
-
-      <div class="generic-icons">
-        <h3>Generic Icons</h3>
+      <section class="generic-icons">
+        <header><h2>Generic Icons</h2></header>
         <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
-      </div>
+      </section>
 
-      <div class="separator smaller"></div>
-
-      <div class="loading-icons">
-        <h3>Loading Icons</h3>
+      <section class="loading-icons">
+        <header><h2>Loading Icons</h2></header>
         <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
         <code-sample>
-          <div style="max-height: 200px;">
-            <img height="200" src="../../../src/images/loading-barrel.svg" />
-          </div>
+          <img height="200" src="~dh2o-atlantis/images/loading-barrel.svg" />
         </code-sample>
 
         <code-sample>
-          <div style="max-height: 200px;">
-            <img height="200" src="../../../src/images/loading-barrel-static.svg" />
-          </div>
+          <img height="200" src="~dh2o-atlantis/images/loading-barrel-static.svg" />
         </code-sample>
-      </div>
+      </section>
 
     </div>
-  </section>
+  </article>
 </template>

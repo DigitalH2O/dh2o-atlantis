@@ -21,12 +21,12 @@ body {
   overflow: hidden;
 
   // Header - located at the top of the aplication
-  header {
+  > header {
     flex: 0 0 $header-height;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $primary;
+    background-color: $primary-color;
     color: $white;
 
     &:before {
@@ -102,7 +102,7 @@ body {
 
     // Sidebar is the primarly left hand bar
     aside {
-      background-color: darker($secondary);
+      background-color: darker($secondary-color);
       flex: 0 1 $sidebar-width;
       overflow-x: hidden;
       overflow-y: auto;
