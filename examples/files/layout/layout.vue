@@ -14,10 +14,10 @@
         <code class="language-markup">
           <script type="prism-html-markup">
             <div class="app">
-              <div class="header"></div>
+              <header></header>
               <div class="container">
-                <div class="sidebar"></div>
-                <div class="main"></div>
+                <aside></aside>
+                <main></main>
               </div>
             </div>
           </script>

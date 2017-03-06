@@ -11,9 +11,11 @@
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <ul class="nav">
-              <li class="link"><a>Link tag</a></li>
-            </ul>
+            <nav>
+              <a class="link">Link 1</a>
+              <a class="link">Link 2</a>
+              <a class="link">Link 3</a>
+            </nav>
           </script>
         </code>
       </pre>
@@ -34,13 +36,13 @@
 
       <h3>Separators</h3>
       <p>
-        If you need to add a line separator in a menu item. Just change
-        the class of one of the li link items with separator.
+        If you need to add a line separator in a menu item.
+        Just add an element with the value of separator.
       </p>
       <pre>
         <code class="language-markup">
           <script type="prism-html-markup">
-            <li class="separator"></li>
+            <div class="separator"></div>
           </script>
         </code>
       </pre>

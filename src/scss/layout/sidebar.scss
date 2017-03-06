@@ -1,16 +1,14 @@
-.sidebar {
-  .nav {
+aside {
+  nav {
     .link {
       text-align: center;
-      a {
-        display: block;
-        padding: $spacing-half;
-        color: $white;
-        text-decoration: none;
+      display: block;
+      padding: $spacing-half;
+      color: $white;
+      text-decoration: none;
 
-        &:hover, &.active {
-          background-color: $primary;
-        }
+      &:hover, &.active {
+        background-color: $primary;
       }
     }
 

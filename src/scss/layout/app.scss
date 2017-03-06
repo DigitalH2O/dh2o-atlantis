@@ -21,7 +21,7 @@ body {
   overflow: hidden;
 
   // Header - located at the top of the aplication
-  .header {
+  header {
     flex: 0 0 $header-height;
     display: flex;
     flex-direction: row;
@@ -101,7 +101,7 @@ body {
     align-content: stretch;
 
     // Sidebar is the primarly left hand bar
-    .sidebar {
+    aside {
       background-color: darker($secondary);
       flex: 0 1 $sidebar-width;
       overflow-x: hidden;
@@ -109,7 +109,7 @@ body {
     }
 
     // Main is the large main section
-    .main {
+    main {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: calc(100% - #{$sidebar-width});
