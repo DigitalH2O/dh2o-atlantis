@@ -1,5 +1,5 @@
 <template>
-  <div id="content-grid" class="section">
+  <section id="content-grid">
     <div class="title"><h1>Grid System</h1></div>
     <div class="content">
       <p>
@@ -9,5 +9,5 @@
         <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Here</a> is a really good reference on using flexbox.
       </p>
     </div>
-  </div>
+  </section>
 </template>
