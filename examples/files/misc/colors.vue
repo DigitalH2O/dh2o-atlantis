@@ -41,6 +41,10 @@
     display: flex;
     flex-direction: row;
 
+    header {
+      display: block;
+    }
+
     div {
       flex: 0 1 33%;
       margin: 0 $spacing-quarter 0 $spacing-quarter;
@@ -55,8 +59,8 @@
 </style>
 
 <template>
-  <div id="content-colors" class="section">
-    <div class="title"><h1>Colors</h1></div>
+  <article id="content-colors">
+    <header><h1>Colors</h1></header>
     <div class="content">
       <p>
         The base color palette below is the default for most cases. When we
@@ -65,70 +69,68 @@
         on the original colors.
       </p>
 
-      <div class="colors-group">
-        <div>
-          <h2>Base Colors</h2>
-          <ul class="colors">
-            <li class="btn" v-for="(color, colorName) in colors.base"
-                :style="{'background-color': color, 'color': '#ffffff'}">
-              ${{colorName}}: {{color}}
-            </li>
-          </ul>
+      <section>
+        <header><h2>Base Colors</h2></header>
+        <div class="colors-group">
+          <div>
+            <ul class="colors">
+              <li class="btn" v-for="(color, colorName) in colors.base"
+                  :style="{'background-color': color, 'color': '#ffffff'}">
+                ${{colorName}}: {{color}}
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="colors">
+              <li class="btn" v-for="(color, colorName) in darkerColors"
+                  :style="{ 'background-color': color, 'color': '#ffffff' }">
+                darker(${{colorName}})
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="colors">
+              <li class="btn" v-for="(color, colorName) in darkestColors"
+                  :style="{ 'background-color': color, 'color': '#ffffff' }">
+                darkest(${{colorName}})
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h2>Darker Colors ({{darkerPercent}})</h2>
-          <ul class="colors">
-            <li class="btn" v-for="(color, colorName) in darkerColors"
-                :style="{ 'background-color': color, 'color': '#ffffff' }">
-              darker(${{colorName}})
-            </li>
-          </ul>
+      <section>
+        <header><h2>Notice Colors</h2></header>
+        <p>The message color palette is used in the slide-out messaging bar.</p>
+        <div class="colors-group">
+          <div>
+            <ul class="colors">
+              <li class="btn" v-for="(color, colorName) in colors.message"
+                  :style="{'background-color': color, 'color': '#ffffff'}">
+                ${{colorName}}: {{color}}
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <h2>Darkest Colors ({{darkestPercent}})</h2>
-          <ul class="colors">
-            <li class="btn" v-for="(color, colorName) in darkestColors"
-                :style="{ 'background-color': color, 'color': '#ffffff' }">
-              darkest(${{colorName}})
-            </li>
-          </ul>
+      <section>
+        <header><h2>Text Link Color</h2></header>
+        <p>Text Link Color is used to highlight text based links and focus values on fields</p>
+        <div class="row">
+          <div class="col-xs-6 col-lg-4">
+            <ul class="colors">
+              <li class="btn" v-for="(color, colorName) in colors.text"
+                  :style="{'background-color': color, 'color': '#ffffff'}">
+                ${{colorName}}: {{color}}
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div class="separator"></div>
-
-      <p>The message color palette is used in the slide-out messaging bar.</p>
-      <div class="colors-group">
-        <div>
-          <h2>Message Colors</h2>
-          <ul class="colors">
-            <li class="btn" v-for="(color, colorName) in colors.message"
-                :style="{'background-color': color, 'color': '#ffffff'}">
-              ${{colorName}}: {{color}}
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="separator"></div>
-
-      <p>Text Link Color is used to highlight text based links and focus values on fields</p>
-
-      <div class="row">
-        <div class="col-xs-6 col-lg-4">
-          <h2>Text Link Color</h2>
-          <ul class="colors">
-            <li class="btn" v-for="(color, colorName) in colors.text"
-                :style="{'background-color': color, 'color': '#ffffff'}">
-              ${{colorName}}: {{color}}
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
 
     </div>
-  </div>
-
+  </article>
 </template>

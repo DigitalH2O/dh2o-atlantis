@@ -16,12 +16,12 @@
 }
 
 %dropdown-menu-item-hover {
-  background-color: $primary;
+  background-color: $primary-color;
   color: $white;
 }
 
 %dropdown-menu-item-selected {
-  background-color: $primary;
+  background-color: $primary-color;
   color: $white;
   font-weight: $font-weight-bold;
 }

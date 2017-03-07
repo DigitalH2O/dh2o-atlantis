@@ -1,16 +1,16 @@
 $colors: (
   base: (
-    primary: #1b7a9d,
-    secondary: #454e67,
+    primary-color: #1b7a9d,
+    secondary-color: #454e67,
     font-color: #666666,
     border-color: #DCDEE2,
     background-color: #f1f1f1
   ),
   message: (
-    success: #719d46,
-    warning: #efaa1b,
-    alert: #b63813,
-    notice: #1b7a9d
+    success-color: #719d46,
+    warning-color: #efaa1b,
+    alert-color: #b63813,
+    notice-color: #1b7a9d
   ),
   text: (
     link-text-color: #40b4de
@@ -18,8 +18,8 @@ $colors: (
 );
 
 $base-colors: map-get($colors, base);
-$primary: map-get($base-colors, primary);
-$secondary: map-get($base-colors, secondary);
+$primary-color: map-get($base-colors, primary-color);
+$secondary-color: map-get($base-colors, secondary-color);
 $font-color: map-get($base-colors, font-color);
 $border-color: map-get($base-colors, border-color);
 $background-color: map-get($base-colors, background-color);
@@ -34,10 +34,10 @@ $link-text-color: map-get($text-colors, link-text-color);
 
 // Message bar colors
 $message-colors : map-get($colors, message);
-$success-color  : map-get($message-colors, success);
-$warning-color  : map-get($message-colors, warning);
-$alert-color    : map-get($message-colors, alert);
-$notice-color   : map-get($message-colors, notice);
+$success-color  : map-get($message-colors, success-color);
+$warning-color  : map-get($message-colors, warning-color);
+$alert-color    : map-get($message-colors, alert-color);
+$notice-color   : map-get($message-colors, notice-color);
 
 $darker-percent: 10%;
 $darkest-percent: 20%;

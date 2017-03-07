@@ -97,7 +97,7 @@ input[type=checkbox] {
     @extend .fa;
     @extend .fa-check;
 
-    color: $primary;
+    color: $primary-color;
     font-size: $font-size*1.2;
 
     &::before {
@@ -156,7 +156,7 @@ textarea {
   .toggle-inner:before {
     content: "On";
     padding-left: 6px;
-    background-color: $primary;
+    background-color: $primary-color;
     color: $white;
   }
   .toggle-inner:after {

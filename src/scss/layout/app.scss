@@ -21,12 +21,12 @@ body {
   overflow: hidden;
 
   // Header - located at the top of the aplication
-  .header {
+  > header {
     flex: 0 0 $header-height;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $primary;
+    background-color: $primary-color;
     color: $white;
 
     &:before {
@@ -44,21 +44,23 @@ body {
       height: $header-height;
     }
 
-    // Digitalh2o logo located in the header
-    .logo {
-      flex: 0 0 auto;
+    .website {
       margin: 0 0 0 15px;
-      width: 161px;
-      height: 30px;
-      background-image: url(#{$dh2o-images-path}logo-white.svg);
-      background-position: left 50%;
-      background-repeat: no-repeat;
-    }
+      line-height: normal;
 
-    // Website name located in the header
-    .website-name {
-      flex: 0 0 auto;
-      margin: 0 0 0 50px;
+      .logo {
+        display: block;
+        width: 160px;
+        height: 30px;
+        background-image: url(#{$dh2o-images-path}logo-white.svg);
+        background-position: left 50%;
+        background-repeat: no-repeat;
+      }
+
+      .name {
+        font-size: $font-size + 1;
+        font-weight: bold;
+      }
     }
 
     // User info located on the right side of the header
@@ -101,15 +103,15 @@ body {
     align-content: stretch;
 
     // Sidebar is the primarly left hand bar
-    .sidebar {
-      background-color: darker($secondary);
+    aside {
+      background-color: darker($secondary-color);
       flex: 0 1 $sidebar-width;
       overflow-x: hidden;
       overflow-y: auto;
     }
 
     // Main is the large main section
-    .main {
+    main {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: calc(100% - #{$sidebar-width});

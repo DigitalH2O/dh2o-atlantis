@@ -1,19 +1,7 @@
-<template>
-  <div class="code-sample">
-    <div class="as-rendered">
-      <slot />
-    </div>
-
-    <div class="as-code">
-      <pre class="language-html-markup">
-        <code class="language-html-markup"></code>
-      </pre>
-    </div>
-  </div>
-</template>
-
 <script>
   import jsBeautify from 'js-beautify'
+
+  /* globals Prism */
 
   export default {
     data () {
@@ -31,12 +19,12 @@
 
         this.lastSeenMarkup = markupInDOM
         // take out the data attributes that Vue uses for scoped CSS
-        markupInDOM = markupInDOM.replace(/data\-v.*?=""\s*/g, '')
+        markupInDOM = markupInDOM.replace(/data-v.*?=""\s*/g, '')
 
         // replace the dev server's image paths with something more sane
         markupInDOM = markupInDOM.replace(
           /src="http:\/\/.*\/(.*\.svg)\?.*?"/g,
-          (match, p1, p2) => `src="../../src/images/${p1}"`)
+          (match, p1, p2) => `src="images/${p1}"`)
 
         // and run the markup through the beautifier to make it more readable:
         markupInDOM = jsBeautify.html(markupInDOM, { indent_size: 2 })
@@ -63,3 +51,17 @@
     width: 49%;
   }
 </style>
+
+<template>
+  <div class="code-sample">
+    <div class="as-rendered">
+      <slot />
+    </div>
+
+    <div class="as-code">
+      <pre class="language-html-markup">
+        <code class="language-html-markup"></code>
+      </pre>
+    </div>
+  </div>
+</template>

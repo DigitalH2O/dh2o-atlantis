@@ -1,0 +1,58 @@
+// Section defines a piece of content in the main container
+article {
+  background-color: $background-color;
+
+  > header {
+    width: auto;
+    padding: $spacing;
+    margin: 0px;
+    border: solid 1px $border-color;
+    background-color: $white;
+  }
+
+  .bar {
+    padding: $spacing;
+    color: $font-color;
+    background-color: $white;
+
+    &.secondary {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+
+  .content {
+    padding: $spacing;
+    margin: $spacing;
+    border: solid 1px $border-color;
+    background-color: $white;
+
+    > section {
+      padding: 0 0 $spacing 0;
+      margin: 0 0 $spacing 0;
+
+      // In case your section shouldn't have additional spacing
+      &.no-spacing {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+      }
+
+      &:last-child {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+      }
+
+      // Any last elements in a section should be tight with border bottom
+      > *:last-child:not(.message) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      > header {
+        padding: 0 0 $spacing-quarter 0;
+        margin: 0 0 $spacing-half 0;
+        border-bottom: solid 1px $border-color;
+      }
+    }
+  }
+}

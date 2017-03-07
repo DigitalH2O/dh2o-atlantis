@@ -1,8 +1,10 @@
 <template>
   <div class="app">
-    <div class="header">
-      <router-link to="/welcome" class="logo"></router-link>
-      <div class="website-name">Style Guide App</div>
+    <header>
+      <div class="website">
+        <router-link to="/welcome" class="logo"></router-link>
+        <div class="name">Style Guide App</div>
+      </div>
       <div class="user-menu dh2o-dropdown-container">
         <div class="dh2o-dropdown-trigger user-menu-btn">
           <i class="dh2o-icon-user"></i>
@@ -16,43 +18,41 @@
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <div class="container">
-      <div class="sidebar">
-        <ul class="nav">
-          <li class="link">
-            <router-link to="/welcome">
-              <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
-              Home
-            </router-link>
-          </li>
-          <li class="separator"></li>
-          <li class="link"><router-link to="/layout">Layout</router-link></li>
-          <li class="link"><router-link to="/sidebar">Sidebar</router-link></li>
-          <li class="link"><router-link to="/menus">Menus</router-link></li>
-          <li class="link"><router-link to="/sections">Sections</router-link></li>
-          <li class="link"><router-link to="/flexboxgrid">Grid</router-link></li>
-          <li class="separator"></li>
-          <li class="link"><router-link to="/colors">Colors</router-link></li>
-          <li class="link"><router-link to="/fonts">Fonts</router-link></li>
-          <li class="link"><router-link to="/images">Images</router-link></li>
-          <li class="link"><router-link to="/misc">Misc</router-link></li>
-          <li class="separator"></li>
-          <li class="link"><router-link to="/inputs">Inputs</router-link></li>
-          <li class="link"><router-link to="/buttons">Buttons</router-link></li>
-          <li class="link"><router-link to="/tags">Tags</router-link></li>
-          <li class="link"><router-link to="/groups">Groups</router-link></li>
-          <li class="link"><router-link to="/messages">Messages</router-link></li>
-          <li class="link"><router-link to="/lists">Lists</router-link></li>
-          <li class="link"><router-link to="/tables">Tables</router-link></li>
-          <li class="separator"></li>
-          <li class="link"><router-link to="/dropdowns">Dropdowns</router-link></li>
-          <li class="link"><router-link to="/modals">Modals</router-link></li>
-        </ul>
-      </div>
-      <div class="main">
+      <aside>
+        <nav>
+          <router-link to="/welcome" class="link">
+            <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
+            Home
+          </router-link>
+          <div class="separator"></div>
+          <router-link class="link" to="/layout">Layout</router-link>
+          <router-link class="link" to="/sidebar">Sidebar</router-link>
+          <router-link class="link" to="/menus">Menus</router-link>
+          <router-link class="link" to="/articles">Articles</router-link>
+          <router-link class="link" to="/grid">Grid</router-link>
+          <div class="separator"></div>
+          <router-link class="link" to="/colors">Colors</router-link>
+          <router-link class="link" to="/fonts">Fonts</router-link>
+          <router-link class="link" to="/images">Images</router-link>
+          <router-link class="link" to="/misc">Misc</router-link>
+          <div class="separator"></div>
+          <router-link class="link" to="/inputs">Inputs</router-link>
+          <router-link class="link" to="/buttons">Buttons</router-link>
+          <router-link class="link" to="/tags">Tags</router-link>
+          <router-link class="link" to="/groups">Groups</router-link>
+          <router-link class="link" to="/messages">Messages</router-link>
+          <router-link class="link" to="/lists">Lists</router-link>
+          <router-link class="link" to="/tables">Tables</router-link>
+          <div class="separator"></div>
+          <router-link class="link" to="/dropdowns">Dropdowns</router-link>
+          <router-link class="link" to="/modals">Modals</router-link>
+        </nav>
+      </aside>
+      <main>
         <router-view></router-view>
-      </div>
+      </main>
     </div>
   </div>
 </template>

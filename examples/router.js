@@ -10,8 +10,8 @@ module.exports = {
     {path: '/layout', component: require('./files/layout/layout.vue')},
     {path: '/sidebar', component: require('./files/layout/sidebar.vue')},
     {path: '/menus', component: require('./files/layout/menus.vue')},
-    {path: '/sections', component: require('./files/layout/sections.vue')},
-    {path: '/flexboxgrid', component: require('./files/layout/flexboxgrid.vue')},
+    {path: '/articles', component: require('./files/layout/articles.vue')},
+    {path: '/grid', component: require('./files/layout/grid.vue')},
 
     // Misc
     {path: '/misc', component: require('./files/misc/misc.vue')},
