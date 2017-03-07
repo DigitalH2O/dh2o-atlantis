@@ -7,7 +7,7 @@ aside {
       color: $white;
       text-decoration: none;
 
-      &:hover, &.active {
+      &:hover:not(.no-hover), &.active {
         background-color: $primary-color;
       }
     }

@@ -33,6 +33,14 @@
             </script>
           </code>
         </pre>
+        <p>If you dont want to have a hover state on any one link just add class="no-hover"</p>
+        <pre>
+          <code class="language-markup">
+            <script type="prism-html-markup">
+              <a class="active no-hover" href="#">Link tag</a>
+            </script>
+          </code>
+        </pre>
       </section>
 
       <section>
@@ -49,7 +57,7 @@
           </code>
         </pre>
       </section>
-      
+
     </div>
   </article>
 </template>
