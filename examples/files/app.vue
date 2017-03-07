@@ -22,7 +22,7 @@
     <div class="container">
       <aside>
         <nav>
-          <router-link to="/welcome" class="link">
+          <router-link to="/welcome" class="link no-hover">
             <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i><br />
             Home
           </router-link>
