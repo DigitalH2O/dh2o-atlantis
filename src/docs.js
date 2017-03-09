@@ -13,12 +13,9 @@ import 'dh2o-atlantis/components/dropdowns/dropdowns.scss'
 // Modals
 import 'dh2o-atlantis/components/modals/modals.scss'
 
-// IE es6 polyfill
-import 'babel-polyfill'
-
-import App from './files/app.vue'
-import CodeSample from './files/code-sample.vue'
-import routerList from './router'
+import App from './docs/app.vue'
+import CodeSample from './docs/code-sample.vue'
+import routerList from './router.js'
 
 Vue.component('code-sample', CodeSample)
 
