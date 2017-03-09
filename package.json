@@ -22,8 +22,9 @@
   "style": "src/index.scss",
   "dependencies": {
     "font-awesome": "^4.6.3",
-    "get-sass-vars-loader": "^1.0.0",
     "jquery": "^3.1.1",
+    "sass-extract": "^0.3.4",
+    "sass-extract-loader": "^0.3.4",
     "select2": "^4.0.3",
     "tinycolor2": "^1.4.1",
     "vue-build": "^0.40.1"
