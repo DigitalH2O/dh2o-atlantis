@@ -1,7 +1,6 @@
 <script>
   import tinycolor from 'tinycolor2'
   import colorVars from '!!sass-extract-loader!../../../src/scss/misc/_colors.scss'
-  console.log(colorVars)
 
   export default {
     data () {
