@@ -26,4 +26,4 @@ open http://localhost:8080
 ```
 
 ### Sass Variables
-In our style guide we use get-sass-vars-loader to pull in a scss and parse variables from it. You can view usage here at [get-sass-vars-loader](https://github.com/brianvoe/get-sass-vars-loader)
+In our style guide we use sass-extract-loader to pull in a scss and parse variables from it. You can view usage here at [sass-extract-loader](https://github.com/jgranstrom/sass-extract-loader)
