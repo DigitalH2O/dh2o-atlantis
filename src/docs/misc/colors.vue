@@ -1,30 +1,39 @@
 <script>
   import tinycolor from 'tinycolor2'
-  import _ from 'lodash'
-  import colorVars from '!!get-sass-vars-loader!../../../src/scss/misc/_colors.scss'
+  import colorVars from '!!sass-extract-loader!../../../src/scss/misc/_colors.scss'
 
   export default {
     data () {
-      const darkerPercent = colorVars['$darker-percent']
-      const darkestPercent = colorVars['$darkest-percent']
-      let colors = colorVars.$colors
+      const darkerPercent = colorVars.global['$darker-percent'].value
+      const darkestPercent = colorVars.global['$darkest-percent'].value
+      const baseColors = []
+      const messageColors = []
+      const textColors = []
+      const darkerColors = []
+      const darkestColors = []
+      let colors = colorVars.global.$colors.value
+      let colorsBase = colors.base.value
+      let colorsMessage = colorVars.global['$message-colors'].value
+      let colorsText = colorVars.global['$text-colors'].value
 
-      const darkerColors = _(colors.base)
-      .map((color, colorName) =>
-        [colorName, tinycolor(color).darken(darkerPercent.replace(/%/i, '')).toString()]
-      )
-      .fromPairs()
-      .value()
+      for (let name in colorsBase) {
+        baseColors.push({name: name, value: colorsBase[name].value.hex})
+        darkerColors.push({name: name, value: tinycolor(colorsBase[name].value.hex).darken(darkerPercent).toString()})
+        darkestColors.push({name: name, value: tinycolor(colorsBase[name].value.hex).darken(darkerPercent).toString()})
+      }
 
-      const darkestColors = _(colors.base)
-      .map((color, colorName) =>
-        [colorName, tinycolor(color).darken(darkestPercent.replace(/%/i, '')).toString()]
-      )
-      .fromPairs()
-      .value()
+      for (let name in colorsMessage) {
+        messageColors.push({name: name, value: colorsMessage[name].value.hex})
+      }
+
+      for (let name in colorsText) {
+        textColors.push({name: name, value: colorsText[name].value.hex})
+      }
 
       return {
-        colors: colors,
+        baseColors,
+        messageColors,
+        textColors,
         darkerPercent,
         darkestPercent,
         darkerColors,
@@ -74,18 +83,18 @@
         <div class="colors-group">
           <div>
             <ul class="colors">
-              <li class="btn" v-for="(color, colorName) in colors.base"
-                  :style="{'background-color': color, 'color': '#ffffff'}">
-                ${{colorName}}: {{color}}
+              <li class="btn" v-for="color in baseColors"
+                  :style="{'background-color': color.value, 'color': '#ffffff'}">
+                ${{color.name}}: {{color.value}}
               </li>
             </ul>
           </div>
 
           <div>
             <ul class="colors">
-              <li class="btn" v-for="(color, colorName) in darkerColors"
-                  :style="{ 'background-color': color, 'color': '#ffffff' }">
-                darker(${{colorName}})
+              <li class="btn" v-for="color in darkerColors"
+                  :style="{ 'background-color': color.value, 'color': '#ffffff' }">
+                darker(${{color.name}})
               </li>
             </ul>
           </div>
@@ -93,8 +102,8 @@
           <div>
             <ul class="colors">
               <li class="btn" v-for="(color, colorName) in darkestColors"
-                  :style="{ 'background-color': color, 'color': '#ffffff' }">
-                darkest(${{colorName}})
+                  :style="{ 'background-color': color.value, 'color': '#ffffff' }">
+                darkest(${{color.name}})
               </li>
             </ul>
           </div>
@@ -107,9 +116,9 @@
         <div class="colors-group">
           <div>
             <ul class="colors">
-              <li class="btn" v-for="(color, colorName) in colors.message"
-                  :style="{'background-color': color, 'color': '#ffffff'}">
-                ${{colorName}}: {{color}}
+              <li class="btn" v-for="color in messageColors"
+                  :style="{'background-color': color.value, 'color': '#ffffff'}">
+                ${{color.name}}: {{color.value}}
               </li>
             </ul>
           </div>
@@ -122,9 +131,9 @@
         <div class="row">
           <div class="col-xs-6 col-lg-4">
             <ul class="colors">
-              <li class="btn" v-for="(color, colorName) in colors.text"
-                  :style="{'background-color': color, 'color': '#ffffff'}">
-                ${{colorName}}: {{color}}
+              <li class="btn" v-for="color in textColors"
+                  :style="{'background-color': color.value, 'color': '#ffffff'}">
+                ${{color.name}}: {{color.value}}
               </li>
             </ul>
           </div>

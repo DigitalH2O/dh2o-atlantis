@@ -1,13 +1,7 @@
 # dh2o-atlantis
-Style guide for front end applications
-
-## Using dh2o-atlantis in other projects
-
-Install dh2o-atlantis with npm, and then do `@import '~dh2o-atlantis/scss/index';`
-in your project's main SASS file to add the base DH2O styles.
+Style guide for front end DigitalH2O applications
 
 ### Building components with DH2O styles
-
 If you need to use DH2O variables or mixins from an isolated styling context
 -- like, say, the `<style>` block of a Vue component -- you should do:
 
@@ -22,18 +16,13 @@ Do NOT import the `index.scss` file from your components! Doing so will duplicat
 every CSS rule in dh2o-atlantis. You should only need to import `index` once per
 project.
 
-## Contributing to dh2o-atlantis
-
 ### Setup
-npm install
+yarn install
 
 ### Run
 ```
-npm run dev
+vue-build dev
 open http://localhost:8080
-
-// To listen on another port
-npm run dev --port=5555
 ```
 
 ### Sass Variables
