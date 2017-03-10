@@ -1,3 +1,14 @@
+<script>
+ export default {
+   mounted () {
+     // Lets redirect to path
+     if (this.$route.query.p) {
+       this.$router.push({ path: this.$route.query.p })
+     }
+   }
+ }
+</script>
+
 <template>
   <div class="app">
     <header>
