@@ -1,10 +1,10 @@
 <script>
-  import colorVars from '!!get-sass-vars-loader!../../../src/scss/misc/_colors.scss'
+  import colorVars from '!!sass-extract-loader!../../../src/scss/misc/_colors.scss'
 
   export default {
     data () {
       return {
-        colors: colorVars.$colors.message
+        colors: colorVars.global.$colors.value.message.value
       }
     }
   }
@@ -57,10 +57,10 @@
         <header><h2>Colors</h2></header>
         <pre>
           <code class="language-scss">
-            $success-color  : {{colors['success-color']}};
-            $warning-color  : {{colors['warning-color']}};
-            $alert-color    : {{colors['alert-color']}};
-            $notice-color   : {{colors['notice-color']}};
+            $success-color  : {{colors['success-color'].value.hex}};
+            $warning-color  : {{colors['warning-color'].value.hex}};
+            $alert-color    : {{colors['alert-color'].value.hex}};
+            $notice-color   : {{colors['notice-color'].value.hex}};
           </code>
         </pre>
       </section>
