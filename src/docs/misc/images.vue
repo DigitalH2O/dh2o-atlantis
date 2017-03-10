@@ -1,9 +1,10 @@
 <script>
-  import fontIcons from '!!get-sass-vars-loader!../../../src/scss/images/_variables.scss'
+  import fontIcons from '!!sass-extract-loader!../../../src/scss/images/_variables.scss'
+
   export default {
     data () {
       return {
-        fontIcons: fontIcons['$font-icons']
+        fontIcons: fontIcons.global['$font-icons'].value
       }
     }
   }
