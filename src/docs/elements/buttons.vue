@@ -13,31 +13,31 @@
   <article id="content-buttons">
     <header><h1>Buttons</h1></header>
     <div class="widget">
+      <div class="widget-body">
+        <section>
+          <p>
+            As much like everything else. Buttons keep a clean consitance
+            with our color system. Hover stats are just a darkening of
+            their original color.
+          </p>
 
-      <section>
-        <p>
-          As much like everything else. Buttons keep a clean consitance
-          with our color system. Hover stats are just a darkening of
-          their original color.
-        </p>
+          <code-sample>
+            <button class="btn">Regular</button>
+          </code-sample>
 
-        <code-sample>
-          <button class="btn">Regular</button>
-        </code-sample>
+          <code-sample>
+            <button class="btn primary">Primary</button>
+          </code-sample>
 
-        <code-sample>
-          <button class="btn primary">Primary</button>
-        </code-sample>
+          <code-sample>
+            <button class="btn secondary">Secondary</button>
+          </code-sample>
 
-        <code-sample>
-          <button class="btn secondary">Secondary</button>
-        </code-sample>
-
-        <code-sample>
-          <button class="btn inactive">Inactive</button>
-        </code-sample>
-      </section>
-
+          <code-sample>
+            <button class="btn inactive">Inactive</button>
+          </code-sample>
+        </section>
+      </div>
     </div>
   </article>
 </template>
