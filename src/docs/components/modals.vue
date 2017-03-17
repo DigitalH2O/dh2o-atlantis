@@ -62,7 +62,7 @@
 <template>
   <article id="content-modals">
     <header><h1>Modals</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <p>

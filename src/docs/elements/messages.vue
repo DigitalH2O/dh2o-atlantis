@@ -30,7 +30,7 @@
 <template>
   <article id="content-messages">
     <header><h1>Messages</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <code-sample>

@@ -1,7 +1,7 @@
 <template>
   <article id="content-welcome">
     <header><h1>Welcome</h1></header>
-    <div class="content">
+    <div class="widget">
       <section>
         <p>
           This guide is to help understand how to develop apps using

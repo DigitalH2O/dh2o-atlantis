@@ -1,7 +1,7 @@
 <template>
   <article id="content-misc">
     <header><h1>Misc</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <header><h2>Hide</h2></header>

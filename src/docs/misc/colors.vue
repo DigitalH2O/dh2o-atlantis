@@ -70,7 +70,7 @@
 <template>
   <article id="content-colors">
     <header><h1>Colors</h1></header>
-    <div class="content">
+    <div class="widget">
       <p>
         The base color palette below is the default for most cases. When we
         need contrast, use the <code class="language-markup">darker</code> and

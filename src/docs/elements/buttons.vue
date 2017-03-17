@@ -12,7 +12,7 @@
 <template>
   <article id="content-buttons">
     <header><h1>Buttons</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <p>

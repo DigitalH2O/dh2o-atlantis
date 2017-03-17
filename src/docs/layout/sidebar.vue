@@ -1,7 +1,7 @@
 <template>
   <article id="content-sidebar">
     <header><h1>Sidebar</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <p>

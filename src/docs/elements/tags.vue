@@ -25,7 +25,7 @@
 <template>
   <article id="content-tags">
     <header><h1>Tags</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <p>

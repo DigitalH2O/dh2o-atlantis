@@ -15,7 +15,7 @@
 <template>
   <article id="content-fonts">
     <header><h1>Fonts</h1></header>
-    <div class="content">
+    <div class="widget">
       <section>
         <header><h2>H Elements</h2></header>
         <h1>H1</h1>

@@ -12,7 +12,7 @@
 <template>
   <article id="group-section">
     <header><h1>Groups</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <header><h2>Button Group</h2></header>

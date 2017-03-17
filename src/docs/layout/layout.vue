@@ -1,7 +1,7 @@
 <template>
   <article id="content-layout">
     <header><h1>Layout</h1></header>
-    <div class="content">
+    <div class="widget">
 
       <section>
         <p>The main application primarily consists of three elements wrapped in
