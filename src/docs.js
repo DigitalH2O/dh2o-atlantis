@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 
 // Styles
 import 'dh2o-atlantis/scss/index.scss'
+import 'dh2o-atlantis/components/dashboards/dashboards.scss'
 
 // Dropdowns
 import 'dh2o-atlantis/components/dropdowns/dropdowns.js'
