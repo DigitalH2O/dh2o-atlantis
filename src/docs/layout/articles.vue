@@ -73,7 +73,7 @@
                     </span>
                   </div>
                   <div class="options">
-                    <div class="dh2o-dropdown-container widget-options-trigger">
+                    <div class="dh2o-dropdown-container trigger">
                       <div class="dh2o-dropdown-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                       <div class="dh2o-dropdown-content">
                         <ul class="dh2o-dropdown-menu">
