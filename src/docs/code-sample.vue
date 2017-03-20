@@ -45,10 +45,20 @@
   }
 </script>
 
-<style scoped>
-  .as-rendered, .as-code {
-    display: inline-block;
-    width: 49%;
+<style scoped lang="sass-loader">
+  @import "~dh2o-atlantis-partials";
+  .code-sample {
+    display: flex;
+    align-items: center;
+
+    .as-rendered {
+      flex: 0 1 auto;
+      margin-right: $spacing-half;
+    }
+
+    .as-code {
+      flex: 1 0 50%;
+    }
   }
 </style>
 
