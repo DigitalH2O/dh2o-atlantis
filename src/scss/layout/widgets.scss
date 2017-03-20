@@ -1,0 +1,58 @@
+.widget {
+  margin: $spacing;
+  border: solid 1px $border-color;
+  background-color: $white;
+
+  > header {
+    display: flex;
+    flex: 0 0 33px;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-quarter $spacing-half;
+    border-bottom: solid 1px $border-color;
+
+    > .titlebar {
+      flex: 1 1;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .title {
+        display: block;
+        line-height: 1.2;
+      }
+      .subtitle {
+        display: block;
+        font-size: $font-size - 2;
+        line-height: 1.2;
+        color: darkest($border-color);
+      }
+    }
+
+    > .toolbar {
+      flex: 0 1;
+      display: flex;
+      justify-content: flex-end;
+
+      > * {
+        padding-left: $spacing-quarter;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+
+      .dh2o-dropdown-content {
+        text-align: left;
+        width: 160px;
+        top: 20px;
+        left: -140px;
+      }
+    }
+  } // header
+
+  > .body {
+    padding: $spacing-half;
+  }
+}
