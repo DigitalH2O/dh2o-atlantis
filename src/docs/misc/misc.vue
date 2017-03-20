@@ -2,7 +2,7 @@
   <article id="content-misc">
     <header><h1>Misc</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <header><h2>Hide</h2></header>
           <p>

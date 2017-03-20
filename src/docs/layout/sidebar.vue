@@ -2,7 +2,7 @@
   <article id="content-sidebar">
     <header><h1>Sidebar</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             Although navigation may change depending on the application

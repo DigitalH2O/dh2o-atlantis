@@ -13,7 +13,7 @@
   <article id="content-lists">
     <header><h1>Lists</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>By default our <code class="language-css">ul</code> and <code class="language-css">ol</code> tags do not have standard bulleted list styles applied due to our CSS reset. They will look the same unless you apply the <code class="language-css">.bulleted-list</code> or <code class="language-css">.ordered-list</code> class to the <code class="language-css">ul</code> or <code class="language-css">ol</code> tag.</p>
           <div>

@@ -37,7 +37,7 @@
   <article id="content-menus">
     <header><h1>Menus</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             The styles for a dropdown menu can be applied to any <code class="language-html">ul</code> tag

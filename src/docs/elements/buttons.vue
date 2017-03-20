@@ -13,7 +13,7 @@
   <article id="content-buttons">
     <header><h1>Buttons</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             As much like everything else. Buttons keep a clean consitance

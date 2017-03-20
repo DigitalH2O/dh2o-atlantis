@@ -63,7 +63,7 @@
   <article id="content-modals">
     <header><h1>Modals</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             Modal consists of a button with the class dh2o-modal-btn and a

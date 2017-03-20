@@ -92,7 +92,7 @@
   <article id="content-images">
     <header><h1>Images</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <header><h2>Logos</h2></header>
           <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>

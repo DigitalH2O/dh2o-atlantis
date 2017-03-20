@@ -23,20 +23,20 @@
       <div class="btn primary">Button</div>
     </div>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <header><h2>Widgets</h2></header>
           <p>
             A widget is some content in a white box. Every
             <code class="language-css">.widget</code> should have
-            a single <code class="language-css">.widget-body</code>
+            a single <code class="language-css">.body</code>
             as its direct child.
           </p>
 
           <code-sample>
             <article>
               <div class="widget">
-                <div class="widget-body">
+                <div class="body">
                   This is a widget.
                 </div>
               </div>
@@ -47,7 +47,7 @@
             Some widgets may <strong>also</strong> have a
             <code class="language-markup">&lt;header&gt;</code>
             preceding their <code class="language-css">
-            .widget-body</code>. You can use
+            .body</code>. You can use
             <code class="language-css">.title-block</code>,
             <code class="language-css">.title</code>,
             <code class="language-css">.subtitle</code>,
@@ -86,7 +86,7 @@
                     </div>
                   </div>
                 </header>
-                <div class="widget-body">
+                <div class="body">
                   This is a widget body.
                 </div>
               </div>
@@ -106,7 +106,7 @@
           <code-sample>
             <article>
               <div class="widget">
-                <div class="widget-body">
+                <div class="body">
                   <section>
                     <header><h2>Section A</h2></header>
                     <p>This is some content.</p>
@@ -124,7 +124,7 @@
           <code-sample>
             <article>
               <div class="widget">
-                <div class="widget-body">
+                <div class="body">
                   <section>
                     <header><h2>Section A</h2></header>
                     <p>This is some content.</p>

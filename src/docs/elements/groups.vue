@@ -13,7 +13,7 @@
   <article id="group-section">
     <header><h1>Groups</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <header><h2>Button Group</h2></header>
           <p>Use <code class="language-css">.group-inline</code> to group buttons or place buttons with a flat side next to other elements such as drop downs.</p>

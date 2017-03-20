@@ -26,7 +26,7 @@
   <article id="content-tags">
     <header><h1>Tags</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             Tags are a way of showing small labels for visual

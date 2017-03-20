@@ -31,7 +31,7 @@
   <article id="content-messages">
     <header><h1>Messages</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <code-sample>
             <div class="message success">Success message</div>

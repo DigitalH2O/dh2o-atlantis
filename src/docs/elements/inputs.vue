@@ -14,7 +14,7 @@
   <article id="content-inputs">
     <header><h1>Inputs</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>
             In order to keep things simple default styles have been added

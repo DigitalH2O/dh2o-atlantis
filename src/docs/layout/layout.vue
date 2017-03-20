@@ -2,7 +2,7 @@
   <article id="content-layout">
     <header><h1>Layout</h1></header>
     <div class="widget">
-      <div class="widget-body">
+      <div class="body">
         <section>
           <p>The main application primarily consists of three elements wrapped in
             a div with the class of "app" for the application to mount to.</p>
