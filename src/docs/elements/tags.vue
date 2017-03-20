@@ -25,37 +25,37 @@
 <template>
   <article id="content-tags">
     <header><h1>Tags</h1></header>
-    <div class="content">
-
-      <section>
-        <p>
-          Tags are a way of showing small labels for visual
-          markers correlating differencial pieces of information.
-        </p>
-        <div class="tag-container">
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-          <div class="tag">Tag</div>
-        </div>
-
-        <code class="language-markup">
-          <script type="prism-html-markup">
+    <div class="widget">
+      <div class="body">
+        <section>
+          <p>
+            Tags are a way of showing small labels for visual
+            markers correlating differencial pieces of information.
+          </p>
+          <div class="tag-container">
             <div class="tag">Tag</div>
-          </script>
-        </code>
-      </section>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+            <div class="tag">Tag</div>
+          </div>
 
+          <code class="language-markup">
+            <script type="prism-html-markup">
+              <div class="tag">Tag</div>
+            </script>
+          </code>
+        </section>
+      </div>
     </div>
   </article>
 </template>
