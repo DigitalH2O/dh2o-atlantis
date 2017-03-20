@@ -48,13 +48,13 @@
             <code class="language-markup">&lt;header&gt;</code>
             preceding their <code class="language-css">
             .body</code>. You can use
-            <code class="language-css">.title-block</code>,
+            <code class="language-css">.titlebar</code>,
             <code class="language-css">.title</code>,
             <code class="language-css">.subtitle</code>,
-            and <code class="language-css">.options</code>
+            and <code class="language-css">.toolbar</code>
             as below to create a title, subtitle and options
             menu. Note that the dropdown menu inside
-            <code class="language-css">.options</code> is
+            <code class="language-css">.toolbar</code> is
             a <router-link to="/dropdowns">standard dropdown
             </router-link> containing a <router-link to="/menus">standard menu
             </router-link>.
@@ -64,7 +64,7 @@
             <article>
               <div class="widget">
                 <header>
-                  <div class="title-block">
+                  <div class="titlebar">
                     <span class="title">
                       Widget title
                     </span>
@@ -72,7 +72,8 @@
                       Widget subtitle
                     </span>
                   </div>
-                  <div class="options">
+                  <div class="toolbar">
+                    <div class="other-menu"><i class="fa fa-pencil"></i></div>
                     <div class="dh2o-dropdown-container trigger">
                       <div class="dh2o-dropdown-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                       <div class="dh2o-dropdown-content">

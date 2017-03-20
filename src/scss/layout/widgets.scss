@@ -11,7 +11,7 @@
     padding: $spacing-quarter $spacing-half;
     border-bottom: solid 1px $border-color;
 
-    > .title-block {
+    > .titlebar {
       flex: 1 1;
       font-weight: bold;
       white-space: nowrap;
@@ -30,15 +30,16 @@
       }
     }
 
-    > .options {
+    > .toolbar {
       flex: 0 1;
-      text-align: right;
+      display: flex;
+      justify-content: flex-end;
 
-      .trigger {
-        width: 15px;
+      > * {
+        padding-left: $spacing-quarter;
 
-        .dh2o-dropdown-trigger {
-          cursor: pointer;
+        &:first-child {
+          padding-left: 0;
         }
       }
 
