@@ -3,7 +3,7 @@
   "name": "dh2o-atlantis",
   "author": "Digital H2O Team",
   "license": "MIT",
-  "version": "1.37.1",
+  "version": "1.38.0",
   "title": "DigitalH2O Style Guide",
   "description": "Style guide for front end apps",
   "bugs": {
@@ -20,6 +20,10 @@
   },
   "main": "dist/index.js",
   "style": "src/index.scss",
+  "scripts": {
+    "dist": "vue-build prod",
+    "dist:docs": "DOCS=true vue-build prod"
+  },
   "dependencies": {
     "font-awesome": "^4.6.3",
     "select2": "^4.0.3"
@@ -29,6 +33,6 @@
     "sass-extract": "^0.3.4",
     "sass-extract-loader": "^0.3.4",
     "tinycolor2": "^1.4.1",
-    "vue-build": "^0.40.1"
+    "vue-build": "^0.43.0"
   }
 }
