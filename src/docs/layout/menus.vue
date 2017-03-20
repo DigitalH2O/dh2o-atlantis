@@ -19,18 +19,19 @@
 <style lang="scss">
   @import '../../../src/scss/_partials';
 
-  h3 {
-    margin-bottom: $spacing-half;
-  }
+  #content-menus {
+    h3 {
+      margin-bottom: $spacing-half;
+    }
 
-  ul.dh2o-dropdown-menu {
-    height: 100px;
-  }
+    ul.dh2o-dropdown-menu {
+      height: 100px;
+    }
 
-  .example {
-    margin-bottom: $spacing;
+    .example {
+      margin-bottom: $spacing;
+    }
   }
-
 </style>
 
 <template>
