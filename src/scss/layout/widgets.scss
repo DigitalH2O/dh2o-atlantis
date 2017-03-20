@@ -1,4 +1,8 @@
 .widget {
+  margin: $spacing;
+  border: solid 1px $border-color;
+  background-color: $white;
+
   > header {
     display: flex;
     flex: 0 0 33px;
@@ -50,8 +54,4 @@
   > .body {
     padding: $spacing-half;
   }
-
-  margin: $spacing;
-  border: solid 1px $border-color;
-  background-color: $white;
 }
