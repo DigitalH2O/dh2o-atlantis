@@ -37,18 +37,18 @@
 <template>
   <article id="content-menus">
     <header><h1>Menus</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <p>
-            The styles for a dropdown menu can be applied to any <code class="language-html">ul</code> tag
-            with the <code class="language-css">dh2o-dropdown-menu</code> class. They're also automatically
-            applied to all Select2 dropdowns.
-          </p>
-        </section>
+    <div class="stage">
+      <div class="widget body">
+        <p>
+          The styles for a dropdown menu can be applied to any <code class="language-html">ul</code> tag
+          with the <code class="language-css">dh2o-dropdown-menu</code> class. They're also automatically
+          applied to all Select2 dropdowns.
+        </p>
+      </div>
 
-        <section>
-          <header><h2>Generic Dropdown Menus</h2></header>
+      <div class="widget">
+        <header><h2>Generic Dropdown Menus</h2></header>
+        <div class="body">
           <p>Note the use of <code class="language-html">aria-selected</code> to mark the selected element.</p>
           <div class="example">
             <code-sample>
@@ -61,11 +61,13 @@
               </ul>
             </code-sample>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Select2</h2></header>
+      <div class="widget">
+        <header><h2>Select2</h2></header>
 
+        <div class="body">
           <h4>A Select2 control without a search box</h4>
           <div class="example">
             <select class="select2-nosearch">
@@ -87,8 +89,10 @@
               <option>Option 5</option>
             </select>
           </div>
-        </section>
+        </div>
       </div>
+      
     </div>
+
   </article>
 </template>

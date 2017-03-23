@@ -1,30 +1,30 @@
 <template>
   <article id="content-sidebar">
     <header><h1>Sidebar</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <p>
-            Although navigation may change depending on the application
-            we have a very simple implementation that is easy to implement.
-            Just add the below code to the sidebar div.
-          </p>
-          <p>You can also add an image if you need to.</p>
-          <pre>
-            <code class="language-markup">
-              <script type="prism-html-markup">
-                <nav>
-                  <a class="link">Link 1</a>
-                  <a class="link">Link 2</a>
-                  <a class="link">Link 3</a>
-                </nav>
-              </script>
-            </code>
-          </pre>
-        </section>
+    <div class="stage">
+      <div class="widget body">
+        <p>
+          Although navigation may change depending on the application
+          we have a very simple implementation that is easy to implement.
+          Just add the below code to the sidebar div.
+        </p>
+        <p>You can also add an image if you need to.</p>
+        <pre>
+          <code class="language-markup">
+            <script type="prism-html-markup">
+              <nav>
+                <a class="link">Link 1</a>
+                <a class="link">Link 2</a>
+                <a class="link">Link 3</a>
+              </nav>
+            </script>
+          </code>
+        </pre>
+      </div>
 
-        <section>
-          <header><h2>Active State</h2></header>
+      <div class="widget">
+        <header><h2>Active State</h2></header>
+        <div class="body">
           <p>In order to show active state just add the active class to the a tag.</p>
           <pre>
             <code class="language-markup">
@@ -41,10 +41,12 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Separators</h2></header>
+      <div class="widget">
+        <header><h2>Separators</h2></header>
+        <div class="body">
           <p>
             If you need to add a line separator in a menu item.
             Just add an element with the value of separator.
@@ -56,7 +58,7 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
       </div>
     </div>
   </article>

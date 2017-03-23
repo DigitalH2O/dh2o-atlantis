@@ -70,17 +70,17 @@
 <template>
   <article id="content-colors">
     <header><h1>Colors</h1></header>
-    <div class="widget">
-      <div class="body">
-        <p>
-          The base color palette below is the default for most cases. When we
-          need contrast, use the <code class="language-markup">darker</code> and
-          <code class="language-markup">darkest</code> functions to get variations
-          on the original colors.
-        </p>
+    <div class="stage">
 
-        <section>
-          <header><h2>Base Colors</h2></header>
+      <div class="widget">
+        <header><h2>Base Colors</h2></header>
+        <div class="body">
+          <p>
+            The base color palette below is the default for most cases. When we
+            need contrast, use the <code class="language-markup">darker</code> and
+            <code class="language-markup">darkest</code> functions to get variations
+            on the original colors.
+          </p>
           <div class="colors-group">
             <div>
               <ul class="colors">
@@ -109,10 +109,12 @@
               </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Notice Colors</h2></header>
+      <div class="widget">
+        <header><h2>Notice Colors</h2></header>
+        <div class="body">
           <p>The message color palette is used in the slide-out messaging bar.</p>
           <div class="colors-group">
             <div>
@@ -124,10 +126,12 @@
               </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Text Link Color</h2></header>
+      <div class="widget">
+        <header><h2>Text Link Color</h2></header>
+        <div class="body">
           <p>Text Link Color is used to highlight text based links and focus values on fields</p>
           <div class="row">
             <div class="col-xs-6 col-lg-4">
@@ -139,8 +143,10 @@
               </ul>
             </div>
           </div>
-        </section>
+        </div>
       </div>
+
     </div>
+
   </article>
 </template>

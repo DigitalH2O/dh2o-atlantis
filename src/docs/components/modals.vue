@@ -62,43 +62,44 @@
 <template>
   <article id="content-modals">
     <header><h1>Modals</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <p>
-            Modal consists of a button with the class dh2o-modal-btn and a
-            data attribute of data-dh2o-modal with the value of the modal id.
-          </p>
-          <p>
-            The modal consists of a div with the class of dh2o-modal and must at
-            least have the child of modal-content and inside that modal-body.
-            Header and footer are optional.
-          </p>
-          <p>
-            To Close the modal just add an element with the class <strong>modal-close</strong>
-          </p>
-          <p>
-            Modals have onkey press function so if use hits esc button it will close last modal in the dom.
-          </p>
-          <p>
-            If you would like to have a modal element triggered a click by hitting enter add the class modal-enter
-          </p>
+    <div class="stage">
 
-          <code-sample>
-            <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
-              Simple Text Modal
+      <div class="widget body">
+        <p>
+          Modal consists of a button with the class dh2o-modal-btn and a
+          data attribute of data-dh2o-modal with the value of the modal id.
+        </p>
+        <p>
+          The modal consists of a div with the class of dh2o-modal and must at
+          least have the child of modal-content and inside that modal-body.
+          Header and footer are optional.
+        </p>
+        <p>
+          To Close the modal just add an element with the class <strong>modal-close</strong>
+        </p>
+        <p>
+          Modals have onkey press function so if use hits esc button it will close last modal in the dom.
+        </p>
+        <p>
+          If you would like to have a modal element triggered a click by hitting enter add the class modal-enter
+        </p>
+
+        <code-sample>
+          <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
+            Simple Text Modal
+          </div>
+
+          <div id="modal1" class="dh2o-modal">
+            <div class="modal-content" style="width: 300px;">
+              <div class="modal-body">Hey buddy!</div>
             </div>
+          </div>
+        </code-sample>
+      </div>
 
-            <div id="modal1" class="dh2o-modal">
-              <div class="modal-content" style="width: 300px;">
-                <div class="modal-body">Hey buddy!</div>
-              </div>
-            </div>
-          </code-sample>
-        </section>
-
-        <section>
-          <header><h2>Full Modal</h2></header>
+      <div class="widget">
+        <header><h2>Full Modal</h2></header>
+        <div class="body">
           <p>All the bells and whistles</p>
           <code-sample>
             <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal2">
@@ -123,10 +124,12 @@
               </div>
             </div>
           </code-sample>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Double Modal</h2></header>
+      <div class="widget">
+        <header><h2>Double Modal</h2></header>
+        <div class="body">
           <p>Show usage of modal over another modal</p>
           <code-sample>
             <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal3">
@@ -152,10 +155,12 @@
               </div>
             </div>
           </code-sample>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Full Modal</h2></header>
+      <div class="widget">
+        <header><h2>Full Modal</h2></header>
+        <div class="body">
           <p>All the bells and whistles</p>
           <code-sample>
             <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal5">
@@ -210,10 +215,12 @@
               </div>
             </div>
           </code-sample>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Javascript</h2></header>
+      <div class="widget">
+        <header><h2>Javascript</h2></header>
+        <div class="body">
           <p>Show to usage with javascript</p>
           <p>
             You most likely will need to programmably call to the modal.
@@ -237,8 +244,9 @@
               modal.hide()
             </code>
           </pre>
-        </section>
+        </div>
       </div>
+
     </div>
   </article>
 </template>
