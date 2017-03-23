@@ -2,13 +2,13 @@
 
 .dashboard-main {
 
-  .dashboard-dropzone {
+  .dashboard-row {
     display: flex;
     height: auto;
     margin: 0 0 $spacing-half 0;
     padding: 0 0 0 0;
     border-radius: 0px;
-    border: solid 1px $white;
+    border: solid 0px transparent;
     will-change: height, min-height, padding, margin, border, background-color;
     transition: height .3s, min-height .3s, padding .3s, margin .3s, border .3s, background-color .3s;
 
@@ -31,7 +31,12 @@
     }
 
     .dashboard-widget {
-      flex: 0 1 33%;
+      flex: 0 1 100%;
+      margin-right: $spacing-half;
+
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 

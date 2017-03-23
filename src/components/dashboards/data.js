@@ -4,6 +4,7 @@ export default class data {
   }
 
   // Loop through data and make sure its injected with empty and full rows
+  // Also make sure each widget is clean as well
   clean () {
     // If data array is empty lets add an empty row
     if (this.data.length === 0) { this.data.push([]); return }
@@ -26,30 +27,48 @@ export default class data {
     }
 
     // Lets make sure the end of the data has an empty row
-    if (this.data[this.data.length - 1].length !== 0) { this.data.push([]); return }
+    if (this.data[this.data.length - 1].length !== 0) { this.data.push([]) }
+
+    // Loop through data and make sure each widget has an id
+    for (var d = 0; d < this.data.length; d++) {
+      for (var w = 0; w < this.data[d].length; w++) {
+        this.cleanWidget(this.data[d][w])
+      }
+    }
   }
 
   // addWidget will take in widget object and add it to designated location
   addWidget (widget, location) {
-    console.log('add')
-    this.validate(widget)
+    this.cleanWidget(widget)
     this.data[location.rowIndex].push(widget)
     this.clean()
   }
 
   // moveWidget will locate widget based upon id, remove it and add it to new location
   moveWidget (widgetId, location) {
-    console.log('move')
-    for (var i = 0; i < this.data.length; i++) {
-      console.log(this.data[i])
+    for (var r = 0; r < this.data.length; r++) {
+      for (var w = 0; w < this.data[r].length; w++) {
+        if (String(this.data[r][w].id) === String(widgetId)) {
+          let widget = Object.assign({}, this.data[r][w])
+          // Remove from data
+          this.data[r].splice(w, 1)
+
+          // Add to data
+          this.addWidget(widget, location)
+
+          this.clean()
+          return
+        }
+      }
     }
   }
 
-  // Validate will take widget object and make sure it has
-  // enough information and is valid to be used within the rest of the application
-  validate (widget) {
-    if (!widget.id) { throw new Error('Widget must have unique id') }
+  deleteWidget (widgetId) {
 
-    return true
+  }
+
+  // Take in widget object and make sure it clean a usable
+  cleanWidget (widget) {
+    if (!widget.id) { widget.id = Math.floor(Math.random() * 1000000) }
   }
 }

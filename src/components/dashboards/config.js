@@ -1,6 +1,9 @@
-export function classes () {
+export default function () {
   return {
-    main: 'dashboard-main',
-    dropzone: 'dashboard-dropzone'
+    id: Math.floor(Math.random() * 100000),
+    classes: {
+      main: 'dashboard-main',
+      row: 'dashboard-row'
+    }
   }
 }
