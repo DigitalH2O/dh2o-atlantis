@@ -41,7 +41,7 @@
   <article id="content-dropdowns">
     <header><h1>Dropdowns</h1></header>
     <div class="stage">
-      <section class="widget">
+      <div class="widget">
         <div class="body">
           <p>
             The dropdown menu styles are applied through 2 main classes: "dh2o-dropdown-trigger" and "dh2o-dropdown-content". The trigger class needs to be applied to the parent element of the content class. This is because the dropdown content is positioned relative to the position of the button.
@@ -61,9 +61,9 @@
             </div>
           </code-sample>
         </div>
-      </section>
+      </div>
 
-      <section class="widget">
+      <div class="widget">
         <header><span class="title">Javascript Triggers</span></header>
         <div class="body">
           <p>You can also programmably trigger showing the dropdown</p>
@@ -82,7 +82,7 @@
             Firefox does not like it.
           </div>
         </div>
-      </section>
+      </div>
 
     </div>
   </article>
