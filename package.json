@@ -21,6 +21,7 @@
   "main": "dist/index.js",
   "style": "src/index.scss",
   "scripts": {
+    "dev": "vue-build dev",
     "dist": "vue-build prod",
     "dist:docs": "DOCS=true vue-build prod"
   },
