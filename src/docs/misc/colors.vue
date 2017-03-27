@@ -135,7 +135,7 @@
 
         <section>
           <header><h2>Text Link Color</h2></header>
-          <p>Text Link Color is used to highlight text based links and focus values on fields</p>
+          <p>Text Link Color is used to highlight text based links and focus values on fields.</p>
           <div class="row">
             <div class="col-xs-6 col-lg-4">
               <ul class="colors">
