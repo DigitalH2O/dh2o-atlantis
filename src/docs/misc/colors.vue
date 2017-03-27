@@ -9,12 +9,14 @@
       const baseColors = []
       const messageColors = []
       const textColors = []
+      const assetColors = []
       const darkerColors = []
       const darkestColors = []
       let colors = colorVars.global.$colors.value
       let colorsBase = colors.base.value
       let colorsMessage = colorVars.global['$message-colors'].value
       let colorsText = colorVars.global['$text-colors'].value
+      let colorsAsset = colorVars.global['$asset-colors'].value
 
       for (let name in colorsBase) {
         baseColors.push({name: name, value: colorsBase[name].value.hex})
@@ -30,10 +32,15 @@
         textColors.push({name: name, value: colorsText[name].value.hex})
       }
 
+      for (let name in colorsAsset) {
+        assetColors.push({name: name, value: colorsAsset[name].value.hex})
+      }
+
       return {
         baseColors,
         messageColors,
         textColors,
+        assetColors,
         darkerPercent,
         darkestPercent,
         darkerColors,
@@ -133,6 +140,21 @@
             <div class="col-xs-6 col-lg-4">
               <ul class="colors">
                 <li class="btn" v-for="color in textColors"
+                    :style="{'background-color': color.value, 'color': '#ffffff'}">
+                  ${{color.name}}: {{color.value}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+         <section>
+          <header><h2>Asset Colors</h2></header>
+          <p>Assets are assigned a color (and icon) which is used to highlight and visually communicate that assets parent definition.</p>
+          <div class="colors-group">
+            <div>
+              <ul class="colors">
+                <li class="btn" v-for="color in assetColors"
                     :style="{'background-color': color.value, 'color': '#ffffff'}">
                   ${{color.name}}: {{color.value}}
                 </li>
