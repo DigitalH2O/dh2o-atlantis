@@ -1,0 +1,43 @@
+@import '../../scss/_partials';
+
+.dashboard-main {
+
+  .dashboard-row {
+    display: flex;
+    height: auto;
+    margin: 0 0 $spacing-half 0;
+    padding: 0 0 0 0;
+    border-radius: 0px;
+    border: solid 0px transparent;
+    will-change: height, min-height, padding, margin, border, background-color;
+    transition: height .3s, min-height .3s, padding .3s, margin .3s, border .3s, background-color .3s;
+
+    &:empty { height: 0px; min-height: 0px; margin: 0px; border: none; }
+
+    // Remove margin on second to last and last child
+    &:last-child, &:nth-last-child(2) { margin: 0 0 0 0; }
+
+    // If you are the only child lets make you big
+    &:only-child { min-height: 50% !important; }
+    &.on { background-color: lighten($primary-color, 50); }
+    &.ready {
+      border: dashed 1px $primary-color;
+      min-height: 50px;
+      margin: 0 0 $spacing-half 0;
+      padding: $spacing-half;
+      border-radius: 4px;
+
+      &:last-child { margin: 0 0 0 0; }
+    }
+
+    .dashboard-widget {
+      flex: 0 1 100%;
+      margin-right: $spacing-half;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+}

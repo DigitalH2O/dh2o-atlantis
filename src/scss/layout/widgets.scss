@@ -1,7 +1,7 @@
 .widget {
-  margin: $spacing;
   border: solid 1px $border-color;
   background-color: $white;
+  flex: 0 1 auto;
 
   > header {
     display: flex;
@@ -52,7 +52,11 @@
     }
   } // header
 
-  > .body {
-    padding: $spacing-half;
+  > .body, &.body {
+    padding: $spacing;
+
+    > *:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
