@@ -5,7 +5,7 @@ dh2oRelease({
   buildStep () {
     return cmd('npm run dist')
     .then(() => {
-      return cmd('dist:docs')
+      return cmd('npm run dist:docs')
     })
   }
 })
