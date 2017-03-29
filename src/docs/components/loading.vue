@@ -27,13 +27,11 @@
           will need to be loaded inside the div of the location in which you would want to overlay loading.
         </p>
 
-        <div class="as-code">
-          <pre class="language-html-markup">
-            <code class="language-html-markup">
-              {{loadingComponent}}
-            </code>
-          </pre>
-        </div>
+        <pre class="language-html-markup">
+          <code class="language-html-markup">
+            {{loadingComponent}}
+          </code>
+        </pre>
 
       </div>
     </div>
