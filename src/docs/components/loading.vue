@@ -23,10 +23,9 @@
     <div class="widget">
       <div class="body">
         <p>
-          The usability for loading needed to be a simplistic approach that was reusable. This loading component
-          will need to be loaded inside the div of the location in which you would want to overlay loading.
+          Place component within the container to which you would like to apply the loading overlay.
+          The parents css position must be set to relative in order for this component to fill properly.
         </p>
-
         <pre class="language-html-markup">
           <code class="language-html-markup">
             {{loadingComponent}}
