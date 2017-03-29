@@ -1,11 +1,11 @@
 <script>
-  import DashboardBuilder from 'dh2o-atlantis/components/dashboards/dashboards.js'
+  import DashboardBuilder from 'dh2o-atlantis/components/dashboards/index.js'
   import dashboardWidget from './dashboards-widget.vue'
 
   export default {
     data () {
       return {
-        rows: [[{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [], [], [{type: 'operator'}, {type: 'rig'}], [], [], []]
+        rows: [[], [{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [{type: 'operator'}, {type: 'rig'}], []]
       }
     },
     components: {
@@ -21,8 +21,18 @@
           return {
             type: info.type
           }
+        },
+        onChange: (data) => {
+          console.log('Changed!!!')
+          console.log(data)
+          this.updateRows(data)
         }
       })
+    },
+    methods: {
+      updateRows (rows) {
+        this.rows = rows
+      }
     }
   }
 </script>

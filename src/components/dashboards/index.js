@@ -1,18 +1,35 @@
 import Interact from './interact.js'
 import Data from './data.js'
+import Html from './html.js'
 import config from './config.js'
+/* eslint-disable no-new */
 
-export default class VueBuildIntro {
+export default class DashboardBuilder {
   constructor (info = {}) {
-    // Set class variables
-    this.data = new Data(info.data)
-    this.config = config()
-    this.main = info.main
-    this.newWidgetCallback = info.newWidget
+    this.validateConstructor(info)
 
+    // Set callbacks
+    this.newWidgetCallback = info.newWidget
+    this.onChangeCallback = info.onChange
+
+    // Set class variables
+    this.config = config()
+    this.data = new Data({
+      data: info.data,
+      onChange: (data) => { this.onChangeCallback(data) }
+    })
+    this.main = info.main
+
+    // Clean data
     this.data.clean()
 
-    /* eslint-disable no-new */
+    // Initiate html class
+    this.html = new Html({
+      main: this
+    })
+    this.html.cleanRows()
+
+    // Instantiate interact js functionality
     new Interact({
       config: this.config,
       draggables: info.draggables,
@@ -20,6 +37,23 @@ export default class VueBuildIntro {
       autoScrollContainer: info.autoScrollContainer || 'main',
       onDrop: (event) => { this.onDrop(event) }
     })
+
+    // Add MutationObserver to select
+    new MutationObserver((mutations) => {
+      console.log(mutations)
+    }).observe(document.querySelector(this.main), {
+      attributes: true,
+      childList: true,
+      characterData: true
+    })
+  }
+
+  validateConstructor (info) {
+    if (!info.data) { throw new Error('Must pass data into constructor') }
+    if (!info.draggables) { throw new Error('Must pass draggable items into constructor') }
+    if (!info.main) { throw new Error('Must pass main div container into constructor') }
+    if (!info.newWidget) { throw new Error('Must pass newWidget function into constructor') }
+    if (!info.onChange) { throw new Error('Must pass onChange function into constructor') }
   }
 
   newWidget (droppableData, dropzoneIndex) {
@@ -52,5 +86,4 @@ export default class VueBuildIntro {
       this.data.moveWidget(droppableData.id, location)
     }
   }
-
 }

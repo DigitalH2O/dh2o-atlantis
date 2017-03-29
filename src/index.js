@@ -1,4 +1,4 @@
-import dh2oDashboardsClass from './components/dashboards/dashboards.js'
+import dh2oDashboardsClass from './components/dashboards/index.js'
 import dh2oModalFunction from './components/modals/modals.js'
 import dh2oDropdownFunction from './components/dropdowns/dropdowns.js'
 import allHelpers from './helpers/helpers.js'

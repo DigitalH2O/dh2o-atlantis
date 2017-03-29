@@ -1,40 +1,23 @@
 export default class data {
-  constructor (data) {
-    this.data = data
+  constructor (info = {}) {
+    this.data = info.data.slice(0) // Clone data
+    this.onChange = info.onChange
   }
 
-  // Loop through data and make sure its injected with empty and full rows
-  // Also make sure each widget is clean as well
+  // Loop through and make sure there are no empty rows
+  // and that widgets are clean
   clean () {
-    // If data array is empty lets add an empty row
-    if (this.data.length === 0) { this.data.push([]); return }
-
-    // Loop through and identify even or odd
-    for (var i = 0; i < this.data.length; i++) {
-      // Check evens, evens should always be empty
-      if (i % 2 === 0 && this.data[i].length !== 0) {
-        this.data.splice(i, 0, [])
-
-        return this.clean()
-      }
-
-      // Check odds, odds should always have something in them
-      if (Math.abs(i % 2) === 1 && this.data[i].length === 0) {
-        this.data.splice(i, 1)
-
-        return this.clean()
-      }
-    }
-
-    // Lets make sure the end of the data has an empty row
-    if (this.data[this.data.length - 1].length !== 0) { this.data.push([]) }
-
-    // Loop through data and make sure each widget has an id
     for (var d = 0; d < this.data.length; d++) {
+      // Remove empty rows
+      if (!this.data[d].length) { this.data.splice(d, 1); continue }
+
+      // Loop through data and make sure each widget has an id
       for (var w = 0; w < this.data[d].length; w++) {
         this.cleanWidget(this.data[d][w])
       }
     }
+
+    this.onChange(this.data.slice(0))
   }
 
   // addWidget will take in widget object and add it to designated location
