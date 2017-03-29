@@ -14,6 +14,16 @@ $colors: (
   ),
   text: (
     link-text-color: #40b4de
+  ),
+  assets: (
+      lease-outbound-color: #40b0d9,
+      lease-inbound-color: #6c7387,
+      asset-oil-color: #729e00,
+      asset-gas-color: #ff7a28,
+      asset-injection-color: #087caa,
+      asset-disposal-color: #70184d,
+      asset-recycle-color: #f1b71c,
+      asset-freshwater-color: #2aace2
   )
 );
 
@@ -38,6 +48,18 @@ $success-color  : map-get($message-colors, success-color);
 $warning-color  : map-get($message-colors, warning-color);
 $alert-color    : map-get($message-colors, alert-color);
 $notice-color   : map-get($message-colors, notice-color);
+
+// Asset colors
+$asset-colors   : map-get($colors, assets);
+$lease-outbound-color   : map-get($asset-colors, lease-outbound-color);
+$lease-inbound-color    : map-get($asset-colors, lease-inbound-color);
+$asset-oil-color        : map-get($asset-colors, asset-oil-color);
+$asset-gas-color        : map-get($asset-colors, asset-gas-color);
+$asset-injection-color  : map-get($asset-colors, asset-injection-color);
+$asset-disposal-color   : map-get($asset-colors, asset-disposal-color);
+$asset-recycle-color    : map-get($asset-colors, asset-recycle-color);
+$asset-freshwater-color : map-get($asset-colors, asset-freshwater-color);
+
 
 $darker-percent: 10%;
 $darkest-percent: 20%;
