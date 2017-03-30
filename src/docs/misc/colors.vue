@@ -151,19 +151,19 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="widget">
-          <header><h2>Asset Colors</h2></header>
-          <p>Assets are assigned a color (and icon) which is used to highlight and visually communicate that assets parent definition.</p>
-          <div class="body">
-            <div>
-              <ul class="colors">
-                <li class="btn" v-for="color in assetColors"
-                    :style="{'background-color': color.value, 'color': '#ffffff'}">
-                  ${{color.name}}: {{color.value}}
-                </li>
-              </ul>
-            </div>
+      <div class="widget">
+        <header><h2>Asset Colors</h2></header>
+        <p>Assets are assigned a color (and icon) which is used to highlight and visually communicate that assets parent definition.</p>
+        <div class="body">
+          <div>
+            <ul class="colors">
+              <li class="btn" v-for="color in assetColors"
+                  :style="{'background-color': color.value, 'color': '#ffffff'}">
+                ${{color.name}}: {{color.value}}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
