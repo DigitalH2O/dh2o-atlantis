@@ -33,7 +33,6 @@
     <div class="stage">
 
       <div class="widget body">
-        <p></p>
         <code-sample>
           <div class="message success">Success message</div>
           <div class="message warning">Warning message</div>

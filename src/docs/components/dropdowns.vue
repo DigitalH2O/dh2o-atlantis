@@ -41,30 +41,28 @@
   <article id="content-dropdowns">
     <header><h1>Dropdowns</h1></header>
     <div class="stage">
-      <div class="widget">
-        <div class="body">
-          <p>
-            The dropdown menu styles are applied through 2 main classes: "dh2o-dropdown-trigger" and "dh2o-dropdown-content". The trigger class needs to be applied to the parent element of the content class. This is because the dropdown content is positioned relative to the position of the button.
-          </p>
-          <p>
-            For the items in the dropdown menu, apply the "menu-item" class to get the hover states and borders as shown below.
-          </p>
-          <code-sample>
-            <div class="dh2o-dropdown-container">
-              <div class="dh2o-dropdown-trigger btn"><span>User Menu</span></div>
-              <div class="dh2o-dropdown-content">
-                <ul>
-                  <li class="menu-item">User Account</li>
-                  <li class="menu-item">Logout</li>
-                </ul>
-              </div>
+      <div class="widget body">
+        <p>
+          The dropdown menu styles are applied through 2 main classes: "dh2o-dropdown-trigger" and "dh2o-dropdown-content". The trigger class needs to be applied to the parent element of the content class. This is because the dropdown content is positioned relative to the position of the button.
+        </p>
+        <p>
+          For the items in the dropdown menu, apply the "menu-item" class to get the hover states and borders as shown below.
+        </p>
+        <code-sample>
+          <div class="dh2o-dropdown-container">
+            <div class="dh2o-dropdown-trigger btn"><span>User Menu</span></div>
+            <div class="dh2o-dropdown-content">
+              <ul>
+                <li class="menu-item">User Account</li>
+                <li class="menu-item">Logout</li>
+              </ul>
             </div>
-          </code-sample>
-        </div>
+          </div>
+        </code-sample>
       </div>
 
       <div class="widget">
-        <header><span class="title">Javascript Triggers</span></header>
+        <header><h2>Javascript Triggers</h2></header>
         <div class="body">
           <p>You can also programmably trigger showing the dropdown</p>
           <code-sample>
