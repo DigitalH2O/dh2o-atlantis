@@ -17,11 +17,15 @@ every CSS rule in dh2o-atlantis. You should only need to import `index` once per
 project.
 
 ### Setup
-yarn install
+`yarn install`
+
+If that command fails, install `yarn` with the command `npm install -g yarn`. 
+
+Then run the install command again.
 
 ### Run
 ```
-vue-build dev
+npm run dev
 open http://localhost:8080
 ```
 

@@ -2,6 +2,7 @@
   border: solid 1px $border-color;
   background-color: $white;
   flex: 0 1 auto;
+  position: relative;
 
   > header {
     display: flex;

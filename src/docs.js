@@ -14,6 +14,9 @@ import 'dh2o-atlantis/components/dropdowns/dropdowns.scss'
 // Modals
 import 'dh2o-atlantis/components/modals/modals.scss'
 
+// Loading
+import 'dh2o-atlantis/components/loading/loading.scss'
+
 import App from './docs/app.vue'
 import CodeSample from './docs/code-sample.vue'
 import routerList from './router.js'
