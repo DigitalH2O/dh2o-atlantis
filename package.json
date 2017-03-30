@@ -30,7 +30,7 @@
     "select2": "^4.0.3"
   },
   "devDependencies": {
-    "dh2o-release": "git+https://726e3e99f617b75bee72466b13d653b0a0734313:x-oauth-basic@github.com/DigitalH2O/dh2o-release.git#v1.3.1",
+    "dh2o-release": "git+https://b97205abced27a9988be1c9a7e69e64cbdac7a86:x-oauth-basic@github.com/DigitalH2O/dh2o-release.git#v1.3.1",
     "interact.js": "^1.2.8",
     "jquery": "^3.1.1",
     "node-cmd-promise": "^1.0.0",
