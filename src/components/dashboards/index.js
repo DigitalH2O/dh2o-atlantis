@@ -41,6 +41,7 @@ export default class DashboardBuilder {
     // Add MutationObserver to select
     new MutationObserver((mutations) => {
       console.log(mutations)
+      this.html.cleanRows()
     }).observe(document.querySelector(this.main), {
       attributes: true,
       childList: true,
@@ -73,7 +74,14 @@ export default class DashboardBuilder {
     let droppableData = Object.assign({}, droppable.dataset)
     let dropzone = event.target
     let location = {
+      new: !dropzone.dataset.index,
       rowIndex: dropzone.dataset.index
+    }
+    if (location.new) {
+      let previousSibling = dropzone.previousSibling
+      if (previousSibling) {
+        location.rowIndex = previousSibling.dataset.index
+      }
     }
 
     // New widget drop

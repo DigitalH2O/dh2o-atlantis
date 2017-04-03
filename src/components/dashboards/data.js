@@ -4,12 +4,12 @@ export default class data {
     this.onChange = info.onChange
   }
 
-  // Loop through and make sure there are no empty rows
-  // and that widgets are clean
+  // Loop through and make sure there are no
+  // empty rows and that widgets are clean
   clean () {
     for (var d = 0; d < this.data.length; d++) {
       // Remove empty rows
-      if (!this.data[d].length) { this.data.splice(d, 1); continue }
+      if (!this.data[d].length) { this.data.splice(d, 1); this.clean(); return }
 
       // Loop through data and make sure each widget has an id
       for (var w = 0; w < this.data[d].length; w++) {
@@ -23,7 +23,15 @@ export default class data {
   // addWidget will take in widget object and add it to designated location
   addWidget (widget, location) {
     this.cleanWidget(widget)
-    this.data[location.rowIndex].push(widget)
+    if (location.new) {
+      if (location.rowIndex === undefined) {
+        this.data.unshift([widget])
+      } else {
+        this.data.splice(location.rowIndex + 1, 0, [widget])
+      }
+    } else {
+      this.data[location.rowIndex].push(widget)
+    }
     this.clean()
   }
 

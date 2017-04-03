@@ -14,28 +14,38 @@ export default class html {
   cleanRows () {
     var rows = this.container.childNodes
     for (var i = 0; i < rows.length; i++) {
-      if (i === 0 && rows[i].innerHTML.trim() === '') {
-        this.container.insertBefore('afterbegin', this.createRow())
+      if (!rows[i]) { console.log('hit') }
+
+      if (i === 0 && rows[i].innerHTML.trim() !== '') {
+        this.container.insertBefore(this.createEmptyRow(), this.container.firstChild)
         this.cleanRows()
         return
       }
 
       if (i & 1) {
-        // ODD
-
+        // Make sure odds always have content within them
+        if (rows[i].innerHTML.trim() === '' && rows.childNodes) {
+          rows.removeChild(rows.childNodes[i])
+          this.cleanRows()
+          return
+        }
       } else {
-        // EVEN
+        // Make sure evens are always empty rows
+        if (rows[i].innerHTML.trim() !== '') {
+          rows[i - 1].after(this.createEmptyRow())
+          this.cleanRows()
+          return
+        }
+      }
+
+      // Check last row and make sure its empty
+      if (rows.length - 1 === i && rows[i].innerHTML.trim() !== '') {
+        rows[i].after(this.createEmptyRow())
       }
     }
-
-    // for (var i = 0; i < rows.length; i++) {
-    //   if (rows[i].innerHTML === '') {
-    //     rows.removeChild(rows.childNodes[i])
-    //   }
-    // }
   }
 
-  createRow () {
+  createEmptyRow () {
     var row = document.createElement('div')
     row.classList.add('dashboard-row')
     row.classList.add('empty')

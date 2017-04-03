@@ -5,7 +5,7 @@
   export default {
     data () {
       return {
-        rows: [[], [{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [{type: 'operator'}, {type: 'rig'}], []]
+        rows: [[], [], [{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [{type: 'operator'}, {type: 'rig'}], []]
       }
     },
     components: {
