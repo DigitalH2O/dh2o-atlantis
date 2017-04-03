@@ -4,13 +4,6 @@ export default class html {
     this.container = document.querySelector(this.main.main)
   }
 
-  validRows () {
-    var rows = this.container.childNodes
-    for (var i = 0; i < rows.length; i++) {
-      console.log(rows[i])
-    }
-  }
-
   cleanRows () {
     var rows = this.container.childNodes
     for (var i = 0; i < rows.length; i++) {

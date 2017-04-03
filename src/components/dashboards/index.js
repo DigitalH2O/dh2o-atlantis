@@ -40,7 +40,6 @@ export default class DashboardBuilder {
 
     // Add MutationObserver to select
     new MutationObserver((mutations) => {
-      console.log(mutations)
       this.html.cleanRows()
     }).observe(document.querySelector(this.main), {
       attributes: true,

@@ -1,6 +1,6 @@
 export default class data {
   constructor (info = {}) {
-    this.data = info.data.slice(0) // Clone data
+    this.data = JSON.parse(JSON.stringify(info.data.slice(0))) // Clone data
     this.onChange = info.onChange
   }
 
