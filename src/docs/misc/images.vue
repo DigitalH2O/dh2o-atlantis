@@ -27,6 +27,7 @@
         }
       }
     }
+
     .logos-droplet {
       .code-sample {
         display: flex;
@@ -91,10 +92,11 @@
 <template>
   <article id="content-images">
     <header><h1>Images</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <header><h2>Logos</h2></header>
+
+    <div class="stage">
+      <div class="widget">
+        <header><h2>Logos</h2></header>
+        <div class="body">
           <p>Our logos are SVG images included in Atlantis as data URLs. Applying a logo class (e.g. <code class="language-css">dh2o-logo-color</code>) sets the logo as a background image. You'll still need to set the element's size yourself (in these examples, the <code class="language-css">logo-example</code> class sets <code class="language-css">height: 100px;</code>.</p>
 
           <section class="logos">
@@ -109,8 +111,6 @@
             </code-sample>
           </section>
 
-          <div class="separator smaller"></div>
-
           <section class="logos-droplet">
             <code-sample>
               <img src="~dh2o-atlantis/images/logo-droplet-color.svg" style="width: 150px;" />
@@ -122,10 +122,12 @@
               </div>
             </code-sample>
           </section>
-        </section>
+        </div>
+      </div>
 
-        <section class="custom-icons">
-          <header><h2>Custom Icons</h2></header>
+      <div class="widget custom-icons">
+        <header><h2>Custom Icons</h2></header>
+        <div class="body">
           <p>Our custom icons are included as an icon font, similar to FontAwesome:</p>
 
           <div>
@@ -207,15 +209,19 @@
             </div>
 
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section class="generic-icons">
-          <header><h2>Generic Icons</h2></header>
+      <div class="widget generic-icons">
+        <header><h2>Generic Icons</h2></header>
+        <div class="body">
           <p>For other icons, we use <a href="http://fontawesome.io/">FontAwesome</a>, which is included in the style library automatically.</p>
-        </section>
+        </div>
+      </div>
 
-        <section class="loading-icons">
-          <header><h2>Loading Icons</h2></header>
+      <div class="widget loading-icons">
+        <header><h2>Loading Icons</h2></header>
+        <div class="body">
           <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
           <code-sample>
@@ -225,8 +231,10 @@
           <code-sample>
             <img height="200" src="~dh2o-atlantis/images/loading-barrel-static.svg" />
           </code-sample>
-        </section>
+        </div>
       </div>
+
     </div>
+
   </article>
 </template>

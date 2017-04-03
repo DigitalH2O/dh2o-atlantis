@@ -31,6 +31,7 @@ module.exports = {
     // Components
     {path: '/dropdowns', component: require('./docs/components/dropdowns.vue')},
     {path: '/modals', component: require('./docs/components/modals.vue')},
-    {path: '/loading', component: require('./docs/components/loading.vue')}
+    {path: '/loading', component: require('./docs/components/loading.vue')},
+    {path: '/dashboards', component: require('./docs/components/dashboards.vue')}
   ]
 }

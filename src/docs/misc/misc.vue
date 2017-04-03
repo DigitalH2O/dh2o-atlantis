@@ -1,10 +1,10 @@
 <template>
   <article id="content-misc">
     <header><h1>Misc</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <header><h2>Hide</h2></header>
+    <div class="stage">
+      <div class="widget">
+        <header><h2>Hide</h2></header>
+        <div class="body">
           <p>
             To more easily allow javascript to hide and show elements
             on the page add the hide class.
@@ -17,10 +17,12 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Separators</h2></header>
+      <div class="widget">
+        <header><h2>Separators</h2></header>
+        <div class="body">
           <p>
             Want to add a  divider line between elements? We have both horizontal and vertical separators.
             The vertical separator will have to be vertically aligned manually if you are floating it
@@ -46,10 +48,12 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Vertical Align</h2></header>
+      <div class="widget">
+        <header><h2>Vertical Align</h2></header>
+        <div class="body">
           <p>
             Alot of times we need an easy way to vertically align an
             element in the middle of another Here is a easy mixin you can use.
@@ -60,9 +64,9 @@
               @include vertical-align(absolute);
             </code>
           </pre>
-        </section>
-
+        </div>
       </div>
+
     </div>
   </article>
 </template>

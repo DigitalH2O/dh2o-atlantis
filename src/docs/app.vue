@@ -9,6 +9,15 @@
  }
 </script>
 
+<style lang="scss">
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .2s ease-in-out;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+</style>
+
 <template>
   <div class="app">
     <header>
@@ -57,13 +66,16 @@
           <router-link class="link" to="/lists">Lists</router-link>
           <router-link class="link" to="/tables">Tables</router-link>
           <div class="separator"></div>
+          <router-link class="link" to="/dashboards">Dashboards</router-link>
           <router-link class="link" to="/dropdowns">Dropdowns</router-link>
           <router-link class="link" to="/modals">Modals</router-link>
           <router-link class="link" to="/loading">Loading</router-link>
         </nav>
       </aside>
       <main>
-        <router-view></router-view>
+        <transition name="fade" mode="out-in" appear>
+          <router-view></router-view>
+        </transition>
       </main>
     </div>
   </div>

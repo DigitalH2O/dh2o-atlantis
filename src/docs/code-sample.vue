@@ -45,7 +45,7 @@
   }
 </script>
 
-<style scoped lang="sass-loader">
+<style scoped lang="scss">
   @import "~dh2o-atlantis-partials";
   .code-sample {
     display: flex;
@@ -58,6 +58,7 @@
 
     .as-code {
       flex: 1 0 50%;
+      overflow-x: auto;
     }
   }
 </style>

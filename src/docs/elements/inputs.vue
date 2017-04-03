@@ -13,9 +13,8 @@
 <template>
   <article id="content-inputs">
     <header><h1>Inputs</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
+    <div class="stage">
+        <div class="widget body">
           <p>
             In order to keep things simple default styles have been added
             to input fields and there types
@@ -72,22 +71,23 @@
             </code>
           </pre>
           <div class="message notice">Switching input types sets icons</div>
-        </section>
+        </div>
 
-        <section>
+        <div class="widget">
           <header><h2>Toggle</h2></header>
-          <code-sample>
-            <div class="toggle">
-              <input type="checkbox" name="toggle" class="toggle-checkbox" id="toggle" checked>
-              <label class="toggle-label" for="toggle">
-                  <span class="toggle-inner"></span>
-                  <span class="toggle-switch"></span>
-              </label>
-            </div>
-          </code-sample>
-        </section>
+          <div class="body">
+            <code-sample>
+              <div class="toggle">
+                <input type="checkbox" name="toggle" class="toggle-checkbox" id="toggle" checked>
+                <label class="toggle-label" for="toggle">
+                    <span class="toggle-inner"></span>
+                    <span class="toggle-switch"></span>
+                </label>
+              </div>
+            </code-sample>
+          </div>
+        </div>
 
-      </div>
     </div>
   </article>
 </template>

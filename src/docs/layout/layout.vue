@@ -1,34 +1,35 @@
 <template>
   <article id="content-layout">
     <header><h1>Layout</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <p>The main application primarily consists of three elements wrapped in
-            a div with the class of "app" for the application to mount to.</p>
-          <p>
-            <b>App</b> - Main app container<br />
-            <b>Header</b> - Main blue top bar<br />
-            <b>Sidebar</b> - Main left dark blue bar<br />
-            <b>Main</b> - Main center section
-          </p>
-          <pre>
-            <code class="language-markup">
-              <script type="prism-html-markup">
-                <div class="app">
-                  <header></header>
-                  <div class="container">
-                    <aside></aside>
-                    <main></main>
-                  </div>
-                </div>
-              </script>
-            </code>
-          </pre>
-        </section>
 
-        <section>
-          <header><h2>Variables</h2></header>
+    <div class="stage">
+      <div class="widget body">
+        <p>The main application primarily consists of three elements wrapped in
+          a div with the class of "app" for the application to mount to.</p>
+        <p>
+          <b>App</b> - Main app container<br />
+          <b>Header</b> - Main blue top bar<br />
+          <b>Sidebar</b> - Main left dark blue bar<br />
+          <b>Main</b> - Main center section
+        </p>
+        <pre>
+          <code class="language-markup">
+            <script type="prism-html-markup">
+              <div class="app">
+                <header></header>
+                <div class="container">
+                  <aside></aside>
+                  <main></main>
+                </div>
+              </div>
+            </script>
+          </code>
+        </pre>
+      </div>
+
+      <div class="widget">
+        <header><h2>Variables</h2></header>
+        <div class="body">
           <p>
             There are two variables that define the height of the header and
             the width of sidebar. These can be used for adjusting values when
@@ -41,10 +42,12 @@
               $sidebar-width: 100px; // Width of main sidebar
             </code>
           </pre>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Logo and Website Name</h2></header>
+      <div class="widget">
+        <header><h2>Logo and Website Name</h2></header>
+        <div class="body">
           <p>
             Your going to need to add a link to main app with the company logo.
             Place this tag in your header
@@ -59,10 +62,12 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>User Info</h2></header>
+      <div class="widget">
+        <header><h2>User Info</h2></header>
+        <div class="body">
           <p>To place user info in the upper right hand section of the header we use the code listed below.</p>
           <pre>
             <code class="language-markup">
@@ -96,8 +101,9 @@
               </script>
             </code>
           </pre>
-        </section>
+        </div>
       </div>
+
     </div>
   </article>
 </template>

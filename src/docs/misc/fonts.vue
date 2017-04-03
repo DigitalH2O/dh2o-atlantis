@@ -15,10 +15,11 @@
 <template>
   <article id="content-fonts">
     <header><h1>Fonts</h1></header>
-    <div class="widget">
-      <div class="body">
-        <section>
-          <header><h2>H Elements</h2></header>
+
+    <div class="stage">
+      <div class="widget">
+        <header><h2>H Elements</h2></header>
+        <div class="body">
           <h1>H1</h1>
           <h2>H2</h2>
           <h3>H3</h3>
@@ -29,10 +30,12 @@
             Notice that this application uses h tags for each section title
             and for each sub section title.
           </p>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Font Weights</h2></header>
+      <div class="widget">
+        <header><h2>Font Weights</h2></header>
+        <div class="body">
           <p class="normal-weight">
             This text has the normal font weight.
           </p>
@@ -41,10 +44,12 @@
             This text uses <code class="language-markup">$font-weight-bold</code>.
             Section headers and input labels should usually use bold text.
           </p>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>P Elements</h2></header>
+      <div class="widget">
+        <header><h2>P Elements</h2></header>
+        <div class="body">
           <p>This tag has a default line height and a small bottom margin</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -69,10 +74,12 @@
             iaculis, dui eu euismod maximus, enim urna egestas ante, nec
             commodo libero justo vel mi.
           </p>
-        </section>
+        </div>
+      </div>
 
-        <section>
-          <header><h2>Small Elements</h2></header>
+      <div class="widget">
+        <header><h2>Small Elements</h2></header>
+        <div class="body">
           <p>
             Small tags will reduce the font size to 80% of the inherited size. Here is a P tag with a nested small tag inside of it:
           </p>
@@ -84,8 +91,9 @@
             tincidunt tortor. Vivamus sit amet metus dolor.
             </small>
           </p>
-        </section>
+        </div>
       </div>
+
     </div>
   </article>
 </template>
