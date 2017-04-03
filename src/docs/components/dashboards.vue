@@ -5,6 +5,7 @@
   export default {
     data () {
       return {
+        dashboardBuilder: null,
         rows: [[], [], [{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [{type: 'operator'}, {type: 'rig'}], []]
       }
     },
@@ -13,7 +14,7 @@
     },
     mounted () {
       /* eslint-disable no-new */
-      new DashboardBuilder({
+      this.dashboardBuilder = new DashboardBuilder({
         data: this.rows,
         draggables: '.widget-modules .draggable, .dashboard-widget',
         main: '.dashboard-main',

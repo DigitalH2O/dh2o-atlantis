@@ -1,7 +1,11 @@
 export default class data {
   constructor (info = {}) {
-    this.data = JSON.parse(JSON.stringify(info.data.slice(0))) // Clone data
+    this.data = this.cloneData(info.data) // Clone data
     this.onChange = info.onChange
+  }
+
+  cloneData (data) {
+    return JSON.parse(JSON.stringify(data))
   }
 
   // Loop through and make sure there are no
@@ -17,7 +21,7 @@ export default class data {
       }
     }
 
-    this.onChange(this.data.slice(0))
+    this.onChange(JSON.parse(JSON.stringify(this.data)))
   }
 
   // addWidget will take in widget object and add it to designated location

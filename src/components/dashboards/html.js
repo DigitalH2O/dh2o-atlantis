@@ -15,7 +15,7 @@ export default class html {
         return
       }
 
-      if (i & 1) {
+      if (i % 2 !== 0) {
         // Make sure odds always have content within them
         if (rows[i].innerHTML.trim() === '' && rows.childNodes) {
           rows.removeChild(rows.childNodes[i])
