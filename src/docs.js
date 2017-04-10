@@ -17,6 +17,9 @@ import 'dh2o-atlantis/components/modals/modals.scss'
 // Loading
 import 'dh2o-atlantis/components/loading/loading.scss'
 
+// No Data
+import 'dh2o-atlantis/components/nodata/nodata.scss'
+
 import App from './docs/app.vue'
 import CodeSample from './docs/code-sample.vue'
 import routerList from './router.js'

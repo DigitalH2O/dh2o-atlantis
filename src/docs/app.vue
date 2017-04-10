@@ -70,6 +70,7 @@
           <router-link class="link" to="/dropdowns">Dropdowns</router-link>
           <router-link class="link" to="/modals">Modals</router-link>
           <router-link class="link" to="/loading">Loading</router-link>
+          <router-link class="link" to="/nodata">No Data</router-link>
         </nav>
       </aside>
       <main>

@@ -29,9 +29,10 @@ module.exports = {
     {path: '/tables', component: require('./docs/elements/tables.vue')},
 
     // Components
+    {path: '/dashboards', component: require('./docs/components/dashboards.vue')},
     {path: '/dropdowns', component: require('./docs/components/dropdowns.vue')},
     {path: '/modals', component: require('./docs/components/modals.vue')},
     {path: '/loading', component: require('./docs/components/loading.vue')},
-    {path: '/dashboards', component: require('./docs/components/dashboards.vue')}
+    {path: '/nodata', component: require('./docs/components/nodata.vue')}
   ]
 }
