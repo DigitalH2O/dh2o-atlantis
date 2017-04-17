@@ -1,0 +1,22 @@
+@import "~slim-select/src/slim-select/index";
+
+.ss-main {
+  .ss-multi-selected {
+    .ss-values {
+      .ss-value {
+        .ss-value-text {
+          font-weight: bold; 
+        }
+      }
+    }
+  }
+  .ss-content {
+    .ss-list {
+      .ss-option {
+        &:hover:not(.ss-disabled), &.ss-highlighted {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

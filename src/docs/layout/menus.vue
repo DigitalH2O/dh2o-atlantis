@@ -1,21 +1,3 @@
-<script>
-  import $ from 'jquery'
-  import 'select2' // globally assign select2 fn to $ element
-
-  export default {
-    mounted () {
-      $('.select2-nosearch').select2({
-        width: '300px',
-        minimumResultsForSearch: Infinity
-      })
-
-      $('.select2-search').select2({
-        width: '300px'
-      })
-    }
-  }
-</script>
-
 <style lang="scss">
   @import '../../../src/scss/_partials';
 
@@ -64,34 +46,6 @@
         </div>
       </div>
 
-      <div class="widget">
-        <header><h2>Select2</h2></header>
-
-        <div class="body">
-          <h4>A Select2 control without a search box</h4>
-          <div class="example">
-            <select class="select2-nosearch">
-              <option>Option 1</option>
-              <option disabled="true">Option 2 (disabled)</option>
-              <option>Option 3</option>
-              <option>Option 4</option>
-              <option>Option 5</option>
-            </select>
-          </div>
-
-          <h4>A Select2 control with a search box</h4>
-          <div class="example">
-            <select class="select2-search">
-              <option>Option 1</option>
-              <option disabled="true">Option 2 (disabled)</option>
-              <option>Option 3</option>
-              <option>Option 4</option>
-              <option>Option 5</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      
     </div>
 
   </article>
