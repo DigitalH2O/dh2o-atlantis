@@ -1,78 +1,27 @@
-//to enforce consistency between .dh2o-dropdown-menu and the Select2 overrides,
-//we put the actual styles in these placeholder classes and then @extend them
-//into each control
-
-%dropdown-menu-container {
+.menu {
   border: 1px solid $border-color;
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-%dropdown-menu-item {
-  padding: $spacing-quarter $spacing-half;
-  text-align: left;
-  cursor: pointer;
-  color: $font-color;
-}
-
-%dropdown-menu-item-hover {
-  background-color: $primary-color;
-  color: $white;
-}
-
-%dropdown-menu-item-selected {
-  background-color: $primary-color;
-  color: $white;
-  font-weight: $font-weight-bold;
-}
-
-%dropdown-menu-item-disabled {
-  color: $border-color;
-  cursor: not-allowed;
-
-  &:hover {
-    background-color: inherit;
-  }
-}
-
-.dh2o-dropdown-menu {
-  @extend %dropdown-menu-container;
 
   li {
-    @extend %dropdown-menu-item;
+    padding: $spacing-quarter $spacing-half;
+    text-align: left;
+    cursor: pointer;
+    color: $font-color;
 
-    &:hover { @extend %dropdown-menu-item-hover; }
-    &[aria-selected="true"] { @extend %dropdown-menu-item-selected; }
-    &[aria-disabled="true"] { @extend %dropdown-menu-item-disabled; }
-  }
-}
-
-.select2-dropdown {
-  @extend %dropdown-menu-container;
-
-  li.select2-results__option {
-    @extend %dropdown-menu-item;
-
-    &.select2-results__option--highlighted {
-      @extend %dropdown-menu-item-hover;
+    &:hover, &[aria-selected="true"] {
+      background-color: $primary-color;
+      color: $white;
+      font-weight: $font-weight-bold;
     }
-
-    &[aria-selected="true"] {
-      @extend %dropdown-menu-item-selected;
-    }
-
     &[aria-disabled="true"] {
-      @extend %dropdown-menu-item-disabled;
-    }
-  }
+      color: $border-color;
+      cursor: not-allowed;
 
-  .select2-search--dropdown {
-    border-bottom: 1px solid $border-color;
-    padding: $spacing-half;
-
-    input {
-      padding: $spacing-quarter $spacing-half;
-      margin: 0;
+      &:hover {
+        background-color: inherit;
+        font-weight: normal;
+      }
     }
   }
 }

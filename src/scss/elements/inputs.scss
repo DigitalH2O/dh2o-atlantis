@@ -27,6 +27,10 @@ input, select, textarea {
   outline: 0;
   box-sizing: border-box;
 
+  &::placeholder {
+    color: $border-color;
+  }
+
   &:focus {
     box-shadow: 0 0 3px $link-text-color;
     border-color: $link-text-color;
@@ -36,6 +40,13 @@ input, select, textarea {
 
 select[multiple] {
   height: auto;
+}
+
+textarea {
+  height: auto;
+  &::placeholder {
+    color: $border-color;
+  }
 }
 
 %input-background-position {
@@ -111,10 +122,6 @@ input[type=checkbox] {
   padding-left: 2px;
 }
 
-textarea {
-  height: auto;
-}
-
 .toggle {
   position: relative;
   width: 50px;
@@ -186,4 +193,9 @@ textarea {
   .toggle-checkbox:checked + .toggle-label .toggle-switch {
     transform: translateX(28px);
   }
+}
+
+/* Used to wrap label and input to give additional margin below */
+.form-group {
+  margin: 0px 0px $spacing-half 0px;
 }

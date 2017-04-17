@@ -45,35 +45,94 @@
         <p>
           The dropdown menu styles are applied through 2 main classes: "dh2o-dropdown-trigger" and "dh2o-dropdown-content". The trigger class needs to be applied to the parent element of the content class. This is because the dropdown content is positioned relative to the position of the button.
         </p>
-        <p>
-          For the items in the dropdown menu, apply the "menu-item" class to get the hover states and borders as shown below.
-        </p>
-        <code-sample>
-          <div class="dh2o-dropdown-container">
-            <div class="dh2o-dropdown-trigger btn"><span>User Menu</span></div>
-            <div class="dh2o-dropdown-content">
-              <ul>
-                <li class="menu-item">User Account</li>
-                <li class="menu-item">Logout</li>
-              </ul>
-            </div>
+        <div class="dh2o-dropdown-container">
+          <div class="dh2o-dropdown-trigger btn"><span>User Menu</span></div>
+          <div class="dh2o-dropdown-content">
+            <ul class="menu">
+              <li>Option 1</li>
+              <li aria-selected="true">Option 2 (selected)</li>
+              <li>Option 3</li>
+              <li aria-disabled="true">Option 4 (disabled)</li>
+              <li>Option 5</li>
+            </ul>
           </div>
-        </code-sample>
+        </div>
+        <pre>
+          <code class="language-markup">
+            <script type="prism-html-markup">
+              <div class="dh2o-dropdown-container">
+                <div class="dh2o-dropdown-trigger btn"><span>User Menu</span></div>
+                <div class="dh2o-dropdown-content"></div>
+              </div>
+            </script>
+          </code>
+        </pre>
+      </div>
+
+      <div class="widget">
+        <header><h2>Menus</h2></header>
+        <div class="body">
+          <p>
+            Dropdown content by default is an empty container but in most cases you will want to add a styled menu.
+            So we made it reusable.
+          </p>
+
+          <ul class="menu">
+            <li>Option 1</li>
+            <li aria-selected="true">Option 2 (selected)</li>
+            <li>Option 3</li>
+            <li aria-disabled="true">Option 4 (disabled)</li>
+            <li>Option 5</li>
+          </ul>
+          <pre>
+            <code class="language-markup">
+              <script type="prism-html-markup">
+                <ul class="menu">
+                  <li>Option 1</li>
+                  <li aria-selected="true">Option 2 (selected)</li>
+                  <li>Option 3</li>
+                  <li aria-disabled="true">Option 4 (disabled)</li>
+                  <li>Option 5</li>
+                </ul>
+              </script>
+            </code>
+          </pre>
+        </div>
       </div>
 
       <div class="widget">
         <header><h2>Javascript Triggers</h2></header>
         <div class="body">
           <p>You can also programmably trigger showing the dropdown</p>
-          <code-sample>
-            <div id="program_trigger" class="dh2o-dropdown-container">
-              <div class="btn" @click="click">Button</div>
-              <div class="dh2o-dropdown-content">
-                <div v-if="showDropdownContents">Stuff to show here</div>
-              </div>
+          <div id="program_trigger" class="dh2o-dropdown-container">
+            <div class="btn" @click="click">Button</div>
+            <div class="dh2o-dropdown-content">
+              <div v-if="showDropdownContents">Content here</div>
             </div>
-            <div style="display: inline-block;">Is dropdown showing: {{showDropdownContents}}</div>
-          </code-sample>
+          </div>
+          <div style="display: inline-block;">Is dropdown showing: {{showDropdownContents}}</div>
+
+          <pre>
+            <code class="language-markup">
+              <script type="prism-html-markup">
+                <div id="program_trigger" class="dh2o-dropdown-container">
+                  <div class="btn" @click="click">Button</div>
+                  <div class="dh2o-dropdown-content">
+                    Content Here
+                  </div>
+                </div>
+              </script>
+            </code>
+          </pre>
+          <pre>
+            <code class="language-javascript">
+              <script type="prism-javascript">
+                dh2oDropdown('program_trigger', true, (isShowing) => {
+                  console.log(isShowing)
+                })
+              </script>
+            </code>
+          </pre>
 
           <div class="message alert">
             Do not use button element for dropdowns.
