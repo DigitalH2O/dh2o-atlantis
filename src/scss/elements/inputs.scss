@@ -104,16 +104,26 @@ input[type=checkbox] {
     border-color: $border-color;
   }
 
-  &:checked {
+  &:checked, &:indeterminate {
     @extend .fa;
-    @extend .fa-check;
 
     color: $primary-color;
-    font-size: $font-size*1.2;
 
     &::before {
       visibility: visible;
     }
+  }
+
+  &:checked {
+    @extend .fa-check;
+
+    font-size: $font-size*1.2;
+  }
+
+  &:indeterminate {
+    @extend .fa-plus-square-o;
+
+    font-size: $font-size*1.6;
   }
 }
 
