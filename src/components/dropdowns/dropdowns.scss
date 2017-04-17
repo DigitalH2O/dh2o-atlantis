@@ -41,15 +41,7 @@
     animation-fill-mode: both;
   }
 
-  .menu-item {
-    padding: 8px;
-    &:hover {
-      background-color: $primary-color;
-      color: $white;
-      cursor: pointer;
-    }
-    &:not(:last-child) {
-      border-bottom: 1px solid $border-color;
-    }
+  > .menu {
+    border: none;
   }
 }

@@ -97,6 +97,26 @@
         </div>
 
         <div class="widget">
+          <header><h2>Spacing</h2></header>
+          <div class="body">
+            <p>
+              In scenarios where you need additional spacing between groups of label/inputs wrap them in a .form-group class
+            </p>
+
+            <pre>
+              <code class="language-markup">
+                <script type="prism-html-markup">
+                  <div class="form-group">
+                    <label>Text</label>
+                    <input type="text" />
+                  </div>
+                </script>
+              </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="widget">
           <header><h2>Selects</h2></header>
           <div class="body">
             <p>

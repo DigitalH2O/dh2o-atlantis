@@ -49,7 +49,6 @@
           <div class="separator"></div>
           <router-link class="link" to="/layout">Layout</router-link>
           <router-link class="link" to="/sidebar">Sidebar</router-link>
-          <router-link class="link" to="/menus">Menus</router-link>
           <router-link class="link" to="/articles">Articles</router-link>
           <router-link class="link" to="/grid">Grid</router-link>
           <div class="separator"></div>
