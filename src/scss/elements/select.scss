@@ -5,12 +5,21 @@
     .ss-values {
       .ss-value {
         .ss-value-text {
-          font-weight: bold; 
+          font-weight: bold;
         }
       }
     }
   }
   .ss-content {
+    .ss-search {
+      input {
+        &:focus {
+          box-shadow: 0 0 3px $link-text-color;
+          border-color: $link-text-color;
+          transition: box-shadow 0.30s ease-in-out, border-color 0.30s ease-in-out;
+        }
+      }
+    }
     .ss-list {
       .ss-option {
         &:hover:not(.ss-disabled), &.ss-highlighted {
