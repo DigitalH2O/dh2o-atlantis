@@ -106,6 +106,9 @@ input[type=checkbox] {
 
   &:checked, &:indeterminate {
     @extend .fa;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
     color: $primary-color;
 
@@ -121,14 +124,14 @@ input[type=checkbox] {
   }
 
   &:indeterminate {
-    @extend .fa-plus-square-o;
-
-    border: 0px;
-    font-size: $font-size*1.8;
+    @extend .fa-plus;
+    
+    font-size: $font-size*1.2;
   }
 }
 
 .checkbox-label {
+  display: inline-flex;
   font-weight: 400;
   padding-left: 2px;
 }
