@@ -50,8 +50,8 @@
 
     > .modal-close {
       position: absolute;
-      top: -35px;
-      right: -45px;
+      top: -25px;
+      right: -25px;
       line-height: 1em;
       text-align: center;
       cursor: pointer;
@@ -62,9 +62,6 @@
       .modal-close-x {
         font-size: 26px;
         padding: 0 0 5px 0;
-      }
-      .modal-close-text {
-        font-size: 14px;
       }
     }
 

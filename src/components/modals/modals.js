@@ -28,11 +28,6 @@ var dh2oModal = function (modalId, autoShow, callback = null) {
     closeX.innerHTML = 'X'
     close.append(closeX)
 
-    var closeText = document.createElement('div')
-    closeText.classList.add('modal-close-text')
-    closeText.innerHTML = 'Close'
-    close.append(closeText)
-
     content.append(close)
   }
 
