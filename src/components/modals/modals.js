@@ -7,8 +7,34 @@ var dh2oModal = function (modalId, autoShow, callback = null) {
   if (!modal) { throw new Error('Could not find modal. Please make sure you pass an id of a modal that exists') }
   var closeName = 'modal-close'
 
-  // Check to make sure modal id exists
-  if (!modal) { console.error('Modal does not exist'); return }
+  // Check to make sure modal content exist
+  var content = modal.querySelector('.modal-content')
+  if (!content) { console.error('Modal content does not exist'); return }
+
+  // Make sure close x is in modal content
+  var contentChildren = content.childNodes
+  var hasClose = false
+  for (var c = 0; c < contentChildren.length; c++) {
+    if (contentChildren[c].classList.contains('modal-close')) {
+      hasClose = true
+    }
+  }
+  if (!hasClose) {
+    var close = document.createElement('div')
+    close.classList.add('modal-close')
+
+    var closeX = document.createElement('div')
+    closeX.classList.add('modal-close-x')
+    closeX.innerHTML = 'X'
+    close.append(closeX)
+
+    var closeText = document.createElement('div')
+    closeText.classList.add('modal-close-text')
+    closeText.innerHTML = 'Close'
+    close.append(closeText)
+
+    content.append(close)
+  }
 
   // Check if modal already has show method on it.
   // If so, show modal and return it.
