@@ -29,9 +29,13 @@
 
   #content-modals {
     .code-sample {
-      .as-rendered, .as-code {
+      .as-rendered {
         display: block;
-        width: 100%;
+        width: 25%;
+      }
+      .as-code {
+        display: block;
+        width: 75%;
       }
     }
 
@@ -88,13 +92,64 @@
           <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
             Simple Text Modal
           </div>
-
+          
           <div id="modal1" class="dh2o-modal">
             <div class="modal-content" style="width: 300px;">
               <div class="modal-body">Hey buddy!</div>
             </div>
           </div>
         </code-sample>
+      </div>
+
+      <div class="widget">
+        <header><h2>Widget Modal</h2></header>
+        <div class="body">
+          <p>
+            You may want to display a widget as a modal. Just add your widget into the modal-content section.
+          </p>
+
+          <code-sample>
+            <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modalWidget">
+              Widget Modal
+            </div>
+
+            <div id="modalWidget" class="dh2o-modal">
+              <div class="modal-content" style="width: 500px;">
+                <div class="widget">
+                  <header>
+                    <div class="titlebar">
+                      <span class="title">Widget title</span>
+                      <span class="subtitle">Widget subtitle</span>
+                    </div>
+                    <div class="toolbar">
+                      <div class="other-menu"><i class="fa fa-pencil"></i></div>
+                      <div class="dh2o-dropdown-container trigger">
+                        <div class="dh2o-dropdown-trigger"><i aria-hidden="true" class="fa fa-bars"></i></div>
+                        <div class="dh2o-dropdown-content">
+                          <ul class="menu">
+                            <li>Menu item</li>
+                            <li>Menu item 2</li>
+                            <li>Menu item 3</li>
+                            <li>Menu item 4</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="body">
+                    This is the widget body<br />
+                    This is the widget body<br />
+                    This is the widget body<br />
+                    This is the widget body<br />
+                    This is the widget body<br />
+                    This is the widget body<br />
+                    This is the widget body
+                  </div>
+                </div>
+              </div>
+            </div>
+          </code-sample>
+        </div>
       </div>
 
       <div class="widget">
@@ -110,7 +165,6 @@
               <div class="modal-content" style="width: 500px;">
                 <div class="modal-header">
                   Title
-                  <div class="modal-header-right"><i class="fa fa-close modal-close"></i></div>
                 </div>
                 <div class="modal-body">
                   <p>Here is some text</p>
