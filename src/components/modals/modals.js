@@ -15,7 +15,7 @@ var dh2oModal = function (modalId, autoShow, callback = null) {
   var contentChildren = content.childNodes
   var hasClose = false
   for (var c = 0; c < contentChildren.length; c++) {
-    if (contentChildren[c].classList.contains('modal-close')) {
+    if (contentChildren[c].classList && contentChildren[c].classList.contains('modal-close')) {
       hasClose = true
     }
   }
