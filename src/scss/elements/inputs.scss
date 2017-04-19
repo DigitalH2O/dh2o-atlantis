@@ -80,19 +80,22 @@ input[type=search] {
 input[type=email] {
   @include input-background('email');
 }
+
 input[type=password] {
   @include input-background('password');
 }
+
 input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
   padding: 0;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: $font-size*1.4;
   height: $font-size*1.4;
   vertical-align: middle;
-  margin-bottom: 0;
 
   &::before {
     content: "\f096";
@@ -104,22 +107,44 @@ input[type=checkbox] {
     border-color: $border-color;
   }
 
-  &:checked {
+  &:checked, &:indeterminate {
     @extend .fa;
-    @extend .fa-check;
-
+    display: inline-flex;
     color: $primary-color;
-    font-size: $font-size*1.2;
+    vertical-align: middle;
 
-    &::before {
-      visibility: visible;
-    }
+    &:before { visibility: visible; }
+  }
+
+  &:checked {
+    @extend .fa-check;
+    font-size: $font-size*1.2;
+  }
+
+  &:indeterminate {
+    @extend .fa-plus;
+    font-size: $font-size*1.2;
+    
+    &:before { margin: 1px 0 0 0; }
   }
 }
 
 .checkbox-label {
+  display: inline-flex;
   font-weight: 400;
   padding-left: 2px;
+
+  input[type=checkbox] {
+    margin: 0 $spacing-quarter 0 0;
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+  .checkbox-label { display: flex; }
 }
 
 .toggle {
