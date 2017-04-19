@@ -1876,9 +1876,9 @@ detective@^4.3.1:
     acorn "^4.0.3"
     defined "^1.0.0"
 
-"dh2o-release@git+https://903db05d353bef89ba0faaac7f17f96fd884d43b:x-oauth-basic@github.com/DigitalH2O/dh2o-release.git#v1.3.1":
+"dh2o-release@git+https://github.com/DigitalH2O/dh2o-release.git#v1.3.1":
   version "1.3.1"
-  resolved "git+https://903db05d353bef89ba0faaac7f17f96fd884d43b:x-oauth-basic@github.com/DigitalH2O/dh2o-release.git#e4bb370a4becf5dbf41078130ce017241afe1b95"
+  resolved "git+https://github.com/DigitalH2O/dh2o-release.git#v1.3.1"
   dependencies:
     chalk "^1.1.3"
     node-cmd-promise "^1.0.0"

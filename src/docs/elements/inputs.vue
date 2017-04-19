@@ -23,7 +23,14 @@
   @import '../../../src/scss/_partials.scss';
 
   #content-inputs {
-
+    & .checkbox-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 15px;
+      & input {
+        display: flex;
+      }
+    }
   }
 </style>
 
@@ -86,12 +93,22 @@
           <div class="form-group">
             <label>Checkbox</label>
             <fieldset>
-              <input id="checkbox-input1" type="checkbox"/>
-              <label for="checkbox-input1" class="inline checkbox-label">Option 1</label>
-              <input id="checkbox-input2" type="checkbox"/>
-              <label for="checkbox-input2" class="inline checkbox-label">Option 2</label>
-              <input id="checkbox-input3" type="checkbox"/>
-              <label for="checkbox-input3" class="inline checkbox-label">Option 3</label>
+              <section class="checkbox-container">
+                <label for="checkbox-input1" class="inline checkbox-label" >
+                  <input id="checkbox-input1" type="checkbox" :indeterminate.prop="true"/>
+                  Indeterminate State
+                </label>
+                <section class="checkbox-container">
+                  <label for="checkbox-input2" class="inline checkbox-label">
+                    <input id="checkbox-input2" type="checkbox" checked="true"/>
+                    Checked State
+                  </label>
+                  <label for="checkbox-input3" class="inline checkbox-label">
+                    <input id="checkbox-input3" type="checkbox"/>
+                    Unchecked State
+                  </label>
+                </section>
+              </section>
             </fieldset>
           </div>
         </div>

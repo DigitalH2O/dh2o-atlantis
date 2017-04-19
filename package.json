@@ -29,7 +29,7 @@
     "font-awesome": "^4.6.3"
   },
   "devDependencies": {
-    "dh2o-release": "git+https://903db05d353bef89ba0faaac7f17f96fd884d43b:x-oauth-basic@github.com/DigitalH2O/dh2o-release.git#v1.3.1",
+    "dh2o-release": "git+https://github.com/DigitalH2O/dh2o-release.git#v1.3.1",
     "interact.js": "^1.2.8",
     "node-cmd-promise": "^1.0.0",
     "sass-extract": "^0.3.4",
