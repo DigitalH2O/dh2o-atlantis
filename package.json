@@ -34,7 +34,7 @@
     "node-cmd-promise": "^1.0.0",
     "sass-extract": "^0.3.4",
     "sass-extract-loader": "^0.3.4",
-    "slim-select": "^0.10.0",
+    "slim-select": "^0.11.0",
     "tinycolor2": "^1.4.1",
     "vue-build": "^0.47.0"
   }

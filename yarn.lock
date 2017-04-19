@@ -5782,9 +5782,9 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
-slim-select@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/slim-select/-/slim-select-0.10.0.tgz#8afce122e9ba822273436c9a4eb081b0acc9416d"
+slim-select@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/slim-select/-/slim-select-0.11.0.tgz#285aa10dc7f5c5694604dc3d53912804c05cdc25"
 
 smart-buffer@^1.0.13:
   version "1.1.15"
@@ -6095,7 +6095,7 @@ style-loader@^0.16.1:
   dependencies:
     loader-utils "^1.0.2"
 
-supports-color@3.1.2, supports-color@^3.1.0, supports-color@^3.1.1:
+supports-color@3.1.2, supports-color@^3.1.1:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.1.2.tgz#72a262894d9d408b956ca05ff37b2ed8a6e2a2d5"
   dependencies:
@@ -6105,7 +6105,7 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-supports-color@^3.2.3:
+supports-color@^3.1.0, supports-color@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
   dependencies:
@@ -6611,8 +6611,8 @@ vue@^2.1.3:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
 
 vuex@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.3.0.tgz#600048bef1682d657a6f3b7b1ffb44898703f2b4"
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.3.1.tgz#cde8e997c1f9957719bc7dea154f9aa691d981a6"
 
 watchpack@^1.3.1:
   version "1.3.1"
