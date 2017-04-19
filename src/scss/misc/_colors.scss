@@ -16,14 +16,14 @@ $colors: (
     link-text-color: #40b4de
   ),
   assets: (
-      lease-outbound-color: #40b0d9,
-      lease-inbound-color: #6c7387,
-      asset-oil-color: #729e00,
-      asset-gas-color: #ff7a28,
-      asset-injection-color: #087caa,
-      asset-disposal-color: #70184d,
-      asset-recycle-color: #f1b71c,
-      asset-freshwater-color: #2aace2
+      lease-outbound-color: #40b0d9, // fa-arrow-cirle-up
+      lease-inbound-color: #6c7387, // fa-arrow-cirle-down
+      asset-oil-color: #729e00, // fa-database
+      asset-gas-color: #ff7a28, // fa-fire
+      asset-injection-color: #087caa, // fa-arrow-cirle-down
+      asset-disposal-color: #70184d, // fa-trash
+      asset-recycle-color: #f1b71c, // fa-recycle
+      asset-freshwater-color: #2aace2 // fa-tint
   )
 );
 
