@@ -85,24 +85,22 @@
 
           <div class="form-group">
             <label>Checkbox Tree </label>
-            <fieldset>
+            <div class="checkbox-container">
+              <label for="checkbox-input1" class="checkbox-label" >
+                <input id="checkbox-input1" type="checkbox" :indeterminate.prop="true"/>
+                Indeterminate State
+              </label>
               <div class="checkbox-container">
-                <label for="checkbox-input1" class="checkbox-label" >
-                  <input id="checkbox-input1" type="checkbox" :indeterminate.prop="true"/>
-                  Indeterminate State
+                <label for="checkbox-input2" class="checkbox-label">
+                  <input id="checkbox-input2" type="checkbox" checked="true"/>
+                  Checked State
                 </label>
-                <div class="checkbox-container">
-                  <label for="checkbox-input2" class="checkbox-label">
-                    <input id="checkbox-input2" type="checkbox" checked="true"/>
-                    Checked State
-                  </label>
-                  <label for="checkbox-input3" class="checkbox-label">
-                    <input id="checkbox-input3" type="checkbox"/>
-                    Unchecked State
-                  </label>
-                </div>
+                <label for="checkbox-input3" class="checkbox-label">
+                  <input id="checkbox-input3" type="checkbox"/>
+                  Unchecked State
+                </label>
               </div>
-            </fieldset>
+            </div>
           </div>
 
           <div class="form-group">

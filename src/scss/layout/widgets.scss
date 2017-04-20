@@ -20,14 +20,15 @@
       text-overflow: ellipsis;
 
       .title {
+        color: $font-color;
         display: block;
         line-height: 1.2;
       }
       .subtitle {
+        color: darkest($border-color);
         display: block;
         font-size: $font-size - 2;
         line-height: 1.2;
-        color: darkest($border-color);
       }
     }
 
