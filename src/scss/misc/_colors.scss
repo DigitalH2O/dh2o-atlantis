@@ -1,66 +1,67 @@
 $colors: (
   base: (
-    primary-color: #1b7a9d,
-    secondary-color: #454e67,
-    font-color: #666666,
-    border-color: #DCDEE2,
-    background-color: #f1f1f1
-  ),
-  message: (
-    success-color: #719d46,
-    warning-color: #efaa1b,
-    alert-color: #b63813,
-    notice-color: #1b7a9d
+    primary: #1b7a9d,
+    secondary: #454e67,
+    border: #DCDEE2,
+    background: #f1f1f1
   ),
   text: (
-    link-text-color: #40b4de
+    font: #666666,
+    link: #40b4de
+  ),
+  message: (
+    success: #719d46,
+    warning: #efaa1b,
+    alert: #b63813,
+    notice: #1b7a9d
   ),
   assets: (
-      lease-outbound-color: #40b0d9, // fa-arrow-cirle-up
-      lease-inbound-color: #6c7387, // fa-arrow-cirle-down
-      asset-oil-color: #729e00, // fa-database
-      asset-gas-color: #ff7a28, // fa-fire
-      asset-injection-color: #087caa, // fa-arrow-cirle-down
-      asset-disposal-color: #70184d, // fa-trash
-      asset-recycle-color: #f1b71c, // fa-recycle
-      asset-freshwater-color: #2aace2 // fa-tint
+    oil: (color: #729e00, icon: 'fa-database'),
+    gas: (color: #ff7a28, icon: 'fa-fire'),
+    recycle: (color: #f1b71c, icon: 'fa-recycle'),
+    freshwater: (color: #2aace2, icon: 'fa-tint'),
+    injection: (color: #087caa, icon: 'fa-arrow-circle-down'),
+    disposal: (color: #70184d, icon: 'fa-trash'),
+    lease-outbound: (color: #40b0d9, icon: 'fa-arrow-circle-up'),
+    lease-inbound: (color: #6c7387, icon: 'fa-arrow-circle-down')
   )
 );
 
-$base-colors: map-get($colors, base);
-$primary-color: map-get($base-colors, primary-color);
-$secondary-color: map-get($base-colors, secondary-color);
-$font-color: map-get($base-colors, font-color);
-$border-color: map-get($base-colors, border-color);
-$background-color: map-get($base-colors, background-color);
+// Base colors
+$base-colors      : map-get($colors, base);
+$primary-color    : map-get($base-colors, primary);
+$secondary-color  : map-get($base-colors, secondary);
+$border-color     : map-get($base-colors, border);
+$background-color : map-get($base-colors, background);
+
+// Text colors
+$text-colors : map-get($colors, text);
+$font-color  : map-get($text-colors, font);
+$link-color  : map-get($text-colors, link);
 
 // Standard white/black
 $white: #ffffff;
 $black: #000000;
 
-// Text colors
-$text-colors: map-get($colors, text);
-$link-text-color: map-get($text-colors, link-text-color);
-
 // Message bar colors
 $message-colors : map-get($colors, message);
-$success-color  : map-get($message-colors, success-color);
-$warning-color  : map-get($message-colors, warning-color);
-$alert-color    : map-get($message-colors, alert-color);
-$notice-color   : map-get($message-colors, notice-color);
+$success-color  : map-get($message-colors, success);
+$warning-color  : map-get($message-colors, warning);
+$alert-color    : map-get($message-colors, alert);
+$notice-color   : map-get($message-colors, notice);
 
 // Asset colors
-$asset-colors   : map-get($colors, assets);
-$lease-outbound-color   : map-get($asset-colors, lease-outbound-color);
-$lease-inbound-color    : map-get($asset-colors, lease-inbound-color);
-$asset-oil-color        : map-get($asset-colors, asset-oil-color);
-$asset-gas-color        : map-get($asset-colors, asset-gas-color);
-$asset-injection-color  : map-get($asset-colors, asset-injection-color);
-$asset-disposal-color   : map-get($asset-colors, asset-disposal-color);
-$asset-recycle-color    : map-get($asset-colors, asset-recycle-color);
-$asset-freshwater-color : map-get($asset-colors, asset-freshwater-color);
+$asset-colors               : map-get($colors, assets);
+$lease-outbound-color : map-get(map-get($asset-colors, lease-outbound), color);
+$lease-inbound-color  : map-get(map-get($asset-colors, lease-inbound), color);
+$oil-color            : map-get(map-get($asset-colors, oil), color);
+$gas-color            : map-get(map-get($asset-colors, gas), color);
+$injection-color      : map-get(map-get($asset-colors, injection), color);
+$disposal-color       : map-get(map-get($asset-colors, disposal), color);
+$recycle-color        : map-get(map-get($asset-colors, recycle), color);
+$freshwater-color     : map-get(map-get($asset-colors, freshwater), color);
 
-
+// Darkening colors
 $darker-percent: 10%;
 $darkest-percent: 20%;
 @function darker($original) { @return darken($original, $darker-percent); }

@@ -14,8 +14,8 @@
     .ss-search {
       input {
         &:focus {
-          box-shadow: 0 0 3px $link-text-color;
-          border-color: $link-text-color;
+          box-shadow: 0 0 3px $link-color;
+          border-color: $link-color;
           transition: box-shadow 0.30s ease-in-out, border-color 0.30s ease-in-out;
         }
       }
