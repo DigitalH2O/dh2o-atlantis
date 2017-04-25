@@ -10,10 +10,10 @@ $colors: (
     link: #40b4de
   ),
   message: (
-    success: #719d46,
-    warning: #efaa1b,
+    success: #729e00,
+    warning: #f1b71c,
     alert: #b63813,
-    notice: #1b7a9d
+    notice: #087caa
   ),
   assets: (
     oil: (color: #729e00, icon: 'fa-database'),
@@ -22,7 +22,7 @@ $colors: (
     freshwater: (color: #2aace2, icon: 'fa-tint'),
     injection: (color: #087caa, icon: 'fa-arrow-circle-down'),
     disposal: (color: #70184d, icon: 'fa-trash'),
-    lease-outbound: (color: #40b0d9, icon: 'fa-arrow-circle-up'),
+    lease-outbound: (color: #2aace2, icon: 'fa-arrow-circle-up'),
     lease-inbound: (color: #6c7387, icon: 'fa-arrow-circle-down')
   )
 );
