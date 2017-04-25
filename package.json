@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "vue-build dev",
     "dist": "vue-build prod",
-    "dist:docs": "DOCS=true vue-build prod"
+    "docs": "DOCS=true vue-build prod"
   },
   "dependencies": {
     "font-awesome": "^4.6.3"
