@@ -56,8 +56,8 @@
             <code class="language-markup">
               <script type="prism-html-markup">
                 <div class="website">
-                  <a class="logo" href="#"><img src="images/logo-white.svg" /></a>
-                  <div class="name">Style Guide App</div>
+                  <a href="/" class="logo"></a>
+                  <a href="/" class="name">Style Guide App</a>
                 </div>
               </script>
             </code>
