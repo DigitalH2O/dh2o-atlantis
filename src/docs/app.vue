@@ -23,7 +23,7 @@
     <header>
       <div class="website">
         <router-link to="/welcome" class="logo"></router-link>
-        <div class="name">Style Guide App</div>
+        <router-link to="/welcome" class="name">Style Guide App</router-link>
       </div>
       <div class="user-menu dh2o-dropdown-container">
         <div class="dh2o-dropdown-trigger user-menu-btn">
