@@ -3,7 +3,7 @@ import dh2oModalFunction from './components/modals/modals.js'
 import dh2oDropdownFunction from './components/dropdowns/dropdowns.js'
 import dh2oLoadingComponent from './components/loading/loading.vue'
 import dh2oNoDataComponent from './components/nodata/nodata.vue'
-import allHelpers from './helpers/helpers.js'
+import allHelpers from './helpers'
 
 export const dh2oDashboards = dh2oDashboardsClass
 export const dh2oModal = dh2oModalFunction
