@@ -17,9 +17,11 @@ const sassColorsText = colorVars.global['$text-colors'].value
 const sassColorsAsset = colorVars.global['$asset-colors'].value
 
 for (let name in sassColorsBase) {
-  baseColors[name] = sassColorsBase[name].value.hex
-  darkerColors[name] = tinycolor(sassColorsBase[name].value.hex).darken(darkerPercent).toString()
-  darkestColors[name] = tinycolor(sassColorsBase[name].value.hex).darken(darkerPercent).toString()
+  baseColors[name] =  {
+    original: sassColorsBase[name].value.hex,
+    darker: tinycolor(sassColorsBase[name].value.hex).darken(darkerPercent).toString(),
+    darkest: tinycolor(sassColorsBase[name].value.hex).darken(darkestPercent).toString()
+ }
 }
 
 for (let name in sassColorsMessage) {
@@ -44,6 +46,4 @@ export default {
   assetColors,
   darkerPercent,
   darkestPercent,
-  darkerColors,
-  darkestColors
 }

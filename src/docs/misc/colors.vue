@@ -94,13 +94,31 @@
             on the original colors.
           </p>
 
+          <p>If you need these colors in Javascript, use</p>
+
+          <pre>
+            <code class="language-javascript">
+              import { helpers } from 'dh2o-atlantis'
+              const colors = helpers.colors
+
+              // e.g.:
+              // colors.baseColors.primary.original
+              // colors.baseColors.secondary.darkest
+              // colors.messageColors.success
+              // colors.assetColors.disposal.icon === '{{assetColors.disposal.icon}}'
+              // colors.assetColors.oil.hex === '{{assetColors.oil.hex}}'
+            </code>
+          </pre>
+
+          <p></p>
+
           <h4>Base</h4>
           <div class="colors">
             <div class="item" v-for="color, name in baseColors">
-              <div class="color" :style="{'background-color': color}"></div>
+              <div class="color" :style="{'background-color': color.original}"></div>
               <div class="text">
                 <div class="name">${{name}}-color</div>
-                <div class="hex">{{color}}</div>
+                <div class="hex">{{color.original}}</div>
               </div>
             </div>
           </div>
