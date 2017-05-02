@@ -9,4 +9,7 @@ node_modules
 # Optional npm cache directory
 .npm
 
+# Dist stuff
+dist/bundle-analyzer.html
+
 .DS_Store
