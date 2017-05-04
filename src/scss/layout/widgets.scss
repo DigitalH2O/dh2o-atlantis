@@ -13,7 +13,7 @@
     border-bottom: solid 1px $border-color;
 
     > .titlebar {
-      flex: 1 1;
+      flex: 1 1 auto;
       font-weight: bold;
       white-space: nowrap;
       overflow: hidden;
@@ -23,12 +23,18 @@
         color: $font-color;
         display: block;
         line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .subtitle {
         color: darkest($border-color);
         display: block;
         font-size: $font-size - 2;
         line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
@@ -36,6 +42,7 @@
       flex: 0 1;
       display: flex;
       justify-content: flex-end;
+      margin: 0 0 0 $spacing-half;
 
       > * {
         padding-left: $spacing-quarter;

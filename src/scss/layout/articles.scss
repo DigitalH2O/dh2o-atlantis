@@ -41,6 +41,7 @@ article {
 
     &.row {
       flex-direction: row;
+      box-sizing: border-box;
       > * {
         flex: 1 1 auto;
         margin: 0 $spacing 0 0;

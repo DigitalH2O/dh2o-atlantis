@@ -24,8 +24,6 @@
           }
         },
         onChange: (data) => {
-          console.log('Changed!!!')
-          console.log(data)
           this.updateRows(data)
         }
       })

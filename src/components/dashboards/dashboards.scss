@@ -32,6 +32,7 @@
 
     .dashboard-widget {
       flex: 0 1 100%;
+      width: 0;
       margin-right: $spacing-half;
 
       &:last-child {
