@@ -4,7 +4,7 @@
 
   .dashboard-row {
     display: flex;
-    height: auto;
+    height: 200px;
     margin: 0 0 $spacing-half 0;
     padding: 0 0 0 0;
     border-radius: 0px;
@@ -32,8 +32,11 @@
 
     .dashboard-widget {
       flex: 0 1 100%;
-      width: 0;
       margin-right: $spacing-half;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
 
       &:last-child {
         margin-right: 0px;
