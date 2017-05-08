@@ -4,7 +4,7 @@
   export default {
     data () {
       return {
-        colors: colorVars.global.$colors.value.message.value
+        colors: colorVars.global['$message-colors'].value
       }
     }
   }
@@ -60,10 +60,10 @@
         <div class="body">
           <pre>
             <code class="language-scss">
-              $success-color  : {{colors['success-color'].value.hex}};
-              $warning-color  : {{colors['warning-color'].value.hex}};
-              $alert-color    : {{colors['alert-color'].value.hex}};
-              $notice-color   : {{colors['notice-color'].value.hex}};
+              $success-color  : {{colors.success.value.hex}};
+              $warning-color  : {{colors.warning.value.hex}};
+              $alert-color    : {{colors.alert.value.hex}};
+              $notice-color   : {{colors.notice.value.hex}};
             </code>
           </pre>
         </div>
