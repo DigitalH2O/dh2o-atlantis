@@ -1,12 +1,14 @@
 .widget {
-  border: solid 1px $border-color;
-  background-color: $white;
+  display: flex;
+  flex-direction: column;
   flex: 0 1 auto;
   position: relative;
+  border: solid 1px $border-color;
+  background-color: $white;
 
   > header {
     display: flex;
-    flex: 0 0 33px;
+    flex: 0 1 auto;
     justify-content: space-between;
     align-items: center;
     padding: $spacing-quarter $spacing-half;
@@ -61,7 +63,13 @@
     }
   } // header
 
+  > .body {
+    flex: 1 1 auto;
+  }
+
   > .body, &.body {
+    display: block;
+    position: relative;
     padding: $spacing;
 
     > *:last-child {

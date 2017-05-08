@@ -23,6 +23,10 @@
       .subtitle { text-transform: capitalize; }
     }
     .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       i {
         font-size: 40px;
