@@ -66,6 +66,27 @@
         </div>
       </div>
 
+      <div class="widget">
+        <header>
+          <div class="titlebar">
+            <div class="title">Just Body</div>
+            <div class="subtitle">Not the header</div>
+          </div>
+        </header>
+        <div class="body">
+          <nodata v-if="showNoData" subtext="Please update search parameters" />
+          <p>
+            Lorem ipsum dolor sit amet, nam erant dolorum urbanitas ad, elitr doming veritus eu sed, laoreet adipisci cu eam. Nemore utamur at nec, sit elit copiosae conclusionemque no, vix ut diam similique signiferumque. Primis mandamus expetenda mea at, in recusabo repudiare est. Dictas postulant ne eam, omnis verterem insolens nam an, vis ut modus delenit verterem.
+          </p>
+          <p>
+            Sea at omnis similique ullamcorper, ei sea elitr principes, ne pro cibo lucilius maiestatis. Fierent reformidans ei has, vix albucius torquatos eu. Nostrum honestatis definitiones quo ei, et solum vulputate vim. Ei usu audiam offendit. Et eam dicit fuisset noluisse, impetus minimum duo ut, ut decore putant qui. Ad wisi congue ceteros usu, mei doming omnesque nominavi an.
+          </p>
+          <p>
+            Vim assum quodsi voluptua ea, sea habeo nobis praesent et, in malis tempor ancillae nec. Ea impedit singulis suavitate eum. Omnis causae repudiare quo an, cum etiam moderatius ex. Quod etiam corrumpit ex has. Ut sed menandri deserunt, te est nemore instructior, ut maiestatis democritum sed. Alii habeo lobortis ex pri, ignota scripserit mel ad, meis prompta qui ne.
+          </p>
+        </div>
+      </div>
+
     </div>
 
   </article>
