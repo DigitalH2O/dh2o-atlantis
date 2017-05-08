@@ -92,7 +92,7 @@
                     <i class="fa fa-caret-down"></i>
                   </div>
                   <div class="dh2o-dropdown-content">
-                    <ul>
+                    <ul class="menu">
                       <li class="menu-item">User Account</li>
                       <li class="menu-item">Logout</li>
                     </ul>

@@ -6,7 +6,7 @@
     data () {
       return {
         dashboardBuilder: null,
-        rows: [[], [], [{type: 'fire'}, {type: 'fire'}, {type: 'fire'}], [], [{type: 'operator'}, {type: 'rig'}], []]
+        rows: [[], [], [{type: 'fire'}, {type: 'fire'}, {type: 'fire', isLoading: true}], [], [{type: 'operator', noData: true}, {type: 'rig'}], []]
       }
     },
     components: {
@@ -16,7 +16,7 @@
       /* eslint-disable no-new */
       this.dashboardBuilder = new DashboardBuilder({
         data: this.rows,
-        draggables: '.widget-modules .draggable, .dashboard-widget',
+        draggables: '.widget-modules .draggable, .dashboard-widget header',
         main: '.dashboard-main',
         newWidget: (info) => {
           return {
@@ -69,7 +69,7 @@
       </div>
       <div class="dashboard-main">
         <div class="dashboard-row" v-for="(row, index) in rows" :data-index="index">
-          <widget v-for="widget in row" :data-id="widget.id" :type="widget.type" />
+          <widget v-for="widget in row" :key="widget.id" :data-id="widget.id" :info="widget" />
         </div>
       </div>
     </div>

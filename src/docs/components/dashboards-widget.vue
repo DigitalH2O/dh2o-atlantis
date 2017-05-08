@@ -1,14 +1,20 @@
 <script>
+  import nodata from 'dh2o-atlantis/components/nodata/nodata.vue'
+  import loading from 'dh2o-atlantis/components/loading/loading.vue'
   export default {
     props: {
-      type: {
-        type: String,
+      info: {
+        type: Object,
         required: true
       }
     },
+    components: {
+      nodata,
+      loading
+    },
     computed: {
       className () {
-        return `dh2o-icon-${this.type}`
+        return `dh2o-icon-${this.info.type}`
       }
     }
   }
@@ -43,10 +49,11 @@
 
 <template>
   <div class="dashboard-widget widget">
+    <loading v-if="info.isLoading" />
     <header>
       <div class="titlebar">
-        <span class="title">{{type}}</span>
-        <span class="subtitle">{{type}} text</span>
+        <span class="title">{{info.type}}</span>
+        <span class="subtitle">{{info.type}} text</span>
       </div>
       <div class="toolbar">
         <div class="other-menu"><i class="fa fa-pencil"></i></div>
@@ -64,8 +71,9 @@
       </div>
     </header>
     <div class="body">
+      <nodata v-if="info.noData" />
       <i :class="className"></i>
-      <div class="text">{{type}}</div>
+      <div class="text">{{info.type}}</div>
     </div>
   </div>
 </template>
