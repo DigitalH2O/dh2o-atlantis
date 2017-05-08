@@ -72,6 +72,19 @@
             <div class="title">Just Body</div>
             <div class="subtitle">Not the header</div>
           </div>
+          <div class="toolbar">
+            <div class="dh2o-dropdown-container trigger">
+              <div class="dh2o-dropdown-trigger"><i aria-hidden="true" class="fa fa-bars"></i></div>
+              <div class="dh2o-dropdown-content">
+                <ul class="menu">
+                  <li>Menu item</li>
+                  <li>Menu item 2</li>
+                  <li>Menu item 3</li>
+                  <li>Menu item 4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </header>
         <div class="body">
           <nodata v-if="showNoData" subtext="Please update search parameters" />
