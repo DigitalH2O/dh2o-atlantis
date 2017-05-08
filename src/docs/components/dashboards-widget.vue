@@ -53,7 +53,7 @@
         <div class="dh2o-dropdown-container trigger">
           <div class="dh2o-dropdown-trigger"><i aria-hidden="true" class="fa fa-bars"></i></div>
           <div class="dh2o-dropdown-content">
-            <ul class="dh2o-dropdown-menu">
+            <ul class="menu">
               <li>Menu item</li>
               <li>Menu item 2</li>
               <li>Menu item 3</li>
