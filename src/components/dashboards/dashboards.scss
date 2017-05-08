@@ -1,6 +1,7 @@
 @import '../../scss/_partials';
 
 .dashboard-main {
+  min-width: 0px;
 
   .dashboard-row {
     display: flex;
