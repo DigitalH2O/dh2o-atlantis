@@ -111,6 +111,7 @@
                     </div>
                     <div class="toolbar">
                       <div class="other-menu"><i class="fa fa-pencil"></i></div>
+                      <div class="separator vertical"></div>
                       <div class="dh2o-dropdown-container trigger">
                         <div class="dh2o-dropdown-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
                         <div class="dh2o-dropdown-content">
