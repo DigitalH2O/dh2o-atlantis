@@ -1,7 +1,12 @@
 @import "~slim-select/src/slim-select/index";
 
 .ss-main {
+  .ss-single-selected {
+    padding: 5px 10px;
+  }
   .ss-multi-selected {
+    padding: 0 0 0 5px;
+
     .ss-values {
       .ss-value {
         .ss-value-text {
