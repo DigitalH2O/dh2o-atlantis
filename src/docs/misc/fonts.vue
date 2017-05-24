@@ -80,7 +80,7 @@
       <div class="widget">
         <header><h2>A Elements</h2></header>
         <div class="body">
-          <p>A tags will have a default styling and you can also style any element like a linke with the <code class="language-markup">.link-like</code> class.</p>
+          <p>A tags will have a default styling and you can also style any element like a link with the <code class="language-markup">.link-like</code> class.</p>
           <a href="#">Link</a>
         </div>
       </div>
