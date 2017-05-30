@@ -29,7 +29,7 @@
 
 <template>
   <article id="content-messages">
-    <header><h1>Messages</h1></header>
+    <div class="bar"><h1>Messages</h1></div>
     <div class="stage">
 
       <div class="widget body">

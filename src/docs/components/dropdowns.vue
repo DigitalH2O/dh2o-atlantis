@@ -39,7 +39,7 @@
 
 <template>
   <article id="content-dropdowns">
-    <header><h1>Dropdowns</h1></header>
+    <div class="bar"><h1>Dropdowns</h1></div>
     <div class="stage">
       <div class="widget body">
         <p>

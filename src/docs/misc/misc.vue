@@ -1,6 +1,6 @@
 <template>
   <article id="content-misc">
-    <header><h1>Misc</h1></header>
+    <div class="bar"><h1>Misc</h1></div>
     <div class="stage">
       <div class="widget">
         <header><h2>Hide</h2></header>

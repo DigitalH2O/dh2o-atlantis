@@ -14,7 +14,7 @@
 
 <template>
   <article id="content-articles">
-    <header><h1>Articles</h1></header>
+    <div class="bar"><h1>Articles</h1></div>
     <div class="bar">
       Here is our article bar.
       <div class="btn primary">Button</div>
@@ -27,10 +27,10 @@
     <div class="stage">
       <div class="widget body">
         <p>
-          Articles are the blank slate within the main element. The use of articles
-          is valuable when i comes to the loading of main route sections. Each of the pages
-          within the style guide start with an article and have a id on them to easily target
-          that section of information.
+          An <code>&lt;article&gt;</code> is a space that can contain <code class="language-css">.bar</code>s
+          and <code class="language-css">.stage</code>s. Each (top-level) route will usually be represented
+          by a single <code>&lt;article&gt;</code>. The style guide itself
+          follows this same pattern.
         </p>
         <code-sample>
           <article id="article-id"></article>
@@ -41,8 +41,9 @@
         <header><h2>Stage</h2></header>
         <div class="body">
           <p>
-            Stage gives margin around the body section and flexes items within itself.
-            If you
+            A <code class="language-css">.stage</code> is a container for
+            <code class="language-css">.widget</code>s. It has padding, and
+            arranges its children via Flexbox.
           </p>
           <h4>Columns</h4>
           <code-sample>

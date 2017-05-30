@@ -11,7 +11,7 @@
 
 <template>
   <article id="group-section">
-    <header><h1>Groups</h1></header>
+    <div class="bar"><h1>Groups</h1></div>
     <div class="stage">
 
       <div class="widget">

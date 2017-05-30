@@ -1,6 +1,6 @@
 <template>
   <article id="content-layout">
-    <header><h1>Layout</h1></header>
+    <div class="bar"><h1>Layout</h1></div>
 
     <div class="stage">
       <div class="widget body">
@@ -10,7 +10,7 @@
           <b>App</b> - Main app container<br />
           <b>Header</b> - Main blue top bar<br />
           <b>Sidebar</b> - Main left dark blue bar<br />
-          <b>Main</b> - Main center section
+          <b>Page</b> - Main center section
         </p>
         <pre>
           <code class="language-markup">
@@ -19,7 +19,7 @@
                 <header></header>
                 <div class="container">
                   <aside></aside>
-                  <main></main>
+                  <div class="page"></div>
                 </div>
               </div>
             </script>
@@ -49,8 +49,8 @@
         <header><h2>Logo and Website Name</h2></header>
         <div class="body">
           <p>
-            Your going to need to add a link to main app with the company logo.
-            Place this tag in your header
+            Place this tag in your header to add the company logo as a link.
+            The logo should link to the home page of your app.
           </p>
           <pre>
             <code class="language-markup">

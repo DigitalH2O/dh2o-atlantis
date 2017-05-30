@@ -14,7 +14,7 @@
 
 <template>
   <article id="content-fonts">
-    <header><h1>Fonts</h1></header>
+    <div class="bar"><h1>Fonts</h1></div>
 
     <div class="stage">
       <div class="widget">

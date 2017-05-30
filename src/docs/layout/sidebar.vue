@@ -1,6 +1,6 @@
 <template>
   <article id="content-sidebar">
-    <header><h1>Sidebar</h1></header>
+    <div class="bar"><h1>Sidebar</h1></div>
     <div class="stage">
       <div class="widget body">
         <p>

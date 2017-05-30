@@ -19,7 +19,7 @@
 
 <template>
   <article id="content-grid">
-    <header><h1>Loading</h1></header>
+    <div class="bar"><h1>Loading</h1></div>
     <div class="stage">
 
       <div class="widget body">

@@ -71,12 +71,10 @@
           <router-link class="link" to="/loading">Loading</router-link>
           <router-link class="link" to="/nodata">No Data</router-link>
         </nav>
-      </aside>
-      <main>
-        <transition name="fade" mode="out-in" appear>
-          <router-view></router-view>
-        </transition>
-      </main>
+    </aside>
+    <transition name="fade" mode="out-in" appear>
+      <router-view class="page"></router-view>
+    </transition>
     </div>
   </div>
 </template>
