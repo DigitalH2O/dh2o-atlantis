@@ -124,6 +124,9 @@
             <code class="language-css">.widget</code>s. It has padding, and
             arranges its children via Flexbox.
           </p>
+
+          <p> By default, a stage will expand to contain its children (causing
+          a scroll). If you need a stage that doesn't scroll, add <code class="language-css">.no-scroll</code>.
           <h4>Columns</h4>
           <code-sample>
             <div>

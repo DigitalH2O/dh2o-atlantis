@@ -146,6 +146,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 
+    &.no-scroll {
+      flex: 1 1 auto;
+    }
+
     &.flush { margin: 0 0 0 0; }
     > * {
       flex: 0 1 auto;
