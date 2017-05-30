@@ -28,7 +28,7 @@
 </style>
 
 <template>
-  <article id="content-messages">
+  <div id="content-messages">
     <div class="bar"><h1>Messages</h1></div>
     <div class="stage">
 
@@ -70,5 +70,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

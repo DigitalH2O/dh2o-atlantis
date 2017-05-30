@@ -1,5 +1,5 @@
 <template>
-  <article id="content-tables">
+  <div id="content-tables">
     <div class="bar"><h1>Tables</h1></div>
     <div class="stage">
 
@@ -8,5 +8,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

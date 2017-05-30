@@ -38,7 +38,7 @@
 </style>
 
 <template>
-  <article id="content-dropdowns">
+  <div id="content-dropdowns">
     <div class="bar"><h1>Dropdowns</h1></div>
     <div class="stage">
       <div class="widget body">
@@ -142,5 +142,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

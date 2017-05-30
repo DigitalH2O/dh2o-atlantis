@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <article id="content-lists">
+  <div id="content-lists">
     <div class="bar"><h1>Lists</h1></div>
     <div class="stage">
 
@@ -35,5 +35,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

@@ -80,7 +80,7 @@
 </style>
 
 <template>
-  <article id="content-colors">
+  <div id="content-colors">
     <div class="bar"><h1>Colors</h1></div>
     <div class="stage">
 
@@ -177,5 +177,5 @@
 
     </div>
 
-  </article>
+  </div>
 </template>

@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <article id="content-buttons">
+  <div id="content-buttons">
     <div class="bar"><h1>Buttons</h1></div>
     <div class="stage">
 
@@ -39,5 +39,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <article id="content-sidebar">
+  <div id="content-sidebar">
     <div class="bar"><h1>Sidebar</h1></div>
     <div class="stage">
       <div class="widget body">
@@ -61,5 +61,5 @@
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>

@@ -90,7 +90,7 @@
 </style>
 
 <template>
-  <article id="content-images">
+  <div id="content-images">
     <div class="bar"><h1>Images</h1></div>
 
     <div class="stage">
@@ -236,5 +236,5 @@
 
     </div>
 
-  </article>
+  </div>
 </template>

@@ -59,7 +59,7 @@
 </style>
 
 <template>
-  <article id="content-dashboards">
+  <div id="content-dashboards">
     <div class="bar"><h1>Dashboards</h1></div>
     <div class="stage flush row">
       <div class="widget-modules">
@@ -73,5 +73,5 @@
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>

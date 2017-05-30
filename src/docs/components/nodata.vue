@@ -21,7 +21,7 @@
 </script>
 
 <template>
-  <article id="content-grid">
+  <div id="content-grid">
     <div class="bar"><h1>No Data</h1></div>
     <div class="stage">
 
@@ -102,5 +102,5 @@
 
     </div>
 
-  </article>
+  </div>
 </template>
