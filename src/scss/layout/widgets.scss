@@ -90,8 +90,7 @@
     min-width: 0;
     min-height: 0;
     padding: $spacing;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: visible;
 
     > *:last-child {
       margin-bottom: 0px;
