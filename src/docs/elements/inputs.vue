@@ -122,6 +122,24 @@
         </div>
 
         <div class="widget">
+          <header><h2>Error</h2></header>
+          <div class="body">
+            <p>
+              If you would like to mark an input field as an error just add the .error class to the input
+            </p>
+
+            <input type="search" value="Error Text" class="error" />
+            <pre>
+              <code class="language-markup">
+                <script type="prism-html-markup">
+                  <input type="search" value="Error Text" class="error" />
+                </script>
+              </code>
+            </pre>
+          </div>
+        </div>
+
+        <div class="widget">
           <header><h2>Spacing</h2></header>
           <div class="body">
             <p>
