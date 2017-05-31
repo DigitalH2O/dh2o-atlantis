@@ -20,6 +20,14 @@ small {
   font-size: 80%;
 }
 
-a {
+a, .link-like {
+  color: $link-color;
   text-decoration: none;
+  &:visited {
+    color: $link-color;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $primary-color;
+  }
 }
