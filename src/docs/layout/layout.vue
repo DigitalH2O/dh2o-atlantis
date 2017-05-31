@@ -125,8 +125,9 @@
             arranges its children via Flexbox.
           </p>
 
-          <p> By default, a stage will expand to contain its children (causing
-          a scroll). If you need a stage that doesn't scroll, add <code class="language-css">.no-scroll</code>.
+          <p>By default, a stage will expand to contain its children (causing
+          a scroll). If you need a stage that doesn't scroll, add <code class="language-css">.no-scroll</code>.</p>
+
           <h4>Columns</h4>
           <code-sample>
             <div>
@@ -137,6 +138,11 @@
             </div>
           </code-sample>
           <br /><br />
+
+          <p><code class="language-css">.stage</code> uses
+          <code class="language-css">flex-direction: column</code> by default.
+          To switch to <code class="language-css">flex-direction: row</code>,
+          add <code class="language-css">.row</code>.</p>
 
           <h4>Rows</h4>
           <code-sample>
