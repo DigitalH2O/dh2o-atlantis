@@ -10,8 +10,8 @@
 </script>
 
 <template>
-  <article id="content-grid">
-    <header><h1>Grid System</h1></header>
+  <div id="content-grid">
+    <div class="bar"><h1>Grid System</h1></div>
     <div class="stage">
       <div class="widget body">
           <p>
@@ -32,5 +32,5 @@
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>

@@ -13,8 +13,8 @@
 </style>
 
 <template>
-  <article id="content-fonts">
-    <header><h1>Fonts</h1></header>
+  <div id="content-fonts">
+    <div class="bar"><h1>Fonts</h1></div>
 
     <div class="stage">
       <div class="widget">
@@ -95,5 +95,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

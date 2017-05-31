@@ -1,6 +1,6 @@
 <template>
-  <article id="content-tables">
-    <header><h1>Tables</h1></header>
+  <div id="content-tables">
+    <div class="bar"><h1>Tables</h1></div>
     <div class="stage">
 
       <div class="widget body">
@@ -8,5 +8,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

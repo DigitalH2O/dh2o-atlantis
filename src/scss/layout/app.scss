@@ -114,15 +114,57 @@ body {
       overflow-y: auto;
     }
 
-    // Main is the large main section
-    main {
+    // .main or (main) is the large main section
+    .main, main {
       display: flex;
       flex-direction: column;
       flex: 1 1 calc(100% - #{$sidebar-width});
       min-height: 0; /* weird browser fix */
       background-color: $background-color;
-      overflow-x: hidden;
-      overflow-y: auto;
+      // overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+
+  .bar {
+    padding: $spacing;
+    color: $font-color;
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+
+    &.secondary {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+
+  .stage {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    margin: $spacing;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.no-scroll {
+      flex: 1 1 auto;
+    }
+
+    &.flush { margin: 0 0 0 0; }
+    > * {
+      flex: 0 1 auto;
+      margin: 0 0 $spacing 0;
+      &:last-child { margin: 0 0 0 0; }
+    }
+
+    &.row {
+      flex-direction: row;
+      box-sizing: border-box;
+      > * {
+        flex: 1 1 auto;
+        margin: 0 $spacing 0 0;
+        &:last-child { margin: 0 0 0 0; }
+      }
     }
   }
 }

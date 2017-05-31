@@ -23,8 +23,8 @@
 </style>
 
 <template>
-  <article id="content-tags">
-    <header><h1>Tags</h1></header>
+  <div id="content-tags">
+    <div class="bar"><h1>Tags</h1></div>
     <div class="stage">
       <div class="widget body">
         <p>
@@ -56,5 +56,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

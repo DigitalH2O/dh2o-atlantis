@@ -80,8 +80,8 @@
 </style>
 
 <template>
-  <article id="content-colors">
-    <header><h1>Colors</h1></header>
+  <div id="content-colors">
+    <div class="bar"><h1>Colors</h1></div>
     <div class="stage">
 
       <div class="widget">
@@ -177,5 +177,5 @@
 
     </div>
 
-  </article>
+  </div>
 </template>
