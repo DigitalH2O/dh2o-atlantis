@@ -72,7 +72,7 @@
         </nav>
     </aside>
     <transition name="fade" mode="out-in" appear>
-      <router-view class="page"></router-view>
+      <router-view class="main"></router-view>
     </transition>
     </div>
   </div>

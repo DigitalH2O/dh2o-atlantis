@@ -114,8 +114,8 @@ body {
       overflow-y: auto;
     }
 
-    // .page is the large main section
-    .page {
+    // .main or (main) is the large main section
+    .main, main {
       display: flex;
       flex-direction: column;
       flex: 1 1 calc(100% - #{$sidebar-width});

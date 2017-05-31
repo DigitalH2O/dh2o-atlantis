@@ -4,7 +4,7 @@
 
     <div class="bar">
       This is a <code class="language-css">.bar</code>, which can contain menus and options.
-      Put them directly inside of <code class="language-css">.page</code>.
+      Put them directly inside of <code class="language-css">.main</code>.
       <div class="btn primary">Button</div>
     </div>
     <div class="bar secondary">
@@ -21,7 +21,7 @@
           <b>App</b> - Main app container<br />
           <b>Header</b> - Main blue top bar<br />
           <b>Sidebar</b> - Main left dark blue bar<br />
-          <b>Page</b> - Main center section. Usually contains <strong>only</strong>
+          <b>Main</b> - Main center section. Usually contains <strong>only</strong>
           a <code class="language-css">.stage</code> and (sometimes) <code class="language-css">.bar</code>s.
         </p>
         <pre>
@@ -31,7 +31,7 @@
                 <header></header>
                 <div class="container">
                   <aside></aside>
-                  <div class="page"></div>
+                  <div class="main"></div>
                 </div>
               </div>
             </script>
