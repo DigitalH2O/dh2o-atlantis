@@ -18,8 +18,8 @@
 </script>
 
 <template>
-  <article id="content-grid">
-    <header><h1>Loading</h1></header>
+  <div id="content-grid">
+    <div class="bar"><h1>Loading</h1></div>
     <div class="stage">
 
       <div class="widget body">
@@ -55,5 +55,5 @@
 
     </div>
 
-  </article>
+  </div>
 </template>

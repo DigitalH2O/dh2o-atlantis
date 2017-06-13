@@ -64,8 +64,8 @@
 </style>
 
 <template>
-  <article id="content-modals">
-    <header><h1>Modals</h1></header>
+  <div id="content-modals">
+    <div class="bar"><h1>Modals</h1></div>
     <div class="stage">
 
       <div class="widget body">
@@ -92,7 +92,7 @@
           <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
             Simple Text Modal
           </div>
-          
+
           <div id="modal1" class="dh2o-modal">
             <div class="modal-content" style="width: 300px;">
               <div class="modal-body">Hey buddy!</div>
@@ -302,5 +302,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

@@ -28,8 +28,8 @@
 </style>
 
 <template>
-  <article id="content-messages">
-    <header><h1>Messages</h1></header>
+  <div id="content-messages">
+    <div class="bar"><h1>Messages</h1></div>
     <div class="stage">
 
       <div class="widget body">
@@ -70,5 +70,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

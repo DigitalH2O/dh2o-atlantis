@@ -1,6 +1,6 @@
 <template>
-  <article id="content-welcome">
-    <header><h1>Welcome</h1></header>
+  <div id="content-welcome">
+    <div class="bar"><h1>Welcome</h1></div>
     <div class="stage">
       <div class="widget body">
         <p>
@@ -9,5 +9,5 @@
         </p>
       </div>
     </div>
-  </article>
+  </div>
 </template>

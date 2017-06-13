@@ -10,8 +10,8 @@
 </style>
 
 <template>
-  <article id="group-section">
-    <header><h1>Groups</h1></header>
+  <div id="group-section">
+    <div class="bar"><h1>Groups</h1></div>
     <div class="stage">
 
       <div class="widget">
@@ -66,5 +66,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>

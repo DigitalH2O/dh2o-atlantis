@@ -28,8 +28,8 @@
 </style>
 
 <template>
-  <article id="content-inputs">
-    <header><h1>Inputs</h1></header>
+  <div id="content-inputs">
+    <div class="bar"><h1>Inputs</h1></div>
     <div class="stage">
         <div class="widget body">
           <p>
@@ -239,5 +239,5 @@
         </div>
 
     </div>
-  </article>
+  </div>
 </template>

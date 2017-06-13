@@ -59,8 +59,8 @@
 </style>
 
 <template>
-  <article id="content-dashboards">
-    <header><h1>Dashboards</h1></header>
+  <div id="content-dashboards">
+    <div class="bar"><h1>Dashboards</h1></div>
     <div class="stage flush row">
       <div class="widget-modules">
         <div class="draggable btn primary" data-type="rig">Drag Rig</div>
@@ -73,5 +73,5 @@
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>

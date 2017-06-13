@@ -1,6 +1,6 @@
 <template>
-  <article id="content-misc">
-    <header><h1>Misc</h1></header>
+  <div id="content-misc">
+    <div class="bar"><h1>Misc</h1></div>
     <div class="stage">
       <div class="widget">
         <header><h2>Hide</h2></header>
@@ -68,5 +68,5 @@
       </div>
 
     </div>
-  </article>
+  </div>
 </template>
