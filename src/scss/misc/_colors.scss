@@ -71,5 +71,5 @@ $darkest-percent: 20%;
 @function darkest($original) { @return darken($original, $darkest-percent); }
 
 // lightening colors
-$ligher-percent: 10%;
+$lighter-percent: 10%;
 @function lighter($original) { @return lighten($original, $lighter-percent); }
