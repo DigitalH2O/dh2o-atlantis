@@ -3,6 +3,7 @@ import colorVars from '!!sass-extract-loader!src/scss/misc/_colors.scss'
 
 const darkerPercent = colorVars.global['$darker-percent'].value
 const darkestPercent = colorVars.global['$darkest-percent'].value
+const lighterPercent = colorVars.global['$lighter-percent'].value
 
 const baseColors = {}
 const messageColors = {}
@@ -44,7 +45,7 @@ for (let index in sassColorsChart) {
 
   chartColors.push({
     original: color.value.hex,
-    lighter: tinycolor(color.value.hex).lighten('10%').toString()
+    lighter: tinycolor(color.value.hex).lighten(lighterPercent).toString()
   })
 }
 
