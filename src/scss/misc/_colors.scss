@@ -24,7 +24,8 @@ $colors: (
     disposal: (color: #70184d, icon: 'fa-trash'),
     lease-outbound: (color: #2aace2, icon: 'fa-arrow-circle-up'),
     lease-inbound: (color: #6c7387, icon: 'fa-arrow-circle-down')
-  )
+  ),
+  charts: (#197c9d, #f5943f)
 );
 
 // Base colors
@@ -61,8 +62,14 @@ $disposal-color       : map-get(map-get($asset-colors, disposal), color);
 $recycle-color        : map-get(map-get($asset-colors, recycle), color);
 $freshwater-color     : map-get(map-get($asset-colors, freshwater), color);
 
+$chart-colors: map-get($colors, charts);
+
 // Darkening colors
 $darker-percent: 10%;
 $darkest-percent: 20%;
 @function darker($original) { @return darken($original, $darker-percent); }
 @function darkest($original) { @return darken($original, $darkest-percent); }
+
+// lightening colors
+$ligher-percent: 10%;
+@function lighter($original) { @return lighten($original, $lighter-percent); }

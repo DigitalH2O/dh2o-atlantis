@@ -10,8 +10,7 @@
         assetColors: colors.assetColors,
         darkerPercent: colors.darkerPercent,
         darkestPercent: colors.darkestPercent,
-        darkerColors: colors.darkerColors,
-        darkestColors: colors.darkestColors
+        chartColors: colors.chartColors
       }
     },
     methods: {
@@ -172,6 +171,30 @@
             </div>
           </div>
 
+        </div>
+      </div>
+
+      <div class="widget">
+        <header><h2>Chart Colors</h2></header>
+        <div class="body">
+          <p>Charts should color their series with the colors in this array,
+          in order. If a chart has two series associated with the same value, use
+          the original color along with a <code class="language-markup">lighter()</code> version
+          to show that the values are connected.</p>
+
+          <p>In Javascript, the <code class="language-javascript">colors.chartColors</code>
+          array contains objects with keys <code class="language-javascript">original</code>
+          and <code class="language-javascript">lighter</code>.</p>
+
+          <div class="colors">
+            <div class="item" v-for="(color, index) in chartColors">
+              <div class="color" :style="{'background-color': color.original}"></div>
+              <div class="text">
+                <div class="name">nth($chart-colors, {{index + 1}})</div>
+                <div class="hex">{{color.original}}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
