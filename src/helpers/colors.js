@@ -8,11 +8,13 @@ const baseColors = {}
 const messageColors = {}
 const textColors = {}
 const assetColors = {}
+const chartColors = []
 
 const sassColorsBase = colorVars.global.$colors.value.base.value
 const sassColorsMessage = colorVars.global['$message-colors'].value
 const sassColorsText = colorVars.global['$text-colors'].value
 const sassColorsAsset = colorVars.global['$asset-colors'].value
+const sassColorsChart = colorVars.global['$chart-colors'].value
 
 for (let name in sassColorsBase) {
   baseColors[name] = {
@@ -37,11 +39,22 @@ for (let name in sassColorsAsset) {
   }
 }
 
+for (let index in sassColorsChart) {
+  const color = sassColorsChart[index]
+
+  chartColors.push({
+    original: color.value.hex,
+    lighter: tinycolor(color.value.hex).lighten('10%').toString()
+  })
+}
+
+
 export default {
   baseColors,
   messageColors,
   textColors,
   assetColors,
   darkerPercent,
-  darkestPercent
+  darkestPercent,
+  chartColors
 }
