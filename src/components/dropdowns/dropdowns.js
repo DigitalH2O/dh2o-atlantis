@@ -23,7 +23,7 @@ function hasClassInTree (element, className) {
 
 var dh2oDropdown = function (dropdown, autoShow=true, callback=null) {
   var contentStr = 'dh2o-dropdown-content'
-
+  debugger
   // If you are passing in a string get element from it
   if (typeof dropdown === 'string') {
     dropdown = document.getElementById(dropdown)
@@ -62,6 +62,7 @@ var dh2oDropdown = function (dropdown, autoShow=true, callback=null) {
 
 // Add document click listener that will close dropdowns and trigger open those who have a dropdown container
 document.addEventListener('click', function (e) {
+  debugger
   var containerStr = 'dh2o-dropdown-container'
   var trigger = 'dh2o-dropdown-trigger'
   var clickTarget = e.target
