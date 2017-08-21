@@ -100,7 +100,7 @@
         <div class="body">
           <p>You can also programmably trigger showing the dropdown</p>
           <div id="program_trigger" class="dh2o-dropdown-container">
-            <div class="btn" @click="click">Button</div>
+            <div class="dh2o-dropdown-trigger btn">Button</div>
             <div class="dh2o-dropdown-content">
               <div v-if="showDropdownContents">Content here</div>
             </div>
@@ -111,7 +111,7 @@
             <code class="language-markup">
               <script type="prism-html-markup">
                 <div id="program_trigger" class="dh2o-dropdown-container">
-                  <div class="btn" @click="click">Button</div>
+                  <div class="dh2o–dropdown-trigger btn">Button</div>
                   <div class="dh2o-dropdown-content">
                     Content Here
                   </div>
@@ -122,7 +122,7 @@
           <pre>
             <code class="language-javascript">
               <script type="prism-javascript">
-                dh2oDropdown('program_trigger', true, (isShowing) => {
+                dh2oDropdown('program_trigger', false, (isShowing) => {
                   console.log(isShowing)
                 })
               </script>
