@@ -7,15 +7,10 @@
         showDropdownContents: false
       }
     },
-    methods: {
-      click () {
-        this.showDropdown = true
-        Vue.nextTick(() => {
-          dh2oDropdown('program_trigger', true, (isShowing) => {
-            this.showDropdownContents = isShowing
-          })
-        })
-      }
+    mounted () {
+      dh2oDropdown('program_trigger', false, (isShowing) => {
+        this.showDropdownContents = isShowing
+      })
     }
   }
 </script>
