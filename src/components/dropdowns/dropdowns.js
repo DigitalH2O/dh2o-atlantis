@@ -62,7 +62,6 @@ var dh2oDropdown = function (dropdown, autoShow=true, callback=null) {
 
 // Add document click listener that will close dropdowns and trigger open those who have a dropdown container
 document.addEventListener('click', function (e) {
-  debugger
   var containerStr = 'dh2o-dropdown-container'
   var trigger = 'dh2o-dropdown-trigger'
   var clickTarget = e.target
