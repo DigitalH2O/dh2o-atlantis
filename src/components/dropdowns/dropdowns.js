@@ -23,7 +23,7 @@ function hasClassInTree (element, className) {
 
 var dh2oDropdown = function (dropdown, autoShow=true, callback=null) {
   var contentStr = 'dh2o-dropdown-content'
-  debugger
+
   // If you are passing in a string get element from it
   if (typeof dropdown === 'string') {
     dropdown = document.getElementById(dropdown)

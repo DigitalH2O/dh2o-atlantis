@@ -68,14 +68,13 @@
         <header><h2>Menus</h2></header>
         <div class="body">
           <p>
-            Dropdown content by default is an empty container but in most cases you will want to add a styled menu.
-            So we made it reusable.
+            Dropdown content by default is an empty container but in most cases you will want to add a styled menu. If you need to have separated groups in the menu, use the "end-menu-group" class.
           </p>
 
           <ul class="menu">
             <li>Option 1</li>
             <li aria-selected="true">Option 2 (selected)</li>
-            <li>Option 3</li>
+            <li class="end-menu-group">Option 3</li>
             <li aria-disabled="true">Option 4 (disabled)</li>
             <li>Option 5</li>
           </ul>
@@ -85,7 +84,7 @@
                 <ul class="menu">
                   <li>Option 1</li>
                   <li aria-selected="true">Option 2 (selected)</li>
-                  <li>Option 3</li>
+                  <li class="end-menu-group">Option 3</li>
                   <li aria-disabled="true">Option 4 (disabled)</li>
                   <li>Option 5</li>
                 </ul>

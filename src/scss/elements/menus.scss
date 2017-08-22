@@ -9,6 +9,10 @@
     cursor: pointer;
     color: $font-color;
 
+    &.end-menu-group {
+      border-bottom: 1px solid $border-color
+    }
+
     &:hover, &[aria-selected="true"] {
       background-color: $primary-color;
       color: $white;
