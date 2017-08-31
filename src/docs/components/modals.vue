@@ -2,11 +2,19 @@
   import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
 
   export default {
+    mounted () {
+      // note that you can create modals without an ID if you use a direct
+      // reference to the DOM element:
+      dh2oModal(this.$refs.modalLock)
+    },
+
     data () {
       return {
-        isModalJsShowing: false
+        isModalJsShowing: false,
+        isModalLockLocked: false
       }
     },
+
     methods: {
       applyModal () {
         var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
@@ -19,6 +27,21 @@
         dh2oModal('modalJs', true, (isShowing) => {
           this.isModalJsShowing = isShowing
         })
+      },
+
+      showModalLock () {
+        this.$refs.modalLock.show()
+        this.lock()
+      },
+
+      lock() {
+        this.$refs.modalLock.lock()
+        this.isModalLockLocked = true
+      },
+
+      unlock () {
+        this.$refs.modalLock.unlock()
+        this.isModalLockLocked = false
       }
     }
   }
@@ -296,6 +319,42 @@
               modal.show()
               // or
               modal.hide()
+            </code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="widget">
+        <header><h2>Locking</h2></header>
+        <div class="body">
+          <p>Use <code class="language-js">modal.lock()</code> and <code class="language-js">modal.unlock()</code>
+          to prevent a user from closing the modal.</p>
+
+          <p>Note that this <strong>also</strong> prevents you from closing the modal manually with <code class="language-js">modal.hide()</code>.
+          If you lock the modal, you must call <code class="language-js">modal.unlock()</code> before hiding it.
+
+          <div class="btn secondary" @click="showModalLock">
+            Click me to open a locked modal!
+          </div>
+
+          <div ref="modalLock" class="dh2o-modal">
+            <div class="modal-content" style="width: 300px;">
+              <div class="modal-body">
+                <p>You have to unlock the modal before you can close it</p>
+                <p>The modal <strong>{{ isModalLockLocked ? 'is' : 'is not'}}</strong> currently locked.</p>
+                <button class="btn primary" @click="lock">Lock</button>
+                <button class="btn primary" @click="unlock">Unlock</button>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <code class="language-js">
+              let modal = dh2oModal('modalId')
+              modal.lock()
+              // the modal is now unclosable
+
+              modal.unlock()
+              // the modal can now be closed
             </code>
           </pre>
         </div>
