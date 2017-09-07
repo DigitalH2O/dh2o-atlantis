@@ -74,12 +74,7 @@ let ModalClass = class Modal {
   triggerCallback() {
     if (!this.callback) {return}
 
-    this.callback({
-      modal: this.modal,
-      widget: this.widget,
-      isLocked: this.isLocked,
-      isOpen: this.isOpen
-    })
+    this.callback(this)
   }
 
   // Add close triggers for both background click and any elements with the class .modal-close
