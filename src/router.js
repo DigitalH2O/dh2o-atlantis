@@ -9,6 +9,7 @@ module.exports = {
     // Layouts
     {path: '/layout', component: require('./docs/layout/layout.vue')},
     {path: '/sidebar', component: require('./docs/layout/sidebar.vue')},
+    {path: '/widgets', component: require('./docs/layout/widgets.vue')},
     {path: '/grid', component: require('./docs/layout/grid.vue')},
 
     // Misc

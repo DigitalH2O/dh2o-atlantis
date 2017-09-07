@@ -21,7 +21,7 @@
     padding: $spacing-quarter $spacing-half;
     border-bottom: solid 1px $border-color;
 
-    > .titlebar {
+    > .titlebar, > .title {
       flex: 1 1 auto;
       min-width: 0px;
       font-weight: bold;
@@ -94,6 +94,31 @@
 
     > *:last-child {
       margin-bottom: 0px;
+    }
+  }
+
+  > footer {
+    display: flex;
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: $spacing-quarter $spacing-half;
+    margin: 0;
+    border-top: solid 1px $border-color;
+    background-color: $background-color;
+
+    &.center {
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 0 0 0 $spacing-quarter;
     }
   }
 }

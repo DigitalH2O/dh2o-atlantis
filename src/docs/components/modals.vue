@@ -1,47 +1,56 @@
 <script>
-  import dh2oModal from 'dh2o-atlantis/components/modals/modals.js'
+  import Modal from 'dh2o-atlantis/components/modals/modals.ts'
 
   export default {
     mounted () {
       // note that you can create modals without an ID if you use a direct
       // reference to the DOM element:
-      dh2oModal(this.$refs.modalLock)
+      this.modalLock = new Modal({
+        el: this.$refs.modalLock,
+        isLocked: true,
+        callback: (info) => {
+          this.isModalLockLocked = info.isLocked
+        }
+      })
     },
 
     data () {
       return {
         isModalJsShowing: false,
-        isModalLockLocked: false
+        isModalLockLocked: false,
+        modalLock: null
       }
     },
 
     methods: {
       applyModal () {
-        var text = '<h1>Great job on clicking a button. What?!?! Do you want a medal or something?</h1>'
-        document.querySelector('#modal2 .modal-body').innerHTML = text
+        var text = '<h1>Great job on clicking a button. What?!?!<br />Do you want a medal or something?</h1>'
+        document.querySelector('#modal2 .widget .body').innerHTML = text
         setTimeout(() => {
-          dh2oModal('modal2').hide()
-        }, 1000)
+          new Modal({
+            el: document.getElementById('modal2')
+          }).hide()
+        }, 2000)
       },
       showModalJs () {
-        dh2oModal('modalJs', true, (isShowing) => {
-          this.isModalJsShowing = isShowing
-        })
+        new Modal({
+          el: document.getElementById('modalJs'),
+          callback: (info) => {
+            this.isModalJsShowing = info.isOpen
+          }
+        }).show()
       },
 
       showModalLock () {
-        this.$refs.modalLock.show()
-        this.lock()
+        this.modalLock.show()
       },
 
       lock() {
-        this.$refs.modalLock.lock()
-        this.isModalLockLocked = true
+        this.modalLock.lock()
       },
 
       unlock () {
-        this.$refs.modalLock.unlock()
-        this.isModalLockLocked = false
+        this.modalLock.unlock()
       }
     }
   }
@@ -62,6 +71,12 @@
       }
     }
 
+    #modalWidget {
+      .widget {
+        width: 400px;
+      }
+    }
+
     #modal5 {
       .info {
         display: flex;
@@ -69,6 +84,7 @@
         .left {
           background-color: $background-color;
           flex: 0 1 100px;
+          padding: $spacing-quarter;
         }
         .right {
           padding: 0 0 0 10px;
@@ -77,10 +93,6 @@
       }
       .bottom {
         padding-top: 10px;
-
-        .btn {
-          margin-bottom: $spacing-quarter;
-        }
       }
     }
   }
@@ -89,37 +101,30 @@
 <template>
   <div id="content-modals">
     <div class="bar"><h1>Modals</h1></div>
+    <div class="bar">
+      <p>
+        Modal consists of a button with the class <code class="language-css">dh2o-modal-btn</code> and a
+        data attribute of <code class="language-css">data-dh2o-modal</code> with the value of the modal id.
+      </p>
+      <p>
+        The modal consists of a div with the class of <code class="language-css">dh2o-modal</code> and must at
+        least have the child of <code class="language-css">widget</code> and inside that <code class="language-css">dh2o-modal</code>.
+        Header and footer are optional.
+      </p>
+      <p>
+        To Close the modal just add an element with the class <code class="language-css">modal-close</code>
+      </p>
+    </div>
     <div class="stage">
 
       <div class="widget body">
-        <p>
-          Modal consists of a button with the class dh2o-modal-btn and a
-          data attribute of data-dh2o-modal with the value of the modal id.
-        </p>
-        <p>
-          The modal consists of a div with the class of dh2o-modal and must at
-          least have the child of modal-content and inside that modal-body.
-          Header and footer are optional.
-        </p>
-        <p>
-          To Close the modal just add an element with the class <strong>modal-close</strong>
-        </p>
-        <p>
-          Modals have onkey press function so if use hits esc button it will close last modal in the dom.
-        </p>
-        <p>
-          If you would like to have a modal element triggered a click by hitting enter add the class modal-enter
-        </p>
-
         <code-sample>
           <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal1">
             Simple Text Modal
           </div>
 
           <div id="modal1" class="dh2o-modal">
-            <div class="modal-content" style="width: 300px;">
-              <div class="modal-body">Hey buddy!</div>
-            </div>
+            <div class="widget body">Im a modal</div>
           </div>
         </code-sample>
       </div>
@@ -137,37 +142,36 @@
             </div>
 
             <div id="modalWidget" class="dh2o-modal">
-              <div class="modal-content" style="width: 500px;">
-                <div class="widget">
-                  <header>
-                    <div class="titlebar">
-                      <span class="title">Widget title</span>
-                      <span class="subtitle">Widget subtitle</span>
-                    </div>
-                    <div class="toolbar">
-                      <div class="other-menu"><i class="fa fa-pencil"></i></div>
-                      <div class="dh2o-dropdown-container trigger">
-                        <div class="dh2o-dropdown-trigger"><i aria-hidden="true" class="fa fa-bars"></i></div>
-                        <div class="dh2o-dropdown-content">
-                          <ul class="menu">
-                            <li>Menu item</li>
-                            <li>Menu item 2</li>
-                            <li>Menu item 3</li>
-                            <li>Menu item 4</li>
-                          </ul>
-                        </div>
+              <div class="widget">
+                <header>
+                  <div class="titlebar">
+                    <span class="title">Widget title</span>
+                    <span class="subtitle">Widget subtitle</span>
+                  </div>
+                  <div class="toolbar">
+                    <div class="other-menu"><i class="fa fa-pencil"></i></div>
+                    <div class="separator vertical"></div>
+                    <div class="dh2o-dropdown-container trigger">
+                      <div class="dh2o-dropdown-trigger"><i aria-hidden="true" class="fa fa-bars"></i></div>
+                      <div class="dh2o-dropdown-content">
+                        <ul class="menu">
+                          <li>Menu item</li>
+                          <li>Menu item 2</li>
+                          <li>Menu item 3</li>
+                          <li>Menu item 4</li>
+                        </ul>
                       </div>
                     </div>
-                  </header>
-                  <div class="body">
-                    This is the widget body<br />
-                    This is the widget body<br />
-                    This is the widget body<br />
-                    This is the widget body<br />
-                    This is the widget body<br />
-                    This is the widget body<br />
-                    This is the widget body
                   </div>
+                </header>
+                <div class="body">
+                  This is the widget body<br />
+                  This is the widget body<br />
+                  This is the widget body<br />
+                  This is the widget body<br />
+                  This is the widget body<br />
+                  This is the widget body<br />
+                  This is the widget body
                 </div>
               </div>
             </div>
@@ -185,19 +189,21 @@
             </div>
 
             <div id="modal2" class="dh2o-modal">
-              <div class="modal-content" style="width: 500px;">
-                <div class="modal-header">
-                  Title
-                </div>
-                <div class="modal-body">
+              <div class="widget">
+                <header>
+                  <div class="titlebar">
+                    <div class="title">Modal Widget</div>
+                  </div>
+                </header>
+                <div class="body">
                   <p>Here is some text</p>
                   <p>Here is some more text</p>
                   <p>Here is some more more text</p>
                 </div>
-                <div class="modal-footer">
-                  <div class="btn primary modal-enter" v-on:click="applyModal()">Apply</div>
+                <footer>
+                  <div class="btn primary" v-on:click="applyModal()">Apply</div>
                   <div class="btn modal-close">Cancel</div>
-                </div>
+                </footer>
               </div>
             </div>
           </code-sample>
@@ -214,21 +220,17 @@
             </div>
 
             <div id="modal3" class="dh2o-modal">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal4">
-                    Modal Over Modal
-                  </div>
+              <div class="widget body">
+                <div class="btn secondary dh2o-modal-btn" data-dh2o-modal="modal4">
+                  Modal Over Modal
                 </div>
               </div>
             </div>
             <div id="modal4" class="dh2o-modal">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <p>Here is some text</p>
-                  <p>Here is some more text</p>
-                  <p>Here is some more more text</p>
-                </div>
+              <div class="widget body">
+                <p>Here is some text</p>
+                <p>Here is some more text</p>
+                <p>Here is some more more text</p>
               </div>
             </div>
           </code-sample>
@@ -236,7 +238,7 @@
       </div>
 
       <div class="widget">
-        <header><h2>Full Modal</h2></header>
+        <header><h2>Advanced Modal</h2></header>
         <div class="body">
           <p>All the bells and whistles</p>
           <code-sample>
@@ -245,15 +247,13 @@
             </div>
 
             <div id="modal5" class="dh2o-modal">
-              <div class="modal-content" style="width: 500px;">
-                <div class="modal-header">
-                  Advanced Modal
-                  <div class="modal-header-right">
-                    <div class="btn primary">Apply</div>
-                    <div class="btn modal-close">Cancel</div>
+              <div class="widget">
+                <header>
+                  <div class="title">
+                    Advanced Modal
                   </div>
-                </div>
-                <div class="modal-body">
+                </header>
+                <div class="body">
                   <div class="info">
                     <div class="left">
                       <ul class="ordered-list">
@@ -276,19 +276,23 @@
                     </div>
                   </div>
                   <div class="bottom">
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
-                    <div class="btn">btn</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
+                    <div class="btn">tag</div>
                   </div>
                 </div>
+                <footer>
+                  <div class="btn primary">Apply</div>
+                  <div class="btn modal-close">Cancel</div>
+                </footer>
               </div>
             </div>
           </code-sample>
@@ -301,7 +305,7 @@
           <p>Show to usage with javascript</p>
           <p>
             You most likely will need to programmably call to the modal.
-            Just use the global dh2oModal() function.
+            Just use the <code class="language-js">new Modal()</code> class.
           </p>
           <div class="btn secondary" @click="showModalJs">
             Click Me!
@@ -309,13 +313,16 @@
           Is Modal Showing? {{isModalJsShowing}}
 
           <div id="modalJs" class="dh2o-modal">
-            <div class="modal-content" style="width: 300px;">
-              <div class="modal-body">Hey buddy!</div>
-            </div>
+            <div class="widget body">Hey buddy!</div>
           </div>
           <pre>
             <code class="language-js">
-              let modal = dh2oModal('modalId')
+              let modal = new Modal({
+                el: document.getElementById('modalId'),
+                isLocked: false,  // Optional
+                callback: (info) => {console.log(info)} // Optional
+              })
+
               modal.show()
               // or
               modal.hide()
@@ -338,18 +345,19 @@
           </div>
 
           <div ref="modalLock" class="dh2o-modal">
-            <div class="modal-content" style="width: 300px;">
-              <div class="modal-body">
-                <p>You have to unlock the modal before you can close it</p>
-                <p>The modal <strong>{{ isModalLockLocked ? 'is' : 'is not'}}</strong> currently locked.</p>
-                <button class="btn primary" @click="lock">Lock</button>
-                <button class="btn primary" @click="unlock">Unlock</button>
-              </div>
+            <div class="widget body">
+              <p>You have to unlock the modal before you can close it</p>
+              <p>The modal <strong>{{ isModalLockLocked ? 'is' : 'is not'}}</strong> currently locked.</p>
+              <button class="btn primary" @click="lock">Lock</button>
+              <button class="btn primary" @click="unlock">Unlock</button>
             </div>
           </div>
           <pre>
             <code class="language-js">
-              let modal = dh2oModal('modalId')
+              let modal = new Modal({
+                el: document.getElementById('modalId')
+              })
+
               modal.lock()
               // the modal is now unclosable
 

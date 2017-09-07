@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "es2017"]
+    },
+    "exclude": ["node_modules"],
+    "include": [
+      "typings/**/*.d.ts",
+      "src/**/*.ts",
+      "src/**/*.d.ts"
+    ]
+  }
+  
