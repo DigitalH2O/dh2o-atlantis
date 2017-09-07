@@ -201,7 +201,7 @@
                   <p>Here is some more more text</p>
                 </div>
                 <footer>
-                  <div class="btn primary modal-enter" v-on:click="applyModal()">Apply</div>
+                  <div class="btn primary" v-on:click="applyModal()">Apply</div>
                   <div class="btn modal-close">Cancel</div>
                 </footer>
               </div>
