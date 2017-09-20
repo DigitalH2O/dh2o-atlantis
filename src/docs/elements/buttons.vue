@@ -38,6 +38,20 @@
         </code-sample>
       </div>
 
+      <div class="widget body">
+        <p>
+          You might also want to use a button for purely semantic reasons.
+          <code class="language-markup">button</code> element with no additional
+          classes has all native browser styling removed, so you can style it however
+          you need to:
+        </p>
+
+        <code-sample>
+          <button>An unstyled button</button>
+        </code-sample>
+
+      </div>
+
     </div>
   </div>
 </template>
