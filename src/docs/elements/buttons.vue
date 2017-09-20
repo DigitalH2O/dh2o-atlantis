@@ -41,13 +41,13 @@
       <div class="widget body">
         <p>
           You might also want to use a button for purely semantic reasons.
-          The <code class="language-markup">unstyled</code> class removes
-          all native browser styling from a button so you can style it however
+          <code class="language-markup">button</code> element with no additional
+          classes has all native browser styling removed, so you can style it however
           you need to:
         </p>
 
         <code-sample>
-          <button class="unstyled">An unstyled button</button>
+          <button>An unstyled button</button>
         </code-sample>
 
       </div>
