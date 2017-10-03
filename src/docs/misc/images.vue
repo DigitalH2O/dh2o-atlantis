@@ -225,11 +225,7 @@
           <p>We have two different loading icons: a fancy animated SVG barrel for browsers that support it (i.e. Chrome, Opera) and a less-fancy non-animated SVG barrel for other browsers.</p>
 
           <code-sample>
-            <img height="200" src="~dh2o-atlantis/images/loading-barrel.svg" />
-          </code-sample>
-
-          <code-sample>
-            <img height="200" src="~dh2o-atlantis/images/loading-barrel-static.svg" />
+            <img height="200" src="~dh2o-atlantis/images/loading.svg" />
           </code-sample>
         </div>
       </div>

@@ -1,0 +1,33 @@
+<svg id="loading" xmlns="http://www.w3.org/2000/svg" viewBox="-28 -28 447 447">
+    <defs>
+        <style>
+            #loading .logo-outline {
+                fill:none;
+                stroke:#b3b3b3;
+                stroke-width:60px;
+            }
+            #loading .logo-path {
+                fill:none;
+                stroke:#2aace2;
+                stroke-width:60px;
+                stroke-dasharray: 1400;
+                stroke-dashoffset: 1400;
+                animation: dash 3s ease-in-out infinite;
+            }
+            @keyframes dash {
+                0% {
+                  stroke-dashoffset: 1400;
+                }
+                50% {
+                  stroke-dashoffset: 0;
+                }
+                100% {
+                  stroke-dashoffset: -1400;
+                }
+            }
+        </style>
+    </defs>
+    <title>Loading Animation</title>
+    <path class="logo-outline" d="M39,0V226h-.3v.28c0,106.67,86.49,193.27,193.16,193.27S425.2,333.12,425.2,226.47C425.2,120.05,339,33.42,233,33H69" transform="translate(-36.69 -31)"/>
+    <path class="logo-path" d="M39,0V226h-.3v.28c0,106.67,86.49,193.27,193.16,193.27S425.2,333.12,425.2,226.47C425.2,120.05,339,33.42,233,33H69" transform="translate(-36.69 -31)"/>
+</svg>
