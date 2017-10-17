@@ -86,17 +86,17 @@
           <div class="form-group">
             <label>Checkbox Tree </label>
             <div class="checkbox-container">
-              <label for="checkbox-input1" class="checkbox-label" >
-                <input id="checkbox-input1" type="checkbox" :indeterminate.prop="true"/>
+              <label class="checkbox-label">
+                <input type="checkbox" :indeterminate.prop="true"/>
                 Indeterminate State
               </label>
               <div class="checkbox-container">
-                <label for="checkbox-input2" class="checkbox-label">
-                  <input id="checkbox-input2" type="checkbox" checked="true"/>
+                <label class="checkbox-label">
+                  <input type="checkbox" checked="true"/>
                   Checked State
                 </label>
-                <label for="checkbox-input3" class="checkbox-label">
-                  <input id="checkbox-input3" type="checkbox"/>
+                <label class="checkbox-label">
+                  <input type="checkbox"/>
                   Unchecked State
                 </label>
               </div>
@@ -104,19 +104,19 @@
           </div>
 
           <div class="form-group">
-            <label>Checkbox Inline </label>
-              <label for="checkbox-input1" class="checkbox-label" >
-                <input id="checkbox-input1" type="checkbox" :indeterminate.prop="true"/>
-                Indeterminate State
-              </label>
-              <label for="checkbox-input2" class="checkbox-label">
-                <input id="checkbox-input2" type="checkbox" checked="true"/>
-                  Checked State
-              </label>
-              <label for="checkbox-input3" class="checkbox-label">
-                <input id="checkbox-input3" type="checkbox"/>
-                Unchecked State
-              </label>
+            <label>Checkbox Inline</label>
+            <label class="checkbox-label">
+              <input type="checkbox" :indeterminate.prop="true"/>
+              Indeterminate State
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" checked="true"/>
+                Checked State
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox"/>
+              Unchecked State
+            </label>
           </div>
 
         </div>
@@ -194,18 +194,23 @@
             <p>
               Checkboxes need to have a class of .checkbox-label on their labels to style them properly and have a unique HTML structure as opposed to the other inputs
             </p>
+            <label class="checkbox-label"><input type="checkbox"/> Option 1</label>
             <pre>
               <code class="language-markup">
                 <script type="prism-html-markup">
-                  <label>Checkbox</label>
-                  <fieldset>
-                    <input id="checkbox-input1" type="checkbox"/>
-                    <label for="checkbox-input1" class="inline checkbox-label">Option 1</label>
-                    <input id="checkbox-input2" type="checkbox"/>
-                    <label for="checkbox-input2" class="inline checkbox-label">Option 2</label>
-                    <input id="checkbox-input3" type="checkbox"/>
-                    <label for="checkbox-input3" class="inline checkbox-label">Option 3</label>
-                  </fieldset>
+                  <label class="checkbox-label"><input type="checkbox"/> Option 1</label>
+                </script>
+              </code>
+            </pre>
+
+            <p>
+              You may also put .disabled class on the label to grey out the text
+            </p>
+            <label class="checkbox-label disabled"><input type="checkbox" disabled="disabled" checked="checked" /> Option 1</label>
+            <pre>
+              <code class="language-markup">
+                <script type="prism-html-markup">
+                  <label class="checkbox-label disabled"><input type="checkbox" disabled="disabled" /> Option 1</label>
                 </script>
               </code>
             </pre>
