@@ -104,9 +104,10 @@ textarea {
 
 input[type=search] {
   @include input-background('search');
+  -webkit-appearance: textfield;
 
   &::-webkit-search-decoration, &::-webkit-search-cancel-button {
-    appearance: none;
+    -webkit-appearance: textfield;
   }
 }
 
