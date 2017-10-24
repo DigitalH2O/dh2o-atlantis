@@ -36,6 +36,6 @@
     "sass-extract": "^0.5.3",
     "sass-extract-loader": "^0.4.0",
     "tinycolor2": "^1.4.1",
-    "vue-build": "^0.51.0"
+    "vue-build": "^1.0.4"
   }
 }
