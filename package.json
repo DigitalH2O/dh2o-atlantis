@@ -32,6 +32,7 @@
   "devDependencies": {
     "dh2o-release": "^1.5.0",
     "interact.js": "^1.2.8",
+    "js-beautify": "^1.7.4",
     "node-cmd-promise": "^1.0.0",
     "sass-extract": "^0.5.3",
     "sass-extract-loader": "^0.4.0",
