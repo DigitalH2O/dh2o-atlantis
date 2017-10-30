@@ -3,7 +3,9 @@
     <div class="bar"><h1>Layout</h1></div>
 
     <div class="bar">
-      <header>Header <i class="fa fa-caret-down" aria-hidden="true"></i></header>
+      This is a <code class="language-css">.bar</code>, which can contain menus and options.
+      Put them directly inside of <code class="language-css">.main</code>.
+      <div class="btn primary">Button</div>
     </div>
     <div class="bar secondary">
       This is a <code class="language-css">.bar.secondary</code>, used for lower level

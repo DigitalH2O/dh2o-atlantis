@@ -127,32 +127,10 @@ body {
   }
 
   .bar {
-    position: relative;
     padding: $spacing;
     color: $font-color;
     background-color: $white;
     border-bottom: 1px solid $border-color;
-
-    header {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: $spacing;
-      background-color: $secondary-color;
-      color: $white;
-      font-size: $font-size + 3;
-      font-weight: bold;
-      border-top-right-radius: 12px 50%;
-      border-bottom-right-radius: 12px 50%;
-
-      i {
-        padding-left: $spacing-half;
-      }
-    }
 
     &.secondary {
       color: $white;
