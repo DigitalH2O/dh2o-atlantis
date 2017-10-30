@@ -135,6 +135,7 @@ body {
     &.secondary {
       color: $white;
       background-color: $secondary-color;
+      border-bottom: none;
     }
   }
 
