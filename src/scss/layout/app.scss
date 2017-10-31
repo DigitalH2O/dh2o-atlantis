@@ -31,7 +31,7 @@ body {
 
     &:before {
       background-image: url(#{$dh2o-images-path}logo-droplet-white.svg);
-      background-size: 200px, auto;
+      background-size: 200px, 200px;
       background-position: left 40%;
       background-repeat: no-repeat;
       opacity: .3;
@@ -40,11 +40,14 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 200px;
       height: $header-height;
     }
 
     .website {
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
       margin: 0 0 0 15px;
       line-height: normal;
       text-decoration: none;
@@ -64,6 +67,7 @@ body {
         color: $white;
         font-size: $font-size + 1;
         font-weight: bold;
+        padding: 0 0 0 $spacing * 1.5;
       }
     }
 
