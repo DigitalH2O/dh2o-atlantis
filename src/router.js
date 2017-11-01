@@ -4,34 +4,34 @@ module.exports = {
   linkActiveClass: 'active',
   routes: [
     {path: '/', redirect: '/welcome'},
-    {path: '/welcome', component: require('./docs/welcome.vue').default},
+    {path: '/welcome', component: require('./docs/welcome.vue')},
 
     // Layouts
-    {path: '/layout', component: require('./docs/layout/layout.vue').default},
-    {path: '/sidebar', component: require('./docs/layout/sidebar.vue').default},
-    {path: '/widgets', component: require('./docs/layout/widgets.vue').default},
-    {path: '/grid', component: require('./docs/layout/grid.vue').default},
+    {path: '/layout', component: require('./docs/layout/layout.vue')},
+    {path: '/sidebar', component: require('./docs/layout/sidebar.vue')},
+    {path: '/widgets', component: require('./docs/layout/widgets.vue')},
+    {path: '/grid', component: require('./docs/layout/grid.vue')},
 
     // Misc
-    {path: '/misc', component: require('./docs/misc/misc.vue').default},
-    {path: '/images', component: require('./docs/misc/images.vue').default},
-    {path: '/fonts', component: require('./docs/misc/fonts.vue').default},
-    {path: '/colors', component: require('./docs/misc/colors.vue').default},
+    {path: '/misc', component: require('./docs/misc/misc.vue')},
+    {path: '/images', component: require('./docs/misc/images.vue')},
+    {path: '/fonts', component: require('./docs/misc/fonts.vue')},
+    {path: '/colors', component: require('./docs/misc/colors.vue')},
 
     // Elements
-    {path: '/buttons', component: require('./docs/elements/buttons.vue').default},
-    {path: '/tags', component: require('./docs/elements/tags.vue').default},
-    {path: '/inputs', component: require('./docs/elements/inputs.vue').default},
-    {path: '/groups', component: require('./docs/elements/groups.vue').default},
-    {path: '/lists', component: require('./docs/elements/lists.vue').default},
-    {path: '/messages', component: require('./docs/elements/messages.vue').default},
-    {path: '/tables', component: require('./docs/elements/tables.vue').default},
+    {path: '/buttons', component: require('./docs/elements/buttons.vue')},
+    {path: '/tags', component: require('./docs/elements/tags.vue')},
+    {path: '/inputs', component: require('./docs/elements/inputs.vue')},
+    {path: '/groups', component: require('./docs/elements/groups.vue')},
+    {path: '/lists', component: require('./docs/elements/lists.vue')},
+    {path: '/messages', component: require('./docs/elements/messages.vue')},
+    {path: '/tables', component: require('./docs/elements/tables.vue')},
 
     // Components
-    {path: '/dashboards', component: require('./docs/components/dashboards.vue').default},
-    {path: '/dropdowns', component: require('./docs/components/dropdowns.vue').default},
-    {path: '/modals', component: require('./docs/components/modals.vue').default},
-    {path: '/loading', component: require('./docs/components/loading.vue').default},
-    {path: '/nodata', component: require('./docs/components/nodata.vue').default}
+    {path: '/dashboards', component: require('./docs/components/dashboards.vue')},
+    {path: '/dropdowns', component: require('./docs/components/dropdowns.vue')},
+    {path: '/modals', component: require('./docs/components/modals.vue')},
+    {path: '/loading', component: require('./docs/components/loading.vue')},
+    {path: '/nodata', component: require('./docs/components/nodata.vue')}
   ]
 }
