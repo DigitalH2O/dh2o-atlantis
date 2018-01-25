@@ -31,6 +31,7 @@ module.exports = {
     {path: '/dashboards', component: () => import('./docs/components/dashboards.vue')},
     {path: '/dropdowns', component: () => import('./docs/components/dropdowns.vue')},
     {path: '/modals', component: () => import('./docs/components/modals.vue')},
+    {path: '/drawer', component: () => import('./docs/components/drawer.vue')},
     {path: '/loading', component: () => import('./docs/components/loading.vue')},
     {path: '/nodata', component: () => import('./docs/components/nodata.vue')}
   ]
