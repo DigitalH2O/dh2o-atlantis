@@ -14,6 +14,9 @@ import 'dh2o-atlantis/components/dropdowns/dropdowns.scss'
 // Modals
 import 'dh2o-atlantis/components/modals/modals.scss'
 
+// Drawer
+import 'dh2o-atlantis/components/drawer/drawer.scss'
+
 // Loading
 import 'dh2o-atlantis/components/loading/loading.scss'
 
