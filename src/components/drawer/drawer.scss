@@ -1,0 +1,78 @@
+@import '../../scss/_partials';
+
+.dh2o-drawer {
+    flex: 0 1 auto;
+    background-color: $white;
+    will-change: margin;
+    transition: all 300ms cubic-bezier(0.945, 0.020, 0.270, 0.665);
+
+    &.hide { display: none; }
+
+    &.dh2o-drawer-overlay {
+        position: absolute;
+        z-index: 500;
+
+        &.dh2o-drawer-top, &.dh2o-drawer-bottom {
+            left: 0;
+            right: 0;
+        }
+    }
+
+    &.dh2o-drawer-top {
+        border-bottom: solid 1px $border-color;
+        transform-origin: top;
+
+        &.dh2o-drawer-hide {
+            opacity: 0;
+        }
+    
+        &.dh2o-drawer-show {
+            opacity: 1;
+        }
+    }
+
+    &.dh2o-drawer-right {
+        border-left: solid 1px $border-color;
+        transform-origin: right;
+
+        &.dh2o-drawer-hide {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+    
+        &.dh2o-drawer-show {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+
+    &.dh2o-drawer-bottom {
+        border-top: solid 1px $border-color;
+        transform-origin: bottom;
+
+        &.dh2o-drawer-hide {
+            transform: scaleY(0);
+            opacity: 0;
+        }
+    
+        &.dh2o-drawer-show {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    }
+
+    &.dh2o-drawer-left {
+        border-right: solid 1px $border-color;
+        transform-origin: left;
+
+        &.dh2o-drawer-hide {
+            opacity: 0;
+        }
+    
+        &.dh2o-drawer-show {
+            opacity: 1;
+        }
+    }
+
+    
+}

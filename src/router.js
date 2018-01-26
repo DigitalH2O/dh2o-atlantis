@@ -4,34 +4,35 @@ module.exports = {
   linkActiveClass: 'active',
   routes: [
     {path: '/', redirect: '/welcome'},
-    {path: '/welcome', component: require('./docs/welcome.vue')},
+    {path: '/welcome', component: () => import('./docs/welcome.vue')},
 
     // Layouts
-    {path: '/layout', component: require('./docs/layout/layout.vue')},
-    {path: '/sidebar', component: require('./docs/layout/sidebar.vue')},
-    {path: '/widgets', component: require('./docs/layout/widgets.vue')},
-    {path: '/grid', component: require('./docs/layout/grid.vue')},
+    {path: '/layout', component: () => import('./docs/layout/layout.vue')},
+    {path: '/sidebar', component: () => import('./docs/layout/sidebar.vue')},
+    {path: '/widgets', component: () => import('./docs/layout/widgets.vue')},
+    {path: '/grid', component: () => import('./docs/layout/grid.vue')},
 
     // Misc
-    {path: '/misc', component: require('./docs/misc/misc.vue')},
-    {path: '/images', component: require('./docs/misc/images.vue')},
-    {path: '/fonts', component: require('./docs/misc/fonts.vue')},
-    {path: '/colors', component: require('./docs/misc/colors.vue')},
+    {path: '/misc', component: () => import('./docs/misc/misc.vue')},
+    {path: '/images', component: () => import('./docs/misc/images.vue')},
+    {path: '/fonts', component: () => import('./docs/misc/fonts.vue')},
+    {path: '/colors', component: () => import('./docs/misc/colors.vue')},
 
     // Elements
-    {path: '/buttons', component: require('./docs/elements/buttons.vue')},
-    {path: '/tags', component: require('./docs/elements/tags.vue')},
-    {path: '/inputs', component: require('./docs/elements/inputs.vue')},
-    {path: '/groups', component: require('./docs/elements/groups.vue')},
-    {path: '/lists', component: require('./docs/elements/lists.vue')},
-    {path: '/messages', component: require('./docs/elements/messages.vue')},
-    {path: '/tables', component: require('./docs/elements/tables.vue')},
+    {path: '/buttons', component: () => import('./docs/elements/buttons.vue')},
+    {path: '/tags', component: () => import('./docs/elements/tags.vue')},
+    {path: '/inputs', component: () => import('./docs/elements/inputs.vue')},
+    {path: '/groups', component: () => import('./docs/elements/groups.vue')},
+    {path: '/lists', component: () => import('./docs/elements/lists.vue')},
+    {path: '/messages', component: () => import('./docs/elements/messages.vue')},
+    {path: '/tables', component: () => import('./docs/elements/tables.vue')},
 
     // Components
-    {path: '/dashboards', component: require('./docs/components/dashboards.vue')},
-    {path: '/dropdowns', component: require('./docs/components/dropdowns.vue')},
-    {path: '/modals', component: require('./docs/components/modals.vue')},
-    {path: '/loading', component: require('./docs/components/loading.vue')},
-    {path: '/nodata', component: require('./docs/components/nodata.vue')}
+    {path: '/dashboards', component: () => import('./docs/components/dashboards.vue')},
+    {path: '/dropdowns', component: () => import('./docs/components/dropdowns.vue')},
+    {path: '/modals', component: () => import('./docs/components/modals.vue')},
+    {path: '/drawer', component: () => import('./docs/components/drawer.vue')},
+    {path: '/loading', component: () => import('./docs/components/loading.vue')},
+    {path: '/nodata', component: () => import('./docs/components/nodata.vue')}
   ]
 }
