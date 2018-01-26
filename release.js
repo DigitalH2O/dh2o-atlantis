@@ -4,8 +4,8 @@ var cmd = require('node-cmd-promise')
 dh2oRelease({
   buildStep () {
     return cmd('npm run dist')
-    .then(() => {
-      return cmd('npm run docs')
-    })
+      .then(() => {
+        return cmd('npm run docs')
+      })
   }
 })
