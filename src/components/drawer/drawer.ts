@@ -52,6 +52,7 @@ class Drawer {
 
         // Set element to drawer variable
         this.drawer = <HTMLElement>(typeof info.el === 'string' ? <HTMLElement>document.querySelector(info.el) : info.el)
+        if (!this.drawer) {throw Error('Could not find element')}
 
         // Identify if drawer is currently open
         if (this.drawer.classList.contains('hide')) {this.isShowing = false}
