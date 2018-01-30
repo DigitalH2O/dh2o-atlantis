@@ -64,7 +64,6 @@ class Drawer {
         if (info.overlay) {this.overlay = info.overlay}
 
         // Get original styles
-        this.display = getComputedStyle(this.drawer, null).display
         if (info.height) {this.height = info.height}
         if (info.width) {this.width = info.width}
 
@@ -96,7 +95,6 @@ class Drawer {
         this.drawer.classList.add(classes.main)
         this.drawer.classList.add(classes[this.location])
         if (this.isShowing) {this.show()} else {this.hide()}
-        this.drawer.classList.remove('hide')
 
         // Add overlay if config set
         if (this.overlay) {this.drawer.classList.add(classes.overlay)}
@@ -117,21 +115,26 @@ class Drawer {
     }
 
     toggle () {
-        (this.isShowing ? this.hide() : this.show())
+        if (this.isShowing) { this.hide() } else { this.show() }
     }
 
     show () {
         // Run beforeShow callback
         if (this.beforeShow) {this.beforeShow()}
 
-        this.drawer.classList.remove(classes.hide)
-        this.drawer.classList.add(classes.show)
-        if (['left', 'right'].includes(this.location)) {
-            this.drawer.style.marginLeft = `0px`
-        }
-        if (['top', 'bottom'].includes(this.location)) {
-            this.drawer.style.marginTop = `0px`
-        }
+        this.drawer.classList.remove('hide')
+        
+        // SetTimeout is used because we want to make sure hide is removed before running animations
+        setTimeout(() => {
+            this.drawer.classList.remove(classes.hide)
+            this.drawer.classList.add(classes.show)
+            if (['left', 'right'].includes(this.location)) {
+                this.drawer.style.marginLeft = `0px`
+            }
+            if (['top', 'bottom'].includes(this.location)) {
+                this.drawer.style.marginTop = `0px`
+            }
+        }, 20)
 
         setTimeout(() => {
             this.isShowing = true
@@ -157,6 +160,7 @@ class Drawer {
         let hasAfterHide = this.afterHide
         setTimeout(() => {
             this.isShowing = false
+            this.drawer.classList.add('hide')
 
             // Run afterHide callback
             if (hasAfterHide) {this.afterHide()}
