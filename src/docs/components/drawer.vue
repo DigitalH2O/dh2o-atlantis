@@ -87,9 +87,13 @@
         flex-direction: row;
 
         .knob {
+          flex: 0 1 auto;
+          min-width: 0px;
+          width: 30px;
           background-color: $white;
           padding: $spacing-quarter;
           border-right: solid 1px $border-color;
+          box-sizing: content-box;
 
           .btn {
             cursor: pointer;
