@@ -9,7 +9,11 @@
   "bugs": {
     "url": "https://github.com/DigitalH2O/dh2o-atlantis/issues"
   },
-  "keywords": ["css", "sass", "dh2o"],
+  "keywords": [
+    "css",
+    "sass",
+    "dh2o"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DigitalH2O/dh2o-atlantis.git"
@@ -30,6 +34,7 @@
   "devDependencies": {
     "dh2o-release": "^1.5.0",
     "eslint": "^4.18.0",
+    "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
