@@ -52,52 +52,52 @@ class Drawer {
 
         // Set element to drawer variable
     this.drawer = (typeof info.el === 'string' ? document.querySelector(info.el) : info.el) as HTMLElement
-    if (!this.drawer) {throw Error('Could not find element')}
+    if (!this.drawer) { throw Error('Could not find element') }
 
         // Identify if drawer is currently open
-    if (this.drawer.classList.contains('hide')) {this.isShowing = false}
+    if (this.drawer.classList.contains('hide')) { this.isShowing = false }
 
         // Set location
-    if (info.location) {this.location = info.location}
+    if (info.location) { this.location = info.location }
 
         // Set overlay
-    if (info.overlay) {this.overlay = info.overlay}
+    if (info.overlay) { this.overlay = info.overlay }
 
         // Get original styles
-    if (info.height) {this.height = info.height}
-    if (info.width) {this.width = info.width}
+    if (info.height) { this.height = info.height }
+    if (info.width) { this.width = info.width }
 
         // Lets make sure the drawer has the necessary classes
     this.addInitialClasses()
 
         // Callbacks - Add after everything to ensure no callbacks are triggered during setup
-    if (info.beforeShow) {this.beforeShow = info.beforeShow}
-    if (info.afterShow) {this.afterShow = info.afterShow}
-    if (info.beforeHide) {this.beforeHide = info.beforeHide}
-    if (info.afterHide) {this.afterHide = info.afterHide}
+    if (info.beforeShow) { this.beforeShow = info.beforeShow }
+    if (info.afterShow) { this.afterShow = info.afterShow }
+    if (info.beforeHide) { this.beforeHide = info.beforeHide }
+    if (info.afterHide) { this.afterHide = info.afterHide }
   }
 
     // Validate certain perameters to ensure proper setup
   private validate (info: Constructor) {
         // Make sure element was passed in
-    if (!info.el) {throw Error('el field is required')}
+    if (!info.el) { throw Error('el field is required') }
 
         // Make sure location is passed
-    if (!info.location) {throw Error('position field is required')}
+    if (!info.location) { throw Error('position field is required') }
 
         // Based upon location lets make sure height or width is set
-    if (['left', 'right'].includes(info.location) && !info.width) {throw Error('width field is required on left or right locations')}
-    if (['top', 'bottom'].includes(info.location) && !info.height) {throw Error('height field is required on top or bottom locations')}
+    if (['left', 'right'].includes(info.location) && !info.width) { throw Error('width field is required on left or right locations') }
+    if (['top', 'bottom'].includes(info.location) && !info.height) { throw Error('height field is required on top or bottom locations') }
   }
 
     // Add required classes to drawer element
   private addInitialClasses () {
     this.drawer.classList.add(classes.main)
     this.drawer.classList.add(classes[this.location])
-    if (this.isShowing) {this.show()} else {this.hide()}
+    if (this.isShowing) { this.show() } else { this.hide() }
 
         // Add overlay if config set
-    if (this.overlay) {this.drawer.classList.add(classes.overlay)}
+    if (this.overlay) { this.drawer.classList.add(classes.overlay) }
 
         // Add height or width based upon what type of location it is
     if (['left', 'right'].includes(this.location)) {
@@ -120,7 +120,7 @@ class Drawer {
 
   show () {
         // Run beforeShow callback
-    if (this.beforeShow) {this.beforeShow()}
+    if (this.beforeShow) { this.beforeShow() }
 
     this.drawer.classList.remove('hide')
 
@@ -140,13 +140,13 @@ class Drawer {
       this.isShowing = true
 
             // Run afterShow callback
-      if (this.afterShow) {this.afterShow()}
+      if (this.afterShow) { this.afterShow() }
     }, this.animationSpeed)
   }
 
   hide () {
         // Run beforeHide callback
-    if (this.beforeHide) {this.beforeHide()}
+    if (this.beforeHide) { this.beforeHide() }
 
     this.drawer.classList.remove(classes.show)
     this.drawer.classList.add(classes.hide)
@@ -163,7 +163,7 @@ class Drawer {
       this.drawer.classList.add('hide')
 
             // Run afterHide callback
-      if (hasAfterHide) {this.afterHide()}
+      if (hasAfterHide) { this.afterHide() }
     }, this.animationSpeed)
   }
 }

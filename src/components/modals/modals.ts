@@ -72,7 +72,7 @@ let ModalClass = class Modal {
 
   // Pass usable values back to a callback function
   triggerCallback () {
-    if (!this.callback) {return}
+    if (!this.callback) { return }
 
     this.callback(this)
   }
