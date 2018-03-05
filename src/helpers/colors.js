@@ -1,5 +1,5 @@
 import tinycolor from 'tinycolor2'
-import colorVars from '!!sass-extract-loader!src/scss/misc/_colors.scss'
+import colorVars from '!!sass-extract-loader!src/scss/misc/_colors.scss' // eslint-disable-line
 
 const darkerPercent = colorVars.global['$darker-percent'].value
 const darkestPercent = colorVars.global['$darkest-percent'].value
