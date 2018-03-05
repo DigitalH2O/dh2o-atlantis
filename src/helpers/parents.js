@@ -14,7 +14,6 @@ function getParentElement (el, parentClass) {
     if (ele.parentElement) {
       findParent(ele.parentElement, parentClass)
     }
-    return
   }
 
   findParent(el.parentElement)
