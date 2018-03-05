@@ -24,7 +24,7 @@
     "dev": "vue-build dev",
     "dist": "vue-build prod",
     "docs": "DOCS=true vue-build prod",
-    "lint": "eslint src --fix && tslint src"
+    "lint": "eslint src --fix && tslint src/**/*.ts --fix"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
@@ -45,6 +45,7 @@
     "sass-extract": "^2.1.0",
     "sass-extract-loader": "^1.1.0",
     "tinycolor2": "^1.4.1",
+    "tslint-eslint-rules": "^4.1.1",
     "vue-build": "^2.3.1"
   }
 }
