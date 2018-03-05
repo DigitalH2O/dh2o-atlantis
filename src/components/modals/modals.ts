@@ -1,12 +1,12 @@
 // Add a document listener, that targets modal buttons
 document.addEventListener('click', function (event: MouseEvent) {
-  var buttonName = 'dh2o-modal-btn'
-  var dataset = 'dh2oModal'
-  var element = event.target as HTMLElement
+  let buttonName = 'dh2o-modal-btn'
+  let dataset = 'dh2oModal'
+  let element = event.target as HTMLElement
 
   if (element.classList && element.classList.contains(buttonName)) {
     // Get all elements needed
-    var modalId = element.dataset[dataset]
+    let modalId = element.dataset[dataset]
 
     if (modalId) {
       let modal = new ModalClass({
@@ -37,7 +37,7 @@ let ModalClass = class Modal {
 
     // Set elements in class for future targeting
     this.modal = options.el
-    this.widget = this.modal.querySelector('.widget') as HTMLElement
+    this.widget = this.modal.querySelector('.widget')
     if (!this.widget) { throw new Error('Must have widget div in root of modal') }
 
     this.isLocked = options.isLocked || false
@@ -71,7 +71,7 @@ let ModalClass = class Modal {
   unlock () { this.isLocked = false; this.triggerCallback() }
 
   // Pass usable values back to a callback function
-  triggerCallback() {
+  triggerCallback () {
     if (!this.callback) {return}
 
     this.callback(this)
@@ -87,8 +87,8 @@ let ModalClass = class Modal {
     }
 
     // Add onclick handlers for any model-close buttons
-    var closes = this.modal.getElementsByClassName('modal-close')
-    for (var i = 0; i < closes.length; i++) {
+    let closes = this.modal.getElementsByClassName('modal-close')
+    for (let i = 0; i < closes.length; i++) {
       (closes[i] as HTMLDivElement).onclick = () => {
         this.hide()
       }
@@ -97,5 +97,5 @@ let ModalClass = class Modal {
 }
 
 export default ModalClass
-declare var module: any;
+declare var module: any
 (module).exports = ModalClass
