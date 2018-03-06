@@ -21,7 +21,7 @@ function hasClassInTree (element, className) {
   return hasClass(element, className) || parentByClass(element, className)
 }
 
-var dh2oDropdown = function (dropdown, autoShow = true, callbackFunc = null) {
+var dh2oDropdown = function (dropdown, autoShow = true, callback = null) {
   var contentStr = 'dh2o-dropdown-content'
 
   // If you are passing in a string get element from it
@@ -40,7 +40,7 @@ var dh2oDropdown = function (dropdown, autoShow = true, callbackFunc = null) {
   var content = dropdown.getElementsByClassName(contentStr)[0]
   dropdown.show = function () {
     if (content) {
-      if (callbackFunc) { callbackFunc(true) }
+      if (callback) { callback(true) }
       content.classList.remove('animate-out')
       content.classList.add('animate-in')
     }
@@ -50,7 +50,7 @@ var dh2oDropdown = function (dropdown, autoShow = true, callbackFunc = null) {
       content.classList.remove('animate-in')
       content.classList.add('animate-out')
       setTimeout(function () {
-        if (callbackFunc) { callbackFunc(false) }
+        if (callback) { callback(false) }
         content.classList.remove('animate-out')
       }, 300)
     }
