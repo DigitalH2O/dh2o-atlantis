@@ -120,14 +120,12 @@
       "check-branch",
       "check-decl",
       "check-operator",
-      // "check-module",
       "check-rest-spread",
       "check-type",
       "check-typecast",
       "check-type-operator",
       "check-preblock"
     ],
-    // TSLint ESLint rules.
     "no-constant-condition": [
       true,
       {

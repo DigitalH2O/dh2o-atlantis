@@ -27,25 +27,25 @@
     "lint": "eslint src --fix && tslint src/**/*.ts --fix"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "slim-select": "^1.11.1",
-    "tslint": "^5.9.1"
-  },
-  "devDependencies": {
-    "dh2o-release": "^1.5.0",
     "eslint": "^4.18.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "font-awesome": "^4.7.0",
+    "slim-select": "^1.11.1",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.1.0"
+  },
+  "devDependencies": {
+    "dh2o-release": "^1.5.0",
     "interact.js": "^1.2.8",
     "js-beautify": "^1.7.5",
     "node-cmd-promise": "^1.0.0",
     "sass-extract": "^2.1.0",
     "sass-extract-loader": "^1.1.0",
     "tinycolor2": "^1.4.1",
-    "tslint-eslint-rules": "^4.1.1",
     "vue-build": "^2.3.1"
   }
 }
