@@ -1,6 +1,6 @@
 module.exports = {
-  "parser": "babel-eslint",
   "parserOptions": {
+    "parser": "babel-eslint",
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -15,7 +15,8 @@ module.exports = {
     "node": true
   },
 
-  "plugins": ["import", "node", "promise", "standard", "html"],
+  "extends": ["plugin:vue/recommended"],
+  "plugins": ["vue", "import", "node", "promise", "standard"],
 
   "globals": {
     "document": false,
@@ -240,6 +241,14 @@ module.exports = {
 
     "standard/array-bracket-even-spacing": ["error", "either"],
     "standard/computed-property-even-spacing": ["error", "even"],
-    "standard/object-curly-even-spacing": ["error", "either"]
+    "standard/object-curly-even-spacing": ["error", "either"],
+
+    "vue/max-attributes-per-line": [2, {
+      "singleline": 5,
+      "multiline": {
+        "max": 1,
+        "allowFirstLine": false
+      }
+    }]
   }
 }
