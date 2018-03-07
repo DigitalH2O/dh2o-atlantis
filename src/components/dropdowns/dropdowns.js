@@ -21,7 +21,7 @@ function hasClassInTree (element, className) {
   return hasClass(element, className) || parentByClass(element, className)
 }
 
-var dh2oDropdown = function (dropdown, autoShow=true, callback=null) {
+var dh2oDropdown = function (dropdown, autoShow = true, callback = null) {
   var contentStr = 'dh2o-dropdown-content'
 
   // If you are passing in a string get element from it
