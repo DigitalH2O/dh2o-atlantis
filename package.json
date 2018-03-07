@@ -24,7 +24,7 @@
     "dev": "vue-build dev",
     "dist": "vue-build prod",
     "docs": "DOCS=true vue-build prod",
-    "lint": "eslint src/**/*.{js,vue} --fix && tslint src/**/*.ts --fix"
+    "lint": "eslint src/**/*.{js,vue} --fix && tslint -p tsconfig.json --fix"
   },
   "dependencies": {
     "eslint": "^4.18.0",

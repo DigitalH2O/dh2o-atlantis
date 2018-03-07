@@ -1,22 +1,3 @@
-// Add a document listener, that targets modal buttons
-document.addEventListener('click', function (event: MouseEvent) {
-  let buttonName = 'dh2o-modal-btn'
-  let dataset = 'dh2oModal'
-  let element = event.target as HTMLElement
-
-  if (element.classList && element.classList.contains(buttonName)) {
-    // Get all elements needed
-    let modalId = element.dataset[dataset]
-
-    if (modalId) {
-      let modal = new ModalClass({
-        el: document.getElementById(modalId)
-      })
-      modal.show()
-    }
-  }
-})
-
 interface ModalOptions {
   el: HTMLElement
   isLocked?: boolean
@@ -95,6 +76,25 @@ let ModalClass = class Modal {
     }
   }
 }
+
+// Add a document listener, that targets modal buttons
+document.addEventListener('click', function (event: MouseEvent) {
+  let buttonName = 'dh2o-modal-btn'
+  let dataset = 'dh2oModal'
+  let element = event.target as HTMLElement
+
+  if (element.classList && element.classList.contains(buttonName)) {
+    // Get all elements needed
+    let modalId = element.dataset[dataset]
+
+    if (modalId) {
+      let modal = new ModalClass({
+        el: document.getElementById(modalId)
+      })
+      modal.show()
+    }
+  }
+})
 
 export default ModalClass
 declare var module: any
