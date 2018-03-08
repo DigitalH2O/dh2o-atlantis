@@ -68,7 +68,7 @@
         <div class="draggable btn primary" data-type="operator">Drag Operator</div>
       </div>
       <div class="dashboard-main">
-        <div class="dashboard-row" v-for="(row, index) in rows" :data-index="index">
+        <div class="dashboard-row" v-for="(row, index) in rows" :key="index" :data-index="index">
           <widget v-for="widget in row" :key="widget.id" :data-id="widget.id" :info="widget" />
         </div>
       </div>
