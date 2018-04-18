@@ -21,6 +21,6 @@
 
 @each $icon-name, $icon-character in $font-icons {
   .dh2o-icon-#{$icon-name}:before {
-    content: '\e#{$icon-character}';
+    content: $icon-character;
   }
 }
