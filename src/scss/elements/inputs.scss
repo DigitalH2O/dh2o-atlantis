@@ -36,6 +36,12 @@ input, select, textarea {
     border-color: $link-color;
     transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
   }
+
+  &:disabled {
+    user-select: none;
+    cursor: not-allowed;
+    background-color: darkest($background-color);
+  }
 }
 
 select[multiple] {

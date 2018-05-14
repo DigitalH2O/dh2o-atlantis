@@ -140,6 +140,27 @@
         </div>
 
         <div class="widget">
+          <header><h2>Disabled</h2></header>
+          <div class="body">
+            <p>
+              Use the <code>disabled</code> attribute to disable inputs
+            </p>
+
+            <code-sample>
+              <input type="text" value="Disabled Field" disabled="disabled" />
+            </code-sample>
+            <!-- <pre>
+              <code class="language-markup">
+                <script type="prism-html-markup">
+                  <input type="text" value="Disabled Field" disabled="disabled" />
+                </script>
+              </code>
+            </pre> -->
+          </div>
+        </div>
+
+
+        <div class="widget">
           <header><h2>Spacing</h2></header>
           <div class="body">
             <p>
